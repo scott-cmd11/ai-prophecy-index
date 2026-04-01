@@ -151,20 +151,41 @@ export function SummarySection() {
 
         {/* Footer */}
         <footer className="scroll-reveal from-below border-t pt-8" style={{ borderColor: "var(--border-card)" }}>
-          <div className="flex flex-col items-center gap-2 text-center">
-            <p
-              className="font-mono text-xs"
-              style={{ color: "var(--text-muted)" }}
+          <div className="flex flex-col items-center gap-4 text-center">
+            <div className="flex flex-col gap-1">
+              <p
+                className="font-mono text-xs"
+                style={{ color: "var(--text-muted)" }}
+              >
+                Last updated: {LAST_UPDATED}
+              </p>
+              <p
+                className="font-mono text-xs"
+                style={{ color: "var(--text-muted)" }}
+              >
+                Predictions sourced from public interviews and writing. Status
+                assessed independently.
+              </p>
+            </div>
+
+            {/* AI disclosure */}
+            <div
+              className="max-w-xl rounded-lg border px-5 py-4 text-left"
+              style={{ borderColor: "var(--border-card)", backgroundColor: "var(--bg-card)" }}
             >
-              Last updated: {LAST_UPDATED}
-            </p>
-            <p
-              className="font-mono text-xs"
-              style={{ color: "var(--text-muted)" }}
-            >
-              Predictions sourced from public interviews and writing. Status
-              assessed independently.
-            </p>
+              <p
+                className="mb-1 font-mono text-[9px] font-medium uppercase tracking-widest"
+                style={{ color: "var(--text-muted)" }}
+              >
+                AI-generated content — use with caution
+              </p>
+              <p
+                className="text-xs leading-relaxed"
+                style={{ color: "var(--text-secondary)" }}
+              >
+                Prediction summaries, evidence assessments, and implication statements on this site were generated with the assistance of AI language models. While sourced from public interviews and published writing, the framing, interpretation, and status judgements reflect automated analysis and may contain errors, omissions, or bias. This site is an independent tracking project and is not affiliated with Carl Shulman, Leopold Aschenbrenner, or their associated organisations. Content should not be used to inform investment, policy, or other consequential decisions without independent verification.
+              </p>
+            </div>
           </div>
         </footer>
       </div>

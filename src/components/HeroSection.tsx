@@ -94,6 +94,15 @@ export function HeroSection() {
         </div>
       </div>
 
+      {/* AI disclosure */}
+      <p
+        className="mt-10 max-w-sm text-center font-mono text-[10px] leading-relaxed"
+        style={{ color: "var(--text-faint)" }}
+      >
+        Prediction summaries and evidence assessments are AI-generated.
+        Not intended to inform investment or policy decisions.
+      </p>
+
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
         <div
