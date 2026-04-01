@@ -3,24 +3,34 @@
 import { PredictionStatus } from "@/types";
 import { STATUS_LABELS } from "@/lib/constants";
 
-const STATUS_STYLES: Record<PredictionStatus, { color: string; bgColor: string }> = {
-  confirmed: { color: "var(--confirmed)", bgColor: "rgba(52, 211, 153, 0.15)" },
-  in_progress: { color: "var(--in-progress)", bgColor: "rgba(251, 191, 36, 0.15)" },
-  outstanding: { color: "var(--outstanding)", bgColor: "rgba(71, 85, 105, 0.15)" },
-  incorrect: { color: "var(--incorrect)", bgColor: "rgba(239, 68, 68, 0.15)" },
+const STATUS_STYLES: Record<PredictionStatus, { color: string; bg: string; border: string }> = {
+  confirmed:    { color: "#166534", bg: "#f0fdf4", border: "#bbf7d0" },
+  in_progress:  { color: "#92400e", bg: "#fffbeb", border: "#fde68a" },
+  outstanding:  { color: "#475569", bg: "#f8fafc", border: "#e2e8f0" },
+  incorrect:    { color: "#991b1b", bg: "#fef2f2", border: "#fecaca" },
 };
 
-export function StatusBadge({ status, animated = true }: { status: PredictionStatus; animated?: boolean }) {
-  const style = STATUS_STYLES[status];
-
+export function StatusBadge({
+  status,
+  animated = true,
+}: {
+  status: PredictionStatus;
+  animated?: boolean;
+}) {
+  const s = STATUS_STYLES[status];
   return (
     <span
-      className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 font-mono text-[9px] font-medium uppercase tracking-widest"
-      style={{ backgroundColor: style.bgColor, color: style.color }}
+      className="inline-flex items-center gap-1.5 px-2 py-0.5 font-mono text-[9px] font-medium uppercase tracking-wider"
+      style={{
+        color: s.color,
+        backgroundColor: s.bg,
+        border: `1px solid ${s.border}`,
+        borderRadius: "2px",
+      }}
     >
       <span
-        className={`h-1.5 w-1.5 rounded-full ${animated && status === "in_progress" ? "status-pulse" : ""}`}
-        style={{ backgroundColor: style.color }}
+        className={`h-1.5 w-1.5 rounded-full flex-shrink-0 ${animated && status === "in_progress" ? "status-pulse" : ""}`}
+        style={{ backgroundColor: s.color }}
       />
       {STATUS_LABELS[status]}
     </span>
