@@ -168,6 +168,29 @@ export function SummarySection() {
               </p>
             </div>
 
+            {/* Personal links */}
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+              {[
+                { label: "Contact", href: "https://scotthazlitt.ai/contact" },
+                { label: "LinkedIn", href: "https://www.linkedin.com/in/scott-hazlitt/" },
+                { label: "GitHub", href: "https://github.com/scott-cmd11" },
+                { label: "Privacy", href: "https://scotthazlitt.ai/privacy" },
+                { label: "Terms", href: "https://scotthazlitt.ai/terms" },
+                { label: "Built with Claude Code", href: "https://claude.ai/code" },
+              ].map(({ label, href }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-[10px] uppercase tracking-widest transition-colors hover:underline"
+                  style={{ color: "var(--text-muted)" }}
+                >
+                  {label}
+                </a>
+              ))}
+            </div>
+
             {/* AI disclosure */}
             <div
               className="max-w-xl rounded-lg border px-5 py-4 text-left"
