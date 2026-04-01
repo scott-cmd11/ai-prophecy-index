@@ -51,7 +51,7 @@ export function YearSection({
       <div
         ref={headerRef}
         className="sticky top-0 z-10 backdrop-blur-md"
-        style={{ backgroundColor: "rgba(5, 5, 7, 0.85)" }}
+        style={{ backgroundColor: "var(--bg-overlay)" }}
       >
         <div className="px-4 pb-3 pt-4 md:px-8">
           {/* Year number */}

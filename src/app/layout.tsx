@@ -49,6 +49,11 @@ export default function RootLayout({
       lang="en"
       className={`${dmSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(){var t=localStorage.getItem('theme');document.documentElement.dataset.theme=t==='light'?'light':'dark';})();`,
+        }}
+      />
       <body className="min-h-full font-sans">
         {children}
       </body>
