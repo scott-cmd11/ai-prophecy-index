@@ -244,5 +244,139 @@ export const shulman: Thinker = {
       timeHorizon: "post-AGI",
       year: 2030,
     },
+
+    // --- Extended Coverage ---
+    {
+      id: "cs-15",
+      claim:
+        "AGI-level AI will require approximately 1000× the compute of GPT-4, placing training costs in the tens-of-billions to potentially trillion-dollar range.",
+      source: "Dwarkesh Podcast, Part 1",
+      sourceUrl: "https://www.dwarkesh.com/p/carl-shulman",
+      date: "2023-06-01",
+      category: "Intelligence Explosion",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "GPT-4 training is estimated at ~$50–100M. 1000× implies ~$50–100B per training run. The largest current clusters ($100B+ capital cost) approach the lower end of this range, but training runs have not yet reached this scale. Consistent with the long-run trajectory but not yet achieved. Stargate's $500B investment over 4 years suggests the compute buildout Shulman anticipates is underway.",
+      lastReviewed: "2026-03-01",
+      timeHorizon: "before AGI",
+      year: 2030,
+    },
+    {
+      id: "cs-16",
+      claim:
+        "Converting automobile manufacturing capacity to humanoid robot production could yield approximately 1 billion robots per year — sufficient to physically substitute for a large fraction of human labor.",
+      source: "Dwarkesh Podcast, Part 1",
+      sourceUrl: "https://www.dwarkesh.com/p/carl-shulman",
+      date: "2023-06-01",
+      category: "Robot Industrialization",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "The auto industry produces ~90M vehicles/year. Shulman's claim is primarily about theoretical conversion capacity, not a prediction that it will happen imminently. Current humanoid robot production (Figure, Tesla Optimus, 1X) is in the thousands annually — orders of magnitude away. This is a long-run extrapolation conditional on AI-driven robotics demand materializing.",
+      lastReviewed: "2026-03-01",
+      timeHorizon: "post-AGI",
+      year: 2030,
+    },
+    {
+      id: "cs-17",
+      claim:
+        "At brain-like energy efficiency (20 watts), Earth's sustainable energy budget could support the equivalent of $50 billion in skilled cognitive labor per person on Earth.",
+      source: "80,000 Hours Podcast, Part 1",
+      sourceUrl:
+        "https://80000hours.org/podcast/episodes/carl-shulman-economy-agi/",
+      date: "2023-06-01",
+      category: "Economic Transformation",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "AI systems currently consume orders of magnitude more energy than the human brain for equivalent cognitive tasks. This is a long-run efficiency extrapolation representing the theoretical upper bound on AI economic value if hardware efficiency converges to biological levels. Not a near-term claim — it describes the ceiling of what post-AGI AI automation could eventually deliver.",
+      lastReviewed: "2026-03-01",
+      timeHorizon: "long-run theoretical",
+      year: 2030,
+    },
+    {
+      id: "cs-18",
+      claim:
+        "Voluntary AI research pauses are ineffective at reducing risk; binding international controls implemented 'closer to crunch time' — when AI systems approach autonomous self-improvement — are the correct policy.",
+      source: "80,000 Hours Podcast, Part 2",
+      sourceUrl:
+        "https://80000hours.org/podcast/episodes/carl-shulman-society-agi/",
+      date: "2023-06-01",
+      category: "AI Alignment",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "Current governance consists of voluntary commitments (Frontier AI Safety Commitments signed by major labs), no binding international treaty. Consistent with Shulman's prediction — international controls remain non-binding as of 2026. The debate over whether pauses help or hurt continues, with Shulman's view that leverage should be applied closer to the threshold gaining traction in some policy circles.",
+      lastReviewed: "2026-03-01",
+      timeHorizon: "AGI-adjacent",
+      year: 2028,
+    },
+    {
+      id: "cs-19",
+      claim:
+        "Authoritarian regimes could weaponize aligned AI to enforce ideological conformity, creating 'runaway ideological shifts' — a distinct catastrophic risk separate from AI takeover.",
+      source: "80,000 Hours Podcast, Part 2",
+      sourceUrl:
+        "https://80000hours.org/podcast/episodes/carl-shulman-society-agi/",
+      date: "2023-06-01",
+      category: "AI Alignment",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "No AI system has been deployed at the scale required for this risk to materialize. China's AI governance framework integrates censorship capabilities, and AI surveillance tools are in use. However, the 'runaway' lock-in scenario Shulman describes — where AI enables a regime to permanently suppress opposition — has not occurred. Theoretical risk with foundational steps underway.",
+      lastReviewed: "2026-03-01",
+      timeHorizon: "post-AGI",
+      year: 2030,
+    },
+    {
+      id: "cs-20",
+      claim:
+        "AI training budgets have been doubling approximately every 6 months; combined with algorithmic improvements that double in under a year, this pace is likely to continue through the AGI transition.",
+      source: "Dwarkesh Podcast, Part 1",
+      sourceUrl: "https://www.dwarkesh.com/p/carl-shulman",
+      date: "2023-06-01",
+      category: "Intelligence Explosion",
+      status: "in_progress",
+      confidence: "high",
+      evidence:
+        "Hyperscaler AI capex: ~$150B (2023) → ~$250B+ (2024) → ~$500B+ (2025). Industry-wide growth is roughly doubling every 12–18 months, slightly slower than Shulman's 6-month claim but directionally consistent. Epoch AI documents algorithmic efficiency gains at ~0.5 OOM/year. Stargate's $500B commitment over 4 years and Microsoft's $80B 2025 AI capex corroborate continued exponential scaling.",
+      lastReviewed: "2026-03-01",
+      timeHorizon: "near-term",
+      year: 2026,
+    },
+    {
+      id: "cs-21",
+      claim:
+        "The critical risk variable for AI alignment is explosion speed: a 2-month intelligence explosion is far more dangerous than a 2-year one, as it leaves less time to detect deception and implement safeguards.",
+      source: "Dwarkesh Podcast, Part 2",
+      sourceUrl: "https://www.dwarkesh.com/p/carl-shulman-2",
+      date: "2023-06-01",
+      category: "AI Alignment",
+      status: "outstanding",
+      confidence: "implied",
+      evidence:
+        "Untestable until an intelligence explosion occurs. Shulman's argument is structural — faster explosions provide less time for alignment researchers to respond, detect deceptive behavior, or halt dangerous systems. The argument informs why he assigns probability to catastrophic outcomes even given alignment progress: speed could outpace safeguard deployment. OpenAI's timeline toward automated AI researchers (2028) makes this speed variable concrete.",
+      lastReviewed: "2026-03-01",
+      timeHorizon: "conditional on AGI",
+      year: 2030,
+    },
+    {
+      id: "cs-22",
+      claim:
+        "If AI systems achieve a fraction of the theoretical productivity of 20-watt brain-equivalents, the total labor value automated could exceed the entire current global GDP — making AI the dominant economic force within years of AGI.",
+      source: "80,000 Hours Podcast, Part 1",
+      sourceUrl:
+        "https://80000hours.org/podcast/episodes/carl-shulman-economy-agi/",
+      date: "2023-06-01",
+      category: "Economic Transformation",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "Global GDP is ~$100T annually. Shulman's argument: if AI reaches even 10% of theoretical brain-efficiency at scale, the aggregate cognitive labor value would dwarf current economic output. No AI system is near this productivity level. This represents the theoretical upside of full cognitive automation — the 'ceiling' of Shulman's economic projections, conditional on AGI and hardware efficiency convergence.",
+      lastReviewed: "2026-03-01",
+      timeHorizon: "post-AGI",
+      year: 2030,
+    },
   ],
 };

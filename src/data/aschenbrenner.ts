@@ -33,8 +33,8 @@ export const aschenbrenner: Thinker = {
       status: "outstanding",
       confidence: "high",
       evidence:
-        "Depends on AGI arriving first. No automated recursive self-improvement loop has been demonstrated. Current AI-assisted research is augmentative, not autonomous. Cannot be evaluated until AGI threshold is crossed.",
-      lastReviewed: "2025-03-01",
+        "Depends on AGI arriving first. No automated recursive self-improvement loop has been demonstrated. Current AI-assisted research is augmentative, not autonomous. Notably, Sam Altman publicly committed (2025) to building an automated AI research intern by September 2026 and a full automated AI researcher by March 2028 — this is mechanistically the path Aschenbrenner describes for triggering the explosion. Cannot be fully evaluated until AGI threshold is crossed.",
+      lastReviewed: "2026-01-01",
       timeHorizon: "within 1 year of AGI",
       year: 2028,
     },
@@ -217,8 +217,8 @@ export const aschenbrenner: Thinker = {
       status: "outstanding",
       confidence: "medium",
       evidence:
-        "Current AI coding and research assistants (Copilot, Claude, etc.) augment human researchers but cannot independently conduct research. The gap between current AI research assistance and 100 million autonomous researcher-equivalents is several orders of magnitude.",
-      lastReviewed: "2025-03-01",
+        "Sam Altman publicly committed (X, 2025) to an automated AI research intern by September 2026 running on hundreds of thousands of GPUs, and a full automated AI researcher by March 2028. Small AI-assisted research discoveries reportedly began in late 2025, ahead of OpenAI's original 2026 target. This directly corroborates the direction of Aschenbrenner's prediction. However, the scale gap remains enormous: OpenAI's target is 1 automated researcher; Aschenbrenner predicts 100 million.",
+      lastReviewed: "2026-01-01",
       timeHorizon: "by 2027-2028",
       year: 2027,
     },
@@ -235,6 +235,138 @@ export const aschenbrenner: Thinker = {
       evidence:
         "AI assistants are widely adopted for writing, coding, analysis, and customer support, but handle narrow, well-defined tasks. Complex judgment, creative direction, and novel problem-solving still require human involvement. Full substitution across all white-collar work has not been demonstrated.",
       lastReviewed: "2025-03-01",
+      timeHorizon: "by 2030",
+      year: 2030,
+    },
+
+    // --- Capability Milestones ---
+    {
+      id: "la-15",
+      claim:
+        "AI models will outpace most college graduates by 2025–2026, becoming 'basically smarter than most college graduates' across academic tasks.",
+      source: "Situational Awareness, Ch. I / Dwarkesh Podcast",
+      sourceUrl: "https://situational-awareness.ai/",
+      date: "2024-06-01",
+      category: "Capability Milestones",
+      status: "in_progress",
+      confidence: "high",
+      evidence:
+        "Frontier models in early 2026 score well above median graduates on standardized tests and professional benchmarks. Reasoning models (o3, Gemini 2.5, Claude 3.7) demonstrate graduate-level performance across STEM, law, and medicine. The threshold of 'basically smarter than most college graduates' is broadly consistent with current model capabilities.",
+      lastReviewed: "2026-01-01",
+      timeHorizon: "by 2025-2026",
+      year: 2026,
+    },
+    {
+      id: "la-16",
+      claim:
+        "The automated AI research mechanism will compress a full decade of algorithmic progress (5+ orders of magnitude) into ≤1 year, via millions of AI researchers running at 10× human speed.",
+      source: "Situational Awareness, Ch. V",
+      sourceUrl: "https://situational-awareness.ai/",
+      date: "2024-06-01",
+      category: "Superintelligence",
+      status: "outstanding",
+      confidence: "high",
+      evidence:
+        "The mechanism: AGI enables 100M AI researchers at 10× human speed = effectively 1 million human-years of AI research per year, compressing a decade of algorithmic progress into ≤1 year. Algorithmic efficiency has been improving at ~0.5 OOM/year historically. No AI system yet runs autonomously at this scale. OpenAI's 2028 automated researcher plan is a step toward validating the mechanism, but orders of magnitude smaller.",
+      lastReviewed: "2026-01-01",
+      timeHorizon: "within 1 year of AGI",
+      year: 2028,
+    },
+    {
+      id: "la-17",
+      claim:
+        "Full automation of software engineering — AI independently managing entire codebases and functioning as a senior engineer — will arrive by 2027–2028.",
+      source: "Situational Awareness, Ch. II / Dwarkesh Podcast",
+      sourceUrl: "https://situational-awareness.ai/",
+      date: "2024-06-01",
+      category: "Capability Milestones",
+      status: "outstanding",
+      confidence: "high",
+      evidence:
+        "AI coding tools (Cursor, Devin, GitHub Copilot) handle subtasks and short-horizon agentic tasks well, but require human oversight for production systems and long-horizon engineering decisions. Fully autonomous software engineering across an entire codebase has not been demonstrated. Sam Altman's September 2026 'intern' milestone is a step toward this but falls short of 'senior engineer' equivalence.",
+      lastReviewed: "2026-01-01",
+      timeHorizon: "by 2027-2028",
+      year: 2027,
+    },
+
+    // --- Geopolitics & Government ---
+    {
+      id: "la-18",
+      claim:
+        "Post-AGI, Congress will appropriate trillions of dollars for AI compute and leading AI labs will be effectively merged into a national security project housed in secure government facilities.",
+      source: "Dwarkesh Podcast",
+      sourceUrl: "https://www.dwarkesh.com/p/leopold-aschenbrenner",
+      date: "2024-03-01",
+      category: "Government Response",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "Stargate ($500B over 4 years, announced Jan 2025) is the closest analog but remains private-sector led. No congressional appropriation at the trillion-dollar scale for AI. Government involvement is growing significantly but the 'merge the labs into a national security project' threshold has not been reached.",
+      lastReviewed: "2026-01-01",
+      timeHorizon: "post-AGI",
+      year: 2030,
+    },
+    {
+      id: "la-19",
+      claim:
+        "Key AGI breakthroughs will likely leak to the CCP within 12–24 months of June 2024 (i.e., by mid-to-late 2026), given current lab security posture.",
+      source: "Situational Awareness, Ch. IIId / Aschenbrenner on X",
+      sourceUrl: "https://situational-awareness.ai/",
+      date: "2024-06-01",
+      category: "China Competition",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "Multiple espionage cases documented at AI labs — DOJ prosecutions increasing, including a Google engineer charged with stealing AI trade secrets for Chinese companies (2024). No confirmed leak of frontier model weights or AGI-level research secrets at the scale Aschenbrenner describes. Lab security has been substantially upgraded since these warnings were published.",
+      lastReviewed: "2026-01-01",
+      timeHorizon: "by mid-2026",
+      year: 2026,
+    },
+    {
+      id: "la-20",
+      claim:
+        "Post-superintelligence economic growth will reach 30%+ per year — potentially doubling annually — representing an acceleration unprecedented in human history.",
+      source: "Situational Awareness, Ch. IV",
+      sourceUrl: "https://situational-awareness.ai/",
+      date: "2024-06-01",
+      category: "Economic Transformation",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "Conditional entirely on superintelligence arriving first. Global GDP growth remains in the 2–3% annual range. No current indicators of this growth rate. This is a theoretical extrapolation from the premise that automated cognitive labor at scale would be the dominant economic input, with marginal cost near zero.",
+      lastReviewed: "2026-01-01",
+      timeHorizon: "post-superintelligence",
+      year: 2030,
+    },
+    {
+      id: "la-21",
+      claim:
+        "Infrastructure for trillion-dollar datacenters is physically feasible in 1–2 years using existing US natural gas — Pennsylvania shale fields alone could support ~200 GW of continuous power generation.",
+      source: "Situational Awareness, Ch. IIIa",
+      sourceUrl: "https://situational-awareness.ai/",
+      date: "2024-06-01",
+      category: "Compute Scaling",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "Pennsylvania shale extraction capacity is real and substantial. However, no datacenter build at 200 GW scale has been attempted — Stargate targets ~5 GW eventually. This is primarily a feasibility claim (it *could* be done) rather than a prediction it *will* be done. The bottleneck is mobilization and capital, not physical resource availability.",
+      lastReviewed: "2026-01-01",
+      timeHorizon: "by 2030",
+      year: 2030,
+    },
+    {
+      id: "la-22",
+      claim:
+        "The decisive factor in the US–China AI race will be the size of the compute lead at AGI/superintelligence; even a 6-month to 2-year gap could confer military dominance comparable to nuclear weapons.",
+      source: "Situational Awareness, Ch. IIId",
+      sourceUrl: "https://situational-awareness.ai/",
+      date: "2024-06-01",
+      category: "China Competition",
+      status: "outstanding",
+      confidence: "medium",
+      evidence:
+        "Geopolitical AI competition is intensifying: US chip export controls, China's domestic semiconductor push, CHIPS Act investments. The exact compute gap between US and China frontier AI is classified or unavailable. The claim that a 6-month lead equals nuclear-level military dominance is contested by defense analysts but taken seriously in national security circles.",
+      lastReviewed: "2026-01-01",
       timeHorizon: "by 2030",
       year: 2030,
     },
