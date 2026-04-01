@@ -1,7 +1,5 @@
 "use client";
 
-import { ThemeToggle } from "@/components/ThemeToggle";
-
 export function TimelineNav({
   visibleThinkers,
   onToggleThinker,
@@ -78,15 +76,6 @@ export function TimelineNav({
           </button>
         ))}
       </div>
-
-      {/* Divider */}
-      <div
-        className="h-px w-6 max-md:h-6 max-md:w-px"
-        style={{ backgroundColor: "var(--border-card)" }}
-      />
-
-      {/* Theme toggle */}
-      <ThemeToggle />
     </div>
   );
 }

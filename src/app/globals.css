@@ -1,78 +1,50 @@
 @import "tailwindcss";
 
 /* ============================================================
-   CSS Custom Properties — Editorial Dark Design System
+   CSS Custom Properties — Editorial Light Design System
    ============================================================ */
 
 :root {
   /* Backgrounds */
-  --bg-primary: #050507;
-  --bg-card: #0a0a0f;
+  --bg-primary: #f8f7f4;
+  --bg-card: #ffffff;
 
   /* Borders */
-  --border-card: #1a1a2e;
+  --border-card: #e2e8f0;
 
   /* Thinker accent colors */
-  --accent-shulman: #a78bfa;
-  --accent-aschenbrenner: #f97316;
+  --accent-shulman: #7c3aed;
+  --accent-aschenbrenner: #ea580c;
 
   /* Spine / timeline rail */
-  --spine: #1e293b;
-  --spine-glow: #334155;
+  --spine: #cbd5e1;
+  --spine-glow: #94a3b8;
 
   /* Prediction status */
-  --confirmed: #34d399;
-  --in-progress: #fbbf24;
-  --outstanding: #475569;
-  --incorrect: #ef4444;
+  --confirmed: #059669;
+  --in-progress: #d97706;
+  --outstanding: #64748b;
+  --incorrect: #dc2626;
 
   /* Typography */
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #475569;
-  --text-faint: #334155;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-faint: #cbd5e1;
 
   /* Year marker */
-  --year-fill: #0f172a;
-  --year-stroke: #1e293b;
+  --year-fill: #e8e4dc;
+  --year-stroke: #cbd5e1;
 
   /* Overlay backgrounds */
-  --bg-overlay: rgba(5, 5, 7, 0.85);
-  --bg-nav: rgba(10, 10, 15, 0.8);
+  --bg-overlay: rgba(248, 247, 244, 0.92);
+  --bg-nav: rgba(255, 255, 255, 0.88);
 
   /* Font families */
   --font-sans: var(--font-dm-sans), system-ui, sans-serif;
   --font-serif: var(--font-instrument-serif), Georgia, serif;
   --font-mono: var(--font-jetbrains-mono), monospace;
   --font-display: var(--font-space-grotesk), system-ui, sans-serif;
-}
-
-html[data-theme="light"] {
-  --bg-primary: #f8f7f4;
-  --bg-card: #ffffff;
-  --border-card: #e2e8f0;
-  --spine: #cbd5e1;
-  --spine-glow: #94a3b8;
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
-  --text-faint: #cbd5e1;
-  --year-fill: #e8e4dc;
-  --year-stroke: #cbd5e1;
-  --bg-overlay: rgba(248, 247, 244, 0.92);
-  --bg-nav: rgba(255, 255, 255, 0.88);
-}
-
-html[data-theme="light"] body::before {
-  opacity: 0.015;
-}
-
-html[data-theme="light"] ::-webkit-scrollbar-track {
-  background: var(--bg-primary);
-}
-
-html[data-theme="light"] ::-webkit-scrollbar-thumb {
-  background: var(--spine-glow);
 }
 
 /* ============================================================
@@ -83,7 +55,6 @@ html {
   background: var(--bg-primary);
   color: var(--text-primary);
   scroll-behavior: smooth;
-  transition: background-color 200ms ease, color 200ms ease;
 }
 
 body {
@@ -100,7 +71,7 @@ body::before {
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0.025;
+  opacity: 0.015;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 256px 256px;
