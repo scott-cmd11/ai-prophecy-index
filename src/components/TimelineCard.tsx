@@ -75,7 +75,6 @@ export function TimelineCard({
             className="text-base leading-snug"
             style={{
               fontFamily: "var(--font-serif)",
-              fontStyle: "italic",
               color: "var(--text-primary)",
             }}
           >
