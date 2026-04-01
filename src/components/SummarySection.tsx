@@ -100,7 +100,7 @@ export function SummarySection() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
+            entry.target.classList.add("visible");
           }
         });
       },
@@ -118,7 +118,7 @@ export function SummarySection() {
     <section ref={sectionRef} className="px-6 py-24">
       <div className="mx-auto max-w-4xl">
         {/* Section header */}
-        <div className="scroll-reveal from-bottom mb-16 text-center">
+        <div className="scroll-reveal from-below mb-16 text-center">
           <h2
             className="font-serif text-5xl italic md:text-6xl"
             style={{ color: "var(--text-primary)" }}
@@ -128,7 +128,7 @@ export function SummarySection() {
         </div>
 
         {/* Side-by-side scorecards */}
-        <div className="scroll-reveal from-bottom mb-16 grid gap-6 md:grid-cols-2">
+        <div className="scroll-reveal from-below mb-16 grid gap-6 md:grid-cols-2">
           <ThinkerCard
             thinker={shulman}
             accentColor="var(--accent-shulman)"
@@ -140,7 +140,7 @@ export function SummarySection() {
         </div>
 
         {/* Closing editorial line */}
-        <div className="scroll-reveal from-bottom mb-12 text-center">
+        <div className="scroll-reveal from-below mb-12 text-center">
           <p
             className="text-sm leading-relaxed"
             style={{ color: "var(--text-secondary)" }}
@@ -150,7 +150,7 @@ export function SummarySection() {
         </div>
 
         {/* Footer */}
-        <footer className="scroll-reveal from-bottom border-t pt-8" style={{ borderColor: "var(--border-card)" }}>
+        <footer className="scroll-reveal from-below border-t pt-8" style={{ borderColor: "var(--border-card)" }}>
           <div className="flex flex-col items-center gap-2 text-center">
             <p
               className="font-mono text-xs"
