@@ -34,7 +34,7 @@ export function FilterBar({
         Show
       </span>
       <button
-        className={`${PILL_BASE} rounded-sm ${visibleThinkers.shulman ? "" : ""}`}
+        className={`${PILL_BASE} rounded-sm`}
         style={{
           border: `1px solid ${visibleThinkers.shulman ? "var(--accent-shulman)" : "var(--rule-light)"}`,
           color: visibleThinkers.shulman ? "var(--accent-shulman)" : "var(--text-muted)",
