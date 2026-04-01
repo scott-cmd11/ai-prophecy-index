@@ -1,0 +1,1209 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - paragraph [ref=e8]:
+          - link "SITUATIONAL AWARENESS" [ref=e9] [cursor=pointer]:
+            - /url: https://situational-awareness.ai/
+        - paragraph [ref=e10]: The Decade Ahead
+      - text: ☰
+  - navigation [ref=e11]:
+    - list [ref=e13]:
+      - listitem [ref=e14]:
+        - link "Introduction" [ref=e15] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/
+      - listitem [ref=e16]:
+        - 'link "I. From GPT-4 to AGI: Counting the OOMs" [ref=e17] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/from-gpt-4-to-agi/
+      - listitem [ref=e18]:
+        - 'link "II. From AGI to Superintelligence: the Intelligence Explosion" [ref=e19] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/from-agi-to-superintelligence/
+      - listitem [ref=e20]:
+        - link "IIIa. Racing to the Trillion-Dollar Cluster" [ref=e21] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+      - listitem [ref=e22]:
+        - 'link "IIIb. Lock Down the Labs: Security for AGI" [ref=e23] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/lock-down-the-labs/
+      - listitem [ref=e24]:
+        - link "IIIc. Superalignment" [ref=e25] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/superalignment/
+      - listitem [ref=e26]:
+        - link "IIId. The Free World Must Prevail" [ref=e27] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/the-free-world-must-prevail/
+      - listitem [ref=e28]:
+        - link "IV. The Project" [ref=e29] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/the-project/
+      - listitem [ref=e30]:
+        - link "V. Parting Thoughts" [ref=e31] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/parting-thoughts/
+      - listitem [ref=e32]:
+        - link "Full series as PDF" [ref=e33] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/wp-content/uploads/2024/06/situationalawareness.pdf
+      - listitem [ref=e34]:
+        - link "About" [ref=e35] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/leopold-aschenbrenner/
+      - listitem [ref=e36]:
+        - link "Dwarkesh podcast" [ref=e37] [cursor=pointer]:
+          - /url: https://www.dwarkeshpatel.com/p/leopold-aschenbrenner
+  - generic [ref=e38]:
+    - main [ref=e41]:
+      - article [ref=e42]:
+        - 'heading "I. From GPT-4 to AGI: Counting the OOMs" [level=1] [ref=e44]'
+        - generic [ref=e45]:
+          - paragraph [ref=e46]:
+            - strong [ref=e47]: AGI by 2027 is strikingly plausible. GPT-2 to GPT-4 took us from ~preschooler to ~smart high-schooler abilities in 4 years. Tracing trendlines in compute (~0.5 orders of magnitude or OOMs/year), algorithmic efficiencies (~0.5 OOMs/year), and “unhobbling” gains (from chatbot to agent), we should expect another preschooler-to-high-schooler-sized qualitative jump by 2027.
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: "In this piece:"
+              - link "Toggle Table of Content" [ref=e51] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e54]:
+                  - img [ref=e55]
+                  - img [ref=e57]
+            - navigation [ref=e59]:
+              - list [ref=e60]:
+                - listitem [ref=e61]:
+                  - link "The last four years" [ref=e62] [cursor=pointer]:
+                    - /url: "#The_last_four_years"
+                  - list [ref=e63]:
+                    - listitem [ref=e64]:
+                      - link "GPT-2 to GPT-4" [ref=e65] [cursor=pointer]:
+                        - /url: "#GPT-2_to_GPT-4"
+                    - listitem [ref=e66]:
+                      - link "The trends in deep learning" [ref=e67] [cursor=pointer]:
+                        - /url: "#The_trends_in_deep_learning"
+                - listitem [ref=e68]:
+                  - link "Counting the OOMs" [ref=e69] [cursor=pointer]:
+                    - /url: "#Counting_the_OOMs"
+                  - list [ref=e70]:
+                    - listitem [ref=e71]:
+                      - link "Compute" [ref=e72] [cursor=pointer]:
+                        - /url: "#Compute"
+                    - listitem [ref=e73]:
+                      - link "Algorithmic efficiencies" [ref=e74] [cursor=pointer]:
+                        - /url: "#Algorithmic_efficiencies"
+                      - list [ref=e75]:
+                        - listitem [ref=e76]:
+                          - link "The data wall" [ref=e77] [cursor=pointer]:
+                            - /url: "#The_data_wall"
+                    - listitem [ref=e78]:
+                      - link "Unhobbling" [ref=e79] [cursor=pointer]:
+                        - /url: "#Unhobbling"
+                      - list [ref=e80]:
+                        - listitem [ref=e81]:
+                          - link "From chatbot to agent-coworker" [ref=e82] [cursor=pointer]:
+                            - /url: "#From_chatbot_to_agent-coworker"
+                - listitem [ref=e83]:
+                  - link "The next four years" [ref=e84] [cursor=pointer]:
+                    - /url: "#The_next_four_years"
+                  - list [ref=e85]:
+                    - listitem [ref=e86]:
+                      - 'link "Addendum. Racing through the OOMs: It’s this decade or bust" [ref=e87] [cursor=pointer]':
+                        - /url: "#Addendum_Racing_through_the_OOMs_Its_this_decade_or_bust"
+          - separator [ref=e88]
+          - blockquote [ref=e90]:
+            - paragraph [ref=e91]: Look. The models, they just want to learn. You have to understand this. The models, they just want to learn.
+            - generic [ref=e92]:
+              - text: —
+              - emphasis [ref=e93]: Ilya Sutskever (circa 2015,
+              - text: via
+              - link "Dario Amodei" [ref=e94] [cursor=pointer]:
+                - /url: https://www.dwarkeshpatel.com/p/dario-amodei
+              - text: )
+          - paragraph [ref=e96]: "GPT-4’s capabilities came as a shock to many: an AI system that could write code and essays, could reason through difficult math problems, and ace college exams. A few years ago, most thought these were impenetrable walls."
+          - paragraph [ref=e97]: But GPT-4 was merely the continuation of a decade of breakneck progress in deep learning. A decade earlier, models could barely identify simple images of cats and dogs; four years earlier, GPT-2 could barely string together semi-plausible sentences. Now we are rapidly saturating all the benchmarks we can come up with. And yet this dramatic progress has merely been the result of consistent trends in scaling up deep learning.
+          - paragraph [ref=e98]: There have been people who have seen this for far longer. They were scoffed at, but all they did was trust the trendlines. The trendlines are intense, and they were right. The models, they just want to learn; you scale them up, and they learn more.
+          - paragraph [ref=e99]:
+            - text: "I make the following claim:"
+            - strong [ref=e100]: it is strikingly plausible that by 2027, models will be able to do the work of an AI researcher/engineer.
+            - text: That doesn’t require believing in sci-fi; it just requires believing in straight lines on a graph.
+          - figure "Rough estimates of past and future scaleup of effective compute (both physical compute and algorithmic efficiencies), based on the public estimates discussed in this piece. As we scale models, they consistently get smarter, and by “counting the OOMs” we get a rough sense of what model intelligence we should expect in the (near) future. (This graph shows only the scaleup in base models; “unhobblings” are not pictured.)" [ref=e102]:
+            - emphasis [ref=e104]: Rough estimates of past and future scaleup of effective compute (both physical compute and algorithmic efficiencies), based on the public estimates discussed in this piece. As we scale models, they consistently get smarter, and by “counting the OOMs” we get a rough sense of what model intelligence we should expect in the (near) future. (This graph shows only the scaleup in base models; “unhobblings” are not pictured.)
+          - paragraph [ref=e105]:
+            - text: "In this piece, I will simply “count the OOMs” (OOM = order of magnitude, 10x = 1 order of magnitude): look at the trends in 1)"
+            - emphasis [ref=e106]: compute
+            - text: ", 2)"
+            - emphasis [ref=e107]: algorithmic efficiencies
+            - text: (algorithmic progress that we can think of as growing “effective compute”), and 3)
+            - emphasis [ref=e108]: ”unhobbling” gains
+            - text: (fixing obvious ways in which models are hobbled by default, unlocking latent capabilities and giving them tools, leading to step-changes in usefulness). We trace the growth in each over four years before GPT-4, and what we should expect in the four years after, through the end of 2027. Given deep learning’s consistent improvements for every OOM of effective compute, we can use this to project future progress.
+          - paragraph [ref=e109]:
+            - text: Publicly, things
+            - link "have been quiet" [ref=e110] [cursor=pointer]:
+              - /url: https://x.com/leopoldasch/status/1768868127138549841
+            - text: for a year since the GPT-4 release, as the next generation of models has been in the oven—leading some to proclaim stagnation and that deep learning is hitting a wall.
+            - button [ref=e112] [cursor=pointer]:
+              - img [ref=e113]
+              - img [ref=e115]
+              - img [ref=e117]
+            - text: But by counting the OOMs, we get a peek at what we should actually expect.
+          - paragraph [ref=e119]: The upshot is pretty simple. GPT-2 to GPT-4—from models that were impressive for sometimes managing to string together a few coherent sentences, to models that ace high-school exams—was not a one-time gain. We are racing through the OOMs extremely rapidly, and the numbers indicate we should expect another ~100,000x effective compute scaleup—resulting in another GPT-2-to-GPT-4-sized qualitative jump—over four years. Moreover, and critically, that doesn’t just mean a better chatbot; picking the many obvious low-hanging fruit on “unhobbling” gains should take us from chatbots to agents, from a tool to something that looks more like drop-in remote worker replacements.
+          - paragraph [ref=e120]:
+            - text: While the inference is simple, the implication is striking. Another jump like that very well could take us to AGI, to models as smart as PhDs or experts that can work beside us as coworkers. Perhaps most importantly, if these AI systems could automate AI research itself, that would set in motion intense feedback loops—the topic of the
+            - link "next piece in the series" [ref=e121] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-agi-to-superintelligence/
+            - text: .
+          - paragraph [ref=e122]: Even now, barely anyone is pricing all this in. But situational awareness on AI isn’t actually that hard, once you step back and look at the trends. If you keep being surprised by AI capabilities, just start counting the OOMs.
+          - heading "The last four years" [level=2] [ref=e123]:
+            - strong [ref=e124]: The last four years
+          - paragraph [ref=e125]:
+            - text: We have machines now that we can basically
+            - link "talk to like humans" [ref=e126] [cursor=pointer]:
+              - /url: https://openai.com/index/hello-gpt-4o/
+            - text: . It’s a remarkable testament to the human capacity to adjust that this seems normal, that we’ve become inured to the pace of progress. But it’s worth stepping back and looking at the progress of just the last few years.
+          - heading "GPT-2 to GPT-4" [level=3] [ref=e127]: GPT-2 to GPT-4
+          - paragraph [ref=e128]: Let me remind you of how far we came in just the ~4 (!) years leading up to GPT-4.
+          - paragraph [ref=e129]:
+            - strong [ref=e130]: GPT-2
+            - text: (2019) ~
+            - emphasis [ref=e131]: preschooler
+            - text: ": “Wow, it can string together a few plausible sentences.” A very-cherry-picked example of a semi-coherent story about unicorns in the Andes"
+            - link "it generated" [ref=e132] [cursor=pointer]:
+              - /url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+            - text: was incredibly impressive at the time. And yet GPT-2 could barely count to 5 without getting tripped up;
+            - button [ref=e134] [cursor=pointer]:
+              - img [ref=e135]
+              - img [ref=e137]
+              - img [ref=e139]
+            - text: when summarizing an article, it just barely outperformed selecting 3 random sentences from the article.
+            - button [ref=e142] [cursor=pointer]:
+              - img [ref=e143]
+              - img [ref=e145]
+              - img [ref=e147]
+          - 'figure "Some examples of what people found impressive about GPT-2 at the time. Left: GPT-2 does an ok job on extremely basic reading comprehension questions. Right: In a cherry-picked sample (best of 10 tries), GPT-2 can write a semi-coherent paragraph that says some semi-relevant things about the Civil War." [ref=e149]':
+            - generic [ref=e150]:
+              - emphasis [ref=e151]: Some
+              - link "examples" [ref=e152] [cursor=pointer]:
+                - /url: https://openai.com/index/better-language-models/
+                - emphasis [ref=e153]: examples
+              - emphasis [ref=e154]: "of what people found impressive about GPT-2 at the time. Left: GPT-2 does an ok job on extremely basic reading comprehension questions. Right: In a cherry-picked sample (best of 10 tries), GPT-2 can write a semi-coherent paragraph that says some semi-relevant things about the Civil War."
+          - paragraph [ref=e155]: Comparing AI capabilities with human intelligence is difficult and flawed, but I think it’s informative to consider the analogy here, even if it’s highly imperfect. GPT-2 was shocking for its command of language, and its ability to occasionally generate a semi-cohesive paragraph, or occasionally answer simple factual questions correctly. It’s what would have been impressive for a preschooler.
+          - paragraph [ref=e156]:
+            - strong [ref=e157]: GPT-3
+            - text: (2020)
+            - button [ref=e159] [cursor=pointer]:
+              - img [ref=e160]
+              - img [ref=e162]
+              - img [ref=e164]
+            - text: ~
+            - emphasis [ref=e166]: elementary schooler
+            - text: ": “Wow, with just some few-shot examples it can do some simple useful tasks.” It started being cohesive over even multiple paragraphs much more consistently, and could correct grammar and do some very basic arithmetic. For the first time, it was also commercially useful in a few narrow ways: for example, GPT-3 could generate"
+            - link "simple copy" [ref=e167] [cursor=pointer]:
+              - /url: https://ai-copysmith.com/
+            - text: for SEO and marketing.
+          - 'figure "Some examples of what people found impressive about GPT-3 at the time. Top: After a simple instruction, GPT-3 can use a made-up word in a new sentence. Bottom-left: GPT-3 can engage in rich storytelling back-and-forth. Bottom-right: GPT-3 can generate some very simple code." [ref=e168]':
+            - emphasis [ref=e170]:
+              - text: Some
+              - link "examples" [ref=e171] [cursor=pointer]:
+                - /url: https://gwern.net/gpt-3
+              - text: "of what people found impressive about GPT-3 at the time. Top: After a simple instruction, GPT-3"
+              - link "can" [ref=e172] [cursor=pointer]:
+                - /url: https://arxiv.org/abs/2005.14165
+              - text: "use a made-up word in a new sentence. Bottom-left: GPT-3"
+              - link "can" [ref=e173] [cursor=pointer]:
+                - /url: https://x.com/nickwalton00/status/1280972636638437382/photo/1
+              - text: "engage in rich storytelling back-and-forth. Bottom-right: GPT-3"
+              - link "can" [ref=e174] [cursor=pointer]:
+                - /url: https://x.com/sharifshameem/status/1282676454690451457
+              - text: generate some very simple code.
+          - paragraph [ref=e175]: "Again, the comparison is imperfect, but what impressed people about GPT-3 is perhaps what would have been impressive for an elementary schooler: it wrote some basic poetry, could tell richer and coherent stories, could start to do rudimentary coding, could fairly reliably learn from simple instructions and demonstrations, and so on."
+          - paragraph [ref=e176]:
+            - strong [ref=e177]: GPT-4
+            - text: (2023) ~
+            - emphasis [ref=e178]: smart high schooler
+            - text: ": “Wow, it can write pretty sophisticated code and iteratively debug, it can write intelligently and sophisticatedly about complicated subjects, it can reason through difficult high-school competition math, it’s beating the vast majority of high schoolers on whatever tests we can give it, etc.” From code to math to Fermi estimates, it can think and reason. GPT-4 is now useful in my daily tasks, from helping write code to revising drafts."
+          - 'figure "Some of what people found impressive about GPT-4 when it was released, from the “Sparks of AGI” paper. Top: It’s writing very complicated code (producing the plots shown in the middle) and can reason through nontrivial math problems. Bottom-left: Solving an AP math problem. Bottom-right: Solving a fairly complex coding problem. More interesting excerpts from that exploration of GPT-4’s capabilities here." [ref=e179]':
+            - generic [ref=e180]:
+              - text: Some of what people found impressive about GPT-4 when it was released, from the “
+              - link "Sparks of AGI" [ref=e181] [cursor=pointer]:
+                - /url: https://arxiv.org/abs/2303.12712
+              - text: "” paper. Top: It’s writing very complicated code (producing the plots shown in the middle) and can reason through nontrivial math problems. Bottom-left: Solving an AP math problem. Bottom-right: Solving a fairly complex coding problem. More interesting excerpts from that exploration of GPT-4’s capabilities"
+              - link "here" [ref=e182] [cursor=pointer]:
+                - /url: https://x.com/leopoldasch/status/1638848850516672513?s=20
+              - text: .
+          - paragraph [ref=e183]:
+            - text: On everything from AP exams to the SAT, GPT-4 scores better than the vast majority of high schoolers.
+            - text: Of course, even GPT-4 is still somewhat uneven; for some tasks it’s much better than smart high-schoolers, while there are other tasks it can’t yet do. That said, I tend to think most of these limitations come down to obvious ways models are still hobbled, as I’ll
+            - link "discuss in-depth later" [ref=e184] [cursor=pointer]:
+              - /url: "#Unhobbling"
+            - text: . The raw intelligence is (mostly) there, even if the models are still artificially constrained; it’ll take extra work to unlock models being able to fully apply that raw intelligence across applications.
+          - figure "Progress over just four years. Where are you on this line?" [ref=e185]:
+            - generic [ref=e186]:
+              - emphasis [ref=e187]: Progress over just four years. Where are
+              - strong [ref=e188]:
+                - emphasis [ref=e189]: you
+              - emphasis [ref=e190]: on this line?
+          - heading "The trends in deep learning" [level=3] [ref=e191]: The trends in deep learning
+          - paragraph [ref=e192]: The pace of deep learning progress in the last decade has simply been extraordinary. A mere decade ago it was revolutionary for a deep learning system to identify simple images. Today, we keep trying to come up with novel, ever harder tests, and yet each new benchmark is quickly cracked. It used to take decades to crack widely-used benchmarks; now it feels like mere months.
+          - 'figure "Deep learning systems are rapidly reaching or exceeding human-level in many domains. Graphic: Our World in Data" [ref=e193]':
+            - generic [ref=e194]:
+              - emphasis [ref=e195]: "Deep learning systems are rapidly reaching or exceeding human-level in many domains. Graphic:"
+              - link "Our World in Data" [ref=e196] [cursor=pointer]:
+                - /url: https://ourworldindata.org/grapher/test-scores-ai-capabilities-relative-human-performance?country=Handwriting+recognition~Speech+recognition~Image+recognition~Reading+comprehension~Language+understanding~Predictive+reasoning~Code+generation~Complex+reasoning~General+knowledge+tests~Nuanced+language+interpretation~Math+problem-solving~Reading+comprehension+with+unanswerable+questions
+                - emphasis [ref=e197]: Our World in Data
+          - paragraph [ref=e198]:
+            - text: We’re literally running out of benchmarks. As an anecdote, my friends Dan and Collin made a benchmark called
+            - link "MMLU" [ref=e199] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2009.03300
+            - text: "a few years ago, in 2020. They hoped to finally make a benchmark that would stand the test of time, equivalent to all the hardest exams we give high school and college students. Just three years later, it’s basically solved: models like GPT-4 and Gemini get ~90%."
+          - paragraph [ref=e200]:
+            - text: More broadly, GPT-4 mostly cracks all the standard high school and college aptitude tests.
+            - button [ref=e202] [cursor=pointer]:
+              - img [ref=e203]
+              - img [ref=e205]
+              - img [ref=e207]
+            - text: (And even the one year from GPT-3.5 to GPT-4 often took us from well below median human performance to the top of the human range.)
+          - figure "GPT-4 scores on standardized tests. Note also the large jump from GPT-3.5 to GPT-4 in human percentile on these tests, often from well below the median human to the very top of the human range. (And this is GPT-3.5, a fairly recent model released less than a year before GPT-4, not the clunky old elementary-school-level GPT-3 we were talking about earlier!)" [ref=e210]:
+            - emphasis [ref=e212]:
+              - text: GPT-4
+              - link "scores" [ref=e213] [cursor=pointer]:
+                - /url: https://arxiv.org/pdf/2303.08774
+              - text: on standardized tests. Note also the large jump from GPT-3.5 to GPT-4 in human percentile on these tests, often from well below the median human to the very top of the human range. (And this is GPT-3.5, a fairly recent model released less than a year before GPT-4, not the clunky old elementary-school-level GPT-3 we were talking about earlier!)
+          - 'figure "Gray: Professional forecasts, made in August 2021, for June 2022 performance on the MATH benchmark (difficult mathematics problems from high-school math competitions). Red star: actual state-of-the-art performance by June 2022, far exceeding even the upper range forecasters gave. The median ML researcher was even more pessimistic." [ref=e214]':
+            - generic [ref=e215]:
+              - emphasis [ref=e216]:
+                - text: "Gray: Professional"
+                - link "forecasts" [ref=e217] [cursor=pointer]:
+                  - /url: https://bounded-regret.ghost.io/ai-forecasting-one-year-in/
+                - text: ", made in August 2021, for June 2022 performance on the MATH benchmark (difficult mathematics problems from high-school math competitions). Red star: actual state-of-the-art performance by June 2022, far exceeding even the upper range forecasters gave. The median ML researcher was"
+              - link "even more pessimistic" [ref=e218] [cursor=pointer]:
+                - /url: https://bounded-regret.ghost.io/ai-forecasting-one-year-in/
+                - emphasis [ref=e219]: even more pessimistic
+              - emphasis [ref=e220]: .
+          - paragraph [ref=e221]:
+            - text: Or consider the
+            - link "MATH benchmark" [ref=e222] [cursor=pointer]:
+              - /url: https://arxiv.org/pdf/2103.03874
+            - text: ", a set of difficult mathematics problems from high-school math competitions."
+            - button [ref=e224] [cursor=pointer]:
+              - img [ref=e225]
+              - img [ref=e227]
+              - img [ref=e229]
+            - text: "When the benchmark was released in 2021, the best models only got ~5% of problems right. And the original paper noted: “Moreover, we find that simply increasing budgets and model parameter counts will be impractical for achieving strong mathematical reasoning if scaling trends continue […]. To have more traction on mathematical problem solving we will likely need new algorithmic advancements from the broader research community”—we would need fundamental new breakthroughs to solve MATH, or so they thought. A survey of"
+            - link "ML researchers predicted" [ref=e231] [cursor=pointer]:
+              - /url: https://bounded-regret.ghost.io/ai-forecasting-one-year-in/
+            - text: minimal progress over the coming years;
+            - button [ref=e233] [cursor=pointer]:
+              - img [ref=e234]
+              - img [ref=e236]
+              - img [ref=e238]
+            - text: and yet within just a year (by mid-2022), the best models went from ~5% to
+            - link "50% accuracy" [ref=e240] [cursor=pointer]:
+              - /url: https://research.google/blog/minerva-solving-quantitative-reasoning-problems-with-language-models/
+            - text: ; now,
+            - link "MATH is basically solved" [ref=e241] [cursor=pointer]:
+              - /url: https://x.com/bneyshabur/status/1792304689335480511
+            - text: ", with recent performance over 90%."
+          - paragraph [ref=e242]:
+            - text: Over and over again, year after year, skeptics have claimed “deep learning won’t be able to do X” and have been quickly proven wrong.
+            - button [ref=e244] [cursor=pointer]:
+              - img [ref=e245]
+              - img [ref=e247]
+              - img [ref=e249]
+            - emphasis [ref=e251]: If there’s one lesson we’ve learned from the past decade of AI, it’s that you should never bet against deep learning.
+          - paragraph [ref=e252]:
+            - text: Now the hardest unsolved benchmarks are tests like
+            - link "GPQA" [ref=e253] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2311.12022
+            - text: ", a set of PhD-level biology, chemistry, and physics questions. Many of the questions read like gibberish to me, and even PhDs in other scientific fields spending 30+ minutes with Google barely score above random chance. Claude 3 Opus currently gets ~60%,"
+            - button [ref=e255] [cursor=pointer]:
+              - img [ref=e256]
+              - img [ref=e258]
+              - img [ref=e260]
+            - text: compared to in-domain PhDs who get ~80%—and I expect this benchmark to fall as well, in the next generation or two.
+          - figure "Example GPQA questions. Models are already better at this than I am, and we’ll probably crack expert-PhD-level soon…" [ref=e263]:
+            - emphasis [ref=e265]: Example GPQA questions. Models are already better at this than I am, and we’ll probably crack expert-PhD-level soon…
+          - heading "Counting the OOMs" [level=2] [ref=e266]:
+            - strong [ref=e267]: Counting the OOMs
+          - paragraph [ref=e268]:
+            - text: How did this happen? The magic of deep learning is that it
+            - emphasis [ref=e269]: just works
+            - text: —and the trendlines have been astonishingly consistent, despite naysayers at every turn.
+          - figure "The effects of scaling compute, in the example of OpenAI Sora." [ref=e270]:
+            - generic [ref=e271]:
+              - emphasis [ref=e272]: The effects of scaling compute, in the example of
+              - link "OpenAI Sora" [ref=e273] [cursor=pointer]:
+                - /url: https://openai.com/research/video-generation-models-as-world-simulators
+                - emphasis [ref=e274]: OpenAI Sora
+              - emphasis [ref=e275]: .
+          - paragraph [ref=e276]:
+            - emphasis [ref=e277]: With each OOM of effective compute, models predictably, reliably get better.
+            - button [ref=e279] [cursor=pointer]:
+              - img [ref=e280]
+              - img [ref=e282]
+              - img [ref=e284]
+            - text: If we can count the OOMs, we can (roughly, qualitatively) extrapolate capability improvements.
+            - button [ref=e287] [cursor=pointer]:
+              - img [ref=e288]
+              - img [ref=e290]
+              - img [ref=e292]
+            - text: That’s how a few prescient individuals saw GPT-4 coming.
+          - paragraph [ref=e294]: "We can decompose the progress in the four years from GPT-2 to GPT-4 into three categories of scaleups:"
+          - list [ref=e295]:
+            - listitem [ref=e296]:
+              - emphasis [ref=e297]: Compute
+              - text: ": We’re using much bigger computers to train these models."
+            - listitem [ref=e298]:
+              - emphasis [ref=e299]: Algorithmic efficiencies
+              - text: ": There’s a continuous trend of algorithmic progress. Many of these act as “compute multipliers,” and we can put them on a unified scale of growing"
+              - emphasis [ref=e300]: effective compute
+              - text: .
+            - listitem [ref=e301]:
+              - emphasis [ref=e302]: ”Unhobbling” gains
+              - text: ": By default, models learn a lot of amazing raw capabilities, but they are hobbled in all sorts of dumb ways, limiting their practical value. With simple algorithmic improvements like reinforcement learning from human feedback (RLHF), chain-of-thought (CoT), tools, and scaffolding, we can unlock significant latent capabilities."
+          - paragraph [ref=e303]: "We can “count the OOMs” of improvement along these axes: that is, trace the scaleup for each in units of effective compute. 3x is 0.5 OOMs; 10x is 1 OOM; 30x is 1.5 OOMs; 100x is 2 OOMs; and so on. We can also look at what we should expect on top of GPT-4, from 2023 to 2027."
+          - paragraph [ref=e304]: "I’ll go through each one-by-one, but the upshot is clear: we are rapidly racing through the OOMs. There are potential headwinds in the data wall, which I’ll address—but overall, it seems likely that we should expect another GPT-2-to-GPT-4-sized jump, on top of GPT-4, by 2027."
+          - heading "Compute" [level=3] [ref=e305]:
+            - strong [ref=e306]: Compute
+          - paragraph [ref=e307]: "I’ll start with the most commonly-discussed driver of recent progress: throwing (a lot) more compute at models."
+          - paragraph [ref=e308]:
+            - text: Many people assume that this is simply due to Moore’s Law. But even in the old days when Moore’s Law was in its heyday, it was comparatively
+            - emphasis [ref=e309]: glacial
+            - text: —perhaps 1-1.5 OOMs per decade. We are seeing much more rapid scaleups in compute—close to 5x the speed of Moore’s law—instead because of mammoth investment. (Spending even a million dollars on a single model used to be an outrageous thought nobody would entertain, and now that’s pocket change!)
+          - figure "Estimates of compute for GPT-2 to GPT-4 by Epoch AI" [ref=e310]:
+            - table [ref=e311]:
+              - rowgroup [ref=e312]:
+                - row "Model Estimated compute Growth" [ref=e313]:
+                  - cell "Model" [ref=e314]:
+                    - strong [ref=e315]: Model
+                  - cell "Estimated compute" [ref=e316]:
+                    - strong [ref=e317]: Estimated compute
+                  - cell "Growth" [ref=e318]:
+                    - strong [ref=e319]: Growth
+                - row "GPT-2 (2019) ~4e21 FLOP" [ref=e320]:
+                  - cell "GPT-2 (2019)" [ref=e321]
+                  - cell "~4e21 FLOP" [ref=e322]
+                  - cell [ref=e323]
+                - row "GPT-3 (2020) ~3e23 FLOP + ~2 OOMs" [ref=e324]:
+                  - cell "GPT-3 (2020)" [ref=e325]
+                  - cell "~3e23 FLOP" [ref=e326]
+                  - cell "+ ~2 OOMs" [ref=e327]
+                - row "GPT-4 (2023) 8e24 to 4e25 FLOP + ~1.5–2 OOMs" [ref=e328]:
+                  - cell "GPT-4 (2023)" [ref=e329]
+                  - cell "8e24 to 4e25 FLOP" [ref=e330]
+                  - cell "+ ~1.5–2 OOMs" [ref=e331]
+            - generic [ref=e332]:
+              - emphasis [ref=e333]: Estimates of compute for GPT-2 to GPT-4 by
+              - link "Epoch AI" [ref=e334] [cursor=pointer]:
+                - /url: https://epochai.org/data/epochdb/table
+                - emphasis [ref=e335]: Epoch AI
+          - paragraph [ref=e336]: "We can use public estimates from Epoch AI (a source widely respected for its excellent analysis of AI trends) to trace the compute scaleup from 2019 to 2023. GPT-2 to GPT-3 was a quick scaleup; there was a large overhang of compute, scaling from a smaller experiment to using an entire datacenter to train a large language model. With the scaleup from GPT-3 to GPT-4, we transitioned to the modern regime: having to build an entirely new (much bigger) cluster for the next model. And yet the dramatic growth continued. Overall, Epoch AI estimates suggest that GPT-4 training used ~3,000x-10,000x more raw compute than GPT-2."
+          - paragraph [ref=e337]: In broad strokes, this is just the continuation of a longer-running trend. For the last decade and a half, primarily because of broad scaleups in investment (and specializing chips for AI workloads in the form of GPUs and TPUs), the training compute used for frontier AI systems has grown at roughly ~0.5 OOMs/year.
+          - 'figure "Training compute of notable deep learning models over time. Source: Epoch AI" [ref=e339]':
+            - generic [ref=e340]:
+              - emphasis [ref=e341]: "Training compute of notable deep learning models over time. Source:"
+              - link "Epoch AI" [ref=e342] [cursor=pointer]:
+                - /url: https://epochai.org/data/epochdb
+                - emphasis [ref=e343]: Epoch AI
+          - paragraph [ref=e344]:
+            - text: The compute scaleup from GPT-2 to GPT-3 in a year was an unusual overhang, but all the indications are that the longer-run trend will continue. The SF-rumor-mill is abuzz with dramatic tales of huge GPU orders. The investments involved will be extraordinary—but they are in motion. I go into this more later in the series, in
+            - link "IIIa. Racing to the Trillion-Dollar Cluster" [ref=e345] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+            - text: ; based on that analysis, an additional 2 OOMs of compute (a cluster in the $10s of billions) seems very likely to happen by the end of 2027; even a cluster closer to +3 OOMs of compute ($100 billion+) seems plausible (and is
+            - link "rumored to be in the works" [ref=e346] [cursor=pointer]:
+              - /url: https://www.theinformation.com/articles/microsoft-and-openai-plot-100-billion-stargate-ai-supercomputer
+            - text: at Microsoft/OpenAI).
+          - figure [ref=e348]
+          - heading "Algorithmic efficiencies" [level=3] [ref=e349]:
+            - strong [ref=e350]: Algorithmic efficiencies
+          - paragraph [ref=e351]: While massive investments in compute get all the attention, algorithmic progress is probably a similarly important driver of progress (and has been dramatically underrated).
+          - paragraph [ref=e352]:
+            - text: To see just how big of a deal algorithmic progress can be, consider the following illustration of the drop in price to attain ~50% accuracy on the MATH benchmark (high school competition math) over just
+            - emphasis [ref=e353]: two years.
+            - text: (For comparison, a computer science PhD student who didn’t particularly like math scored 40%, so this is already quite good.)
+            - emphasis [ref=e354]
+            - text: Inference efficiency improved by nearly 3 OOMs—1,000x—in less than two years.
+          - figure "Rough estimate on relative inference cost of attaining ~50% MATH performance." [ref=e356]:
+            - generic [ref=e357]:
+              - emphasis [ref=e358]: Rough estimate on relative inference cost of attaining ~50% MATH performance.
+              - button [ref=e360] [cursor=pointer]:
+                - img [ref=e361]
+                - img [ref=e363]
+                - img [ref=e365]
+          - paragraph [ref=e367]:
+            - text: Though these are numbers just for inference efficiency (which may or may not correspond to training efficiency improvements, where numbers are harder to infer from public data), they make clear there is an
+            - emphasis [ref=e368]: enormous
+            - text: amount of algorithmic progress possible and happening.
+          - paragraph [ref=e369]:
+            - text: In this piece, I’ll separate out two kinds of algorithmic progress. Here, I’ll start by covering “within-paradigm” algorithmic improvements—those that simply result in better base models, and that straightforwardly act as
+            - emphasis [ref=e370]: compute efficiencies
+            - text: or
+            - emphasis [ref=e371]: compute multipliers
+            - text: . For example, a better algorithm might allow us to achieve the same performance but with 10x less training compute. In turn, that would act as a 10x (1 OOM) increase in
+            - emphasis [ref=e372]: effective compute
+            - text: . (Later, I’ll cover “unhobbling,” which you can think of as “paradigm-expanding/application-expanding” algorithmic progress that unlocks capabilities of base models.)
+          - paragraph [ref=e373]: If we step back and look at the long-term trends, we seem to find new algorithmic improvements at a fairly consistent rate. Individual discoveries seem random, and at every turn, there seem insurmountable obstacles—but the long-run trendline is predictable, a straight line on a graph. Trust the trendline.
+          - paragraph [ref=e374]: We have the best data for ImageNet (where algorithmic research has been mostly public and we have data stretching back a decade), for which we have consistently improved compute efficiency by roughly ~0.5 OOMs/year across the 9-year period between 2012 and 2021.
+          - 'figure "We can measure algorithmic progress: how much less compute is needed in 2021 compared to 2012 to train a model with the same performance? We see a trend of ~0.5 OOMs/yr of algorithmic efficiency. Source: Erdil and Besiroglu 2022." [ref=e375]':
+            - generic [ref=e376]:
+              - emphasis [ref=e377]: "We can measure algorithmic progress: how much less compute is needed in 2021 compared to 2012 to train a model with the same performance? We see a trend of ~0.5 OOMs/yr of algorithmic efficiency. Source:"
+              - link "Erdil and Besiroglu 2022" [ref=e378] [cursor=pointer]:
+                - /url: https://arxiv.org/abs/2212.05153
+                - emphasis [ref=e379]: Erdil and Besiroglu 2022
+              - emphasis [ref=e380]: .
+          - paragraph [ref=e381]: "That’s a huge deal: that means 4 years later, we can achieve the same performance for ~100x less compute (and concomitantly, much higher performance for the same compute!)."
+          - paragraph [ref=e382]:
+            - text: Unfortunately, since labs don’t publish internal data on this, it’s harder to measure algorithmic progress for frontier LLMs over the last four years.
+            - link "EpochAI has new work" [ref=e383] [cursor=pointer]:
+              - /url: https://arxiv.org/pdf/2403.05812
+            - text: replicating their results on ImageNet for language modeling, and estimate a similar ~0.5 OOMs/year of algorithmic efficiency trend in LLMs from 2012 to 2023. (This has wider error bars though, and doesn’t capture some more recent gains, since the leading labs have stopped publishing their algorithmic efficiencies.)
+          - figure "Estimates by Epoch AI of algorithmic efficiencies in language modeling. Their estimates suggest we’ve made ~4 OOMs of efficiency gains in 8 years." [ref=e385]:
+            - emphasis [ref=e387]:
+              - link "Estimates by Epoch AI" [ref=e388] [cursor=pointer]:
+                - /url: https://arxiv.org/pdf/2403.05812
+              - text: of algorithmic efficiencies in language modeling. Their estimates suggest we’ve made ~4 OOMs of efficiency gains in 8 years.
+          - paragraph [ref=e389]:
+            - text: More directly looking at the last 4 years, GPT-2 to GPT-3 was basically a simple scaleup (according to
+            - link "the paper" [ref=e390] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2005.14165
+            - text: "), but there have been many publicly-known and publicly-inferable gains since GPT-3:"
+          - list [ref=e391]:
+            - listitem [ref=e392]:
+              - text: "We can infer gains from API costs:"
+              - button [ref=e394] [cursor=pointer]:
+                - img [ref=e395]
+                - img [ref=e397]
+                - img [ref=e399]
+              - list [ref=e401]:
+                - listitem [ref=e402]:
+                  - text: GPT-4, on release, cost ~the same as GPT-3 when it was released, despite the absolutely enormous performance increase.
+                  - button [ref=e404] [cursor=pointer]:
+                    - img [ref=e405]
+                    - img [ref=e407]
+                    - img [ref=e409]
+                  - text: (If we do a naive and oversimplified back-of-the-envelope estimate based on scaling laws, this suggests that perhaps roughly half the effective compute increase from GPT-3 to GPT-4 came from algorithmic improvements.
+                  - button [ref=e412] [cursor=pointer]:
+                    - img [ref=e413]
+                    - img [ref=e415]
+                    - img [ref=e417]
+                  - text: )
+                - listitem [ref=e419]: Since the GPT-4 release a year ago, OpenAI prices for GPT-4-level models have fallen another 6x/4x (input/output) with the release of GPT-4o.
+                - listitem [ref=e420]:
+                  - text: Gemini 1.5 Flash, recently released, offers between “GPT-3.75-level” and GPT-4-level performance,
+                  - button [ref=e422] [cursor=pointer]:
+                    - img [ref=e423]
+                    - img [ref=e425]
+                    - img [ref=e427]
+                  - text: while
+                  - link "costing" [ref=e429] [cursor=pointer]:
+                    - /url: https://ai.google.dev/pricing
+                  - text: 85x/57x (input/output) less than the original GPT-4 (extraordinary gains!).
+            - listitem [ref=e430]:
+              - link "Chinchilla scaling laws" [ref=e431] [cursor=pointer]:
+                - /url: https://arxiv.org/abs/2203.15556
+              - text: give a 3x+ (0.5 OOMs+) efficiency gain.
+              - button [ref=e433] [cursor=pointer]:
+                - img [ref=e434]
+                - img [ref=e436]
+                - img [ref=e438]
+            - listitem [ref=e440]:
+              - text: Gemini 1.5 Pro claimed
+              - link "major compute efficiency gains" [ref=e441] [cursor=pointer]:
+                - /url: https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf
+              - text: (outperforming Gemini 1.0 Ultra, while using “significantly less” compute), with Mixture of Experts (MoE) as a highlighted architecture change.
+              - link "Other" [ref=e442] [cursor=pointer]:
+                - /url: https://x.com/deepseek_ai/status/1745304852211839163?s=20
+              - link "papers" [ref=e443] [cursor=pointer]:
+                - /url: https://arxiv.org/pdf/2101.03961
+              - link "also" [ref=e444] [cursor=pointer]:
+                - /url: https://arxiv.org/pdf/2202.08906
+              - link "claim" [ref=e445] [cursor=pointer]:
+                - /url: https://arxiv.org/pdf/2112.06905
+              - text: a substantial multiple on compute from MoE.
+            - listitem [ref=e446]:
+              - text: There have been many tweaks and gains on
+              - link "architecture" [ref=e447] [cursor=pointer]:
+                - /url: https://arxiv.org/pdf/2307.08691
+              - text: ","
+              - link "data" [ref=e448] [cursor=pointer]:
+                - /url: https://arxiv.org/pdf/2306.01116
+              - text: ","
+              - link "training stack" [ref=e449] [cursor=pointer]:
+                - /url: https://arxiv.org/pdf/1909.08053
+              - text: ","
+              - link "etc" [ref=e450] [cursor=pointer]:
+                - /url: https://twitter.com/__nmca__/status/1781189294360846372?s=12
+              - text: ., all the time.
+              - button [ref=e452] [cursor=pointer]:
+                - img [ref=e453]
+                - img [ref=e455]
+                - img [ref=e457]
+          - paragraph [ref=e459]:
+            - text: Put together, public information suggests that the GPT-2 to GPT-4 jump included 1-2 OOMs of algorithmic efficiency gains.
+            - button [ref=e461] [cursor=pointer]:
+              - img [ref=e462]
+              - img [ref=e464]
+              - img [ref=e466]
+          - figure [ref=e469]
+          - paragraph [ref=e470]:
+            - text: "Over the 4 years following GPT-4, we should expect the trend to continue:"
+            - button [ref=e472] [cursor=pointer]:
+              - img [ref=e473]
+              - img [ref=e475]
+              - img [ref=e477]
+            - text: on average 0.5 OOMs/yr of compute efficiency, i.e. ~2 OOMs of gains compared to GPT-4 by 2027. While compute efficiencies will become harder to find as we pick the low-hanging fruit, AI lab investments in money and talent to find new algorithmic improvements are growing rapidly.
+            - button [ref=e480] [cursor=pointer]:
+              - img [ref=e481]
+              - img [ref=e483]
+              - img [ref=e485]
+            - text: (The publicly-inferable inference cost efficiencies, at least, don’t seem to have slowed down at all.) On the high end, we could even see more fundamental, Transformer-like breakthroughs
+            - button [ref=e488] [cursor=pointer]:
+              - img [ref=e489]
+              - img [ref=e491]
+              - img [ref=e493]
+            - text: with even bigger gains.
+          - paragraph [ref=e495]: Put together, this suggests we should expect something like 1-3 OOMs of algorithmic efficiency gains (compared to GPT-4) by the end of 2027, maybe with a best guess of ~2 OOMs.
+          - generic [ref=e497]:
+            - heading "The data wall" [level=4] [ref=e498]:
+              - strong [ref=e499]: The data wall
+            - paragraph [ref=e500]: "There is a potentially important source of variance for all of this: we’re running out of internet data. That could mean that, very soon, the naive approach to pretraining larger language models on more scraped data could start hitting serious bottlenecks."
+            - paragraph [ref=e501]:
+              - text: Frontier models are already trained on much of the internet. Llama 3, for example, was trained on
+              - link "over 15T tokens" [ref=e502] [cursor=pointer]:
+                - /url: https://ai.meta.com/blog/meta-llama-3/
+              - text: . Common Crawl, a dump of much of the internet
+              - link "used for LLM training" [ref=e503] [cursor=pointer]:
+                - /url: https://foundation.mozilla.org/en/blog/Mozilla-Report-How-Common-Crawl-Data-Infrastructure-Shaped-the-Battle-Royale-over-Generative-AI/
+              - text: ", is >100T tokens raw, though much of that is spam and duplication (e.g., a"
+              - link "relatively simple deduplication" [ref=e504] [cursor=pointer]:
+                - /url: https://www.together.ai/blog/redpajama-data-v2
+              - text: leads to 30T tokens, implying Llama 3 would already be using basically all the data). Moreover, for more specific domains like code, there are many fewer tokens still, e.g.
+              - link "public github repos" [ref=e505] [cursor=pointer]:
+                - /url: https://arxiv.org/pdf/2211.04325
+              - text: are estimated to be in low trillions of tokens.
+            - paragraph [ref=e506]:
+              - text: You can go somewhat further by repeating data, but
+              - link "academic work on this" [ref=e507] [cursor=pointer]:
+                - /url: https://arxiv.org/abs/2305.16264
+              - text: "suggests that repetition only gets you so far, finding that after 16 epochs (a 16-fold repetition), returns diminish extremely fast to nil. At some point, even with more (effective) compute, making your models better can become much tougher because of the data constraint. This isn’t to be understated: we’ve been riding the scaling curves, riding the wave of the language-modeling-pretraining-paradigm, and without something new here, this paradigm will (at least naively) run out. Despite the massive investments, we’d plateau. All of the labs are rumored to be making massive research bets on new algorithmic improvements or approaches to get around this. Researchers are purportedly trying many strategies, from"
+              - link "synthetic data to self-play and RL approaches" [ref=e508] [cursor=pointer]:
+                - /url: https://www.dwarkeshpatel.com/p/will-scaling-work
+              - text: ". Industry insiders seem to be very bullish: Dario Amodei (CEO of Anthropic)"
+              - link "recently said on a podcast" [ref=e509] [cursor=pointer]:
+                - /url: https://www.dwarkeshpatel.com/p/dario-amodei
+              - text: ": “if you look at it very naively we’re not that far from running out of data […] My guess is that this will not be a blocker […] There’s just many different ways to do it.” Of course, any research results on this are proprietary and not being published these days."
+            - paragraph [ref=e510]: "In addition to insider bullishness, I think there’s a strong intuitive case for why it should be possible to find ways to train models with much better sample efficiency (algorithmic improvements that let them learn more from limited data). Consider how you or I would learn from a really dense math textbook:"
+            - list [ref=e511]:
+              - listitem [ref=e512]:
+                - text: What a modern LLM does during training is, essentially, very very quickly skim the textbook, the words just
+                - emphasis [ref=e513]: flying by
+                - text: ", not spending much brain power on it."
+              - listitem [ref=e514]: Rather, when you or I read that math textbook, we read a couple pages slowly; then have an internal monologue about the material in our heads and talk about it with a few study-buddies; read another page or two; then try some practice problems, fail, try them again in a different way, get some feedback on those problems, try again until we get a problem right; and so on, until eventually the material “clicks.”
+              - listitem [ref=e515]:
+                - text: You or I also wouldn’t learn much at all from a pass through a dense math textbook if all we could do was breeze through it like LLMs.
+                - button [ref=e517] [cursor=pointer]:
+                  - img [ref=e518]
+                  - img [ref=e520]
+                  - img [ref=e522]
+              - listitem [ref=e524]:
+                - text: But perhaps, then, there are ways to incorporate aspects of how humans would digest a dense math textbook to let the models learn much more from limited data. In a simplified sense, this sort of thing—having an internal monologue about material, having a discussion with a study-buddy, trying and failing at problems until it clicks—is what many synthetic data/self-play/RL approaches are trying to do.
+                - button [ref=e526] [cursor=pointer]:
+                  - img [ref=e527]
+                  - img [ref=e529]
+                  - img [ref=e531]
+            - paragraph [ref=e533]:
+              - text: The old state of the art of training models was simple and naive, but it worked, so nobody really tried hard to crack these approaches to sample efficiency. Now that it may become more of a constraint, we should expect all the labs to invest billions of dollars and their smartest minds into cracking it. A common pattern in deep learning is that it takes
+              - emphasis [ref=e534]: a lot
+              - text: of effort (and many failed projects) to get the details right, but eventually some version of the obvious and simple thing just works. Given how deep learning has managed to crash through every supposed wall over the last decade, my base case is that it will be similar here.
+            - paragraph [ref=e535]:
+              - text: Moreover, it actually seems possible that cracking one of these algorithmic bets like synthetic data could dramatically
+              - emphasis [ref=e536]: improve
+              - text: models. Here’s an intuition pump. Current frontier models like Llama 3 are trained on the internet—and the internet is mostly crap, like e-commerce or SEO or whatever. Many LLMs spend the vast majority of their training compute on this crap, rather than on really high-quality data (e.g. reasoning chains of people working through difficult science problems). Imagine if you could spend GPT-4-level compute on entirely extremely high-quality data—it could be a much, much more capable model.
+            - paragraph [ref=e537]:
+              - text: A look back at AlphaGo—the first AI system that beat the world champions at the game of Go, decades before it was thought possible—is useful here as well.
+              - button [ref=e539] [cursor=pointer]:
+                - img [ref=e540]
+                - img [ref=e542]
+                - img [ref=e544]
+            - list [ref=e546]:
+              - listitem [ref=e547]: In step 1, AlphaGo was trained by imitation learning on expert human Go games. This gave it a foundation.
+              - listitem [ref=e548]: "In step 2, AlphaGo played millions of games against itself. This let it become superhuman at Go: remember the famous move 37 in the game against Lee Sedol, an extremely unusual but brilliant move a human would never have played."
+            - paragraph [ref=e549]: Developing the equivalent of step 2 for LLMs is a key research problem for overcoming the data wall (and, moreover, will ultimately be the key to surpassing human-level intelligence).
+            - paragraph [ref=e550]: All of this is to say that data constraints seem to inject large error bars either way into forecasting the coming years of AI progress. There’s a very real chance things stall out (LLMs might still be as big of a deal as the internet, but we wouldn’t get to truly crazy AGI). But I think it’s reasonable to guess that the labs will crack it, and that doing so will not just keep the scaling curves going, but possibly enable huge gains in model capability.
+            - paragraph [ref=e551]:
+              - text: As an aside, this also means that we should expect more variance between the different labs in coming years compared to today. Up until recently, the state of the art techniques were published, so everyone was basically doing the same thing. (And new upstarts or open source projects could easily compete with the frontier, since the recipe was published.) Now, key algorithmic ideas are becoming increasingly proprietary. I’d expect labs’ approaches to diverge much more, and some to make faster progress than others—even a lab that seems on the frontier now could get stuck on the data wall while others make a breakthrough that lets them race ahead. And open source will have a much harder time competing. It will certainly make things interesting. (And if and when a lab figures it out, their breakthrough will be the key to AGI, key to superintelligence—one of the United States’
+              - link "most prized secrets" [ref=e552] [cursor=pointer]:
+                - /url: https://situational-awareness.ai/lock-down-the-labs/
+              - text: .)
+          - heading "Unhobbling" [level=3] [ref=e553]:
+            - strong [ref=e554]: Unhobbling
+          - paragraph [ref=e555]: "Finally, the hardest to quantify—but no less important—category of improvements: what I’ll call “unhobbling.”"
+          - paragraph [ref=e556]: Imagine if when asked to solve a hard math problem, you had to instantly answer with the very first thing that came to mind. It seems obvious that you would have a hard time, except for the simplest problems. But until recently, that’s how we had LLMs solve math problems. Instead, most of us work through the problem step-by-step on a scratchpad, and are able to solve much more difficult problems that way. “Chain-of-thought” prompting unlocked that for LLMs. Despite excellent raw capabilities, they were much worse at math than they could be because they were hobbled in an obvious way, and it took a small algorithmic tweak to unlock much greater capabilities.
+          - paragraph [ref=e557]: "We’ve made huge strides in “unhobbling” models over the past few years. These are algorithmic improvements beyond just training better base models—and often only use a fraction of pretraining compute—that unleash model capabilities:"
+          - list [ref=e558]:
+            - listitem [ref=e559]:
+              - emphasis [ref=e560]: Reinforcement learning from human feedback (RLHF)
+              - text: . Base models have incredible
+              - emphasis [ref=e561]: latent
+              - text: capabilities,
+              - button [ref=e563] [cursor=pointer]:
+                - img [ref=e564]
+                - img [ref=e566]
+                - img [ref=e568]
+              - emphasis [ref=e570]
+              - text: but they’re raw and incredibly hard to work with. While the popular conception of RLHF is that it merely censors swear words, RLHF has been key to making models actually useful and commercially valuable (rather than making models predict random internet text, get them to actually apply their capabilities to try to answer your question!). This was the magic of ChatGPT—well-done RLHF made models usable and useful to real people for the first time. The original
+              - link "InstructGPT paper" [ref=e571] [cursor=pointer]:
+                - /url: https://openai.com/research/instruction-following
+              - text: "has a great quantification of this: an RLHF’d small model was equivalent to a non-RLHF’d >100x larger model in terms of human rater preference."
+            - listitem [ref=e572]:
+              - emphasis [ref=e573]: Chain of Thought
+              - text: (CoT). As discussed.
+              - link "CoT started being widely used just 2 years ago" [ref=e574] [cursor=pointer]:
+                - /url: https://arxiv.org/abs/2201.11903
+              - text: and can provide the equivalent of a >10x effective compute increase on math/reasoning problems.
+            - listitem [ref=e575]:
+              - emphasis [ref=e576]: Scaffolding
+              - text: ". Think of CoT++: rather than just asking a model to solve a problem, have one model make a plan of attack, have another propose a bunch of possible solutions, have another critique it, and so on. For"
+              - link "example" [ref=e577] [cursor=pointer]:
+                - /url: https://paperswithcode.com/paper/language-agent-tree-search-unifies-reasoning
+              - text: ", on HumanEval (coding problems), simple scaffolding enables GPT-3.5 to outperform un-scaffolded GPT-4. On SWE-Bench (a benchmark of solving real-world software engineering tasks), GPT-4 can only solve ~2% correctly, while with"
+              - link "Devin’s agent scaffolding" [ref=e578] [cursor=pointer]:
+                - /url: https://x.com/cognition_labs/status/1768716551056728233
+              - text: it jumps to 14-23%. (Unlocking agency is only in its infancy though, as I’ll discuss more later.)
+            - listitem [ref=e579]:
+              - emphasis [ref=e580]: "Tools:"
+              - text: Imagine if humans weren’t allowed to use calculators or computers. We’re only at the beginning here, but ChatGPT can now use a web browser, run some code, and so on.
+            - listitem [ref=e581]:
+              - emphasis [ref=e582]: Context length
+              - text: . Models have gone from 2k token context (GPT-3) to 32k context (GPT-4 release) to 1M+ context (Gemini 1.5 Pro). This is a
+              - emphasis [ref=e583]: huge
+              - text: deal. A much smaller base model with, say, 100k tokens of relevant context can outperform a model that is much larger but only has, say, 4k relevant tokens of context—more context is effectively a large compute efficiency gain.
+              - button [ref=e585] [cursor=pointer]:
+                - img [ref=e586]
+                - img [ref=e588]
+                - img [ref=e590]
+              - text: "More generally, context is key to unlocking many applications of these models: for example, many coding applications require understanding large parts of a codebase in order to usefully contribute new code; or, if you’re using a model to help you write a document at work, it really needs the context from lots of related internal docs and conversations. Gemini 1.5 Pro, with its 1M+ token context, was"
+              - link "even able" [ref=e592] [cursor=pointer]:
+                - /url: https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf
+              - text: to learn a new language (a low-resource language not on the internet) from scratch, just by putting a dictionary and grammar reference materials in context!
+            - listitem [ref=e593]:
+              - emphasis [ref=e594]: Posttraining improvements.
+              - text: The current GPT-4 has substantially improved compared to the original GPT-4 when released,
+              - link "according to John Schulman" [ref=e595] [cursor=pointer]:
+                - /url: https://www.dwarkeshpatel.com/p/john-schulman
+              - text: "due to posttraining improvements that unlocked latent model capability: on"
+              - link "reasoning evals" [ref=e596] [cursor=pointer]:
+                - /url: https://x.com/polynoamial/status/1778584064343388179
+              - text: it’s made substantial gains (e.g., ~50% -> 72% on MATH, ~40% to ~50% on GPQA) and on the
+              - link "LMSys leaderboard" [ref=e597] [cursor=pointer]:
+                - /url: https://chat.lmsys.org/?leaderboard
+              - text: ", it’s made nearly 100-point elo jump (comparable to the difference in elo between Claude 3 Haiku and the much larger Claude 3 Opus, models that have a ~50x"
+              - link "price difference" [ref=e598] [cursor=pointer]:
+                - /url: https://www.anthropic.com/api
+              - text: ).
+          - paragraph [ref=e599]:
+            - link "A survey by Epoch AI" [ref=e600] [cursor=pointer]:
+              - /url: https://epochai.org/blog/ai-capabilities-can-be-significantly-improved-without-expensive-retraining
+            - text: "of some of these techniques, like scaffolding, tool use, and so on, finds that techniques like this can typically result in effective compute gains of 5-30x on many benchmarks. METR (an organization that evaluates models) similarly found very large performance improvements on their set of agentic tasks, via unhobbling from the same GPT-4 base model: from 5% with just the base model, to 20% with the GPT-4 as posttrained on release, to nearly 40% today from better posttraining, tools, and agent scaffolding."
+          - 'figure "Performance on METR’s agentic tasks, over time via better unhobbling. Source: Model Evaluation and Threat Research" [ref=e602]':
+            - generic [ref=e603]:
+              - emphasis [ref=e604]: "Performance on METR’s agentic tasks, over time via better unhobbling. Source:"
+              - link "Model Evaluation and Threat Research" [ref=e605] [cursor=pointer]:
+                - /url: https://metr.github.io/autonomy-evals-guide/elicitation-gap/
+                - emphasis [ref=e606]: Model Evaluation and Threat Research
+          - paragraph [ref=e607]:
+            - text: While it’s hard to put these on a unified effective compute scale with compute and algorithmic efficiencies, it’s clear these are
+            - emphasis [ref=e608]: huge
+            - text: "gains, at least on a roughly similar magnitude as the compute scaleup and algorithmic efficiencies. (It also highlights the central role of algorithmic progress: the 0.5 OOMs/year of compute efficiencies, already significant, are only part of the story, and put together with unhobbling algorithmic progress overall is maybe even a majority of the gains on the current trend.)"
+          - figure [ref=e610]
+          - paragraph [ref=e611]:
+            - text: “Unhobbling” is what actually enabled these models to become useful—and I’d argue that much of what is holding back many commercial applications today is the need for further “unhobbling” of this sort. Indeed,
+            - emphasis [ref=e612]: models today are still incredibly hobbled
+            - text: "! For example:"
+          - list [ref=e613]:
+            - listitem [ref=e614]: They don’t have long-term memory.
+            - listitem [ref=e615]: They can’t use a computer (they still only have very limited tools).
+            - listitem [ref=e616]:
+              - text: They still mostly don’t think before they speak. When you ask ChatGPT to write an essay, that’s like expecting a human to write an essay via their initial stream-of-consciousness.
+              - button [ref=e618] [cursor=pointer]:
+                - img [ref=e619]
+                - img [ref=e621]
+                - img [ref=e623]
+            - listitem [ref=e625]: They can (mostly) only engage in short back-and-forth dialogues, rather than going away for a day or a week, thinking about a problem, researching different approaches, consulting other humans, and then writing you a longer report or pull request.
+            - listitem [ref=e626]: They’re mostly not personalized to you or your application (just a generic chatbot with a short prompt, rather than having all the relevant background on your company and your work).
+          - paragraph [ref=e627]:
+            - text: "The possibilities here are enormous, and we’re rapidly picking low-hanging fruit here. This is critical:"
+            - emphasis [ref=e628]: it’s completely wrong to just imagine “GPT-6 ChatGPT.”
+            - text: With continued unhobbling progress, the improvements will be step-changes compared to GPT-6 + RLHF. By 2027, rather than a chatbot, you’re going to have something that looks more like an agent, like a coworker.
+          - generic [ref=e630]:
+            - heading "From chatbot to agent-coworker" [level=4] [ref=e631]:
+              - strong [ref=e632]: From chatbot to agent-coworker
+            - paragraph [ref=e633]: "What could ambitious unhobbling over the coming years look like? The way I think about it, there are three key ingredients:"
+            - paragraph [ref=e635]:
+              - strong [ref=e636]: 1. Solving the “onboarding problem”
+            - paragraph [ref=e637]: "GPT-4 has the raw smarts to do a decent chunk of many people’s jobs, but it’s sort of like a smart new hire that just showed up 5 minutes ago: it doesn’t have any relevant context, hasn’t read the company docs or Slack history or had conversations with members of the team, or spent any time understanding the company-internal codebase. A smart new hire isn’t that useful 5 minutes after arriving—but they are quite useful a month in! It seems like it should be possible, for example via very-long-context, to “onboard” models like we would a new human coworker. This alone would be a huge unlock."
+            - paragraph [ref=e639]:
+              - strong [ref=e640]: "2."
+              - strong [ref=e641]: The test-time compute overhang (reasoning/error correction/system II for longer-horizon problems)
+            - paragraph [ref=e642]: "Right now, models can basically only do short tasks: you ask them a question, and they give you an answer. But that’s extremely limiting. Most useful cognitive work humans do is longer horizon—it doesn’t just take 5 minutes, but hours, days, weeks, or months."
+            - paragraph [ref=e643]: A scientist that could only think about a difficult problem for 5 minutes couldn’t make any scientific breakthroughs. A software engineer that could only write skeleton code for a single function when asked wouldn’t be very useful—software engineers are given a larger task, and they then go make a plan, understand relevant parts of the codebase or technical tools, write different modules and test them incrementally, debug errors, search over the space of possible solutions, and eventually submit a large pull request that’s the culmination of weeks of work. And so on.
+            - paragraph [ref=e644]:
+              - text: In essence, there is a large
+              - emphasis [ref=e645]: test-time compute overhang.
+              - text: Think of each GPT-4 token as a word of internal monologue when you think about a problem. Each GPT-4 token is quite smart, but it can currently only really effectively use on the order of ~hundreds of tokens for chains of thought coherently (effectively as though you could only spend a few minutes of internal monologue/thinking on a problem or project).
+            - paragraph [ref=e646]: What if it could use millions of tokens to think about and work on really hard problems or bigger projects?
+            - figure "Assuming a human thinking at ~100 tokens/minute and working 40 hours/week, translating “how long a model thinks” in tokens to human-time on a given problem/project." [ref=e647]:
+              - table [ref=e648]:
+                - rowgroup [ref=e649]:
+                  - row "Number of tokens Equivalent to me working on something for…" [ref=e650]:
+                    - cell "Number of tokens" [ref=e651]
+                    - cell "Equivalent to me working on something for…" [ref=e652]
+                    - cell [ref=e653]
+                  - row "100s A few minutes ChatGPT (we are here)" [ref=e654]:
+                    - cell "100s" [ref=e655]
+                    - cell "A few minutes" [ref=e656]
+                    - cell "ChatGPT (we are here)" [ref=e657]
+                  - row "1000s Half an hour +1 OOMs test-time compute" [ref=e658]:
+                    - cell "1000s" [ref=e659]
+                    - cell "Half an hour" [ref=e660]
+                    - cell "+1 OOMs test-time compute" [ref=e661]
+                  - row "10,000s Half a workday +2 OOMs" [ref=e662]:
+                    - cell "10,000s" [ref=e663]
+                    - cell "Half a workday" [ref=e664]
+                    - cell "+2 OOMs" [ref=e665]
+                  - row "100,000s A workweek +3 OOMs" [ref=e666]:
+                    - cell "100,000s" [ref=e667]
+                    - cell "A workweek" [ref=e668]
+                    - cell "+3 OOMs" [ref=e669]
+                  - row "Millions Multiple months +4 OOMs" [ref=e670]:
+                    - cell "Millions" [ref=e671]
+                    - cell "Multiple months" [ref=e672]
+                    - cell "+4 OOMs" [ref=e673]
+              - emphasis [ref=e675]: Assuming a human thinking at ~100 tokens/minute and working 40 hours/week, translating “how long a model thinks” in tokens to human-time on a given problem/project.
+            - paragraph [ref=e676]:
+              - text: Even if the “per-token” intelligence were the same, it’d be the difference between a smart person spending a
+              - emphasis [ref=e677]: few minutes
+              - text: vs. a
+              - emphasis [ref=e678]: few months
+              - text: on a problem. I don’t know about you, but there’s much, much, much more I am capable of in a few months vs. a few minutes. If we could unlock “being able to think and work on something for months-equivalent, rather than a few-minutes-equivalent” for models, it would unlock an
+              - emphasis [ref=e679]: insane
+              - text: jump in capability. There’s a huge overhang here, many OOMs worth.
+            - paragraph [ref=e680]:
+              - text: Right now, models can’t do this yet. Even with recent advances in long-context, this longer context mostly only works for the consumption of tokens, not the production of tokens—after a while, the model goes off the rails or gets stuck. It’s not yet able to go away for a while to work on a problem or project on its own.
+              - button [ref=e682] [cursor=pointer]:
+                - img [ref=e683]
+                - img [ref=e685]
+                - img [ref=e687]
+            - paragraph [ref=e689]: But unlocking test-time compute might merely be a matter of relatively small “unhobbling” algorithmic wins. Perhaps a small amount of RL helps a model learn to error correct (“hm, that doesn’t look right, let me double check that”), make plans, search over possible solutions, and so on. In a sense, the model already has most of the raw capabilities, it just needs to learn a few extra skills on top to put it all together.
+            - paragraph [ref=e690]:
+              - text: In essence, we just need to teach the model a sort of System II outer loop
+              - button [ref=e692] [cursor=pointer]:
+                - img [ref=e693]
+                - img [ref=e695]
+                - img [ref=e697]
+              - text: that lets it reason through difficult, long-horizon projects.
+            - paragraph [ref=e699]: If we succeed at teaching this outer loop, instead of a short chatbot answer of a couple paragraphs, imagine a stream of millions of words (coming in more quickly than you can read them) as the model thinks through problems, uses tools, tries different approaches, does research, revises its work, coordinates with others, and completes big projects on its own.
+            - heading " Trading off test-time and train-time compute in other ML domains" [level=4] [ref=e704]:
+              - link " Trading off test-time and train-time compute in other ML domains" [ref=e705] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e706]: 
+                - text: Trading off test-time and train-time compute in other ML domains
+            - paragraph [ref=e708]:
+              - strong [ref=e709]: 3. Using a computer
+            - paragraph [ref=e710]: "This is perhaps the most straightforward of the three. ChatGPT right now is basically like a human that sits in an isolated box that you can text. While early unhobbling improvements teach models to use individual isolated tools, I expect that with multimodal models we will soon be able to do this in one fell swoop: we will simply enable models to use a computer like a human would."
+            - paragraph [ref=e711]: That means joining your Zoom calls, researching things online, messaging and emailing people, reading shared docs, using your apps and dev tooling, and so on. (Of course, for models to make the most use of this in longer-horizon loops, this will go hand-in-hand with unlocking test-time compute.)
+            - paragraph [ref=e713]:
+              - text: By the end of this, I expect us to get something that looks a lot like a
+              - emphasis [ref=e714]: drop-in remote worker
+              - text: . An agent that joins your company, is onboarded like a new human hire, messages you and colleagues on Slack and uses your softwares, makes pull requests, and that, given big projects, can do the model-equivalent of a human going away for weeks to independently complete the project. You’ll probably need somewhat better base models than GPT-4 to unlock this, but possibly not even
+              - emphasis [ref=e715]: that
+              - text: much better—a lot of juice is in fixing the clear and basic ways models are still hobbled.
+            - figure "A very early peek at what this might look like is Devin, an early prototype of unlocking the “agency-overhang”/”test-time compute overhang” on models on the path to creating a fully automated software engineer. I don’t know how well Devin works in practice, and this demo is still very limited compared to what proper chatbot → agent unhobbling would yield, but it’s a useful teaser of the sort of thing coming soon." [ref=e716]:
+              - generic [ref=e717]:
+                - emphasis [ref=e718]: A very early peek at what this might look like is
+                - link "Devin" [ref=e719] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=fjHtjT7GO1c
+                  - emphasis [ref=e720]: Devin
+                - emphasis [ref=e721]: ", an early prototype of unlocking the “agency-overhang”/”test-time compute overhang” on models on the path to creating a fully automated software engineer. I don’t know how well Devin works in practice, and this demo is still very limited compared to what proper chatbot → agent unhobbling would yield, but it’s a useful teaser of the sort of thing coming soon."
+          - paragraph [ref=e722]: By the way, I expect the centrality of unhobbling to lead to a somewhat interesting “sonic boom” effect in terms of commercial applications. Intermediate models between now and the drop-in remote worker will require tons of schlep to change workflows and build infrastructure to integrate and derive economic value from. The drop-in remote worker will be dramatically easier to integrate—just, well, drop them in to automate all the jobs that could be done remotely. It seems plausible that the schlep will take longer than the unhobbling, that is, by the time the drop-in remote worker is able to automate a large number of jobs, intermediate models won’t yet have been fully harnessed and integrated—so the jump in economic value generated could be somewhat discontinuous.
+          - heading "The next four years" [level=2] [ref=e723]:
+            - strong [ref=e724]: The next four years
+          - figure [ref=e725]
+          - figure "Summary of the estimates on drivers of progress in the four years preceding GPT-4, and what we should expect in the four years following GPT-4." [ref=e727]:
+            - emphasis [ref=e729]: Summary of the estimates on drivers of progress in the four years preceding GPT-4, and what we should expect in the four years following GPT-4.
+          - paragraph [ref=e730]: Putting the numbers together, we should (roughly) expect another GPT-2-to-GPT-4-sized jump in the 4 years following GPT-4, by the end of 2027.
+          - list [ref=e731]:
+            - listitem [ref=e732]: GPT-2 to GPT-4 was roughly a 4.5–6 OOM base effective compute scaleup (physical compute and algorithmic efficiencies), plus major “unhobbling” gains (from base model to chatbot).
+            - listitem [ref=e733]: In the subsequent 4 years, we should expect 3–6 OOMs of base effective compute scaleup (physical compute and algorithmic efficiencies)—with perhaps a best guess of ~5 OOMs—plus step-changes in utility and applications unlocked by “unhobbling” (from chatbot to agent/drop-in remote worker).
+          - paragraph [ref=e734]:
+            - text: To put this in perspective, suppose GPT-4 training took 3 months.
+            - emphasis [ref=e735]: In 2027, a leading AI lab will be able to train a GPT-4-level model in a minute.
+            - button [ref=e737] [cursor=pointer]:
+              - img [ref=e738]
+              - img [ref=e740]
+              - img [ref=e742]
+            - strong [ref=e744]
+            - text: The OOM effective compute scaleup will be dramatic.
+          - paragraph [ref=e745]: Where will that take us?
+          - figure "Summary of counting the OOMs." [ref=e746]:
+            - emphasis [ref=e748]: Summary of counting the OOMs.
+          - paragraph [ref=e749]:
+            - text: GPT-2 to GPT-4 took us from ~preschooler to ~smart high-schooler; from barely being able to output a few cohesive sentences to acing high-school exams and being a useful coding assistant. That was an insane jump. If
+            - emphasis [ref=e750]: this
+            - text: is the intelligence gap we’ll cover once more, where will that take us?
+            - button [ref=e752] [cursor=pointer]:
+              - img [ref=e753]
+              - img [ref=e755]
+              - img [ref=e757]
+            - text: We should not be surprised if that takes us very, very far. Likely, it will take us to models that can outperform PhDs and the best experts in a field.
+          - paragraph [ref=e759]: (One neat way to think about this is that the current trend of AI progress is proceeding at roughly 3x the pace of child development. Your 3x-speed-child just graduated high school; it’ll be taking your job before you know it!)
+          - paragraph [ref=e760]: "Again, critically, don’t just imagine an incredibly smart ChatGPT: unhobbling gains should mean that this looks more like a drop-in remote worker, an incredibly smart agent that can reason and plan and error-correct and knows everything about you and your company and can work on a problem independently for weeks."
+          - paragraph [ref=e761]: "We are on course for AGI by 2027. These AI systems will basically be able to automate basically all cognitive jobs (think: all jobs that could be done remotely)."
+          - paragraph [ref=e762]: To be clear—the error bars are large. Progress could stall as we run out of data, if the algorithmic breakthroughs necessary to crash through the data wall prove harder than expected. Maybe unhobbling doesn’t go as far, and we are stuck with merely expert chatbots, rather than expert coworkers. Perhaps the decade-long trendlines break, or scaling deep learning hits a wall for real this time. (Or an algorithmic breakthrough, even simple unhobbling that unleashes the test-time compute overhang, could be a paradigm-shift, accelerating things further and leading to AGI even earlier.)
+          - paragraph [ref=e763]:
+            - text: In any case, we are racing through the OOMs, and it requires no esoteric beliefs, merely trend extrapolation of straight lines, to take the possibility of AGI—true AGI—by 2027
+            - strong [ref=e764]:
+              - emphasis [ref=e765]: extremely
+            - text: seriously.
+          - paragraph [ref=e766]:
+            - text: It seems like many are in the game of downward-defining AGI these days, as just as really good chatbot or whatever. What I mean is an AI system that could fully automate my or my friends’ job, that could fully do the work of an AI researcher or engineer. Perhaps some areas, like robotics, might take longer to figure out by default. And the societal rollout, e.g. in medical or legal professions, could easily be slowed by societal choices or regulation. But once models can automate AI research itself, that’s enough—enough to kick off intense feedback loops—and we could very quickly make further progress, the automated AI engineers themselves solving all the remaining bottlenecks to fully automating everything. In particular, millions of automated researchers could very plausibly compress a decade of further algorithmic progress into a year or less. AGI will merely be a small taste of the superintelligence soon to follow. (More on that in the
+            - link "next piece" [ref=e767] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-agi-to-superintelligence/
+            - text: .)
+          - paragraph [ref=e768]: "In any case, do not expect the vertiginous pace of progress to abate. The trendlines look innocent, but their implications are intense. As with every generation before them, every new generation of models will dumbfound most onlookers; they’ll be incredulous when, very soon, models solve incredibly difficult science problems that would take PhDs days, when they’re whizzing around your computer doing your job, when they’re writing codebases with millions of lines of code from scratch, when every year or two the economic value generated by these models 10xs. Forget scifi, count the OOMs: it’s what we should expect. AGI is no longer a distant fantasy. Scaling up simple deep learning techniques has just worked, the models just want to learn, and we’re about to do another 100,000x+ by the end of 2027. It won’t be long before they’re smarter than us."
+          - figure "GPT-4 is just the beginning—where will we be four years later? Do not make the mistake of underestimating the rapid pace of deep learning progress (as illustrated by progress in GANs)." [ref=e769]:
+            - generic [ref=e770]:
+              - emphasis [ref=e771]: GPT-4 is just the beginning—where will we be four years later? Do not make the mistake of underestimating the rapid pace of deep learning progress (as illustrated by
+              - link "progress in GANs" [ref=e772] [cursor=pointer]:
+                - /url: https://twitter.com/goodfellow_ian/status/1084973596236144640/photo/1
+                - emphasis [ref=e773]: progress in GANs
+              - emphasis [ref=e774]: ).
+          - paragraph [ref=e776]:
+            - text: "Next post in series:"
+            - strong [ref=e777]:
+              - 'link "II. From AGI to Superintelligence: the Intelligence Explosion" [ref=e778] [cursor=pointer]':
+                - /url: https://situational-awareness.ai/from-agi-to-superintelligence/
+                - emphasis [ref=e779]: "II. From AGI to Superintelligence: the Intelligence Explosion"
+              - emphasis
+          - separator [ref=e780]
+          - generic [ref=e784]:
+            - generic [ref=e786]:
+              - 'heading "Addendum. Racing through the OOMs: It’s this decade or bust" [level=3] [ref=e787]':
+                - text: Addendum.
+                - strong [ref=e788]: "Racing through the OOMs: It’s this decade or bust"
+              - paragraph [ref=e789]: I used to be more skeptical of short timelines to AGI. One reason is that it seemed unreasonable to privilege this decade, concentrating so much AGI-probability-mass on it (it seemed like a classic fallacy to think “oh we’re so special”). I thought we should be uncertain about what it takes to get AGI, which should lead to a much more “smeared-out” probability distribution over when we might get AGI.
+              - paragraph [ref=e790]:
+                - text: "However, I’ve changed my mind: critically, our uncertainty over what it takes to get AGI should be over"
+                - emphasis [ref=e791]: OOMs
+                - text: (of effective compute), rather than over years.
+              - paragraph [ref=e792]: We’re racing through the OOMs this decade. Even at its bygone heyday, Moore’s law was only 1–1.5 OOMs/decade. I estimate that we will do ~5 OOMs in 4 years, and over ~10 this decade overall.
+              - figure "We’ve been racing through the OOMs this decade; after the early 2030s, we will face a slow slog." [ref=e794]:
+                - emphasis [ref=e796]: We’ve been racing through the OOMs this decade; after the early 2030s, we will face a slow slog.
+            - generic [ref=e798]:
+              - paragraph [ref=e799]: In essence, we’re in the middle of a huge scaleup reaping one-time gains this decade, and progress through the OOMs will be multiples slower thereafter. If this scaleup doesn’t get us to AGI in the next 5-10 years, it might be a long way out.
+              - list [ref=e800]:
+                - listitem [ref=e801]:
+                  - emphasis [ref=e802]: Spending scaleup
+                  - text: ": Spending a million dollars on a model used to be outrageous; by the end of the decade, we will likely have"
+                  - link "$100B or $1T clusters" [ref=e803] [cursor=pointer]:
+                    - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+                  - text: . Going much higher than that will be hard; that’s already basically the feasible limit (both in terms of what big business can afford, and even just as a fraction of GDP). Thereafter all we have is glacial 2%/year trend real GDP growth to increase this.
+                - listitem [ref=e804]:
+                  - emphasis [ref=e805]: Hardware gains
+                  - text: ": AI hardware has been improving much more quickly than Moore’s law. That’s because we’ve been specializing chips for AI workloads. For example, we’ve gone from CPUs to GPUs; adapted chips for Transformers; and we’ve gone down to much lower precision number formats, from fp64/fp32 for traditional supercomputing to fp8 on H100s. These are large gains, but by the end of the decade we’ll likely have totally-specialized AI-specific chips, without much further beyond-Moore’s law gains possible."
+                - listitem [ref=e806]:
+                  - emphasis [ref=e807]: Algorithmic progress
+                  - text: ": In the coming decade, AI labs will invest tens of billions in algorithmic R&D, and all the smartest people in the world will be working on this; from tiny efficiencies to new paradigms, we’ll be picking lots of the low-hanging fruit. We probably won’t reach any sort of hard limit (though “unhobblings” are likely finite), but at the very least the pace of improvements should slow down, as the rapid growth (in $ and human capital investments) necessarily slows down (e.g., most of the smart STEM talent will already be working on AI). (That said, this is the most uncertain to predict, and the source of most of the uncertainty on the OOMs in the 2030s on the plot above.)"
+              - paragraph [ref=e808]:
+                - text: Put together, this means we are racing through many more OOMs in the next decade than we might in multiple decades thereafter. Maybe it’s enough—and we get AGI soon—or we might be in for a long, slow slog. You and I can reasonably disagree on the
+                - emphasis [ref=e809]: median
+                - text: time to AGI, depending on how hard we think achieving AGI will be—but given how we’re racing through the OOMs right now, certainly your
+                - emphasis [ref=e810]: modal
+                - text: AGI year should sometime later this decade or so.
+              - figure "Matthew Barnett has a nice related visualization of this, considering just compute and biological bounds." [ref=e812]:
+                - generic [ref=e813]:
+                  - text: Matthew Barnett has a
+                  - link "nice related visualization" [ref=e814] [cursor=pointer]:
+                    - /url: https://x.com/MatthewJBar/status/1772819342511820995
+                  - text: of this, considering just compute and biological bounds.
+          - generic [ref=e815]:
+            - separator [ref=e816]
+            - list [ref=e817]:
+              - listitem [ref=e818]:
+                - paragraph [ref=e819]:
+                  - text: Predictions they’ve made every year for the last decade, and which they’ve been consistently wrong about…
+                  - link "↩" [ref=e820] [cursor=pointer]:
+                    - /url: "#note-1-70"
+                    - img "↩" [ref=e821]
+              - listitem [ref=e822]:
+                - paragraph [ref=e823]:
+                  - text: From
+                  - link "SSC" [ref=e824] [cursor=pointer]:
+                    - /url: https://slatestarcodex.com/2019/02/19/gpt-2-as-step-toward-general-intelligence/
+                  - text: ": Janelle Shane asks GPT-2 its ten favorite animals:"
+                  - text: "Prompt: My 10 favorite animals are: 1."
+                  - text: "My ten favorite animals are:"
+                  - text: Zebras with a white scar on the back
+                  - text: Insiduous spiders and octopus
+                  - text: Frog with large leaves, hopefully black
+                  - text: Cockatiel with scales
+                  - text: Razorbill with wings hanging about 4 inches from one’s face and a heart tattoo on a frog
+                  - text: "Cockatric interlocking tetrabods that can be blind, cut, and eaten raw:"
+                  - text: Black and white desert crocodiles living in sunlight
+                  - text: Zebra and many other pea bugs
+                  - link "↩" [ref=e825] [cursor=pointer]:
+                    - /url: "#note-2-70"
+                    - img "↩" [ref=e826]
+              - listitem [ref=e827]:
+                - paragraph [ref=e828]:
+                  - text: From the
+                  - link "GPT-2 paper" [ref=e829] [cursor=pointer]:
+                    - /url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+                  - text: ", Section 3.6."
+                  - link "↩" [ref=e830] [cursor=pointer]:
+                    - /url: "#note-3-70"
+                    - img "↩" [ref=e831]
+              - listitem [ref=e832]:
+                - paragraph [ref=e833]:
+                  - text: I mean clunky old GPT-3 here, not the dramatically-improved GPT-3.5 you might know from ChatGPT.
+                  - link "↩" [ref=e834] [cursor=pointer]:
+                    - /url: "#note-4-70"
+                    - img "↩" [ref=e835]
+              - listitem [ref=e836]:
+                - paragraph [ref=e837]:
+                  - text: And no, these tests aren’t in the training set. AI labs put real effort into ensuring these evals are uncontaminated, because they need good measurements in order to do good science. A
+                  - link "recent analysis on this by ScaleAI" [ref=e838] [cursor=pointer]:
+                    - /url: https://x.com/alexandr_wang/status/1785888203943161970
+                  - text: confirmed that the leading labs aren’t overfitting to the benchmarks (though some smaller LLM developers might be juicing their numbers).
+                  - link "↩" [ref=e839] [cursor=pointer]:
+                    - /url: "#note-5-70"
+                    - img "↩" [ref=e840]
+              - listitem [ref=e841]:
+                - paragraph [ref=e842]:
+                  - text: "In the original paper, it was noted: “We also evaluated humans on MATH, and found that a computer science PhD student who does not especially like mathematics attained approximately 40% on MATH, while a three-time IMO gold medalist attained 90%, indicating that MATH can be challenging for humans as well.”"
+                  - link "↩" [ref=e843] [cursor=pointer]:
+                    - /url: "#note-6-70"
+                    - img "↩" [ref=e844]
+              - listitem [ref=e845]:
+                - paragraph [ref=e846]:
+                  - text: A coauthor
+                  - link "notes" [ref=e847] [cursor=pointer]:
+                    - /url: https://bounded-regret.ghost.io/ai-forecasting-one-year-in/
+                  - text: ": “When our group first released the MATH dataset, at least one [ML researcher colleague] told us that it was a pointless dataset because it was too far outside the range of what ML models could accomplish (indeed, I was somewhat worried about this myself).”"
+                  - link "↩" [ref=e848] [cursor=pointer]:
+                    - /url: "#note-7-70"
+                    - img "↩" [ref=e849]
+              - listitem [ref=e850]:
+                - paragraph [ref=e851]:
+                  - text: Here’s Yann LeCun
+                  - link "predicting" [ref=e852] [cursor=pointer]:
+                    - /url: https://x.com/YaBoyFathoM/status/1659516423540965378
+                  - text: in 2022 that even GPT-5000 won’t be able to reason about physical interactions with the real world; GPT-4 obviously does it with ease a year later.
+                  - text: Here’s Gary Marcus’s walls predicted after GPT-2
+                  - link "being solved" [ref=e853] [cursor=pointer]:
+                    - /url: https://www.astralcodexten.com/p/my-bet-ai-size-solves-flubs
+                  - text: by GPT-3, and the walls he predicted after GPT-3
+                  - link "being solved" [ref=e854] [cursor=pointer]:
+                    - /url: https://www.lesswrong.com/posts/cGbEtNbxACJpqoP4x/gpt-4-solves-gary-marcus-induced-flubs
+                  - text: by GPT-4.
+                  - text: Here’s Prof. Bryan Caplan
+                  - link "losing" [ref=e855] [cursor=pointer]:
+                    - /url: https://twitter.com/finmoorhouse/status/1638221410328797186?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1638221410328797186%7Ctwgr%5E30fcf9cb4b7ac2403b9fbf482b142b6598405006%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.redditmedia.com%2Fmediaembed%2F11xp2dz%2F%3Fresponsive%3Dtrueis_nightmode%3Dfalse
+                  - text: his first-ever public bet (after previously famously having a perfect public betting track record). In January 2023, after GPT-3.5 got a D on his economics midterm, Prof. Caplan
+                  - link "bet" [ref=e856] [cursor=pointer]:
+                    - /url: https://www.betonit.ai/p/gpt-retakes-my-midterm-and-gets-an
+                  - text: Matthew Barnett that no AI would get an A on his economics midterms by
+                  - emphasis [ref=e857]: "2029."
+                  - text: Just two months later, when GPT-4 came out, it promptly scored an A on his midterm (and it would have been one of the highest scores in his class).
+                  - link "↩" [ref=e858] [cursor=pointer]:
+                    - /url: "#note-8-70"
+                    - img "↩" [ref=e859]
+              - listitem [ref=e860]:
+                - paragraph [ref=e861]:
+                  - text: On the
+                  - link "diamond set, majority voting" [ref=e862] [cursor=pointer]:
+                    - /url: https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf
+                  - text: of the model trying 32 times with chain-of-thought.
+                  - link "↩" [ref=e863] [cursor=pointer]:
+                    - /url: "#note-9-70"
+                    - img "↩" [ref=e864]
+              - listitem [ref=e865]:
+                - paragraph [ref=e866]:
+                  - text: And it’s worth noting just how consistent these trendlines are. Combining the original
+                  - link "scaling laws paper" [ref=e867] [cursor=pointer]:
+                    - /url: https://arxiv.org/pdf/2001.08361
+                  - text: with some of the estimates on compute and compute efficiency scaling since then implies a consistent scaling trend for over 15 orders of magnitude (over 1,000,000,000,000,000x in effective compute)!
+                  - link "↩" [ref=e868] [cursor=pointer]:
+                    - /url: "#note-10-70"
+                    - img "↩" [ref=e869]
+              - listitem [ref=e870]:
+                - paragraph [ref=e871]:
+                  - text: A common misconception is that scaling only holds for perplexity loss, but we see very clear and consistent scaling behavior on downstream performance on benchmarks as well. It’s usually just a matter of finding the right log-log graph. For example, in the GPT-4 blog post, they show consistent scaling behavior for performance on coding problems over 6 OOMs (1,000,000x) of compute, using MLPR (mean log pass rate). The “Are Emergent Abilities a Mirage?”
+                  - link "paper" [ref=e872] [cursor=pointer]:
+                    - /url: https://arxiv.org/pdf/2304.15004
+                  - text: makes a similar point; with the right choice of metric, there is almost always a consistent trend for performance on downstream tasks.
+                - paragraph [ref=e873]:
+                  - text: More generally, the “scaling hypothesis” qualitative observation—very clear trends on model capability with scale—predates loss-scaling-curves; the “scaling laws” work was just a formal measurement of this.
+                  - link "↩" [ref=e874] [cursor=pointer]:
+                    - /url: "#note-11-70"
+                    - img "↩" [ref=e875]
+              - listitem [ref=e876]:
+                - paragraph [ref=e877]:
+                  - text: 1. Gemini 1.5 Flash scores 54.9% on MATH, and costs $0.35/$1.05 (input/output) per million tokens. GPT-4 scored 42.5% on MATH prelease and 52.9% on MATH in early 2023, and cost $30/$60 (input/output) per million tokens; that’s 85x/57x (input/output) more expensive per token than Gemini 1.5 Flash. To be conservative, I use an estimate of 30x cost decrease above (accounting for Gemini 1.5 Flash possibly using more tokens to reason through problems).
+                  - text: 2. Minerva540B scores 50.3% on MATH, using majority voting among 64 samples. A knowledgeable friend estimates the base model here is probably 2-3x more expensive to inference than GPT-4. However, Minerva seems to use somewhat fewer tokens per answer on a quick spot check. More importantly, Minerva needed 64 samples to achieve that performance, naively implying a 64x multiple on cost if you e.g. naively ran this via an inference API. In practice, prompt tokens can be cached when running an eval; given a few-shot prompt, prompt tokens are likely a majority of the cost, even accounting for output tokens. Supposing output tokens are a third of the cost for getting a single sample, that would imply only a ~20x increase in cost from the maj@64 with caching. To be conservative, I use the rough number of a 20x cost decrease in the above (even if the naive decrease in inference cost from running this via an API would be larger).
+                  - link "↩" [ref=e878] [cursor=pointer]:
+                    - /url: "#note-12-70"
+                    - img "↩" [ref=e879]
+              - listitem [ref=e880]:
+                - paragraph [ref=e881]:
+                  - text: Though these are inference efficiencies (rather than necessarily training efficiencies), and to some extent will reflect inference-specific optimizations, a) they suggest enormous amounts of algorithmic progress is possible and happening in general, and b) it’s often the case that an algorithmic improvements is both a training efficiency gain and an inference efficiency, for example by reducing the number of parameters necessary.
+                  - link "↩" [ref=e882] [cursor=pointer]:
+                    - /url: "#note-13-70"
+                    - img "↩" [ref=e883]
+              - listitem [ref=e884]:
+                - paragraph [ref=e885]:
+                  - link "GPT-3" [ref=e886] [cursor=pointer]:
+                    - /url: https://the-decoder.com/openai-cuts-prices-for-gpt-3-by-two-thirds/
+                  - text: ": $60/1M tokens,"
+                  - link "GPT-4" [ref=e887] [cursor=pointer]:
+                    - /url: https://openai.com/pricing
+                  - text: ": $30/1M input tokens and $60/1M output tokens."
+                  - link "↩" [ref=e888] [cursor=pointer]:
+                    - /url: "#note-14-70"
+                    - img "↩" [ref=e889]
+              - listitem [ref=e890]:
+                - paragraph [ref=e891]:
+                  - text: Chinchilla scaling laws say that one should scale parameter count and data equally. That is, parameter count grows “half the OOMs” of the OOMs that effective training compute grows. At the same time, parameter count is intuitively roughly proportional to inference costs. All else equal, constant inference costs thus implies that half of the OOMs of effective compute growth were “canceled out” by algorithmic win.
+                  - text: That said, to be clear, this is a very naive calculation (just meant for a rough illustration) that is wrong in various ways. There may be inference-specific optimizations (that don’t translate into training efficiency); there may be training efficiencies that don’t reduce parameter count (and thus don’t translate into inference efficiency); and so on.
+                  - link "↩" [ref=e892] [cursor=pointer]:
+                    - /url: "#note-15-70"
+                    - img "↩" [ref=e893]
+              - listitem [ref=e894]:
+                - paragraph [ref=e895]:
+                  - text: Gemini 1.5 Flash ranks similarly to GPT-4 (higher than original GPT-4, lower than updated versions of GPT-4)
+                  - link "on LMSys, a chatbot leaderboard" [ref=e896] [cursor=pointer]:
+                    - /url: https://chat.lmsys.org/?leaderboard
+                  - text: ", and has"
+                  - link "similar performance" [ref=e897] [cursor=pointer]:
+                    - /url: https://deepmind.google/technologies/gemini/flash/
+                  - text: on MATH and GPQA (evals that measure reasoning) as the original GPT-4, while landing roughly in the middle between GPT-3.5 and GPT-4 on MMLU (an eval that more heavily weights towards measuring knowledge).
+                  - link "↩" [ref=e898] [cursor=pointer]:
+                    - /url: "#note-16-70"
+                    - img "↩" [ref=e899]
+              - listitem [ref=e900]:
+                - paragraph [ref=e901]:
+                  - text: At ~GPT-3
+                  - link "scale" [ref=e902] [cursor=pointer]:
+                    - /url: https://www.databricks.com/blog/gpt-3-quality-for-500k
+                  - text: ", more than 3x at larger scales."
+                  - link "↩" [ref=e903] [cursor=pointer]:
+                    - /url: "#note-17-70"
+                    - img "↩" [ref=e904]
+              - listitem [ref=e905]:
+                - paragraph [ref=e906]:
+                  - text: For example, this
+                  - link "paper" [ref=e907] [cursor=pointer]:
+                    - /url: https://arxiv.org/pdf/2312.00752
+                  - text: contains a comparison of a GPT-3-style vanilla Transformer to various simple changes to architecture and training recipe published over the years (RMSnorms instead of layernorm, different positional embeddings, SwiGlu activation, AdamW optimizer instead of Adam, etc.), what they call “Transformer++”, implying a 6x gain at least at small scale.
+                  - link "↩" [ref=e908] [cursor=pointer]:
+                    - /url: "#note-18-70"
+                    - img "↩" [ref=e909]
+              - listitem [ref=e910]:
+                - paragraph [ref=e911]:
+                  - text: If we take the trend of 0.5 OOMs/year, and 4 years between GPT-2 and GPT-4 release, that would be 2 OOMs. However, GPT-2 to GPT-3 was a simple scaleup (after big gains from e.g. Transformers), and OpenAI claims
+                  - link "GPT-4 pretraining finished in 2022" [ref=e912] [cursor=pointer]:
+                    - /url: https://cdn.openai.com/papers/gpt-4.pdf
+                  - text: ", which could mean we’re looking at closer to 2 years worth of algorithmic progress that we should be counting here. 1 OOM of algorithmic efficiency seems like a conservative lower bound."
+                  - link "↩" [ref=e913] [cursor=pointer]:
+                    - /url: "#note-19-70"
+                    - img "↩" [ref=e914]
+              - listitem [ref=e915]:
+                - paragraph [ref=e916]:
+                  - text: At the very least, given over a decade of consistent algorithmic improvements, the burden of proof would be on those who would suggest it will all suddenly come to a halt!
+                  - link "↩" [ref=e917] [cursor=pointer]:
+                    - /url: "#note-20-70"
+                    - img "↩" [ref=e918]
+              - listitem [ref=e919]:
+                - paragraph [ref=e920]:
+                  - text: The economic returns to a 3x compute efficiency will be measured in the $10s of billions or more, given cluster costs.
+                  - link "↩" [ref=e921] [cursor=pointer]:
+                    - /url: "#note-21-70"
+                    - img "↩" [ref=e922]
+              - listitem [ref=e923]:
+                - paragraph [ref=e924]:
+                  - text: Very roughly something like a
+                  - link "~10x gain" [ref=e925] [cursor=pointer]:
+                    - /url: https://twitter.com/tamaybes/status/1767589514984493537
+                  - text: .
+                  - link "↩" [ref=e926] [cursor=pointer]:
+                    - /url: "#note-22-70"
+                    - img "↩" [ref=e927]
+              - listitem [ref=e928]:
+                - paragraph [ref=e929]:
+                  - text: And just rereading the same textbook over and over again might result in memorization, not understanding. I take it that’s how many wordcels pass math classes!
+                  - link "↩" [ref=e930] [cursor=pointer]:
+                    - /url: "#note-23-70"
+                    - img "↩" [ref=e931]
+              - listitem [ref=e932]:
+                - paragraph [ref=e933]:
+                  - text: "One other way of thinking about it I find interesting: there is a “missing-middle” between pretraining and in-context learning. In-context learning is"
+                  - emphasis [ref=e934]: incredible
+                  - text: (and competitive with human sample efficiency). For example, the
+                  - link "Gemini 1.5 Pro paper" [ref=e935] [cursor=pointer]:
+                    - /url: https://arxiv.org/pdf/2403.05530
+                  - text: discusses giving the model instructional materials (a textbook, a dictionary) on Kalamang, a language spoken by fewer than 200 people and basically not present on the internet, in context—and the model learns to translate from English to Kalamang at human-level! In context, the model is able to learn from the textbook as well as a human could (and much better than it would learn from just chucking that one textbook into pretraining).
+                  - text: "When a human learns from a textbook, they’re able to distill their short-term memory/learnings into long-term memory/long-term skills with practice; however, we don’t have an equivalent way to distill in-context learning “back to the weights.” Synthetic data/self-play/RL/etc are trying to fix that: let the model learn by itself, then think about it and practice what it learned, distilling that learning back into the weights."
+                  - link "↩" [ref=e936] [cursor=pointer]:
+                    - /url: "#note-24-70"
+                    - img "↩" [ref=e937]
+              - listitem [ref=e938]:
+                - paragraph [ref=e939]:
+                  - text: See also Andrej Karpathy’s talk discussing this
+                  - link "here" [ref=e940] [cursor=pointer]:
+                    - /url: https://youtu.be/zjkBMFhNj_g?si=g1Oa-KJitdCPHj_g&t=2284
+                  - text: .
+                  - link "↩" [ref=e941] [cursor=pointer]:
+                    - /url: "#note-25-70"
+                    - img "↩" [ref=e942]
+              - listitem [ref=e943]:
+                - paragraph [ref=e944]:
+                  - text: "That’s the magic of unsupervised learning, in some sense: to better predict the next token, to make perplexity go down, models learn incredibly rich internal representations, everything from ("
+                  - link "famously" [ref=e945] [cursor=pointer]:
+                    - /url: https://openai.com/research/unsupervised-sentiment-neuron
+                  - text: ") sentiment to complex world models. But, out of the box, they’re hobbled: they’re using their incredible internal representations merely to predict the next token in random internet text, and rather than applying them in the best way to actually try to solve your problem."
+                  - link "↩" [ref=e946] [cursor=pointer]:
+                    - /url: "#note-26-70"
+                    - img "↩" [ref=e947]
+              - listitem [ref=e948]:
+                - paragraph [ref=e949]:
+                  - text: See Figure 7 from the
+                  - link "updated Gemini 1.5 whitepaper" [ref=e950] [cursor=pointer]:
+                    - /url: https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf
+                  - text: ", comparing perplexity vs. context for Gemini 1.5 Pro and Gemini 1.5 Flash (a much cheaper and presumably smaller model)."
+                  - link "↩" [ref=e951] [cursor=pointer]:
+                    - /url: "#note-27-70"
+                    - img "↩" [ref=e952]
+              - listitem [ref=e953]:
+                - paragraph [ref=e954]:
+                  - text: People are working on this though!
+                  - link "↩" [ref=e955] [cursor=pointer]:
+                    - /url: "#note-28-70"
+                    - img "↩" [ref=e956]
+              - listitem [ref=e957]:
+                - paragraph [ref=e958]:
+                  - text: Which makes sense—why would it have learned the skills for longer-horizon reasoning and error correction? There’s very little data on the internet in the form of “my complete internal monologue, reasoning, all the relevant steps over the course of a month as I work on a project.” Unlocking this capability will require a new kind of training, for it to learn these extra skills.
+                  - text: "Or as Gwern put it (private correspondence): “‘Brain the size of a galaxy, and what do they ask me to do? Predict the misspelled answers on benchmarks!’ Marvin the depressed neural network moaned.”"
+                  - link "↩" [ref=e959] [cursor=pointer]:
+                    - /url: "#note-29-70"
+                    - img "↩" [ref=e960]
+              - listitem [ref=e961]:
+                - paragraph [ref=e962]:
+                  - text: "System I vs. System II is a useful way of thinking about current capabilities of LLMs—including their limitations and dumb mistakes—and what might be possible with RL and unhobbling. Think of this way: when you are driving, most of the time you are on autopilot (system I, what models mostly do right now). But when you encounter a complex construction zone or novel intersection, you might ask your passenger-seat-companion to pause your conversation for a moment while you figure out—actually think about—what’s going on and what to do. If you were forced to go about life with only system I (closer to models today), you’d have a lot of trouble. Creating the ability for system II reasoning loops is a central unlock."
+                  - link "↩" [ref=e963] [cursor=pointer]:
+                    - /url: "#note-30-70"
+                    - img "↩" [ref=e964]
+              - listitem [ref=e965]:
+                - paragraph [ref=e966]:
+                  - text: On the best guess assumptions on physical compute and algorithmic efficiency scaleups described above, and simplifying parallelism considerations (in reality, it might look more like “1440 (60*24) GPT-4-level models in a day” or similar).
+                  - link "↩" [ref=e967] [cursor=pointer]:
+                    - /url: "#note-31-70"
+                    - img "↩" [ref=e968]
+              - listitem [ref=e969]:
+                - paragraph [ref=e970]:
+                  - text: Of course, any benchmark we have today will be saturated. But that’s not saying much; it’s mostly a reflection on the difficulty of making hard-enough benchmarks.
+                  - link "↩" [ref=e971] [cursor=pointer]:
+                    - /url: "#note-32-70"
+                    - img "↩" [ref=e972]
+    - contentinfo [ref=e973]

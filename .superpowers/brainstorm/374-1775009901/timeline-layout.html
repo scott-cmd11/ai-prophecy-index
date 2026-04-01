@@ -1,0 +1,136 @@
+<h2>How should the two thinkers relate on the timeline?</h2>
+<p class="subtitle">The central design question — how Shulman and Aschenbrenner's predictions sit relative to each other</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:24px;background:#0d1117;">
+      <!-- Split spine layout mockup -->
+      <div style="display:flex;gap:0;height:280px;font-family:system-ui;font-size:11px;">
+        <!-- Left: Shulman -->
+        <div style="flex:1;display:flex;flex-direction:column;align-items:flex-end;gap:12px;padding-right:16px;">
+          <div style="text-align:right;color:#8b949e;font-size:9px;letter-spacing:2px;text-transform:uppercase;">Carl Shulman</div>
+          <div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px 14px;max-width:200px;text-align:right;">
+            <div style="color:#c9d1d9;font-size:11px;">AI boosts researcher productivity 50-200%</div>
+            <div style="margin-top:6px;display:inline-block;background:#1a3a2a;color:#34d399;padding:2px 8px;border-radius:10px;font-size:9px;">IN PROGRESS</div>
+          </div>
+          <div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px 14px;max-width:200px;text-align:right;">
+            <div style="color:#c9d1d9;font-size:11px;">Hardware fab capacity is the primary bottleneck</div>
+            <div style="margin-top:6px;display:inline-block;background:#0d2d1a;color:#34d399;padding:2px 8px;border-radius:10px;font-size:9px;">CONFIRMED</div>
+          </div>
+        </div>
+        <!-- Center spine -->
+        <div style="width:3px;background:linear-gradient(to bottom,#30363d,#58a6ff,#30363d);position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:40px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:#58a6ff;border:2px solid #0d1117;"></div>
+          <div style="position:absolute;top:120px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:#58a6ff;border:2px solid #0d1117;"></div>
+          <div style="position:absolute;top:200px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:#58a6ff;border:2px solid #0d1117;"></div>
+          <div style="position:absolute;top:40px;left:50%;transform:translateX(-50%) translateY(-18px);color:#58a6ff;font-size:10px;font-weight:600;white-space:nowrap;">2025</div>
+          <div style="position:absolute;top:120px;left:50%;transform:translateX(-50%) translateY(-18px);color:#58a6ff;font-size:10px;font-weight:600;white-space:nowrap;">2026</div>
+          <div style="position:absolute;top:200px;left:50%;transform:translateX(-50%) translateY(-18px);color:#58a6ff;font-size:10px;font-weight:600;white-space:nowrap;">2027</div>
+        </div>
+        <!-- Right: Aschenbrenner -->
+        <div style="flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding-left:16px;">
+          <div style="color:#8b949e;font-size:9px;letter-spacing:2px;text-transform:uppercase;">Leopold Aschenbrenner</div>
+          <div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px 14px;max-width:200px;">
+            <div style="color:#c9d1d9;font-size:11px;">$100B+ annual AI revenue by mid-2026</div>
+            <div style="margin-top:6px;display:inline-block;background:#1a3a2a;color:#fbbf24;padding:2px 8px;border-radius:10px;font-size:9px;">IN PROGRESS</div>
+          </div>
+          <div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px 14px;max-width:200px;">
+            <div style="color:#c9d1d9;font-size:11px;">AGI by roughly 2027</div>
+            <div style="margin-top:6px;display:inline-block;background:#1e293b;color:#64748b;padding:2px 8px;border-radius:10px;font-size:9px;">OUTSTANDING</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Split Spine</h3>
+      <p>Central timeline with Shulman left, Aschenbrenner right. Classic dual-timeline. Clean separation, easy to compare at the same year. Cards connect to the spine with dots/lines.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:24px;background:#0d1117;">
+      <!-- Interleaved river mockup -->
+      <div style="max-width:320px;margin:0 auto;font-family:system-ui;font-size:11px;">
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <!-- Year header -->
+          <div style="text-align:center;color:#58a6ff;font-size:10px;font-weight:600;letter-spacing:3px;padding:8px 0;border-bottom:1px solid #21262d;">2025</div>
+          <!-- Shulman card - left aligned -->
+          <div style="display:flex;gap:8px;align-items:flex-start;">
+            <div style="width:3px;background:#a78bfa;border-radius:2px;flex-shrink:0;align-self:stretch;"></div>
+            <div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px 14px;flex:1;">
+              <div style="color:#a78bfa;font-size:8px;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Shulman</div>
+              <div style="color:#c9d1d9;font-size:11px;">Hardware fab capacity is the primary bottleneck</div>
+              <div style="margin-top:6px;display:inline-block;background:#0d2d1a;color:#34d399;padding:2px 8px;border-radius:10px;font-size:9px;">CONFIRMED</div>
+            </div>
+          </div>
+          <!-- Aschenbrenner card - right aligned -->
+          <div style="display:flex;gap:8px;align-items:flex-start;">
+            <div style="flex:1;background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px 14px;">
+              <div style="color:#f97316;font-size:8px;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;text-align:right;">Aschenbrenner</div>
+              <div style="color:#c9d1d9;font-size:11px;text-align:right;">$100B+ annual AI revenue by mid-2026</div>
+              <div style="margin-top:6px;float:right;display:inline-block;background:#1a3a2a;color:#fbbf24;padding:2px 8px;border-radius:10px;font-size:9px;">IN PROGRESS</div>
+            </div>
+            <div style="width:3px;background:#f97316;border-radius:2px;flex-shrink:0;align-self:stretch;"></div>
+          </div>
+          <!-- Year header -->
+          <div style="text-align:center;color:#58a6ff;font-size:10px;font-weight:600;letter-spacing:3px;padding:8px 0;border-bottom:1px solid #21262d;">2027</div>
+          <!-- Both -->
+          <div style="display:flex;gap:8px;align-items:flex-start;">
+            <div style="width:3px;background:#a78bfa;border-radius:2px;flex-shrink:0;align-self:stretch;"></div>
+            <div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px 14px;flex:1;">
+              <div style="color:#a78bfa;font-size:8px;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Shulman</div>
+              <div style="color:#c9d1d9;font-size:11px;">Intelligence explosion once AI can do AI research</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Interleaved River</h3>
+      <p>Single column, cards alternate left-aligned (Shulman, purple accent) and right-aligned (Aschenbrenner, orange accent). Color-coded side bars identify each thinker. Works beautifully on mobile. Less rigid than the split spine.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:24px;background:#0d1117;">
+      <!-- Layered landscape mockup -->
+      <div style="font-family:system-ui;font-size:11px;position:relative;height:280px;overflow:hidden;">
+        <!-- Background gradient layers -->
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(to top,#0f1923,transparent);"></div>
+        <!-- Year markers along bottom -->
+        <div style="position:absolute;bottom:12px;left:0;right:0;display:flex;justify-content:space-between;padding:0 20px;">
+          <span style="color:#58a6ff;font-size:10px;font-weight:600;">2024</span>
+          <span style="color:#58a6ff;font-size:10px;font-weight:600;">2025</span>
+          <span style="color:#58a6ff;font-size:10px;font-weight:600;">2026</span>
+          <span style="color:#58a6ff;font-size:10px;font-weight:600;">2027</span>
+          <span style="color:#58a6ff;font-size:10px;font-weight:600;">2028</span>
+          <span style="color:#58a6ff;font-size:10px;font-weight:600;">2030</span>
+        </div>
+        <!-- Horizontal line -->
+        <div style="position:absolute;bottom:30px;left:20px;right:20px;height:1px;background:linear-gradient(to right,transparent,#30363d,#58a6ff,#30363d,transparent);"></div>
+        <!-- Shulman predictions floating above (upper layer) -->
+        <div style="position:absolute;top:20px;left:10px;right:10px;">
+          <div style="color:#a78bfa;font-size:8px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Shulman</div>
+          <div style="display:flex;gap:6px;">
+            <div style="background:rgba(167,139,250,0.1);border:1px solid rgba(167,139,250,0.3);border-radius:6px;padding:6px 10px;font-size:9px;color:#c9d1d9;flex:1;">Fab capacity bottleneck <span style="color:#34d399;">✓</span></div>
+            <div style="background:rgba(167,139,250,0.1);border:1px solid rgba(167,139,250,0.3);border-radius:6px;padding:6px 10px;font-size:9px;color:#c9d1d9;flex:1;">Robotics is the bottleneck</div>
+            <div style="background:rgba(167,139,250,0.1);border:1px solid rgba(167,139,250,0.3);border-radius:6px;padding:6px 10px;font-size:9px;color:#c9d1d9;flex:1;">Intelligence explosion</div>
+          </div>
+        </div>
+        <!-- Aschenbrenner predictions (lower layer) -->
+        <div style="position:absolute;top:120px;left:10px;right:10px;">
+          <div style="color:#f97316;font-size:8px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Aschenbrenner</div>
+          <div style="display:flex;gap:6px;">
+            <div style="background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.3);border-radius:6px;padding:6px 10px;font-size:9px;color:#c9d1d9;flex:1;">$100B revenue</div>
+            <div style="background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.3);border-radius:6px;padding:6px 10px;font-size:9px;color:#c9d1d9;flex:1;">AGI by ~2027</div>
+            <div style="background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.3);border-radius:6px;padding:6px 10px;font-size:9px;color:#c9d1d9;flex:1;">$100B cluster</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Layered Landscape</h3>
+      <p>Horizontal timeline with predictions plotted along it. Shulman floats above, Aschenbrenner below. Creates a topographic "landscape of prediction" effect. More data-viz than editorial, but visually striking. Horizontal scroll or zooming interaction.</p>
+    </div>
+  </div>
+</div>

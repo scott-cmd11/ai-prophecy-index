@@ -1,0 +1,812 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - paragraph [ref=e8]:
+          - link "SITUATIONAL AWARENESS" [ref=e9] [cursor=pointer]:
+            - /url: https://situational-awareness.ai/
+        - paragraph [ref=e10]: The Decade Ahead
+      - text: ☰
+  - navigation [ref=e11]:
+    - list [ref=e13]:
+      - listitem [ref=e14]:
+        - link "Introduction" [ref=e15] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/
+      - listitem [ref=e16]:
+        - 'link "I. From GPT-4 to AGI: Counting the OOMs" [ref=e17] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/from-gpt-4-to-agi/
+      - listitem [ref=e18]:
+        - 'link "II. From AGI to Superintelligence: the Intelligence Explosion" [ref=e19] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/from-agi-to-superintelligence/
+      - listitem [ref=e20]:
+        - link "IIIa. Racing to the Trillion-Dollar Cluster" [ref=e21] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+      - listitem [ref=e22]:
+        - 'link "IIIb. Lock Down the Labs: Security for AGI" [ref=e23] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/lock-down-the-labs/
+      - listitem [ref=e24]:
+        - link "IIIc. Superalignment" [ref=e25] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/superalignment/
+      - listitem [ref=e26]:
+        - link "IIId. The Free World Must Prevail" [ref=e27] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/the-free-world-must-prevail/
+      - listitem [ref=e28]:
+        - link "IV. The Project" [ref=e29] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/the-project/
+      - listitem [ref=e30]:
+        - link "V. Parting Thoughts" [ref=e31] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/parting-thoughts/
+      - listitem [ref=e32]:
+        - link "Full series as PDF" [ref=e33] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/wp-content/uploads/2024/06/situationalawareness.pdf
+      - listitem [ref=e34]:
+        - link "About" [ref=e35] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/leopold-aschenbrenner/
+      - listitem [ref=e36]:
+        - link "Dwarkesh podcast" [ref=e37] [cursor=pointer]:
+          - /url: https://www.dwarkeshpatel.com/p/leopold-aschenbrenner
+  - generic [ref=e38]:
+    - main [ref=e41]:
+      - article [ref=e42]:
+        - heading "IIIa. Racing to the Trillion-Dollar Cluster" [level=1] [ref=e44]
+        - generic [ref=e45]:
+          - paragraph [ref=e46]:
+            - strong [ref=e47]: The most extraordinary techno-capital acceleration has been set in motion. As AI revenue grows rapidly, many trillions of dollars will go into GPU, datacenter, and power buildout before the end of the decade. The industrial mobilization, including growing US electricity production by 10s of percent, will be intense.
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: "In this piece:"
+              - link "Toggle Table of Content" [ref=e51] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e54]:
+                  - img [ref=e55]
+                  - img [ref=e57]
+            - navigation [ref=e59]:
+              - list [ref=e60]:
+                - listitem [ref=e61]:
+                  - link "Training compute" [ref=e62] [cursor=pointer]:
+                    - /url: "#Training_compute"
+                - listitem [ref=e63]:
+                  - link "Overall compute" [ref=e64] [cursor=pointer]:
+                    - /url: "#Overall_compute"
+                - listitem [ref=e65]:
+                  - link "Will it be done? Can it be done?" [ref=e66] [cursor=pointer]:
+                    - /url: "#Will_it_be_done_Can_it_be_done"
+                  - list [ref=e67]:
+                    - listitem [ref=e68]:
+                      - link "AI revenue" [ref=e69] [cursor=pointer]:
+                        - /url: "#AI_revenue"
+                    - listitem [ref=e70]:
+                      - link "Historical precedents" [ref=e71] [cursor=pointer]:
+                        - /url: "#Historical_precedents"
+                    - listitem [ref=e72]:
+                      - link "Power" [ref=e73] [cursor=pointer]:
+                        - /url: "#Power"
+                    - listitem [ref=e74]:
+                      - link "Chips" [ref=e75] [cursor=pointer]:
+                        - /url: "#Chips"
+                - listitem [ref=e76]:
+                  - link "The Clusters of Democracy" [ref=e77] [cursor=pointer]:
+                    - /url: "#The_Clusters_of_Democracy"
+          - separator [ref=e78]
+          - blockquote [ref=e80]:
+            - paragraph [ref=e81]: You see, I told you it couldn’t be done without turning the whole country into a factory. You have done just that.
+            - generic [ref=e82]:
+              - text: —
+              - link "Niels Bohr" [ref=e83] [cursor=pointer]:
+                - /url: https://blog.nuclearsecrecy.com/2015/06/12/what-remains-of-the-manhattan-project/
+              - text: (to Edward Teller, upon learning of the scale of the Manhattan Project in 1944)
+          - 'figure "The trillion-dollar cluster. Credit: DALLE." [ref=e84]':
+            - emphasis [ref=e86]: "The trillion-dollar cluster. Credit: DALLE."
+          - paragraph [ref=e88]: "The race to AGI won’t just play out in code and behind laptops—it’ll be a race to mobilize America’s industrial might. Unlike anything else we’ve recently seen come out of Silicon Valley, AI is a massive industrial process: each new model requires a giant new cluster, soon giant new power plants, and eventually giant new chip fabs. The investments involved are staggering. But behind the scenes, they are already in motion."
+          - paragraph [ref=e89]: "In this post, I’ll walk you through numbers to give you a sense of what this will mean:"
+          - list [ref=e90]:
+            - listitem [ref=e91]:
+              - text: As revenue from AI products grows rapidly—plausibly hitting a $100B annual run rate for companies like Google or Microsoft by ~2026, with powerful but pre-AGI systems—that will motivate ever-greater capital mobilization, and total AI investment could be north of $1T
+              - emphasis [ref=e92]: annually
+              - text: by 2027.
+            - listitem [ref=e93]: We’re on the path to individual training clusters costing $100s of billions by 2028—clusters requiring power equivalent to a small/medium US state and more expensive than the International Space Station.
+            - listitem [ref=e94]: By the end of the decade, we are headed to $1T+ individual training clusters, requiring power equivalent to >20% of US electricity production. Trillions of dollars of capex will churn out 100s of millions of GPUs per year overall.
+          - paragraph [ref=e95]:
+            - text: Nvidia shocked the world as its datacenter sales exploded from about
+            - link "$14B annualized" [ref=e96] [cursor=pointer]:
+              - /url: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023
+            - text: to about
+            - link "$90B annualized" [ref=e97] [cursor=pointer]:
+              - /url: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2025
+            - text: in the last year. But that’s still just the very beginning.
+          - heading "Training compute" [level=2] [ref=e98]:
+            - strong [ref=e99]: Training compute
+          - paragraph [ref=e100]:
+            - link "Earlier" [ref=e101] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-gpt-4-to-agi/#Compute
+            - text: ", we found a roughly ~0.5 OOMs/year trend growth of AI training compute."
+            - button [ref=e103] [cursor=pointer]:
+              - img [ref=e104]
+              - img [ref=e106]
+              - img [ref=e108]
+            - text: If this trend were to continue for the rest of the decade, what would that mean for the largest training clusters?
+          - figure "Scaling the largest training clusters, rough back-of-the-envelope calculations." [ref=e110]:
+            - table [ref=e111]:
+              - rowgroup [ref=e112]:
+                - 'row "Year OOMs # of H100s-equivalent Cost Power Power reference class" [ref=e113]':
+                  - columnheader "Year" [ref=e114]
+                  - columnheader "OOMs" [ref=e115]
+                  - columnheader "# of H100s-equivalent" [ref=e116]:
+                    - strong [ref=e117]: "# of H100s-"
+                    - text: equivalent
+                  - columnheader "Cost" [ref=e118]
+                  - columnheader "Power" [ref=e119]
+                  - columnheader "Power reference class" [ref=e120]
+              - rowgroup [ref=e121]:
+                - row "2022 ~GPT-4 cluster ~10k ~$500M ~10 MW ~10,000 average homes" [ref=e122]:
+                  - cell "2022" [ref=e123]
+                  - cell "~GPT-4 cluster" [ref=e124]
+                  - cell "~10k" [ref=e125]
+                  - cell "~$500M" [ref=e126]
+                  - cell "~10 MW" [ref=e127]
+                  - cell "~10,000 average homes" [ref=e128]
+                - row "~2024 +1 OOM ~100k $billions ~100MW ~100,000 homes" [ref=e129]:
+                  - cell "~2024" [ref=e130]
+                  - cell "+1 OOM" [ref=e131]
+                  - cell "~100k" [ref=e132]
+                  - cell "$billions" [ref=e133]
+                  - cell "~100MW" [ref=e134]
+                  - cell "~100,000 homes" [ref=e135]
+                - row "~2026 +2 OOMs ~1M $10s of billions ~1 GW The Hoover Dam, or a large nuclear reactor" [ref=e136]:
+                  - cell "~2026" [ref=e137]
+                  - cell "+2 OOMs" [ref=e138]
+                  - cell "~1M" [ref=e139]
+                  - cell "$10s of billions" [ref=e140]
+                  - cell "~1 GW" [ref=e141]
+                  - cell "The Hoover Dam, or a large nuclear reactor" [ref=e142]
+                - row "~2028 +3 OOMs ~10M $100s of billions ~10 GW A small/medium US state" [ref=e143]:
+                  - cell "~2028" [ref=e144]
+                  - cell "+3 OOMs" [ref=e145]
+                  - cell "~10M" [ref=e146]
+                  - cell "$100s of billions" [ref=e147]
+                  - cell "~10 GW" [ref=e148]
+                  - cell "A small/medium US state" [ref=e149]
+                - row "~2030 +4 OOMs ~100M $1T+ ~100GW >20% of US electricity production" [ref=e150]:
+                  - cell "~2030" [ref=e151]
+                  - cell "+4 OOMs" [ref=e152]
+                  - cell "~100M" [ref=e153]
+                  - cell "$1T+" [ref=e154]
+                  - cell "~100GW" [ref=e155]
+                  - cell ">20% of US electricity production" [ref=e156]
+            - emphasis [ref=e158]: Scaling the largest training clusters, rough back-of-the-envelope calculations.
+          - heading " Details on the calculations for the largest training clusters" [level=4] [ref=e164]:
+            - link " Details on the calculations for the largest training clusters" [ref=e165] [cursor=pointer]:
+              - /url: javascript:void(0)
+              - generic [ref=e166]: 
+              - text: Details on the calculations for the largest training clusters
+          - paragraph [ref=e167]:
+            - text: This may seem hard to believe—but it appears to be happening. Zuck
+            - link "bought 350k H100s" [ref=e168] [cursor=pointer]:
+              - /url: https://www.cnbc.com/2024/01/18/mark-zuckerberg-indicates-meta-is-spending-billions-on-nvidia-ai-chips.html
+            - text: . Amazon
+            - link "bought a 1GW datacenter campus" [ref=e169] [cursor=pointer]:
+              - /url: https://www.datacenterdynamics.com/en/news/aws-acquires-talens-nuclear-data-center-campus-in-pennsylvania/
+            - text: next to a nuclear power plant. Rumors
+            - link "suggest" [ref=e170] [cursor=pointer]:
+              - /url: https://twitter.com/rediminds/status/1749852816938529247?lang=en
+            - text: a 1GW, 1.4M H100-equivalent cluster (~2026-cluster) is being built in Kuwait. Media report that
+            - link "Microsoft and OpenAI are rumored to be working on a $100B cluster, slated for 2028" [ref=e171] [cursor=pointer]:
+              - /url: https://www.reuters.com/technology/microsoft-openai-planning-100-billion-data-center-project-information-reports-2024-03-29/
+            - text: (a cost comparable to the
+            - link "International Space Station" [ref=e172] [cursor=pointer]:
+              - /url: https://en.wikipedia.org/wiki/International_Space_Station_programme#:~:text=Cost,-This%20section%20is&text=The%20ISS%20has%20been%20described,cost%20was%20US%24150%20billion.
+            - text: "!). And as each generation of models shocks the world, further acceleration may yet be in store."
+          - paragraph [ref=e173]:
+            - text: "Perhaps the wildest part is that willingness-to-spend doesn’t even seem to be the binding constraint at the moment, at least for training clusters. It’s finding the infrastructure itself: “Where do I find 10GW?” (power for the $100B+, trend 2028 cluster) is a favorite topic of conversation in SF. What any compute guy is thinking about is securing power, land, permitting, and datacenter construction."
+            - button [ref=e175] [cursor=pointer]:
+              - img [ref=e176]
+              - img [ref=e178]
+              - img [ref=e180]
+            - text: While it may take you a year of waiting to get the GPUs, the lead times for these are much longer still.
+          - paragraph [ref=e182]: The trillion-dollar cluster—+4 OOMs from the GPT-4 cluster, the ~2030 training cluster on the current trend—will be a truly extraordinary effort. The 100GW of power it’ll require is equivalent to >20% of US electricity production; imagine not just a simple warehouse with GPUs, but hundreds of power plants. Perhaps it will take a national consortium.
+          - paragraph [ref=e183]:
+            - text: (Note that I think it’s pretty likely we’ll only need a ~$100B cluster, or less, for AGI. The $1T cluster might be what we’ll train and run superintelligence on, or what we’ll use for AGI if AGI is harder than expected. In any case, in a post-AGI world, having the most compute will probably still really
+            - emphasis [ref=e184]
+            - text: matter.)
+          - heading "Overall compute" [level=2] [ref=e185]:
+            - strong [ref=e186]: Overall compute
+          - paragraph [ref=e187]:
+            - text: "The above are just rough numbers for the largest training clusters. Overall investment is likely to be much larger still: a large fraction of GPUs will probably be used for inference"
+            - button [ref=e189] [cursor=pointer]:
+              - img [ref=e190]
+              - img [ref=e192]
+              - img [ref=e194]
+            - text: (GPUs to actually run the AI systems for products), and there could be multiple players with giant clusters in the race.
+          - paragraph [ref=e196]: "My rough estimate is that 2024 will already feature $100B-$200B of AI investment:"
+          - list [ref=e197]:
+            - listitem [ref=e198]:
+              - text: Nvidia datacenter revenue will hit a ~$25B/quarter run rate soon, i.e. ~$100B of capex flowing via Nvidia alone. But of course, Nvidia isn’t the only player (Google’s TPUs are great too!), and close to half of datacenter capex is on things other than the chips (site, building, cooling, power, etc.)
+              - button [ref=e200] [cursor=pointer]:
+                - img [ref=e201]
+                - img [ref=e203]
+                - img [ref=e205]
+          - figure "Quarterly Nvidia datacenter revenue. Plot by Thomas Woodside." [ref=e207]:
+            - generic [ref=e208]:
+              - emphasis [ref=e209]: Quarterly Nvidia datacenter revenue. Plot by
+              - link "Thomas Woodside" [ref=e210] [cursor=pointer]:
+                - /url: https://twitter.com/Thomas_Woodside/status/1795247239990014409/photo/1
+                - emphasis [ref=e211]: Thomas Woodside
+              - text: .
+          - list [ref=e212]:
+            - listitem [ref=e213]:
+              - text: "Big tech has been dramatically ramping their capex numbers: Microsoft and Google will likely do $50B+,"
+              - button [ref=e215] [cursor=pointer]:
+                - img [ref=e216]
+                - img [ref=e218]
+                - img [ref=e220]
+              - text: AWS and Meta $40B+, in capex this year. Not all of this is AI, but combined their capex will have grown $50B-100B year-over-year because of the AI boom, and even then they are still cutting back on other capex to shift even more spending to AI. Moreover, other cloud providers, companies (e.g.,
+              - link "Tesla is spending $10B" [ref=e222] [cursor=pointer]:
+                - /url: https://twitter.com/heyitsyashu/status/1784594856037208516?s=12
+              - text: on AI this year), and nation-states are investing in AI as well.
+          - figure "Big tech capex is growing extremely rapidly since ChatGPT unleashed the AI boom. Graphic source." [ref=e224]:
+            - generic [ref=e225]:
+              - emphasis [ref=e226]: Big tech capex is growing extremely rapidly since ChatGPT unleashed the AI boom.
+              - link "Graphic source" [ref=e227] [cursor=pointer]:
+                - /url: https://basehitinvesting.substack.com/p/big-tech-capex-and-earnings-quality
+                - emphasis [ref=e228]: Graphic source
+              - emphasis [ref=e229]: .
+          - paragraph [ref=e230]:
+            - text: Let’s play this forward. My best guess is overall compute investments will grow more slowly than the 3x/year largest training clusters, let’s say 2x/year.
+            - button [ref=e232] [cursor=pointer]:
+              - img [ref=e233]
+              - img [ref=e235]
+              - img [ref=e237]
+          - figure "Playing forward trends on total world AI investment. Rough back-of-the-envelope calculation." [ref=e239]:
+            - table [ref=e240]:
+              - rowgroup [ref=e241]:
+                - row "Year Annual investment AI accelerator shipments (in H100s-equivalent) Power as % of US electricity production Chips as % of current leading-edge TSMC wafer production" [ref=e242]:
+                  - columnheader "Year" [ref=e243]
+                  - columnheader "Annual investment" [ref=e244]
+                  - columnheader "AI accelerator shipments (in H100s-equivalent)" [ref=e245]
+                  - columnheader "Power as % of US electricity production" [ref=e246]:
+                    - text: Power as % of US electricity production
+                    - button [ref=e248] [cursor=pointer]:
+                      - img [ref=e249]
+                      - img [ref=e251]
+                      - img [ref=e253]
+                  - columnheader "Chips as % of current leading-edge TSMC wafer production" [ref=e255]
+              - rowgroup [ref=e256]:
+                - row "2024 ~$150B ~5-10M 1-2% 5-10%" [ref=e257]:
+                  - cell "2024" [ref=e258]
+                  - cell "~$150B" [ref=e259]
+                  - cell "~5-10M" [ref=e260]:
+                    - text: ~5-10M
+                    - button [ref=e262] [cursor=pointer]:
+                      - img [ref=e263]
+                      - img [ref=e265]
+                      - img [ref=e267]
+                  - cell "1-2%" [ref=e269]
+                  - cell "5-10%" [ref=e270]:
+                    - text: 5-10%
+                    - button [ref=e272] [cursor=pointer]:
+                      - img [ref=e273]
+                      - img [ref=e275]
+                      - img [ref=e277]
+                - row "~2026 ~$500B ~10s of millions 5% ~25%" [ref=e279]:
+                  - cell "~2026" [ref=e280]
+                  - cell "~$500B" [ref=e281]
+                  - cell "~10s of millions" [ref=e282]
+                  - cell "5%" [ref=e283]
+                  - cell "~25%" [ref=e284]
+                - row "~2028 ~$2T ~100M 20% ~100%" [ref=e285]:
+                  - cell "~2028" [ref=e286]
+                  - cell "~$2T" [ref=e287]
+                  - cell "~100M" [ref=e288]
+                  - cell "20%" [ref=e289]
+                  - cell "~100%" [ref=e290]
+                - row "~2030 ~$8T Many 100s of millions 100% 4x current capacity" [ref=e291]:
+                  - cell "~2030" [ref=e292]
+                  - cell "~$8T" [ref=e293]
+                  - cell "Many 100s of millions" [ref=e294]
+                  - cell "100%" [ref=e295]
+                  - cell "4x current capacity" [ref=e296]
+            - emphasis [ref=e298]: Playing forward trends on total world AI investment. Rough back-of-the-envelope calculation.
+          - paragraph [ref=e299]:
+            - text: And these aren’t just my idiosyncratic numbers.
+            - link "AMD forecasted" [ref=e300] [cursor=pointer]:
+              - /url: https://www.bloomberg.com/news/articles/2023-12-06/amd-ceo-debuts-new-nvidia-chip-rival-gives-eye-popping-forecast?embedded-checkout=true
+            - text: a $400B AI accelerator market by 2027, implying $700B+ of total AI spending, pretty close to my numbers (and they are surely much less “AGI-pilled” than I am). Sam Altman is reported to be in talks to raise funds for a project of “
+            - link "up to $7T" [ref=e301] [cursor=pointer]:
+              - /url: https://www.wsj.com/tech/ai/sam-altman-seeks-trillions-of-dollars-to-reshape-business-of-chips-and-ai-89ab3db0
+            - text: ” in capex to build out AI compute capacity (the number was widely mocked, but it seems less crazy if you run the numbers here…). One way or another, this massive scaleup is happening.
+          - heading "Will it be done? Can it be done?" [level=2] [ref=e302]:
+            - strong [ref=e303]: Will it be done? Can it be done?
+          - paragraph [ref=e304]: The scale of investment postulated here may seem fantastical. But both the demand-side and the supply-side seem like they could support the above trajectory. The economic returns justify the investment, the scale of expenditures is not unprecedented for a new general-purpose technology, and the industrial mobilization for power and chips is doable.
+          - heading "AI revenue" [level=3] [ref=e305]:
+            - strong [ref=e306]: AI revenue
+          - paragraph [ref=e307]: Companies will make large AI investments if they expect the economic returns to justify it.
+          - paragraph [ref=e308]:
+            - text: Reports suggest OpenAI was at a $1B revenue run rate in
+            - link "August 2023" [ref=e309] [cursor=pointer]:
+              - /url: https://www.theinformation.com/articles/openai-passes-1-billion-revenue-pace-as-big-companies-boost-ai-spending
+            - text: ", and a $2B revenue run rate in"
+            - link "February 2024" [ref=e310] [cursor=pointer]:
+              - /url: https://www.reuters.com/technology/openai-hits-2-bln-revenue-milestone-ft-2024-02-09/
+            - text: . That’s roughly a doubling every 6 months. If that trend holds, we should see a ~$10B annual run rate by late 2024/early 2025, even without pricing in a massive surge from any next-generation model. One estimate puts
+            - link "Microsoft" [ref=e311] [cursor=pointer]:
+              - /url: https://x.com/ttunguz/status/1783941512159776840
+            - text: at ~$5B of incremental AI revenue already.
+          - paragraph [ref=e312]: "So far, every 10x scaleup in AI investment seems to yield the necessary returns. GPT-3.5 unleashed the ChatGPT mania. The estimated $500M cost for the GPT-4 cluster would have been paid off by the reported billions of annual revenue for Microsoft and OpenAI (see above calculations), and a “2024-class” training cluster in the billions will easily pay off if Microsoft/OpenAI AI revenue continues on track to a $10B+ revenue run rate. The boom is investment-led: it takes time from a huge order of GPUs to build the clusters, build the models, and roll them out, and the clusters being planned today are many years out. But if the returns on the last GPU order keep materializing, investment will continue to skyrocket (and outpace revenue), plowing in even more capital in a bet that the next 10x will keep paying off."
+          - paragraph [ref=e313]: "A key milestone for AI revenue that I like to think about is: when will a big tech company (Google, Microsoft, Meta, etc.) hit a $100B revenue run rate from AI (products and API)? These companies have on the order of $100B-$300B of revenue today; $100B would thus start representing a very substantial fraction of their business. Very naively extrapolating out the doubling every 6 months, supposing we hit a $10B revenue run rate in early 2025, suggests this would happen mid-2026."
+          - paragraph [ref=e314]:
+            - text: That may seem like a stretch, but it seems to me to require surprisingly little imagination to reach that milestone. For example, there are around
+            - link "350 million paid subscribers to Microsoft Office" [ref=e315] [cursor=pointer]:
+              - /url: https://office365itpros.com/2022/04/28/office-365-number-of-users/
+            - text: —could you get a third of these to be willing to pay $100/month for an AI add-on? For an average worker, that’s only a few hours a month of productivity gained; models powerful enough to make that justifiable seem very doable in the next couple years.
+            - button [ref=e317] [cursor=pointer]:
+              - img [ref=e318]
+              - img [ref=e320]
+              - img [ref=e322]
+          - paragraph [ref=e324]:
+            - text: It’s hard to understate the ensuing reverberations. This would make AI products the biggest revenue driver for America’s largest corporations, and
+            - emphasis [ref=e325]: by far
+            - text: their biggest area of growth. Forecasts of overall revenue growth for these companies would skyrocket. Stock markets would follow; we might see our first $10T company soon thereafter. Big tech at this point would be willing to go all out, each investing many hundreds of billions (at least) into further AI scaleout. We probably see our first many-hundred-billion dollar corporate bond sale then.
+            - button [ref=e327] [cursor=pointer]:
+              - img [ref=e328]
+              - img [ref=e330]
+              - img [ref=e332]
+          - paragraph [ref=e334]:
+            - text: Beyond $100B, it gets harder to see the contours. But if we are truly on the path to AGI, the returns will be there. White-collar workers are paid tens of trillions of dollars in wages annually worldwide; a drop-in remote worker that automates even a fraction of white-collar/cognitive jobs (imagine, say, a truly automated AI coder) would pay for the trillion-dollar cluster. If nothing else, the national security import could well motivate a government project, bundling the nation’s resources in the race to AGI (
+            - link "more later" [ref=e335] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/the-project/
+            - text: ).
+          - heading "Historical precedents" [level=3] [ref=e336]:
+            - strong [ref=e337]: Historical precedents
+          - paragraph [ref=e338]: "$1T/year of total annual AI investment by 2027 seems outrageous. But it’s worth taking a look at other historical reference classes:"
+          - list [ref=e339]:
+            - listitem [ref=e340]:
+              - text: In their peak years of funding, the Manhattan and Apollo programs
+              - link "reached 0.4% of GDP" [ref=e341] [cursor=pointer]:
+                - /url: https://sgp.fas.org/crs/misc/RL34645.pdf
+              - text: ", or ~$100 billion annually today (surprisingly small!). At $1T/year, AI investment would be about 3% of GDP."
+            - listitem [ref=e342]:
+              - text: Between 1996–2001,
+              - link "telecoms invested" [ref=e343] [cursor=pointer]:
+                - /url: https://www.latimes.com/archives/la-xpm-2002-jun-30-fi-billions30-story.html
+              - text: nearly $1 trillion in today’s dollars in building out internet infrastructure.
+            - listitem [ref=e344]:
+              - text: From 1841 to 1850,
+              - link "private British railway investments totaled" [ref=e345] [cursor=pointer]:
+                - /url: https://x.com/michael_nielsen/status/1782129830932210166
+              - text: a cumulative ~40% of British GDP at the time. A similar fraction of
+              - link "US GDP" [ref=e346] [cursor=pointer]:
+                - /url: https://fred.stlouisfed.org/series/GDP
+              - text: would be equivalent to ~$11T over a decade.
+            - listitem [ref=e347]:
+              - link "Many trillions" [ref=e348] [cursor=pointer]:
+                - /url: https://www2.deloitte.com/content/dam/Deloitte/global/Documents/deloitte-financing-the-green-energy-transition-report-2023.pdf
+              - text: are being spent on the green transition.
+            - listitem [ref=e349]:
+              - text: Rapidly-growing economies often spend a high fraction of their GDP on investment; for example, China has spent more than
+              - link "40% of its GDP on investment for two decades" [ref=e350] [cursor=pointer]:
+                - /url: https://carnegieendowment.org/chinafinancialmarkets/91161#:~:text=It%20currently%20invests%2042%E2%80%9344,percent%20in%202010%20and%202011
+              - text: (equivalent to $11T
+              - emphasis [ref=e351]: annually
+              - text: given US GDP).
+            - listitem [ref=e352]:
+              - text: In the historically most exigent national security circumstances—wartime—borrowing to finance the national effort has often comprised enormous fractions of GDP. During WWI, the
+              - link "UK" [ref=e353] [cursor=pointer]:
+                - /url: https://bankunderground.co.uk/2017/08/08/your-country-needs-funds-the-extraordinary-story-of-britains-early-efforts-to-finance-the-first-world-war/
+              - text: and
+              - link "France" [ref=e354] [cursor=pointer]:
+                - /url: https://encyclopedia.1914-1918-online.net/article/war_finance_france
+              - text: ", and"
+              - link "Germany" [ref=e355] [cursor=pointer]:
+                - /url: https://encyclopedia.1914-1918-online.net/article/war_finance_germany
+              - text: borrowed over 100% of their GDPs while the
+              - link "US" [ref=e356] [cursor=pointer]:
+                - /url: https://www.theatlantic.com/business/archive/2012/11/the-long-story-of-us-debt-from-1790-to-2011-in-1-little-chart/265185/
+              - text: borrowed over 20%; during WWII, the
+              - link "UK" [ref=e357] [cursor=pointer]:
+                - /url: https://obr.uk/box/post-world-war-ii-debt-reduction/
+              - text: and Japan borrowed over 100% of their GDPs while the
+              - link "US" [ref=e358] [cursor=pointer]:
+                - /url: https://www.theatlantic.com/business/archive/2012/11/the-long-story-of-us-debt-from-1790-to-2011-in-1-little-chart/265185/
+              - text: borrowed over 60% of GDP (equivalent to over $17T today).
+          - paragraph [ref=e359]:
+            - text: $1T/year of total AI investment by 2027 would be dramatic—among the very largest capital buildouts ever—but would not be unprecedented. And a trillion-dollar individual training cluster by the end of the decade seems on the table.
+            - button [ref=e361] [cursor=pointer]:
+              - img [ref=e362]
+              - img [ref=e364]
+              - img [ref=e366]
+          - heading "Power" [level=3] [ref=e368]:
+            - strong [ref=e369]: Power
+          - paragraph [ref=e370]:
+            - text: Probably the single biggest constraint on the supply-side will be
+            - link "power" [ref=e371] [cursor=pointer]:
+              - /url: https://www.wsj.com/business/energy-oil/big-techs-latest-obsession-is-finding-enough-energy-f00055b2
+            - text: ". Already, at nearer-term scales (1GW/2026 and especially 10GW/2028), power has become the binding constraint: there simply isn’t much spare capacity, and power contracts are usually long-term locked-in. And building, say, a new gigawatt-class nuclear power plant takes a decade. (I’ll wonder when we’ll start seeing things like tech companies buying"
+            - link "aluminum smelting companies" [ref=e372] [cursor=pointer]:
+              - /url: https://en.wikipedia.org/wiki/Aluminerie_Alouette
+            - text: for their gigawatt-class power contracts.
+            - button [ref=e374] [cursor=pointer]:
+              - img [ref=e375]
+              - img [ref=e377]
+              - img [ref=e379]
+            - text: )
+          - figure "Comparing trends on total US electricity production to our rough back of the envelope estimates on AI electricity demands." [ref=e382]:
+            - emphasis [ref=e384]: Comparing trends on total US electricity production to our rough back of the envelope estimates on AI electricity demands.
+          - paragraph [ref=e385]:
+            - text: Total US electricity generation has
+            - link "barely grown 5% in the last decade" [ref=e386] [cursor=pointer]:
+              - /url: https://en.wikipedia.org/wiki/Electricity_sector_of_the_United_States
+            - text: .
+            - button [ref=e388] [cursor=pointer]:
+              - img [ref=e389]
+              - img [ref=e391]
+              - img [ref=e393]
+            - text: Utilities are
+            - link "starting to get excited" [ref=e395] [cursor=pointer]:
+              - /url: https://twitter.com/hayekandkeynes/status/1776365744323780997?s=12
+            - text: about AI (
+            - link "instead of" [ref=e396] [cursor=pointer]:
+              - /url: https://www.wsj.com/business/energy-oil/data-centers-energy-georgia-development-7a5352e9?st=gi5gnqcodm9uy16
+            - text: 2.6% growth over the next 5 years, they now estimate 4.7%!). But they’re barely pricing in what’s coming. The trillion-dollar, 100GW cluster alone would require ~20% of current US electricity generation in 6 years; together with large inference capacity, demand will be multiples higher.
+          - paragraph [ref=e397]: To most, this seems completely out of the question. Some are betting on Middle Eastern autocracies, who have been going around offering boundless power and giant clusters to get their rulers a seat at the AGI-table.
+          - paragraph [ref=e398]:
+            - text: "But it’s totally possible to do this in the United States: we have abundant natural gas."
+            - button [ref=e400] [cursor=pointer]:
+              - img [ref=e401]
+              - img [ref=e403]
+              - img [ref=e405]
+          - list [ref=e407]:
+            - listitem [ref=e408]: Powering a 10GW cluster would take only a few percent of US natural gas production and could be done rapidly.
+            - listitem [ref=e409]:
+              - text: Even the 100GW cluster is surprisingly doable.
+              - list [ref=e410]:
+                - listitem [ref=e411]:
+                  - text: Right now the Marcellus/Utica shale (around Pennsylvania) alone is
+                  - link "producing" [ref=e412] [cursor=pointer]:
+                    - /url: https://www.eia.gov/petroleum/drilling/pdf/appalachia.pdf
+                  - text: around 36 billion cubic feet a day of gas; that would be enough to generate just under 150GW continuously with generators (and combined cycle power plants could output 250 GW due to their higher efficiency).
+                - listitem [ref=e413]:
+                  - text: It would take about ~1200
+                  - link "new wells" [ref=e414] [cursor=pointer]:
+                    - /url: https://ir.rangeresources.com/static-files/cd9b4c2c-f4fe-4118-9659-a4c3528b95b1
+                  - text: for the 100GW cluster.
+                  - button [ref=e416] [cursor=pointer]:
+                    - img [ref=e417]
+                    - img [ref=e419]
+                    - img [ref=e421]
+                  - text: Each rig can drill roughly 3 wells per month, so 40 rigs (the current
+                  - link "rig count" [ref=e423] [cursor=pointer]:
+                    - /url: https://www.eia.gov/petroleum/drilling/pdf/appalachia.pdf
+                  - text: in the Marcellus) could build up the production base for 100GW in less than a year.
+                  - button [ref=e425] [cursor=pointer]:
+                    - img [ref=e426]
+                    - img [ref=e428]
+                    - img [ref=e430]
+                  - text: The Marcellus had a rig count of ~80 as recently as 2019 so it would not be taxing to add 40 rigs to build up the production base.
+                  - button [ref=e433] [cursor=pointer]:
+                    - img [ref=e434]
+                    - img [ref=e436]
+                    - img [ref=e438]
+                - listitem [ref=e440]:
+                  - text: More generally, US natural gas production has more than
+                  - link "doubled in a decade" [ref=e441] [cursor=pointer]:
+                    - /url: https://en.wikipedia.org/wiki/Shale_gas_in_the_United_States#/media/File:Shale_gas_production_USA.svg
+                  - text: ; simply continuing that trend could power multiple trillion-dollar datacenters.
+                  - button [ref=e443] [cursor=pointer]:
+                    - img [ref=e444]
+                    - img [ref=e446]
+                    - img [ref=e448]
+                - listitem [ref=e450]:
+                  - text: The harder part would be building enough generators/turbines; this wouldn’t be trivial, but it seems doable with about $100B of capex
+                  - button [ref=e452] [cursor=pointer]:
+                    - img [ref=e453]
+                    - img [ref=e455]
+                    - img [ref=e457]
+                  - text: for 100GW of natural gas power plants. Combined cycle plants can be built in about two years; the timeline for generators would be even shorter still.
+                  - button [ref=e460] [cursor=pointer]:
+                    - img [ref=e461]
+                    - img [ref=e463]
+                    - img [ref=e465]
+          - paragraph [ref=e467]:
+            - text: The barriers to even trillions of dollars of datacenter buildout in the US are entirely self-made. Well-intentioned but rigid climate commitments (not just by the government, but green datacenter commitments by Microsoft, Google, Amazon, and so on) stand in the way of the obvious, fast solution. At the very least, even if we won’t do natural gas, a broad deregulatory agenda would unlock the solar/batteries/SMR/geothermal megaprojects. Permitting, utility regulation, FERC regulation of
+            - link "transmission lines" [ref=e468] [cursor=pointer]:
+              - /url: https://ifp.org/how-cost-allocation-works-for-transmission-lines/
+            - text: ", and NEPA environmental review makes things that should take a few years take a decade or more. We don’t have that kind of time."
+          - paragraph [ref=e469]: We’re going to drive the AGI datacenters to the Middle East, under the thumb of brutal, capricious autocrats. I’d prefer clean energy too—but this is simply too important for US national security. We will need a new level of determination to make this happen. The power constraint can, must, and will be solved.
+          - heading "Chips" [level=3] [ref=e470]:
+            - strong [ref=e471]: Chips
+          - paragraph [ref=e472]: While chips are usually what comes to mind when people think about AI-supply-constraints, they’re likely a smaller constraint than power. Global production of AI chips is still a pretty small percent of TSMC-leading-edge production, likely less than 10%. There’s a lot of room to grow via AI becoming a larger share of TSMC production.
+          - paragraph [ref=e473]:
+            - text: Indeed, 2024 production of AI chips (~5-10M H100-equivalents) would already be almost enough for the $100s of billion cluster (if they were all diverted to one cluster). From a pure logic fab standpoint ~100% of TSMC’s output for a year could already support the trillion-dollar cluster (again if all the chips went to one datacenter).
+            - button [ref=e475] [cursor=pointer]:
+              - img [ref=e476]
+              - img [ref=e478]
+              - img [ref=e480]
+            - text: Of course, not all of TSMC will be able to be diverted to AI, and not all of AI chip production for a year will be for one training cluster. Total AI chip demand (including inference and multiple players) by 2030 will be a multiple of TSMC’s current total leading-edge logic chip capacity, just for AI. TSMC ~
+            - link "doubled" [ref=e482] [cursor=pointer]:
+              - /url: https://www.macrotrends.net/stocks/charts/TSM/taiwan-semiconductor-manufacturing/revenue
+            - button [ref=e484] [cursor=pointer]:
+              - img [ref=e485]
+              - img [ref=e487]
+              - img [ref=e489]
+            - text: in the past 5 years; they’d likely need to go ~at least twice as fast on their pace of expansion to meet AI chip demand. Massive new fab investments would be necessary.
+          - paragraph [ref=e491]:
+            - text: Even if raw logic fabs won’t be the constraint, chip-on-wafer-on-substrate (CoWoS) advanced packaging (connecting chips to memory, also made by TSMC, Intel, and others) and HBM memory (for which demand
+            - link "is" [ref=e492] [cursor=pointer]:
+              - /url: https://twitter.com/ericjhonsa/status/1770545692978925955?s=12
+            - link "enormous" [ref=e493] [cursor=pointer]:
+              - /url: https://twitter.com/dnystedt/status/1787662436478410867?s=12
+            - text: ) are already key bottlenecks for the current AI GPU scaleup; these are more specialized to AI, unlike the pure logic chips, so there’s less pre-existing capacity. In the near term, these will be the primary constraint on churning out more GPUs, and these will be the huge constraints as AI scales. Still, these are comparatively “easy” to scale; it’s been incredible watching TSMC literally build “greenfield” fabs (i.e. entirely new facilities from scratch) to massively scale up CoWoS production this year (and Nvidia is even starting to find
+            - link "CoWoS alternatives" [ref=e494] [cursor=pointer]:
+              - /url: https://x.com/dnystedt/status/1793096268400759110?s=46&t=EfdUOH7OfS4lpc8-o1U6Dg
+            - text: to work around the shortage).
+          - paragraph [ref=e495]:
+            - text: A new TSMC
+            - link "Gigafab" [ref=e496] [cursor=pointer]:
+              - /url: https://www.asianometry.com/p/the-economics-of-tsmcs-giga-fabs
+            - text: (a
+            - link "technological marvel" [ref=e497] [cursor=pointer]:
+              - /url: https://www.construction-physics.com/p/how-to-build-a-20-billion-semiconductor
+            - text: ) costs around $20B in capex and produces 100k wafer-starts a month. For hundreds of millions of AI GPUs a year by the end of the decade, TSMC would need to build dozens of these—as well as a huge buildout for memory, advanced packaging, networking, etc., which will be a major fraction of capex. It could add up to over $1T of capex. It will be intense, but doable. (Perhaps the biggest roadblock will not be feasibility, but TSMC not even trying—TSMC does not yet seem AI-scaling-pilled! They think AI will “only” grow at a
+            - link "glacial 50% CAGR" [ref=e498] [cursor=pointer]:
+              - /url: https://www.fierceelectronics.com/ai/tsmc-bullish-ai-q1-revenues-rises-q2-outlook-bright
+            - text: .)
+          - paragraph [ref=e499]:
+            - text: Recent USG efforts like the CHIPS Act have been trying to onshore more AI chip production to the US (as insurance in case of the Taiwan contingency). While onshoring more of AI chip production to the US would be nice, it’s less critical than having the actual datacenter (on which the AGI lives) in the US. If having chip production abroad is like having uranium deposits abroad, having the AGI datacenter abroad is like having the literal nukes be built and stored abroad. Given the dysfunction and cost we’ve seen from building fabs in the US in practice, my guess is we should prioritize datacenters in the US while betting more heavily on democratic allies like Japan and South Korea for fab projects—fab buildouts there
+            - link "seem much more functional" [ref=e500] [cursor=pointer]:
+              - /url: https://twitter.com/dnystedt/status/1768446340881907914?s=12
+            - text: .
+          - heading "The Clusters of Democracy" [level=2] [ref=e501]:
+            - strong [ref=e502]: The Clusters of Democracy
+          - paragraph [ref=e503]: Before the decade is out, many trillions of dollars of compute clusters will have been built. The only question is whether they will be built in America. Some are rumored to be betting on building them elsewhere, especially in the Middle East. Do we really want the infrastructure for the Manhattan Project to be controlled by some capricious Middle Eastern dictatorship?
+          - paragraph [ref=e504]:
+            - text: "The clusters that are being planned today may well be the clusters AGI and superintelligence are trained and run on, not just the “cool-big-tech-product clusters.” The national interest demands that these are built in America (or close democratic allies). Anything else creates an irreversible security risk: it risks the AGI weights getting stolen"
+            - button [ref=e506] [cursor=pointer]:
+              - img [ref=e507]
+              - img [ref=e509]
+              - img [ref=e511]
+            - text: (and perhaps be
+            - link "shipped to China" [ref=e513] [cursor=pointer]:
+              - /url: https://www.nytimes.com/2023/11/27/us/politics/ai-us-uae-china-security-g42.html
+            - text: ) (
+            - link "more later" [ref=e514] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/lock-down-the-labs/
+            - text: ); it risks these dictatorships physically seizing the datacenters (to build and run AGI themselves) when the AGI race gets hot; or even if these threats are only wielded implicity, it puts AGI and superintelligence at unsavory dictator’s whims. America sorely regretted her energy dependence on the Middle East in the 70s, and we worked so hard to get out from under their thumbs. We cannot make the same mistake again.
+          - paragraph [ref=e515]: The clusters can be built in the US, and we have to get our act together to make sure it happens in the US. American national security must come first, before the allure of free-flowing Middle Eastern cash, arcane regulation, or even, yes, admirable climate commitments. We face a real system competition—can the requisite industrial mobilization only be done in “top-down” autocracies? If American business is unshackled, America can build like none other (at least in red states). Being willing to use natural gas, or at the very least a broad-based deregulatory agenda—NEPA exemptions, fixing FERC and transmission permitting at the federal level, overriding utility regulation, using federal authorities to unlock land and rights of way—is a national security priority.
+          - separator [ref=e516]
+          - paragraph [ref=e517]: In any case—the exponential is in full swing now.
+          - paragraph [ref=e518]: In the “old days,” when AGI was still a dirty word, some colleagues and I used to make theoretical economic models of what the path to AGI might look like. One feature of these models used to be a hypothetical “AI wakeup” moment, when the world started realizing how powerful these models could be and began rapidly ramping up their investments—culminating in multiple % of GDP towards the largest training runs.
+          - paragraph [ref=e519]:
+            - text: It seemed far-off then, but that time has come. 2023
+            - emphasis [ref=e520]: was
+            - text: “AI wakeup.”
+            - button [ref=e522] [cursor=pointer]:
+              - img [ref=e523]
+              - img [ref=e525]
+              - img [ref=e527]
+            - text: Behind the scenes, the most staggering techno-capital acceleration has been put into motion.
+          - paragraph [ref=e529]: Brace for the G-forces.
+          - paragraph [ref=e531]:
+            - text: "Next post in series:"
+            - emphasis [ref=e532]:
+              - 'link "IIIb. Lock Down the Labs: Security for AGI" [ref=e533] [cursor=pointer]':
+                - /url: https://situational-awareness.ai/lock-down-the-labs/
+                - strong [ref=e534]: "IIIb. Lock Down the Labs: Security for AGI"
+          - paragraph [ref=e536]:
+            - emphasis [ref=e537]: "(What all of this means for NVDA/TSM/etc. I leave as an exercise for the reader. Hint: Those with situational awareness bought much lower than you, but it’s still not even close to fully priced in."
+            - button [ref=e539] [cursor=pointer]:
+              - img [ref=e540]
+              - img [ref=e542]
+              - img [ref=e544]
+            - emphasis [ref=e546]: )
+          - generic [ref=e547]:
+            - separator [ref=e548]
+            - list [ref=e549]:
+              - listitem [ref=e550]:
+                - paragraph [ref=e551]:
+                  - text: As mentioned, OOM = order of magnitude, 10x = 1 order of magnitude
+                  - link "↩" [ref=e552] [cursor=pointer]:
+                    - /url: "#note-1-138"
+                    - img "↩" [ref=e553]
+              - listitem [ref=e554]:
+                - paragraph [ref=e555]:
+                  - text: One key uncertainty is how distributed training will be—if instead of needing that amount of power in one location, we could spread it among 100 locations, it’d be a lot easier.
+                  - link "↩" [ref=e556] [cursor=pointer]:
+                    - /url: "#note-2-138"
+                    - img "↩" [ref=e557]
+              - listitem [ref=e558]:
+                - paragraph [ref=e559]:
+                  - text: See, for example, Zuck
+                  - link "here" [ref=e560] [cursor=pointer]:
+                    - /url: https://x.com/akhenosiris/status/1781162128881164566
+                  - text: ; only ~45k of his H100s are in his largest training clusters, the vast majority of his 350k H100s for inference. Meta likely has heavier inference needs than other players, who serve fewer customers so far, but as everyone else’s AI products scale, I expect inference to become a strong majority of the GPUs.
+                  - link "↩" [ref=e561] [cursor=pointer]:
+                    - /url: "#note-3-138"
+                    - img "↩" [ref=e562]
+              - listitem [ref=e563]:
+                - paragraph [ref=e564]:
+                  - text: For example, this
+                  - link "total-cost-of-ownership analysis" [ref=e565] [cursor=pointer]:
+                    - /url: https://pytorchtoatoms.substack.com/p/metas-24k-h100-cluster-capextco-and
+                  - text: estimates that around 40% of a large cluster cost is the H100 GPUs itself, and another 13% goes to Nvidia for Infiniband networking. That said, excluding cost of capital in that calculation would mean the GPUs are about 50% of the cost, and with networking would mean Nvidia gets a bit over 60% of the cost of the cluster.
+                  - link "↩" [ref=e566] [cursor=pointer]:
+                    - /url: "#note-4-138"
+                    - img "↩" [ref=e567]
+              - listitem [ref=e568]:
+                - paragraph [ref=e569]:
+                  - text: And
+                  - link "apparently" [ref=e570] [cursor=pointer]:
+                    - /url: https://www.cnbc.com/2024/04/25/microsoft-says-cloud-ai-demand-exceeds-supply-despite-spending-surge.html
+                  - text: ", despite Microsoft growing capex by 79% compared to a year ago in a recent quarter, their AI cloud demand still exceeds supply!"
+                  - link "↩" [ref=e571] [cursor=pointer]:
+                    - /url: "#note-5-138"
+                    - img "↩" [ref=e572]
+              - listitem [ref=e573]:
+                - paragraph [ref=e574]:
+                  - text: A larger fraction of global GPU production will probably be going to the largest training cluster in the future than today, e.g. because of a consolidation to just a few leading labs, rather than many companies having frontier-model-scale clusters.
+                  - link "↩" [ref=e575] [cursor=pointer]:
+                    - /url: "#note-6-138"
+                    - img "↩" [ref=e576]
+              - listitem [ref=e577]:
+                - paragraph [ref=e578]:
+                  - text: Of course, not all of this will be in the US, but to give a reference class.
+                  - link "↩" [ref=e579] [cursor=pointer]:
+                    - /url: "#note-7-138"
+                    - img "↩" [ref=e580]
+              - listitem [ref=e581]:
+                - paragraph [ref=e582]:
+                  - text: "I estimate Nvidia is going to ship on the order of 5M datacenter GPUs in 2024. A minority of those are B100s, which we’ll count as 2x+ H100s. Then there’s the other AI chips: TPUs, Trainium, Meta’s custom silicon, AMD GPUs, etc."
+                  - link "↩" [ref=e583] [cursor=pointer]:
+                    - /url: "#note-8-138"
+                    - img "↩" [ref=e584]
+              - listitem [ref=e585]:
+                - paragraph [ref=e586]:
+                  - text: TSMC has capacity for over
+                  - link "150k 5nm" [ref=e587] [cursor=pointer]:
+                    - /url: https://wccftech.com/tsmc-boosts-5nm-production-to-150000-wafers-month-amidst-strong-demand/#:~:text=The%20DigiTimes%20report%20is%20quite,mark%20a%2025%25%20production%20increase.
+                  - text: wafers per month, is ramping to
+                  - link "100k 3nm wafers" [ref=e588] [cursor=pointer]:
+                    - /url: https://wccftech.com/tsmc-3nm-wafer-production-reaching-100000-units-by-end-of-2024/
+                  - text: per month, and likely another
+                  - link "150k or so" [ref=e589] [cursor=pointer]:
+                    - /url: https://www.digitimes.com/news/a20200902PD200.html
+                  - text: 7nm wafers per month; let’s call it 400k wafers per month in total.
+                  - text: Let’s say roughly
+                  - link "35 H100s per wafer" [ref=e590] [cursor=pointer]:
+                    - /url: https://www.reddit.com/r/AMD_Stock/comments/18es0ks/amd_can_get_65_more_mi300x_from_the_same_5nm/
+                  - text: (H100s are made on 5nm). At 5-10 million H100-equivalents in 2024, that’s 150k-300k wafers per year for annual AI chip production in 2024.
+                  - text: Depending on where in that range and whether we want to count 7nm production, that’s about 3-10% of annual leading-edge wafer production.
+                  - link "↩" [ref=e591] [cursor=pointer]:
+                    - /url: "#note-9-138"
+                    - img "↩" [ref=e592]
+              - listitem [ref=e593]:
+                - paragraph [ref=e594]:
+                  - text: A big uncertainty for me is what the lags are for the technology to diffuse and be adopted. I think it’s plausible revenue is slowed because intermediate, pre-AGI models take a lot of “schlep” to properly integrate into company workflows; historically, it’s taken a while to fully harvest the productivity gains from new general purpose technologies. This is where the “
+                  - link "sonic boom" [ref=e595] [cursor=pointer]:
+                    - /url: https://situational-awareness.ai/from-gpt-4-to-agi/#sonic_boom
+                  - text: "” discussion earlier comes in: as we “unhobble” models and they start looking more like agents/drop-in remote workers,, deploying them becomes much easier. Rather than having to completely remake some workflow to harvest a 25% productivity gain from a GPT-chatbot, instead you’ll get models that you can onboard and work with as you would a new coworker (e.g., just directly substitute for an engineer, rather than needing to train up engineers to use some new tool). Or, in the extreme, and later on: you won’t need to completely redesign a factory to work with some new tool, you’ll just bring in the humanoid robots."
+                - paragraph [ref=e596]:
+                  - text: That said, this may lead to some discontinuity in economic value and revenue generated, depending on how quickly we can “unhobble” models.
+                  - link "↩" [ref=e597] [cursor=pointer]:
+                    - /url: "#note-10-138"
+                    - img "↩" [ref=e598]
+              - listitem [ref=e599]:
+                - paragraph [ref=e600]:
+                  - text: What will happen to interest rates will be interesting… see
+                  - link "Tyler Cowen here" [ref=e601] [cursor=pointer]:
+                    - /url: https://www.bloomberg.com/opinion/articles/2024-03-27/ai-could-have-a-surprising-effect-on-interest-rates?sref=o4HC3q1q
+                  - text: ;
+                  - link "Chow, Mazlish and Halperin here" [ref=e602] [cursor=pointer]:
+                    - /url: https://basilhalperin.com/papers/agi_emh.pdf
+                  - text: .
+                  - link "↩" [ref=e603] [cursor=pointer]:
+                    - /url: "#note-11-138"
+                    - img "↩" [ref=e604]
+              - listitem [ref=e605]:
+                - paragraph [ref=e606]:
+                  - text: And, farther out, but if AGI truly led to substantial increases in economic growth, $10T+ annually would start being plausible—the reference class being investment rates of countries during high-growth periods.
+                  - link "↩" [ref=e607] [cursor=pointer]:
+                    - /url: "#note-12-138"
+                    - img "↩" [ref=e608]
+              - listitem [ref=e609]:
+                - paragraph [ref=e610]:
+                  - text: “Since 2011, the Alouette Smelter uses 930 MW electricity at maximum production capacity.”
+                  - link "↩" [ref=e611] [cursor=pointer]:
+                    - /url: "#note-13-138"
+                    - img "↩" [ref=e612]
+              - listitem [ref=e613]:
+                - paragraph [ref=e614]:
+                  - text: "That said, this is “net-new” capacity: some of that is building new renewables and taking old fossil fuel plants off the grid. Maybe it’s closer to a percent or two a year of gross-new capacity."
+                  - link "↩" [ref=e615] [cursor=pointer]:
+                    - /url: "#note-14-138"
+                    - img "↩" [ref=e616]
+              - listitem [ref=e617]:
+                - paragraph [ref=e618]:
+                  - text: Thanks to
+                  - link "Austin Vernon" [ref=e619] [cursor=pointer]:
+                    - /url: https://austinvernon.site/
+                  - text: (private correspondence) for helping with these estimates.
+                  - link "↩" [ref=e620] [cursor=pointer]:
+                    - /url: "#note-15-138"
+                    - img "↩" [ref=e621]
+              - listitem [ref=e622]:
+                - paragraph [ref=e623]:
+                  - text: New wells produce around 0.01 BCF per day.
+                  - link "↩" [ref=e624] [cursor=pointer]:
+                    - /url: "#note-16-138"
+                    - img "↩" [ref=e625]
+              - listitem [ref=e626]:
+                - paragraph [ref=e627]:
+                  - text: Each well produces ~20 BCF over its lifetime, meaning two new wells a month would replace the depleted reserves, i.e. it would need only one rig to maintain the production.
+                  - link "↩" [ref=e628] [cursor=pointer]:
+                    - /url: "#note-17-138"
+                    - img "↩" [ref=e629]
+              - listitem [ref=e630]:
+                - paragraph [ref=e631]:
+                  - text: Though it would be more efficient to add less rigs and build up over a longer time frame than 10 months.
+                  - link "↩" [ref=e632] [cursor=pointer]:
+                    - /url: "#note-18-138"
+                    - img "↩" [ref=e633]
+              - listitem [ref=e634]:
+                - paragraph [ref=e635]:
+                  - text: A cubic foot of natural gas
+                  - link "generates about" [ref=e636] [cursor=pointer]:
+                    - /url: https://www.eia.gov/tools/faqs/faq.php?id=667&t=6
+                  - text: 0.13 kWh. Shale gas production
+                  - link "was about" [ref=e637] [cursor=pointer]:
+                    - /url: https://en.wikipedia.org/wiki/Shale_gas_in_the_United_States#/media/File:Shale_gas_production_USA.svg
+                  - text: ~70 billion cubic feet per day in the US in 2020. Suppose we doubled production again, and the extra capacity all went to compute clusters. That’s 3322 TWh/year of electricity, or enough for almost 4 100GW clusters.
+                  - link "↩" [ref=e638] [cursor=pointer]:
+                    - /url: "#note-19-138"
+                    - img "↩" [ref=e639]
+              - listitem [ref=e640]:
+                - paragraph [ref=e641]:
+                  - text: The capex costs for natural gas power plants
+                  - link "seem to be" [ref=e642] [cursor=pointer]:
+                    - /url: https://atb-archive.nrel.gov/electricity/2019/index.html?t=cg
+                  - text: under $1000 per kW, meaning the capex for 100GW of natural gas power plants would be about $100 billion.
+                  - link "↩" [ref=e643] [cursor=pointer]:
+                    - /url: "#note-20-138"
+                    - img "↩" [ref=e644]
+              - listitem [ref=e645]:
+                - paragraph [ref=e646]:
+                  - text: Solar and batteries aren’t a totally crazy alternative, but it does just seem rougher than natural gas. I did appreciate
+                  - link "Casey Handmer’s calculation" [ref=e647] [cursor=pointer]:
+                    - /url: https://caseyhandmer.wordpress.com/2024/03/12/how-to-feed-the-ais/
+                  - text: "of tiling the Earth in solar panels:"
+                  - text: “With current GPUs, the global solar datacenter’s compute is equivalent to ~150 billion humans, though if our computers can eventually match [human brain] efficiency, we could support more like 5 quadrillion AI souls.”
+                  - link "↩" [ref=e648] [cursor=pointer]:
+                    - /url: "#note-21-138"
+                    - img "↩" [ref=e649]
+              - listitem [ref=e650]:
+                - paragraph [ref=e651]:
+                  - text: This poses the interesting question of why power requirements are going up so much before chip fab production starts being really constrained. A simple answer is while datacenters run continuously at close to max power, most chips currently produced are idle a lot of the time. Currently, smartphones are close to half of leading chip demand, but use a lot less energy per wafer area (trading transistors for serial operations and energy efficiency) and have low utilization as smartphones are mostly idle. The AI revolution means working our transistors way harder, dedicating them all to constantly-running, high-performance AI datacenters instead of idle, battery-powered/energy-saving devices. HT Carl Shulman for this point.
+                  - link "↩" [ref=e652] [cursor=pointer]:
+                    - /url: "#note-22-138"
+                    - img "↩" [ref=e653]
+              - listitem [ref=e654]:
+                - paragraph [ref=e655]:
+                  - text: (Using revenue as a proxy.)
+                  - link "↩" [ref=e656] [cursor=pointer]:
+                    - /url: "#note-23-138"
+                    - img "↩" [ref=e657]
+              - listitem [ref=e658]:
+                - paragraph [ref=e659]:
+                  - text: It’s a lot easier to do side-channel attacks to exfiltrate weights with physical access!
+                  - link "↩" [ref=e660] [cursor=pointer]:
+                    - /url: "#note-24-138"
+                    - img "↩" [ref=e661]
+              - listitem [ref=e662]:
+                - paragraph [ref=e663]:
+                  - text: I distinctly remember writing “THE TAKEOFF HAS STARTED” on my whiteboard in March of 2023.
+                  - link "↩" [ref=e664] [cursor=pointer]:
+                    - /url: "#note-25-138"
+                    - img "↩" [ref=e665]
+              - listitem [ref=e666]:
+                - paragraph [ref=e667]:
+                  - text: Mainstream sell-side analysts seem to assume only 10-20% year-over-year growth in Nvidia revenue from CY24 to CY25, maybe $120B-$130B in CY25 (or at least did until very recently). Insane! It’s been pretty obvious for a while that Nvidia is going to do over $200B of revenue in CY25.
+                  - link "↩" [ref=e668] [cursor=pointer]:
+                    - /url: "#note-26-138"
+                    - img "↩" [ref=e669]
+    - contentinfo [ref=e670]

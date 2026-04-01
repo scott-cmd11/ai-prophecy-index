@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx create-next-app@latest . --yes --force --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --turbopack --use-npm)"
+      "Bash(npx create-next-app@latest . --yes --force --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --turbopack --use-npm)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm run:*)",
+      "WebFetch(domain:claude.ai)",
+      "Bash(bash \"C:/Users/scott/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.5/skills/brainstorming/scripts/start-server.sh\" --project-dir \"/c/Users/scott/coding projects/ai-predictions-page\")"
     ]
   }
 }

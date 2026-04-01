@@ -1,0 +1,596 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - paragraph [ref=e8]:
+          - link "SITUATIONAL AWARENESS" [ref=e9] [cursor=pointer]:
+            - /url: https://situational-awareness.ai/
+        - paragraph [ref=e10]: The Decade Ahead
+      - text: ☰
+  - navigation [ref=e11]:
+    - list [ref=e13]:
+      - listitem [ref=e14]:
+        - link "Introduction" [ref=e15] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/
+      - listitem [ref=e16]:
+        - 'link "I. From GPT-4 to AGI: Counting the OOMs" [ref=e17] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/from-gpt-4-to-agi/
+      - listitem [ref=e18]:
+        - 'link "II. From AGI to Superintelligence: the Intelligence Explosion" [ref=e19] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/from-agi-to-superintelligence/
+      - listitem [ref=e20]:
+        - link "IIIa. Racing to the Trillion-Dollar Cluster" [ref=e21] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+      - listitem [ref=e22]:
+        - 'link "IIIb. Lock Down the Labs: Security for AGI" [ref=e23] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/lock-down-the-labs/
+      - listitem [ref=e24]:
+        - link "IIIc. Superalignment" [ref=e25] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/superalignment/
+      - listitem [ref=e26]:
+        - link "IIId. The Free World Must Prevail" [ref=e27] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/the-free-world-must-prevail/
+      - listitem [ref=e28]:
+        - link "IV. The Project" [ref=e29] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/the-project/
+      - listitem [ref=e30]:
+        - link "V. Parting Thoughts" [ref=e31] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/parting-thoughts/
+      - listitem [ref=e32]:
+        - link "Full series as PDF" [ref=e33] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/wp-content/uploads/2024/06/situationalawareness.pdf
+      - listitem [ref=e34]:
+        - link "About" [ref=e35] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/leopold-aschenbrenner/
+      - listitem [ref=e36]:
+        - link "Dwarkesh podcast" [ref=e37] [cursor=pointer]:
+          - /url: https://www.dwarkeshpatel.com/p/leopold-aschenbrenner
+  - generic [ref=e38]:
+    - main [ref=e41]:
+      - article [ref=e42]:
+        - 'heading "II. From AGI to Superintelligence: the Intelligence Explosion" [level=1] [ref=e44]'
+        - generic [ref=e45]:
+          - paragraph [ref=e46]:
+            - strong [ref=e47]: AI progress won’t stop at human-level. Hundreds of millions of AGIs could automate AI research, compressing a decade of algorithmic progress (5+ OOMs) into ≤1 year. We would rapidly go from human-level to vastly superhuman AI systems. The power—and the peril—of superintelligence would be dramatic.
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: "In this piece:"
+              - link "Toggle Table of Content" [ref=e51] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e54]:
+                  - img [ref=e55]
+                  - img [ref=e57]
+            - navigation [ref=e59]:
+              - list [ref=e60]:
+                - listitem [ref=e61]:
+                  - link "Automating AI research" [ref=e62] [cursor=pointer]:
+                    - /url: "#Automating_AI_research"
+                - listitem [ref=e63]:
+                  - link "Possible bottlenecks" [ref=e64] [cursor=pointer]:
+                    - /url: "#Possible_bottlenecks"
+                - listitem [ref=e65]:
+                  - link "The power of superintelligence" [ref=e66] [cursor=pointer]:
+                    - /url: "#The_power_of_superintelligence"
+          - separator [ref=e67]
+          - blockquote [ref=e69]:
+            - paragraph [ref=e70]: Let an ultraintelligent machine be defined as a machine that can far surpass all the intellectual activities of any man however clever. Since the design of machines is one of these intellectual activities, an ultraintelligent machine could design even better machines; there would then unquestionably be an ‘intelligence explosion,’ and the intelligence of man would be left far behind. Thus the first ultraintelligent machine is the last invention that man need ever make.
+            - generic [ref=e71]:
+              - text: —
+              - emphasis [ref=e72]: I. J. Good (
+              - link "1965" [ref=e73] [cursor=pointer]:
+                - /url: https://web.archive.org/web/20120501043117/http://www.stat.vt.edu/tech_reports/2005/GoodTechReport.pdf
+                - emphasis [ref=e74]: "1965"
+              - emphasis [ref=e75]: )
+          - generic [ref=e80]:
+            - paragraph [ref=e81]:
+              - strong [ref=e82]: The Bomb and The Super
+            - paragraph [ref=e83]: In the common imagination, the Cold War’s terrors principally trace back to Los Alamos, with the invention of the atomic bomb. But The Bomb, alone, is perhaps overrated. Going from The Bomb to The Super—hydrogen bombs—was arguably just as important.
+            - paragraph [ref=e84]: In the Tokyo air raids, hundreds of bombers dropped thousands of tons of conventional bombs on the city. Later that year, Little Boy, dropped on Hiroshima, unleashed similar destructive power in a single device. But just 7 years later, Teller’s hydrogen bomb multiplied yields a thousand-fold once again—a single bomb with more explosive power than all of the bombs dropped in the entirety of WWII combined.
+            - paragraph [ref=e85]:
+              - text: The Bomb was a more efficient bombing campaign. The Super was a country-annihilating device.
+              - button [ref=e87] [cursor=pointer]:
+                - img [ref=e88]
+                - img [ref=e90]
+                - img [ref=e92]
+            - paragraph [ref=e94]: So it will be with AGI and Superintelligence.
+          - paragraph [ref=e96]:
+            - emphasis [ref=e97]: AI progress won’t stop at human-level.
+            - text: After initially learning from the best human games, AlphaGo started playing against itself—and it quickly became superhuman, playing extremely creative and complex moves that a human would never have come up with.
+          - paragraph [ref=e98]:
+            - text: We discussed the path to AGI in the
+            - link "previous piece" [ref=e99] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-gpt-4-to-agi/
+            - text: . Once we get AGI, we’ll turn the crank one more time—or two or three more times—and AI systems will become superhuman—vastly superhuman. They will become qualitatively smarter than you or I, much smarter, perhaps similar to how you or I are qualitatively smarter than an elementary schooler.
+          - paragraph [ref=e100]: The jump to superintelligence would be wild enough at the current rapid but continuous rate of AI progress (if we could make the jump to AGI in 4 years from GPT-4, what might another 4 or 8 years after that bring?). But it could be much faster than that, if AGI automates AI research itself.
+          - paragraph [ref=e101]:
+            - text: "Once we get AGI, we won’t just have one AGI. I’ll walk through the numbers later, but: given inference GPU fleets by then, we’ll likely be able to run"
+            - emphasis [ref=e102]: many millions of them (perhaps 100 million human-equivalents, and soon after at 10x+ human speed)
+            - text: . Even if they can’t yet walk around the office or make coffee, they will be able to do ML research on a computer. Rather than a few hundred researchers and engineers at a leading AI lab, we’d have more than 100,000x that—furiously working on algorithmic breakthroughs, day and night. Yes, recursive self-improvement, but no sci-fi required;
+            - emphasis [ref=e103]:
+              - text: they would need only to accelerate the existing trendlines of algorithmic progress (
+              - link "currently at" [ref=e104] [cursor=pointer]:
+                - /url: https://situational-awareness.ai/from-gpt-4-to-agi/#Algorithmic_efficiencies
+              - text: ~0.5 OOMs/year).
+          - figure "Automated AI research could accelerate algorithmic progress, leading to 5+ OOMs of effective compute gains in a year. The AI systems we’d have by the end of an intelligence explosion would be vastly smarter than humans." [ref=e106]:
+            - emphasis [ref=e108]: Automated AI research could accelerate algorithmic progress, leading to 5+ OOMs of effective compute gains in a year. The AI systems we’d have by the end of an intelligence explosion would be vastly smarter than humans.
+          - paragraph [ref=e109]:
+            - text: Automated AI research could probably compress a human-decade of algorithmic progress into less than a year (and that seems conservative). That’d be 5+ OOMs, another
+            - link "GPT-2-to-GPT-4-sized jump" [ref=e110] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-gpt-4-to-agi/
+            - text: ", on top of AGI—a qualitative jump like that from a preschooler to a smart high schooler,"
+            - emphasis [ref=e111]: on top
+            - text: of AI systems already as smart as expert AI researchers/engineers.
+          - paragraph [ref=e112]: There are several plausible bottlenecks—including limited compute for experiments, complementarities with humans, and algorithmic progress becoming harder—which I’ll address, but none seem sufficient to definitively slow things down.
+          - paragraph [ref=e113]:
+            - text: Before we know it, we would have superintelligence on our hands—AI systems
+            - emphasis [ref=e114]: vastly
+            - text: smarter than humans, capable of novel, creative, complicated behavior we couldn’t even begin to understand—perhaps even a small civilization of billions of them. Their power would be vast, too. Applying superintelligence to R&D in other fields, explosive progress would broaden from just ML research; soon they’d solve robotics, make dramatic leaps across other fields of science and technology within years, and an industrial explosion would follow. Superintelligence would likely provide a decisive military advantage, and unfold untold powers of destruction. We will be faced with one of the most intense and volatile moments of human history.
+          - heading "Automating AI research" [level=2] [ref=e115]:
+            - strong [ref=e116]: Automating AI research
+          - paragraph [ref=e117]:
+            - strong [ref=e118]: We don’t need to automate everything—just AI research.
+            - text: A common objection to transformative impacts of AGI is that it will be hard for AI to do everything. Look at robotics, for instance, doubters say; that will be a gnarly problem, even if AI is cognitively at the levels of PhDs. Or take automating biology R&D, which might require lots of physical lab-work and human experiments.
+          - paragraph [ref=e119]:
+            - text: "But we don’t need robotics—we don’t need many things—for AI to automate AI research. The jobs of AI researchers and engineers at leading labs can be done fully virtually and don’t run into real-world bottlenecks in the same way (though it will still be limited by compute, which I’ll address later). And the job of an AI researcher is fairly straightforward, in the grand scheme of things: read ML literature and come up with new questions or ideas, implement experiments to test those ideas, interpret the results, and repeat. This all seems squarely in the domain where simple extrapolations of current AI capabilities could easily take us to or beyond the levels of the best humans"
+            - link "by the end of 2027" [ref=e120] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-gpt-4-to-agi/
+            - text: .
+            - button [ref=e122] [cursor=pointer]:
+              - img [ref=e123]
+              - img [ref=e125]
+              - img [ref=e127]
+          - paragraph [ref=e129]:
+            - text: "It’s worth emphasizing just how straightforward and hacky some of the biggest machine learning breakthroughs of the last decade have been: “oh, just add some normalization” (LayerNorm/BatchNorm) or “do f(x)+x instead of f(x)” (residual connections)” or “fix an implementation bug” (Kaplan → Chinchilla scaling laws). AI research can be automated. And automating AI research is all it takes to kick off extraordinary feedback loops."
+            - button [ref=e131] [cursor=pointer]:
+              - img [ref=e132]
+              - img [ref=e134]
+              - img [ref=e136]
+          - paragraph [ref=e138]:
+            - strong [ref=e139]: We’d be able to run millions of copies (and soon at 10x+ human speed) of the automated AI researchers.
+            - text: Even by 2027, we should expect
+            - link "GPU fleets in the 10s of millions" [ref=e140] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/#Overall_compute
+            - text: . Training clusters alone should be approaching ~3 OOMs larger, already putting us at 10 million+ A100-equivalents. Inference fleets should be much larger still. (More on all this in a
+            - link "later piece" [ref=e141] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+            - text: .)
+          - paragraph [ref=e142]:
+            - text: That would let us run many millions of copies of our automated AI researchers, perhaps 100 million human-researcher-equivalents, running day and night. There’s some assumptions that flow into the exact numbers, including that humans “think” at 100 tokens/minute (just a rough order of magnitude estimate, e.g. consider your internal monologue) and extrapolating historical trends and Chinchilla scaling laws on per-token inference costs for frontier models remaining in the same ballpark.
+            - button [ref=e144] [cursor=pointer]:
+              - img [ref=e145]
+              - img [ref=e147]
+              - img [ref=e149]
+            - text: We’d also want to reserve some of the GPUs for running experiments and training new models. Full calculation in a footnote.
+            - button [ref=e152] [cursor=pointer]:
+              - img [ref=e153]
+              - img [ref=e155]
+              - img [ref=e157]
+          - paragraph [ref=e159]:
+            - text: Another way of thinking about it is that
+            - emphasis [ref=e160]: given inference fleets in 2027, we should be able to generate an entire internet’s worth of tokens, every single day.
+            - button [ref=e162] [cursor=pointer]:
+              - img [ref=e163]
+              - img [ref=e165]
+              - img [ref=e167]
+            - text: In any case, the exact numbers don’t matter that much, beyond a simple plausibility demonstration.
+          - paragraph [ref=e169]: "Moreover, our automated AI researchers may soon be able to run at much faster than human-speed:"
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - text: By taking some inference penalties, we can trade off running fewer copies in exchange for running them at faster serial speed. (For example, we could go from ~5x human speed to ~100x human speed by “only” running 1 million copies of the automated researchers.
+              - button [ref=e173] [cursor=pointer]:
+                - img [ref=e174]
+                - img [ref=e176]
+                - img [ref=e178]
+              - text: )
+            - listitem [ref=e180]:
+              - text: More importantly, the first algorithmic innovation the automated AI researchers work on is getting a 10x or 100x speedup. Gemini 1.5 Flash is ~10x faster than the originally-released GPT-4,
+              - button [ref=e182] [cursor=pointer]:
+                - img [ref=e183]
+                - img [ref=e185]
+                - img [ref=e187]
+              - text: merely a year later, while providing similar performance to the originally-released GPT-4 on reasoning benchmarks. If that’s the algorithmic speedup a few hundred human researchers can find in a year, the automated AI researchers will be able to find similar wins very quickly.
+          - paragraph [ref=e189]:
+            - emphasis [ref=e190]: "That is: expect 100 million automated researchers each working at 100x human speed not long after we begin to be able to automate AI research."
+            - text: They’ll each be able to do a year’s worth of work in a few days. The increase in research effort—compared to a few hundred puny human researchers at a leading AI lab today, working at a puny 1x human speed—will be extraordinary.
+          - paragraph [ref=e191]:
+            - strong [ref=e192]: This could easily dramatically accelerate existing trends of algorithmic progress, compressing a decade of advances into a year.
+            - text: We need not postulate anything totally novel for automated AI research to intensely speed up AI progress. Walking through the numbers in the
+            - link "previous piece" [ref=e193] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-gpt-4-to-agi
+            - text: ", we saw that algorithmic progress has been a central driver of deep learning progress in the last decade; we noted a trendline of ~0.5 OOMs/year on algorithmic efficiencies alone, with additional large algorithmic gains from unhobbling on top. (I think the import of algorithmic progress has been underrated by many, and properly appreciating it is important for appreciating the possibility of an intelligence explosion.)"
+          - paragraph [ref=e194]: Could our millions of automated AI researchers (soon working at 10x or 100x human speed) compress the algorithmic progress human researchers would have found in a decade into a year instead? That would be 5+ OOMs in a year.
+          - paragraph [ref=e195]: "Don’t just imagine 100 million junior software engineer interns here (we’ll get those earlier, in the next couple years!). Real automated AI researchers will be very smart—and in addition to their raw quantitative advantage, automated AI researchers will have other enormous advantages over human researchers:"
+          - list [ref=e196]:
+            - listitem [ref=e197]: They’ll be able to read every single ML paper ever written, have been able to deeply think about every single previous experiment ever run at the lab, learn in parallel from each of their copies, and rapidly accumulate the equivalent of millennia of experience. They’ll be able to develop far deeper intuitions about ML than any human.
+            - listitem [ref=e198]: They’ll be easily able to write millions of lines of complex code, keep the entire codebase in context, and spend human-decades (or more) checking and rechecking every line of code for bugs and optimizations. They’ll be superbly competent at all parts of the job.
+            - listitem [ref=e199]: You won’t have to individually train up each automated AI researcher (indeed, training and onboarding 100 million new human hires would be difficult). Instead, you can just teach and onboard one of them—and then make replicas. (And you won’t have to worry about politicking, cultural acclimation, and so on, and they’ll work with peak energy and focus day and night.)
+            - listitem [ref=e200]: Vast numbers of automated AI researchers will be able to share context (perhaps even accessing each others’ latent space and so on), enabling much more efficient collaboration and coordination compared to human researchers.
+            - listitem [ref=e201]: And of course, however smart our initial automated AI researchers would be, we’d soon be able to make further OOM-jumps, producing even smarter models, even more capable at automated AI research.
+          - paragraph [ref=e202]:
+            - text: Imagine an automated Alec Radford—
+            - emphasis [ref=e203]: imagine 100 million automated Alec Radfords.
+            - button [ref=e205] [cursor=pointer]:
+              - img [ref=e206]
+              - img [ref=e208]
+              - img [ref=e210]
+            - text: I think just about every researcher at OpenAI would agree that if they had 10 Alec Radfords, let alone 100 or 1,000 or 1 million running at 10x or 100x human speed, they could very quickly solve very many of their problems. Even with various other bottlenecks (more in a moment), compressing a decade of algorithmic progress into a year as a result seems very plausible. (A 10x acceleration from a million times more research effort, which seems conservative if anything.)
+          - paragraph [ref=e212]:
+            - text: That would be 5+ OOMs right there. 5 OOMs of algorithmic wins would be a similar scaleup to what produced the
+            - link "GPT-2-to-GPT-4 jump" [ref=e213] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-gpt-4-to-agi/
+            - text: ", a capability jump from ~a preschooler to ~a smart high schooler. Imagine such a qualitative jump"
+            - emphasis [ref=e214]: on top of
+            - text: AGI,
+            - emphasis [ref=e215]: on top of
+            - text: Alec Radford.
+          - paragraph [ref=e216]: It’s strikingly plausible we’d go from AGI to superintelligence very quickly, perhaps in less than one year.
+          - heading "Possible bottlenecks" [level=2] [ref=e217]:
+            - strong [ref=e218]: Possible bottlenecks
+          - paragraph [ref=e219]:
+            - text: While this basic story is surprisingly strong—and is supported by
+            - link "thorough economic modeling work" [ref=e220] [cursor=pointer]:
+              - /url: https://www.openphilanthropy.org/research/what-a-compute-centric-framework-says-about-takeoff-speeds/
+            - text: —there are some real and plausible bottlenecks that will probably slow down an automated-AI-research intelligence explosion.
+          - paragraph [ref=e221]: "I’ll give a summary here, and then discuss these in more detail in the optional sections below for those interested:"
+          - list [ref=e222]:
+            - listitem [ref=e223]:
+              - strong [ref=e224]:
+                - emphasis [ref=e225]: Limited compute
+              - text: ": AI research doesn’t just take good ideas, thinking, or math—but running experiments to get empirical signal on your ideas. A million times more research effort via automated research labor won’t mean a million times faster progress, because compute will still be limited—and limited compute for experiments will be the bottleneck. Still, even if this won’t be a 1,000,000x speedup, I find it hard to imagine that the automated AI researchers couldn’t use the compute"
+              - emphasis [ref=e226]: at least
+              - text: "10x more effectively: they’ll be able to get incredible ML intuition (having internalized the whole ML literature and every previous experiment every run!) and centuries-equivalent of thinking-time to figure out exactly the right experiment to run, configure it optimally, and get the maximum value of information; they’ll be able to spend centuries-equivalent of engineer-time before running even tiny experiments to avoid bugs and get them right on the first try; they can make tradeoffs to economize on compute by focusing on the biggest wins; and they’ll be able to try tons of smaller-scale experiments (and given effective compute scaleups by then, “smaller-scale” means being able to train 100,000 GPT-4-level models in a year to try architecture breakthroughs). Some human researchers and engineers are able to produce 10x the progress as others, even with the same amount of compute—and this should apply even moreso to automated AI researchers. I do think this is the most important bottleneck, and I address it in more depth below."
+            - listitem [ref=e227]:
+              - strong [ref=e228]:
+                - emphasis [ref=e229]: Complementarities/long tail
+              - emphasis [ref=e230]: ":"
+              - text: A classic lesson from economics (cf Baumol’s growth disease) is that if you can automate, say, 70% of something, you get some gains but quickly the remaining 30% become your bottleneck. For anything that falls short of full automation—say, really good copilots—human AI researchers would remain a major bottleneck, making the overall increase in the rate of algorithmic progress relatively small. Moreover, there’s likely some long tail of capabilities required for automating AI research—the last 10% of the job of an AI researcher might be particularly hard to automate. This could soften takeoff some, though my best guess is that this only delays things by a couple years. Perhaps 2026/27-models speed are the proto-automated-researcher, it takes another year or two for some final unhobbling, a somewhat better model, inference speedups, and working out kinks to get to full automation, and finally by 2028 we get the 10x acceleration (and superintelligence by the end of the decade).
+            - listitem [ref=e231]:
+              - strong [ref=e232]:
+                - emphasis [ref=e233]: Inherent limits to algorithmic progress
+              - emphasis [ref=e234]: ":"
+              - text: Maybe another 5 OOMs of algorithmic efficiency will be fundamentally impossible? I doubt it. While there will definitely be upper limits,
+              - button [ref=e236] [cursor=pointer]:
+                - img [ref=e237]
+                - img [ref=e239]
+                - img [ref=e241]
+              - text: if we got 5 OOMs in the last decade, we should probably expect at least another decade’s-worth of progress to be possible. More directly, current architectures and training algorithms are still very rudimentary, and it seems that much more efficient schemes should be possible. Biological reference classes also support dramatically more efficient algorithms being plausible.
+            - listitem [ref=e243]:
+              - strong [ref=e244]:
+                - emphasis [ref=e245]: "Ideas get harder to find, so the automated AI researchers will merely sustain, rather than accelerate, the current rate of progress:"
+              - text: "One objection is that although automated research would increase effective research effort a lot, ideas also get harder to find. That is, while it takes only a few hundred top researchers at a lab to sustain 0.5 OOMs/year today, as we exhaust the low-hanging fruit, it will take more and more effort to sustain that progress—and so the 100 million automated researchers will be merely what’s necessary to sustain progress. I think this basic model is correct, but the empirics don’t add up: the magnitude of the increase in research effort—a million-fold—is way, way larger than the historical trends of the growth in research effort that’s been necessary to sustain progress. In econ modeling terms, it’s a bizarre “knife-edge assumption” to assume that the increase in research effort from automation will be"
+              - emphasis [ref=e246]: just enough
+              - text: to keep progress constant.
+            - listitem [ref=e247]:
+              - strong [ref=e248]:
+                - emphasis [ref=e249]: Ideas get harder to find and there are diminishing returns, so the intelligence explosion will quickly fizzle
+              - emphasis [ref=e250]: ":"
+              - text: Related to the above objection, even if the automated AI researchers lead to an initial burst of progress, whether rapid progress can be sustained depends on the shape of the diminishing returns curve to algorithmic progress. Again, my best read of the empirical evidence is that the exponents shake out in favor of explosive/accelerating progress. In any case, the sheer size of the one-time boost—from 100s to 100s of millions of AI researchers—probably overcomes diminishing returns here for at least a good number of OOMs of algorithmic progress, even though it of course can’t be
+              - emphasis [ref=e251]: indefinitely
+              - text: self-sustaining.
+          - generic [ref=e253]:
+            - generic [ref=e254]:
+              - heading " Limited compute for experiments" [level=3] [ref=e255]:
+                - link " Limited compute for experiments" [ref=e256] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - generic [ref=e257]: 
+                  - text: Limited compute for experiments
+              - text: 
+            - heading " Complementarities and long tails to 100% automation" [level=3] [ref=e259]:
+              - link " Complementarities and long tails to 100% automation" [ref=e260] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e261]: 
+                - text: Complementarities and long tails to 100% automation
+            - heading " Fundamental limits to algorithmic progress" [level=3] [ref=e263]:
+              - link " Fundamental limits to algorithmic progress" [ref=e264] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e265]: 
+                - text: Fundamental limits to algorithmic progress
+            - heading " Ideas get harder to find and diminishing returns" [level=3] [ref=e267]:
+              - link " Ideas get harder to find and diminishing returns" [ref=e268] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e269]: 
+                - text: Ideas get harder to find and diminishing returns
+          - paragraph [ref=e270]: "Overall, these factors may slow things down somewhat: the most extreme versions of intelligence explosion (say, overnight) seem implausible. And they may result in a somewhat longer runup (perhaps we need to wait an extra year or two from more sluggish, proto-automated researchers to the true automated Alec Radfords, before things kick off in full force). But they certainly don’t rule out a very rapid intelligence explosion. A year—or at most just a few years, but perhaps even just a few months—in which we go from fully-automated AI researchers to vastly superhuman AI systems should be our mainline expectation."
+          - heading "The power of superintelligence" [level=2] [ref=e271]:
+            - strong [ref=e272]: The power of superintelligence
+          - paragraph [ref=e273]: "Whether or not you agree with the strongest form of these arguments—whether we get a <1 year intelligence explosion, or it takes a few years—it is clear: we must confront the possibility of superintelligence."
+          - paragraph [ref=e274]:
+            - text: The AI systems we’ll likely have
+            - emphasis [ref=e275]: by the end of this decade
+            - text: will be unimaginably powerful.
+          - list [ref=e276]:
+            - listitem [ref=e277]:
+              - text: Of course, they’ll be
+              - emphasis [ref=e278]: quantitatively
+              - text: superhuman. On our fleets of
+              - link "100s of millions of GPUs by the end of the decade" [ref=e279] [cursor=pointer]:
+                - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+              - text: ", we’ll be able to run a civilization of billions of them, and they will be able to “think” orders of magnitude faster than humans. They’ll be able to quickly master any domain, write trillions of lines of code, read every research paper in every scientific field ever written (they’ll be perfectly interdisciplinary!) and write new ones before you’ve gotten past the abstract of one, learn from the parallel experience of every one of its of copies, gain billions of human-equivalent years of experience with some new innovation in a matter of weeks, work 100% of the time with peak energy and focus and won’t be slowed down by that one teammate who is lagging, and so on."
+            - listitem [ref=e280]:
+              - text: More importantly—but harder to imagine—they’ll be
+              - emphasis [ref=e281]: qualitatively
+              - text: superhuman. As a narrow example of this, large-scale RL runs have been able to produce completely novel and creative behaviors beyond human understanding, such as the
+              - link "famous move 37 in AlphaGo vs. Lee Sedol" [ref=e282] [cursor=pointer]:
+                - /url: https://www.wired.com/2016/03/two-moves-alphago-lee-sedol-redefined-future/
+              - text: . Superintelligence will be this across many domains. It’ll find exploits in the human code too subtle for any human to notice, and it’ll generate code too complicated for any human to understand even if the model spent decades trying to explain it. Extremely difficult scientific and technological problems that a human would be stuck on for decades will seem just
+              - emphasis [ref=e283]: so obvious
+              - text: to them. We’ll be like high-schoolers stuck on Newtonian physics while it’s off exploring quantum mechanics.
+          - paragraph [ref=e284]:
+            - text: As a visualization of how
+            - emphasis [ref=e285]: wild
+            - text: this could be, look at some Youtube videos of video game speedruns, such as this one of
+            - link "beating Minecraft in 20 seconds" [ref=e286] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=do08uW0N5Qs
+            - text: .
+          - figure "Beating Minecraft in 20 seconds. (If you have no idea what’s going on in this video, you’re in good company; even most normal players of Minecraft have almost no clue what’s going on.)" [ref=e288]:
+            - generic [ref=e289]: Beating Minecraft in 20 seconds. (If you have no idea what’s going on in this video, you’re in good company; even most normal players of Minecraft have almost no clue what’s going on.)
+          - paragraph [ref=e290]: Now imagine this applied to all domains of science, technology, and the economy. The error bars here, of course, are extremely large. Still, it’s important to consider just how consequential this would be.
+          - figure "What does it feel like to stand here? Illustration from Wait But Why/Tim Urban." [ref=e292]:
+            - generic [ref=e293]:
+              - text: What does it feel like to stand here? Illustration from
+              - link "Wait But Why/Tim Urban" [ref=e294] [cursor=pointer]:
+                - /url: https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html
+              - text: .
+          - paragraph [ref=e295]: "In the intelligence explosion, explosive progress was initially only in the narrow domain of automated AI research. As we get superintelligence, and apply our billions of (now superintelligent) agents to R&D across many fields, I expect explosive progress to broaden:"
+          - list [ref=e296]:
+            - listitem [ref=e297]:
+              - emphasis [ref=e298]:
+                - strong [ref=e299]: An AI capabilities explosion.
+              - text: Perhaps our initial AGIs had limitations that prevented them fully automating work in some other domains (rather than just in the AI research domain); automated AI research will quickly solve these, enabling automation of any and all cognitive work.
+            - listitem [ref=e300]:
+              - emphasis [ref=e301]:
+                - strong [ref=e302]: Solve robotics.
+              - text: Superintelligence won’t stay purely cognitive for long. Getting robotics to work well is primarily an ML algorithms problem (rather than a hardware problem), and our automated AI researchers will likely be able to solve it (more below). Factories would go from human-run, to AI-directed using human physical labor, to soon being fully run by swarms of robots.
+            - listitem [ref=e303]:
+              - emphasis [ref=e304]:
+                - strong [ref=e305]: Dramatically accelerate scientific and technological progress.
+              - text: Yes, Einstein alone couldn’t develop neuroscience and build a semiconductor industry, but a billion superintelligent automated scientists, engineers, technologists, and robot technicians (with the robots moving at 10x or more human speed!)
+              - button [ref=e307] [cursor=pointer]:
+                - img [ref=e308]
+                - img [ref=e310]
+                - img [ref=e312]
+              - text: would make extraordinary advances in many fields in the space of years. (Here’s a nice
+              - link "short story" [ref=e314] [cursor=pointer]:
+                - /url: https://www.asimov.press/p/tinker
+              - text: visualizing what AI-driven R&D might look like.) The billion superintelligences would be able to compress the R&D effort humans researchers would have done in the next century into years. Imagine if the technological progress of the 20th century were compressed into less than a decade. We would have gone from flying being thought a mirage, to airplanes, to a man on the moon and ICBMs in a matter of years.
+              - emphasis [ref=e315]: This is what I expect the 2030s to look like across science and technology.
+            - listitem [ref=e316]:
+              - emphasis [ref=e317]:
+                - strong [ref=e318]: An industrial and economic explosion.
+              - text: "Extremely accelerated technological progress, combined with the ability to automate all human labor, could dramatically accelerate economic growth (think: self-replicating robot factories quickly covering all of the Nevada desert)."
+              - button [ref=e320] [cursor=pointer]:
+                - img [ref=e321]
+                - img [ref=e323]
+                - img [ref=e325]
+              - text: The increase in growth probably wouldn’t just be from 2%/year to 2.5%/year; rather, this would be a fundamental shift in the growth regime, more comparable to the historical step-change from very slow growth to a couple percent a year with the industrial revolution. We could see economic growth rates of 30%/year and beyond, quite possibly multiple doublings a year. This follows fairly straightforwardly from economists’
+              - link "models" [ref=e327] [cursor=pointer]:
+                - /url: https://globalprioritiesinstitute.org/philip-trammell-and-anton-korinek-economic-growth-under-transformative-ai/
+              - text: of
+              - link "economic" [ref=e328] [cursor=pointer]:
+                - /url: https://www.openphilanthropy.org/research/could-advanced-ai-drive-explosive-economic-growth/
+              - link "growth" [ref=e329] [cursor=pointer]:
+                - /url: https://www.kellogg.northwestern.edu/faculty/research/researchdetail?guid=6d8928d1-2328-11e8-91be-0242ac160003
+              - text: . To be sure, this may well be delayed by societal frictions; arcane regulation might ensure lawyers and doctors still need to be human, even if AI systems were much better at those jobs; surely sand will be thrown into the gears of rapidly expanding robo-factories as society resists the pace of change; and perhaps we’ll want to retain human nannies; all of which would slow the growth of the overall GDP statistics. Still, in whatever domains we remove human-created barriers (e.g., competition might force us to do so for military production), we’d see an industrial explosion.
+          - 'figure "A shift in the growth regime is not unprecedented: as civilization went from hunting, to farming, to the blossoming of science and commerce, to industry, the pace of global economic growth accelerated. Superintelligence could kick off another shift in growth mode. Based on Robin Hanson’s “Long-run growth as a sequence of exponential modes”." [ref=e330]':
+            - table [ref=e331]:
+              - rowgroup [ref=e332]:
+                - row "Growth mode Date began to dominate Doubling time of the global economy (years)" [ref=e333]:
+                  - columnheader "Growth mode" [ref=e334]
+                  - columnheader "Date began to dominate" [ref=e335]:
+                    - text: Date began
+                    - text: to dominate
+                  - columnheader "Doubling time of the global economy (years)" [ref=e336]:
+                    - text: Doubling time of
+                    - text: the global economy
+                    - text: (years)
+              - rowgroup [ref=e337]:
+                - row "Hunting 2,000,000 B.C. 230,000" [ref=e338]:
+                  - cell "Hunting" [ref=e339]
+                  - cell "2,000,000 B.C." [ref=e340]
+                  - cell "230,000" [ref=e341]
+                - row "Farming 4700 B.C. 860" [ref=e342]:
+                  - cell "Farming" [ref=e343]
+                  - cell "4700 B.C." [ref=e344]
+                  - cell "860" [ref=e345]
+                - row "Science and commerce 1730 A.D. 58" [ref=e346]:
+                  - cell "Science and commerce" [ref=e347]
+                  - cell "1730 A.D." [ref=e348]
+                  - cell "58" [ref=e349]
+                - row "Industry 1903 A.D. 15" [ref=e350]:
+                  - cell "Industry" [ref=e351]
+                  - cell "1903 A.D." [ref=e352]
+                  - cell "15" [ref=e353]
+              - rowgroup [ref=e354]:
+                - row "Superintelligence? 2030 A.D.? ???" [ref=e355]:
+                  - cell "Superintelligence?" [ref=e356]
+                  - cell "2030 A.D.?" [ref=e357]
+                  - cell "???" [ref=e358]
+            - generic [ref=e359]:
+              - emphasis [ref=e360]: "A shift in the growth regime is not unprecedented: as civilization went from hunting, to farming, to the blossoming of science and commerce, to industry, the pace of global economic growth accelerated. Superintelligence could kick off another shift in growth mode. Based on Robin Hanson’s “"
+              - link "Long-run growth as a sequence of exponential modes" [ref=e361] [cursor=pointer]:
+                - /url: https://mason.gmu.edu/~rhanson/longgrow.pdf
+                - emphasis [ref=e362]: Long-run growth as a sequence of exponential modes
+              - emphasis [ref=e363]: ”
+              - text: .
+          - list [ref=e364]:
+            - listitem [ref=e365]:
+              - emphasis [ref=e366]:
+                - strong [ref=e367]: Provide a decisive and overwhelming military advantage.
+              - text: Even early cognitive superintelligence might be enough here; perhaps some superhuman hacking scheme can deactivate adversary militaries. In any case, military power and technological progress has been tightly linked historically, and with extraordinarily rapid technological progress will come concomitant military revolutions. The drone swarms and roboarmies will be a big deal, but they are just the beginning; we should expect completely new kinds of weapons, from novel WMDs to invulnerable laser-based missile defense to things we can’t yet fathom. Compared to pre-superintelligence arsenals, it’ll be like 21st century militaries fighting a 19th century brigade of horses and bayonets. (I discuss how superintelligence could lead to a decisive military advantage in a
+              - link "later piece" [ref=e368] [cursor=pointer]:
+                - /url: https://situational-awareness.ai/the-free-world-must-prevail/
+              - text: .)
+            - listitem [ref=e369]:
+              - emphasis [ref=e370]:
+                - strong [ref=e371]: Be able to overthrow the US government.
+              - text: Whoever controls superintelligence will quite possibly have enough power to seize control from pre-superintelligence forces. Even without robots, the small civilization of superintelligences would be able to hack any undefended military, election, television, etc. system, cunningly persuade generals and electorates, economically outcompete nation-states, design new synthetic bioweapons and then pay a human in bitcoin to synthesize it, and so on. In the
+              - link "early 1500s" [ref=e372] [cursor=pointer]:
+                - /url: https://www.lesswrong.com/posts/ivpKSjM4D6FbqF4pZ/cortes-pizarro-and-afonso-as-precedents-for-takeover
+              - text: ", Cortes and about 500 Spaniards conquered the Aztec empire of several million; Pizarro and ~300 Spaniards conquered the Inca empire of several million; Alfonso and ~1000 Portuguese conquered the Indian Ocean. They didn’t have god-like power, but the Old World’s technological edge and an advantage in strategic and diplomatic cunning led to an utterly decisive advantage. Superintelligence might look similar."
+          - heading " Robots" [level=3] [ref=e376]:
+            - link " Robots" [ref=e377] [cursor=pointer]:
+              - /url: javascript:void(0)
+              - generic [ref=e378]: 
+              - text: Robots
+          - figure "Explosive growth starts in the narrower domain of AI R&D; as we apply superintelligence to R&D in other fields, explosive growth will broaden." [ref=e380]:
+            - emphasis [ref=e382]: Explosive growth starts in the narrower domain of AI R&D; as we apply superintelligence to R&D in other fields, explosive growth will broaden.
+          - separator [ref=e383]
+          - paragraph [ref=e384]: "How all of this plays out over the 2030s is hard to predict (and a story for another time). But one thing, at least, is clear: we will be rapidly plunged into the most extreme situation humanity has ever faced."
+          - paragraph [ref=e385]:
+            - text: Human-level AI systems, AGI, would be highly consequential in their own right—but in some sense, they would simply be a more efficient version of what we already know. But, very plausibly, within just a year, we would transition to much more alien systems, systems whose understanding and abilities—whose raw power—would exceed those even of humanity combined. There is a real possibility that we will
+            - link "lose control" [ref=e386] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/superalignment/
+            - text: ", as we are forced to hand off trust to AI systems during this rapid transition."
+          - paragraph [ref=e387]:
+            - text: More generally, everything will just start happening
+            - emphasis [ref=e388]: incredibly fast
+            - text: . And the world will start going insane. Suppose we had gone through the geopolitical fever-pitches and man-made perils of the 20th century in mere years; that is the sort of situation we should expect post-superintelligence. By the end of it, superintelligent AI systems will be running our military and economy. During all of this insanity, we’d have extremely scarce time to make the right decisions. The challenges will be immense. It will take everything we’ve got to make it through in one piece.
+          - paragraph [ref=e389]:
+            - emphasis [ref=e390]:
+              - strong [ref=e391]: The intelligence explosion and the immediate post-superintelligence period will be one of the most volatile, tense, dangerous, and wildest periods ever in human history.
+          - paragraph [ref=e392]: And by the end of the decade, we’ll likely be in the midst of it.
+          - separator [ref=e393]
+          - paragraph [ref=e394]:
+            - text: Confronting the possibility of an intelligence explosion—the emergence of superintelligence—often echoes the
+            - link "early debates" [ref=e395] [cursor=pointer]:
+              - /url: https://www.amazon.com/Making-Atomic-Bomb-Richard-Rhodes/dp/1451677618
+            - text: around the possibility of a nuclear chain reaction—and the atomic bomb it would enable. HG Wells predicted the atomic bomb in a 1914 novel. When Szilard first conceived of the idea of a chain reaction in 1933, he couldn’t convince anyone of it; it was pure theory. Once fission was empirically discovered in 1938, Szilard freaked out again and argued strongly for secrecy, and a few people started to wake up to the possibility of a bomb. Einstein hadn’t considered the possibility of a chain reaction, but when Szilard confronted him, he was quick to see the implications and willing to do anything that was needed to be done; he was willing to sound the alarm, and wasn’t afraid of sounding foolish. But Fermi, Bohr, and most scientists thought the “conservative” thing was to play it down, rather than take seriously the extraordinary implications of the possibility of a bomb. Secrecy (to avoid sharing their advances with the Germans) and other all-out efforts seemed absurd to them. A chain reaction sounded too crazy. (Even when, as it turned out, a bomb was but half a decade from becoming reality.)
+          - paragraph [ref=e396]:
+            - text: We must once again confront the possibility of a chain reaction. Perhaps it sounds speculative to you. But among senior scientists at AI labs, many see a rapid intelligence explosion as strikingly plausible. They can
+            - emphasis [ref=e397]: see
+            - text: it. Superintelligence is possible.
+          - paragraph [ref=e399]:
+            - text: "Next post in series:"
+            - emphasis [ref=e400]:
+              - link "III. The Challenges – IIIa. Racing to the Trillion-Dollar Cluster" [ref=e401] [cursor=pointer]:
+                - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+                - strong [ref=e402]: III. The Challenges – IIIa. Racing to the Trillion-Dollar Cluster
+          - generic [ref=e404]:
+            - separator [ref=e405]
+            - list [ref=e406]:
+              - listitem [ref=e407]:
+                - paragraph [ref=e408]:
+                  - text: And much of the Cold War’s perversities (cf
+                  - link "Daniel Ellsberg’s book" [ref=e409] [cursor=pointer]:
+                    - /url: https://www.amazon.com/Doomsday-Machine-Confessions-Nuclear-Planner/dp/1608196704
+                  - text: ) stemmed from merely replacing A-bombs with H-bombs, without adjusting nuclear policy and war plans to the massive capability increase.
+                  - link "↩" [ref=e410] [cursor=pointer]:
+                    - /url: "#note-1-71"
+                    - img "↩" [ref=e411]
+              - listitem [ref=e412]:
+                - paragraph [ref=e413]:
+                  - text: The job of an AI researcher is also a job that AI researchers at AI labs just, well, know really well—so it’ll be particularly intuitive to them to optimize models to be good at that job. And there will be huge incentives to do so to help them accelerate their research and their labs’ competitive edge.
+                  - link "↩" [ref=e414] [cursor=pointer]:
+                    - /url: "#note-2-71"
+                    - img "↩" [ref=e415]
+              - listitem [ref=e416]:
+                - paragraph [ref=e417]:
+                  - text: This suggests an important point in terms of the sequencing of risks from AI, by the way. A common AI threat model people point to is AI systems developing novel bioweapons, and that posing catastrophic risk. But if AI research is more straightforward to automate than biology R&D, we might get an intelligence explosion before we get extreme AI biothreats. This matters, for example, with regard to whether we should expect “bio warning shots” in time before things get crazy on AI.
+                  - link "↩" [ref=e418] [cursor=pointer]:
+                    - /url: "#note-3-71"
+                    - img "↩" [ref=e419]
+              - listitem [ref=e420]:
+                - paragraph [ref=e421]:
+                  - link "As noted earlier" [ref=e422] [cursor=pointer]:
+                    - /url: https://situational-awareness.ai/from-gpt-4-to-agi/#Algorithmic_efficiencies
+                  - text: ", the GPT-4 API costs less today than GPT-3 when it was released—this suggests that the trend of inference efficiency wins is fast enough to keep inference costs roughly constant even as models get much more powerful. Similarly, there have been huge"
+                  - link "inference cost wins" [ref=e423] [cursor=pointer]:
+                    - /url: https://situational-awareness.ai/from-gpt-4-to-agi/#Algorithmic_efficiencies
+                  - text: in just the year since GPT-4 was released; for example,
+                  - link "the current version of Gemini 1.5 Pro" [ref=e424] [cursor=pointer]:
+                    - /url: https://ai.google.dev/pricing
+                  - text: outperforms the original GPT-4, while being
+                  - link "roughly 10x cheaper" [ref=e425] [cursor=pointer]:
+                    - /url: https://ai.google.dev/pricing
+                  - text: .
+                - paragraph [ref=e426]:
+                  - text: We can also ground this somewhat more by considering Chinchilla scaling laws. On Chinchilla scaling laws, model size—and thus inference costs—grow with the square root of training cost, i.e. half the OOMs of the OOM scaleup of effective compute. However, in the
+                  - link "previous piece" [ref=e427] [cursor=pointer]:
+                    - /url: https://situational-awareness.ai/from-gpt-4-to-agi
+                  - text: ", I suggested that algorithmic efficiency was advancing at roughly the same pace as compute scaleup, i.e. it made up roughly half of the OOMs of effective compute scaleup. If these algorithmic wins also translate into inference efficiency, that means that the algorithmic efficiencies would compensate for the naive increase in inference cost."
+                - paragraph [ref=e428]: In practice, training compute efficiencies often, but not always, translate into inference efficiency wins. However, there are also separately many inference efficiency wins that are not training efficiency wins. So, at least in terms of the rough ballpark, assuming the $/token of frontier models stays roughly similar doesn’t seem crazy.
+                - paragraph [ref=e429]:
+                  - text: (Of course, they’ll use more tokens, i.e. more test-time compute. But that’s already part of the calculation here, by pricing human-equivalents as 100 tokens/minute.)
+                  - link "↩" [ref=e430] [cursor=pointer]:
+                    - /url: "#note-4-71"
+                    - img "↩" [ref=e431]
+              - listitem [ref=e432]:
+                - paragraph [ref=e433]:
+                  - text: GPT-4 Turbo
+                  - link "is about" [ref=e434] [cursor=pointer]:
+                    - /url: https://openai.com/api/pricing/
+                  - text: $0.03/1K tokens. We supposed we would have 10s of millions of A100 equivalents, which cost ~$1 hour per GPU if A100-equivalents. If we used the API costs to translate GPUs into tokens generated, that implies 10s of millions GPUs * $1/GPU-hour * 33K tokens/$ = ~ one trillion tokens/ hour. Suppose a human does 100 tokens/min of thinking, that means a human-equivalent is 6,000 tokens/hour. One trillion tokens/hour divided by 6,000 tokens/human-hour = ~200 million human-equivalents—i.e. as if running 200 million human researchers, day and night. (And even if we reserve half the GPUs for experiment compute, we get 100 million human-researcher-equivalents.)
+                  - link "↩" [ref=e435] [cursor=pointer]:
+                    - /url: "#note-5-71"
+                    - img "↩" [ref=e436]
+              - listitem [ref=e437]:
+                - paragraph [ref=e438]:
+                  - text: The previous footnote estimated ~1T tokens/hour, i.e. 24T tokens a day. In the
+                  - link "previous piece," [ref=e439] [cursor=pointer]:
+                    - /url: https://situational-awareness.ai/from-gpt-4-to-agi/
+                  - text: I noted that a
+                  - link "public deduplicated CommonCrawl had around 30T tokens" [ref=e440] [cursor=pointer]:
+                    - /url: https://www.together.ai/blog/redpajama-data-v2
+                  - text: .
+                  - link "↩" [ref=e441] [cursor=pointer]:
+                    - /url: "#note-6-71"
+                    - img "↩" [ref=e442]
+              - listitem [ref=e443]:
+                - paragraph [ref=e444]:
+                  - text: Jacob Steinhardt estimates that k^3 parallel copies of a model can be replaced with a single model that is k^2 faster, given
+                  - link "some math on inference tradeoffs" [ref=e445] [cursor=pointer]:
+                    - /url: https://bounded-regret.ghost.io/how-fast-can-we-perform-a-forward-pass/
+                  - text: with a tiling scheme (that theoretically works even for k of 100 or more). Suppose initial speeds were already ~5x human speed (based on, say, GPT-4 speed on release). Then, by taking this inference penalty (with k= ~5), we’d be able to run ~1 million automated AI researchers at ~100x human speed.
+                  - link "↩" [ref=e446] [cursor=pointer]:
+                    - /url: "#note-7-71"
+                    - img "↩" [ref=e447]
+              - listitem [ref=e448]:
+                - paragraph [ref=e449]:
+                  - text: This
+                  - link "source" [ref=e450] [cursor=pointer]:
+                    - /url: https://artificialanalysis.ai/models/gemini-1-5-flash
+                  - text: benchmarks throughput of Flash at ~6x GPT-4 Turbo, and GPT-4 Turbo was faster than original GPT-4. Latency is probably also roughly 10x faster.
+                  - link "↩" [ref=e451] [cursor=pointer]:
+                    - /url: "#note-8-71"
+                    - img "↩" [ref=e452]
+              - listitem [ref=e453]:
+                - paragraph [ref=e454]:
+                  - text: Alec Radford is an incredibly gifted and prolific researcher/engineer at OpenAI, behind
+                  - link "many of the most important advances" [ref=e455] [cursor=pointer]:
+                    - /url: https://www.olin.edu/sites/default/files/2023-06/How%20a%20couple%20of%20Olin%20College%20students%20h...%20chatbot%20revolution%20-%20The%20Boston%20Globe.pdf
+                  - text: ", though he flies under the radar some."
+                  - link "↩" [ref=e456] [cursor=pointer]:
+                    - /url: "#note-9-71"
+                    - img "↩" [ref=e457]
+              - listitem [ref=e458]:
+                - paragraph [ref=e459]:
+                  - text: "25 OOMs of algorithmic progress on top of GPT-4, for example, are clearly impossible: that would imply it would be possible to train a GPT-4-level model with just a handful of FLOP."
+                  - link "↩" [ref=e460] [cursor=pointer]:
+                    - /url: "#note-10-71"
+                    - img "↩" [ref=e461]
+              - listitem [ref=e462]:
+                - paragraph [ref=e463]:
+                  - text: The 10x speed robots doing physical R&D in the real world is the “slow version”; in reality the superintelligences will try to do as much R&D as possible in simulation, like
+                  - link "AlphaFold" [ref=e464] [cursor=pointer]:
+                    - /url: https://deepmind.google/technologies/alphafold/
+                  - text: or manufacturing “
+                  - link "digital" [ref=e465] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=h68kXLIRilM
+                  - link "twins" [ref=e466] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=OAdqXZGUb70
+                  - text: ”.
+                  - link "↩" [ref=e467] [cursor=pointer]:
+                    - /url: "#note-11-71"
+                    - img "↩" [ref=e468]
+              - listitem [ref=e469]:
+                - paragraph [ref=e470]:
+                  - text: Why isn’t “factorio-world”—build a factory, that produces more factories, producing even more factories, doubling factories until eventually your entire planet is quickly covered in factories—possible today? Well, labor is constrained—you can accumulate capital (factories, tools, etc.), but that runs into diminishing returns because it’s constrained by a fixed labor force. With robots and AI systems being able to fully automate labor, that removes that constraint; robo-factories could produce more robo-factories in an ~unconstrained way, leading to an industrial explosion. See more economic growth models of this
+                  - link "here" [ref=e471] [cursor=pointer]:
+                    - /url: https://www.nber.org/papers/w31815
+                  - text: .
+                  - link "↩" [ref=e472] [cursor=pointer]:
+                    - /url: "#note-12-71"
+                    - img "↩" [ref=e473]
+    - contentinfo [ref=e474]

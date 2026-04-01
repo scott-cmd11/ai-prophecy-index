@@ -1,0 +1,584 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - paragraph [ref=e8]:
+          - link "SITUATIONAL AWARENESS" [ref=e9] [cursor=pointer]:
+            - /url: https://situational-awareness.ai/
+        - paragraph [ref=e10]: The Decade Ahead
+      - text: ☰
+  - navigation [ref=e11]:
+    - list [ref=e13]:
+      - listitem [ref=e14]:
+        - link "Introduction" [ref=e15] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/
+      - listitem [ref=e16]:
+        - 'link "I. From GPT-4 to AGI: Counting the OOMs" [ref=e17] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/from-gpt-4-to-agi/
+      - listitem [ref=e18]:
+        - 'link "II. From AGI to Superintelligence: the Intelligence Explosion" [ref=e19] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/from-agi-to-superintelligence/
+      - listitem [ref=e20]:
+        - link "IIIa. Racing to the Trillion-Dollar Cluster" [ref=e21] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+      - listitem [ref=e22]:
+        - 'link "IIIb. Lock Down the Labs: Security for AGI" [ref=e23] [cursor=pointer]':
+          - /url: https://situational-awareness.ai/lock-down-the-labs/
+      - listitem [ref=e24]:
+        - link "IIIc. Superalignment" [ref=e25] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/superalignment/
+      - listitem [ref=e26]:
+        - link "IIId. The Free World Must Prevail" [ref=e27] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/the-free-world-must-prevail/
+      - listitem [ref=e28]:
+        - link "IV. The Project" [ref=e29] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/the-project/
+      - listitem [ref=e30]:
+        - link "V. Parting Thoughts" [ref=e31] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/parting-thoughts/
+      - listitem [ref=e32]:
+        - link "Full series as PDF" [ref=e33] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/wp-content/uploads/2024/06/situationalawareness.pdf
+      - listitem [ref=e34]:
+        - link "About" [ref=e35] [cursor=pointer]:
+          - /url: https://situational-awareness.ai/leopold-aschenbrenner/
+      - listitem [ref=e36]:
+        - link "Dwarkesh podcast" [ref=e37] [cursor=pointer]:
+          - /url: https://www.dwarkeshpatel.com/p/leopold-aschenbrenner
+  - generic [ref=e38]:
+    - main [ref=e41]:
+      - article [ref=e42]:
+        - heading "IIId. The Free World Must Prevail" [level=1] [ref=e44]
+        - generic [ref=e45]:
+          - paragraph [ref=e46]:
+            - strong [ref=e47]: Superintelligence will give a decisive economic and military advantage. China isn’t at all out of the game yet. In the race to AGI, the free world’s very survival will be at stake. Can we maintain our preeminence over the authoritarian powers? And will we manage to avoid self-destruction along the way?
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: "In this piece:"
+              - link "Toggle Table of Content" [ref=e51] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e54]:
+                  - img [ref=e55]
+                  - img [ref=e57]
+            - navigation [ref=e59]:
+              - list [ref=e60]:
+                - listitem [ref=e61]:
+                  - link "Whoever leads on superintelligence will have a decisive military advantage" [ref=e62] [cursor=pointer]:
+                    - /url: "#Whoever_leads_on_superintelligence_will_have_a_decisive_military_advantage"
+                  - list [ref=e63]:
+                    - listitem [ref=e64]:
+                      - list [ref=e65]:
+                        - listitem [ref=e66]:
+                          - 'link "The Gulf War, or: What a few-decades-worth of technological lead implies for military power" [ref=e67] [cursor=pointer]':
+                            - /url: "#The_Gulf_War_or_What_a_few-decades-worth_of_technological_lead_implies_for_military_power"
+                        - listitem [ref=e68]:
+                          - link "The military advantage would be decisive even against nuclear deterrents" [ref=e69] [cursor=pointer]:
+                            - /url: "#The_military_advantage_would_be_decisive_even_against_nuclear_deterrents"
+                - listitem [ref=e70]:
+                  - link "China can be competitive" [ref=e71] [cursor=pointer]:
+                    - /url: "#China_can_be_competitive"
+                  - list [ref=e72]:
+                    - listitem [ref=e73]:
+                      - list [ref=e74]:
+                        - listitem [ref=e75]:
+                          - link "1. Compute" [ref=e76] [cursor=pointer]:
+                            - /url: "#1_Compute"
+                        - listitem [ref=e77]:
+                          - link "2. Algorithms" [ref=e78] [cursor=pointer]:
+                            - /url: "#2_Algorithms"
+                - listitem [ref=e79]:
+                  - link "The authoritarian peril" [ref=e80] [cursor=pointer]:
+                    - /url: "#The_authoritarian_peril"
+                - listitem [ref=e81]:
+                  - link "Maintaining a healthy lead will be decisive for safety" [ref=e82] [cursor=pointer]:
+                    - /url: "#Maintaining_a_healthy_lead_will_be_decisive_for_safety"
+                - listitem [ref=e83]:
+                  - link "Superintelligence is a matter of national security" [ref=e84] [cursor=pointer]:
+                    - /url: "#Superintelligence_is_a_matter_of_national_security"
+          - separator [ref=e85]
+          - blockquote [ref=e87]:
+            - paragraph [ref=e88]:
+              - emphasis [ref=e89]: The story of the human race is War. Except for brief and precarious interludes, there has never been peace in the world; and before history began, murderous strife was universal and unending.
+              - emphasis [ref=e90]: …
+              - emphasis [ref=e91]: Might not a bomb no bigger than an orange be found to possess a secret power to destroy a whole block of buildings — nay, to concentrate the force of a thousand tons of cordite and blast a township at a stroke?
+            - generic [ref=e92]: —Winston Churchill, “Shall We All Commit Suicide?”
+          - paragraph [ref=e94]: Superintelligence will be the most powerful technology—and most powerful weapon—mankind has ever developed. It will give a decisive military advantage, perhaps comparable only with nuclear weapons. Authoritarians could use superintelligence for world conquest, and to enforce total control internally. Rogue states could use it to threaten annihilation. And though many count them out, once the CCP wakes up to AGI it has a clear path to being competitive (at least until and unless we drastically improve US AI lab security).
+          - paragraph [ref=e95]: Every month of lead will matter for safety too. We face the greatest risks if we are locked in a tight race, democratic allies and authoritarian competitors each racing through the already-precarious intelligence explosion at breakneck pace—forced to throw any caution by the wayside, fearing the other getting superintelligence first. Only if we preserve a healthy lead of democratic allies will we have the margin of error for navigating the extraordinarily volatile and dangerous period around the emergence of superintelligence. And only American leadership is a realistic path to developing a nonproliferation regime to avert the risks of self-destruction superintelligence will unfold.
+          - paragraph [ref=e96]: "Our generation too easily takes for granted that we live in peace and freedom. And those who herald the age of AGI in SF too often ignore the elephant in the room: superintelligence is a matter of national security, and the United States must win."
+          - heading "Whoever leads on superintelligence will have a decisive military advantage" [level=2] [ref=e97]:
+            - strong [ref=e98]: Whoever leads on superintelligence will have a decisive military advantage
+          - paragraph [ref=e99]: Superintelligence is not just any other technology—hypersonic missiles, stealth, and so on—where US and liberal democracies’ leadership is highly desirable, but not strictly necessary. The military balance of power can be kept if the US falls behind on one or a couple such technologies; these technologies matter a great deal, but can be outweighed by advantages in other areas.
+          - paragraph [ref=e100]: "The advent of superintelligence will put us in a situation unseen since the advent of the atomic era: those who have it will wield complete dominance over those who don’t."
+          - paragraph [ref=e101]:
+            - text: I’ve previously discussed the
+            - link "vast power of superintelligence" [ref=e102] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-agi-to-superintelligence/#The_power_of_superintelligence
+            - text: . It’ll mean having billions of automated scientists and engineers and technicians, each much smarter than the smartest human scientists, furiously inventing new technologies, day and night. The acceleration in scientific and technological development will be extraordinary. As superintelligence is applied to R&D in military technology, we could quickly go through decades of military technological progress.
+          - generic [ref=e104]:
+            - 'heading "The Gulf War, or: What a few-decades-worth of technological lead implies for military power" [level=4] [ref=e105]':
+              - strong [ref=e106]: "The Gulf War, or: What a few-decades-worth of technological lead implies for military power"
+            - paragraph [ref=e107]:
+              - text: The Gulf War provides a helpful illustration of how a 20-30 year lead in military technology can be decisive. At the time, Iraq commanded the fourth-largest army in the world. In terms of
+              - link "numbers" [ref=e108] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=wKi3NwLFkX4
+              - text: (troops, tanks, artillery), the US-led coalition barely matched (or was outmatched) by the Iraqis, all while the Iraqis had had ample time to entrench their defenses (a situation that would normally require a 3:1, or 5:1, advantage in military manpower to dislocate).
+            - paragraph [ref=e109]:
+              - text: But the US-led coalition
+              - emphasis [ref=e110]: obliterated
+              - text: the Iraqi army in a merely 100-hour ground war. Coalition dead
+              - link "numbered" [ref=e111] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Gulf_War
+              - text: a mere 292, compared to 20k-50k Iraqi dead and hundreds of thousands of others wounded or captured. The Coalition lost a mere 31 tanks, compared to the destruction of over 3,000 Iraqi tanks.
+            - paragraph [ref=e112]: "The difference in technology wasn’t godlike or unfathomable, but it was utterly and completely decisive: guided and smart munitions, early versions of stealth, better sensors, better tank scopes (to see farther in the night and in dust storms), better fighter jets, an advantage in reconnaissance, and so on."
+            - paragraph [ref=e113]:
+              - text: (For a more recent example, recall Iran launching a massive attack of 300 missiles at Israel, “
+              - link "99%" [ref=e114] [cursor=pointer]:
+                - /url: https://apnews.com/article/strait-of-hormuz-vessel-33fcffde2d867380e98c89403776a8ac
+              - text: ” of which were intercepted by superior Israel, US, and allied missile defense.)
+          - paragraph [ref=e115]:
+            - text: A lead of a year or two or three on superintelligence could mean as
+            - emphasis [ref=e116]: utterly decisive
+            - text: a military advantage as the US coalition had against Iraq in the Gulf War. A complete reshaping of the military balance of power will be on the line.
+          - paragraph [ref=e117]: Imagine if we had gone through the military technological developments of the 20th century in less than a decade. We’d have gone from horses and rifles and trenches, to modern tank armies, in a couple years; to armadas of supersonic fighter planes and nuclear weapons and ICBMs a couple years after that; to stealth and precision that can knock out an enemy before they even know you’re there another couple years after that.
+          - paragraph [ref=e118]: "That is the situation we will face with the advent of superintelligence: the military technological advances of a century compressed to less than a decade. We’ll see superhuman hacking that can cripple much of an adversary’s military force, roboarmies and autonomous drone swarms, but more importantly completely new paradigms we can’t yet begin to imagine, and the inventions of new WMDs with thousandfold increases in destructive power (and new WMD defenses too, like impenetrable missile defense, that rapidly and repeatedly upend deterrence equilibria)."
+          - paragraph [ref=e119]:
+            - text: And it wouldn’t just be technological progress. As we solve
+            - link "robotics" [ref=e120] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-agi-to-superintelligence/#The_power_of_superintelligence
+            - text: ", labor will become fully automated, enabling a broader industrial and"
+            - link "economic explosion" [ref=e121] [cursor=pointer]:
+              - /url: https://www.openphilanthropy.org/research/could-advanced-ai-drive-explosive-economic-growth/
+            - text: ", too. It is plausible growth rates could go into the 10s of percent a year; within at most a decade, the GDP of those with the lead would trounce those behind. Rapidly multiplying robot factories would mean not only a drastic technological edge, but also production capacity to dominate in pure materiel. Think millions of missile interceptors; billions of drones; and so on."
+          - paragraph [ref=e122]:
+            - text: Of course, we don’t know the limits of science and the many frictions that could slow things down. But no godlike advances are necessary for a decisive military advantage. And a billion superintelligent scientists will be able to do
+            - emphasis [ref=e123]: a lot. It seems clear that within a matter of years, pre-superintelligence militaries would become hopelessly outclassed
+            - text: .
+          - generic [ref=e125]:
+            - heading "The military advantage would be decisive even against nuclear deterrents" [level=4] [ref=e126]:
+              - strong [ref=e127]: The military advantage would be decisive even against nuclear deterrents
+            - paragraph [ref=e128]:
+              - text: "To be even clearer: it seems likely the advantage conferred by superintelligence would be decisive enough even to preemptively take out an adversary’s nuclear deterrent. Improved sensor networks and analysis could locate even the quietest current nuclear submarines (similarly for mobile missile launchers). Millions or billions of mouse-sized autonomous drones, with advances in stealth, could infiltrate behind enemy lines and then surreptitiously locate, sabotage, and decapitate the adversary’s nuclear forces. Improved sensors, targeting, and so on could dramatically improve missile defense (similar to, say, the Iran vs. Israel example above); moreover, if there is an industrial explosion, robot factories could churn out thousands of interceptors for each opposing missile. And all of this is without even considering completely new scientific and technological paradigms (e.g.,"
+              - link "remotely deactivating" [ref=e129] [cursor=pointer]:
+                - /url: https://twitter.com/toughsf/status/1754550452996518099?s=46
+              - text: all the nukes).
+            - paragraph [ref=e130]: It would simply be no contest. And not just no contest in the nuclear sense of “we could mutually destroy each other,” but no contest in terms of being able to obliterate the military power of a rival without taking significant casualties. A couple years of lead on superintelligence would mean complete dominance.
+          - paragraph [ref=e131]:
+            - text: If there is a rapid
+            - link "intelligence explosion" [ref=e132] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-agi-to-superintelligence/
+            - text: ", it’s plausible a lead of mere"
+            - emphasis [ref=e133]: months
+            - text: "could be decisive: months could mean the difference between roughly human-level AI systems and substantially superhuman AI systems. Perhaps possessing those initial superintelligences alone, even before being broadly deployed, would be enough for a decisive advantage, e.g. via superhuman hacking abilities that could shut down pre-superintelligence militaries, more limited drone swarms that threaten instant death for every opposing leader, official, and their families, and advanced bioweapons developed with AlphaFold-style simulation that could target specific ethnic groups, e.g. anybody but Han Chinese (or simply withhold the cure from the adversary)."
+          - heading "China can be competitive" [level=2] [ref=e134]:
+            - strong [ref=e135]: China can be competitive
+          - paragraph [ref=e136]:
+            - text: Many seem complacent about China and AGI. The chip export controls have neutered them, and the leading AI labs are in the US and the UK—so we don’t have much to worry about, right? Chinese LLMs are
+            - emphasis [ref=e137]: fine
+            - text: —they are definitely capable of training large models!—but they are at best comparable to the second tier of US labs.
+            - button [ref=e139] [cursor=pointer]:
+              - img [ref=e140]
+              - img [ref=e142]
+              - img [ref=e144]
+            - text: And even Chinese models are often mere ripoffs of American open source releases (for example, the Yi-34B architecture
+            - link "seems to have" [ref=e146] [cursor=pointer]:
+              - /url: https://huggingface.co/01-ai/Yi-34B/discussions/11
+            - text: essentially the Llama2 architecture, with merely a
+            - link "few lines of code changed" [ref=e147] [cursor=pointer]:
+              - /url: https://github.com/turboderp/exllamav2/commit/6d24e1ad40d89f64b1bd3ae36e639c74c9f730b2
+            - text: ).
+            - button [ref=e149] [cursor=pointer]:
+              - img [ref=e150]
+              - img [ref=e152]
+              - img [ref=e154]
+            - text: Chinese deep learning
+            - link "used to be" [ref=e156] [cursor=pointer]:
+              - /url: https://twitter.com/gwern/status/1788722053954048475
+            - text: more important than it is today (for example
+            - link "Baidu published" [ref=e157] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/1712.00409#baidu
+            - text: one of the first modern scaling law papers), and while China
+            - link "publishes more papers" [ref=e158] [cursor=pointer]:
+              - /url: https://cset.georgetown.edu/wp-content/uploads/Comparing-U.S.-and-Chinese-Contributions-to-High-Impact-AI.pdf
+            - text: in AI than the US, they don’t seem to have driven any of the key breakthroughs in recent years.
+          - paragraph [ref=e159]: "That’s all merely a prelude, however. If and when the CCP wakes up to AGI, we should expect extraordinary efforts on the part of the CCP to compete. And I think there’s a pretty clear path for China to be in the game: outbuild the US and steal the algorithms."
+          - heading "1. Compute" [level=4] [ref=e160]:
+            - strong [ref=e161]: 1. Compute
+          - paragraph [ref=e162]:
+            - strong [ref=e163]: "1a. Chips:"
+            - text: China now seems to have demonstrated the ability to
+            - link "manufacture 7nm chips" [ref=e164] [cursor=pointer]:
+              - /url: https://www.semianalysis.com/p/china-ai-and-semiconductors-rise
+            - text: . While going beyond 7nm will be difficult (requiring EUV), 7nm is enough! For reference, 7nm is what Nvidia A100s used. The indigenous Huawei Ascend 910B, based on the SMIC 7nm platform, seems to only be ~2-3x worse on performance/$ than an equivalent Nvidia chip would be.
+            - button [ref=e166] [cursor=pointer]:
+              - img [ref=e167]
+              - img [ref=e169]
+              - img [ref=e171]
+          - paragraph [ref=e173]:
+            - text: The
+            - link "yield" [ref=e174] [cursor=pointer]:
+              - /url: https://www.semianalysis.com/p/china-ai-and-semiconductors-rise
+            - text: of SMIC’s 7nm production and the general maturity of Chinese abilities here is debated,
+            - button [ref=e176] [cursor=pointer]:
+              - img [ref=e177]
+              - img [ref=e179]
+              - img [ref=e181]
+            - text: and a critical open question is in what quantities they could produce these 7nm chips.
+            - button [ref=e184] [cursor=pointer]:
+              - img [ref=e185]
+              - img [ref=e187]
+              - img [ref=e189]
+            - text: Still, it seems like there’s at least a very reasonable chance they’ll be able to do this at large scale in a few years.
+          - paragraph [ref=e191]:
+            - text: Most of the gains in AI chips have come from improved chip design adapting them for AI use cases (and China likely already steals Nvidia chip designs from the Taiwan supply chain).
+            - button [ref=e193] [cursor=pointer]:
+              - img [ref=e194]
+              - img [ref=e196]
+              - img [ref=e198]
+            - text: 7nm vs. 3nm or 2nm, and their general fab immaturity, probably makes things more expensive for China.
+            - button [ref=e201] [cursor=pointer]:
+              - img [ref=e202]
+              - img [ref=e204]
+              - img [ref=e206]
+            - text: But that seems by no means fatal; you can make very good AI chips on top of a 7nm process. I wouldn’t have high confidence by this point, for example, that they couldn’t just spend a bit more and get ample compute for the $100B+ and trillion-dollar training clusters in a few years.
+            - button [ref=e209] [cursor=pointer]:
+              - img [ref=e210]
+              - img [ref=e212]
+              - img [ref=e214]
+          - paragraph [ref=e216]:
+            - strong [ref=e217]: "1b. Outbuilding the US:"
+            - text: The binding constraint on the largest training clusters won’t be chips, but industrial mobilization—perhaps most of all the
+            - link "100GW of power for the trillion-dollar cluster" [ref=e218] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+            - text: . But if there’s one thing China can do better than the US it’s
+            - emphasis [ref=e219]: building stuff.
+          - paragraph [ref=e220]:
+            - text: In the last decade, China has roughly built as much new electricity capacity as
+            - emphasis [ref=e221]: the entire US capacity
+            - text: (while US capacity has remained basically flat).
+            - emphasis [ref=e222]
+            - text: In the US, these things get stuck in environmental review, permitting, and regulation for a decade first. It thus seems quite plausible that China will be able to simply outbuild the US on the largest training clusters.
+          - figure "The AI power buildout for 2030 seems much more doable for China than the US. Based on earlier estimates from Racing to the Trillion-Dollar Cluster." [ref=e224]:
+            - generic [ref=e225]:
+              - emphasis [ref=e226]:
+                - text: The AI power buildout for 2030 seems much more doable for China than the US. Based on earlier estimates from
+                - link "Racing to the Trillion-Dollar Cluster" [ref=e227] [cursor=pointer]:
+                  - /url: https://situational-awareness.ai/racing-to-the-trillion-dollar-cluster/
+              - text: .
+          - heading "2. Algorithms" [level=4] [ref=e228]:
+            - text: "2."
+            - strong [ref=e229]: Algorithms
+          - paragraph [ref=e230]:
+            - text: As discussed extensively in
+            - link "Counting the OOMs" [ref=e231] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-gpt-4-to-agi/
+            - text: ", scaling compute is only part of the story: algorithmic advances probably contribute at least half of AI progress. We’re developing the key algorithmic breakthroughs for AGI"
+            - emphasis [ref=e232]: right now
+            - text: (essentially the EUV of algorithms because of the
+            - link "data wall" [ref=e233] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-gpt-4-to-agi/#The_data_wall
+            - text: ).
+          - paragraph [ref=e234]: By default, I expect Western labs to be well ahead; they have much of the key talent, and in recent years have developed all of the key breakthroughs. The size of the advantage may well be equivalent to a 10x (or even 100x) bigger cluster in a few years; this would provide the United States with a reasonably comfortable lead.
+          - paragraph [ref=e235]:
+            - text: "And yet, on the current course, we will completely surrender this advantage: as discussed extensively in the"
+            - link "security section" [ref=e236] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/lock-down-the-labs/
+            - text: ", the current state of security essentially makes it trivial for China to infiltrate American labs. And so, unless we lock down the labs very soon, I expect China to be able to simply steal the key algorithmic ingredients for AGI, and match US capabilities."
+            - button [ref=e238] [cursor=pointer]:
+              - img [ref=e239]
+              - img [ref=e241]
+              - img [ref=e243]
+          - paragraph [ref=e246]:
+            - text: "(Even worse, if we don’t improve security, there’s an even more salient path for China to compete. They won’t even need to train their own AGI: they’ll just be able to steal the AGI weights directly. Once they’ve stolen a copy of the"
+            - link "automated AI researcher" [ref=e247] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/from-agi-to-superintelligence/
+            - text: ", they’ll be off to the races, and can launch their own intelligence explosion. If they’re willing to apply less caution—both good caution, and unreasonable regulation and delay—than the US, they could race through the intelligence explosion more quickly, outrunning us to superintelligence.)"
+          - separator [ref=e248]
+          - paragraph [ref=e249]: To date, US tech companies have made a much bigger bet on AI and scaling than any Chinese efforts; consequently, we are well ahead. But counting out China now is a bit like counting out Google in the AI race when ChatGPT came out in late 2022. Google hadn’t yet focused their efforts in an intense AI bet, and it looked as though OpenAI was far ahead—but once Google woke up, a year and half later, they are putting up a very serious fight. China, too, has a clear path to putting up a very serious fight. If and when the CCP mobilizes in the race to AGI, the picture could start looking very different.
+          - paragraph [ref=e250]:
+            - text: Perhaps the Chinese government will be incompetent; perhaps they decide AI threatens the CCP and impose
+            - link "stifling regulation" [ref=e251] [cursor=pointer]:
+              - /url: https://cset.georgetown.edu/publication/china-ai-law-draft
+            - text: . But I wouldn’t count on it.
+          - paragraph [ref=e252]: I, for one, think we need to operate under the assumption that we will face a full-throated Chinese AGI effort. As every year we get dramatic leaps in AI capability, as we start seeing early automation of software engineers, as AI revenue explodes and we start seeing $10T valuations and trillion-dollar cluster buildouts, as a broader consensus starts to form that we are on the cusp of AGI—the CCP will take note. Much as I expect these leaps to wake up the USG to AGI, I would expect it to wake up the CCP to AGI—and to wake up to what being behind on AGI would mean for their national power.
+          - paragraph [ref=e253]: They will be a formidable adversary.
+          - heading "The authoritarian peril" [level=2] [ref=e254]:
+            - strong [ref=e255]: The authoritarian peril
+          - paragraph [ref=e256]: A dictator who wields the power of superintelligence would command concentrated power unlike any we’ve ever seen. In addition to being able to impose their will on other countries, they could enshrine their rule internally. Millions of AI-controlled robotic law enforcement agents could police their populace; mass surveillance would be hypercharged; dictator-loyal AIs could individually assess every citizen for dissent, with advanced near-perfect lie detection rooting out any disloyalty.
+          - paragraph [ref=e257]: Most importantly, the robotic military and police force could be wholly controlled by a single political leader, and programmed to be perfectly obedient—no more risk of coups or popular rebellions.
+          - paragraph [ref=e258]:
+            - text: Whereas past dictatorships were never permanent, superintelligence could eliminate basically all historical threats to a dictator’s rule and lock in their power (cf
+            - link "value lock-in" [ref=e259] [cursor=pointer]:
+              - /url: https://docs.google.com/document/d/1mkLFhxixWdT5peJHq4rfFzq4QbHyfZtANH1nou68q88/edit#heading=h.w0odoleyhzrt
+            - text: ). If the CCP gets this power, they could enforce the Party’s conception of “truth” totally and completely.
+          - paragraph [ref=e260]:
+            - text: To be clear, I don’t just worry about dictators getting superintelligence because “our values are better.” I believe in freedom and democracy, strongly, because I don’t know what the right values are. In the long arc of history, “
+            - link "time has upset many fighting faiths" [ref=e261] [cursor=pointer]:
+              - /url: https://supreme.justia.com/cases/federal/us/250/616/#tab-opinion-1928348
+            - text: .” I believe we should
+            - link "place our faith in mechanisms of error correction" [ref=e262] [cursor=pointer]:
+              - /url: https://www.forourposterity.com/burkean-longtermism/
+            - text: ", experimentation, competition, and adaption."
+          - paragraph [ref=e263]: Superintelligence will give those who wield it the power to crush opposition, dissent, and lock in their grand plan for humanity. It will be difficult for anyone to resist the terrible temptation to use this power. I hope, dearly, that we can instead rely on the wisdom of the Framers—letting radically different values flourish, and preserving the raucous plurality that has defined the American experiment.
+          - paragraph [ref=e264]:
+            - text: At stake in the AGI race will not just be the advantage in some far-flung proxy war, but whether freedom and democracy can survive for the next century and beyond. The course of human history is as brutal as it is clear. Twice in the 20th century tyranny threatened the globe; we must be under no delusion that this threat is banished forever. For many of my young friends, freedom and democracy feel like a given—but they are not. By far the most common political system in history is authoritarianism.
+            - button [ref=e266] [cursor=pointer]:
+              - img [ref=e267]
+              - img [ref=e269]
+              - img [ref=e271]
+          - paragraph [ref=e273]:
+            - text: "I genuinely do not know the intentions of the CCP and their authoritarian allies. But, as a reminder: the CCP is a regime founded on the"
+            - link "continued worship" [ref=e274] [cursor=pointer]:
+              - /url: https://english.news.cn/20231226/b7f98403ef3b4c01add52d2c93148f66/c.html
+            - text: of perhaps the
+            - link "greatest totalitarian mass-murderer" [ref=e275] [cursor=pointer]:
+              - /url: https://en.wikipedia.org/wiki/Mao_Zedong
+            - text: in human history (“with estimates ranging from 40 to 80 million victims due to starvation, persecution, prison labor, and mass executions”); a regime that recently put a million Uyghurs in
+            - link "concentration camps" [ref=e276] [cursor=pointer]:
+              - /url: https://www.theatlantic.com/the-uyghur-chronicles/
+            - text: and
+            - link "crushed" [ref=e277] [cursor=pointer]:
+              - /url: https://www.economist.com/china/2023/08/24/the-world-should-study-chinas-crushing-of-hong-kongs-freedoms
+            - text: a free Hong Kong; a regime that systematically practices mass surveillance for social control, both of the
+            - link "new-fangled" [ref=e278] [cursor=pointer]:
+              - /url: https://www.nytimes.com/2022/06/21/world/asia/china-surveillance-investigation.html
+            - text: (tracking phones, DNA databases, facial recognition, and so on) and the
+            - link "old-fangled" [ref=e279] [cursor=pointer]:
+              - /url: https://www.nytimes.com/2024/05/25/world/asia/china-surveillance-xi.html
+            - text: (recruiting an army of citizens to report on their neighbors) kind; a regime that ensures
+            - link "all text messages" [ref=e280] [cursor=pointer]:
+              - /url: https://citizenlab.ca/2020/05/wechat-surveillance-explained/
+            - text: passes through a censor, and that goes so far to repress dissent as to
+            - link "pull families into police stations" [ref=e281] [cursor=pointer]:
+              - /url: https://www.amnesty.org/en/latest/news/2024/05/china-overseas-students-face-harassment-and-surveillance-in-campaign-of-transnational-repression/
+            - text: when their child overseas attends a protest; a regime that
+            - link "has cemented" [ref=e282] [cursor=pointer]:
+              - /url: https://www.bbc.com/news/world-asia-china-43361276
+            - text: Xi Jinping as dictator-for-life; a regime that touts its aims to militarily crush and “
+            - link "reeducate" [ref=e283] [cursor=pointer]:
+              - /url: https://sg.news.yahoo.com/china-educate-taiwan-takes-over-101045402.html
+            - text: ” a free neighboring nation; a regime that
+            - link "explicitly seeks" [ref=e284] [cursor=pointer]:
+              - /url: https://www.uscc.gov/sites/default/files/testimonies/SFR%20for%20USCC%20TobinD%2020200313.pdf
+            - text: a China-centric world order.
+          - paragraph [ref=e285]:
+            - emphasis [ref=e286]: The free world must prevail over the authoritarian powers in this race.
+            - text: We owe our peace and freedom to American economic and military preeminence. Perhaps even empowered with superintelligence, the CCP will behave responsibly on the international stage, leaving each to their own. But the history of dictators of their ilk is not pretty. If America and her allies fail to win this race, we risk it all.
+          - heading "Maintaining a healthy lead will be decisive for safety" [level=2] [ref=e287]:
+            - strong [ref=e288]: Maintaining a healthy lead will be decisive for safety
+          - paragraph [ref=e289]: "It is the cursed history of science and technology that as they have unfolded their wonders, they have also expanded the means of destruction: from sticks and stones, to swords and spears, rifles and cannons, machine guns and tanks, bombers and missiles, nuclear weapons. The “destruction/$” curve has consistently gone down as technology has advanced. We should expect the rapid technological progress post-superintelligence to follow this trend."
+          - paragraph [ref=e290]: Perhaps dramatic advances in biology will yield extraordinary new bioweapons, ones that spread silently, swiftly, before killing with perfect lethality on command (and that can be made extraordinarily cheaply, affordable even for terrorist groups). Perhaps new kinds of nuclear weapons enable the size of nuclear arsenals to increase by orders of magnitude, with new delivery mechanisms that are undetectable. Perhaps mosquito-sized drones, each carrying a deadly poison, could be targeted to kill every member of an opposing nation. It’s hard to know what a century’s worth of technological progress would yield—but I am confident it would unfold appalling possibilities.
+          - paragraph [ref=e291]:
+            - text: Humanity barely evaded self-destruction during the Cold War. On the historical view, the greatest existential risk posed by AGI is that it will enable us to develop extraordinary new means of mass death. This time, these means could even proliferate to become accessible to rogue actors or terrorists (especially if, as on
+            - link "the current" [ref=e292] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/lock-down-the-labs/
+            - text: course, the superintelligence weights aren’t sufficiently protected, and can be directly stolen by North Korea, Iran, and co.).
+          - paragraph [ref=e293]:
+            - text: "North Korea already has a concerted bioweapons program: the US"
+            - link "assesses" [ref=e294] [cursor=pointer]:
+              - /url: https://www.state.gov/wp-content/uploads/2023/04/13APR23-FINAL-2023-Treaty-Compliance-Report-UNCLASSIFIED-UNSOURCED.pdf
+            - text: that “North Korea has a dedicated, national level offensive program” to develop and produce bioweapons. It seems plausible that their primary constraint is how far their small circle of top scientists has been able to push the limits of (synthetic) biology. What happens when that constraint is removed, when they can use millions of superintelligences to accelerate their bioweapons R&D? For example, the US
+            - link "assesses" [ref=e295] [cursor=pointer]:
+              - /url: https://www.state.gov/wp-content/uploads/2023/04/13APR23-FINAL-2023-Treaty-Compliance-Report-UNCLASSIFIED-UNSOURCED.pdf
+            - text: that North Korea currently has “limited ability” to genetically engineer biological products—what happens when that becomes unlimited? With what unholy new concoctions will they hold us hostage?
+          - paragraph [ref=e296]:
+            - text: Moreover, as discussed in the
+            - link "superalignment section" [ref=e297] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/superalignment/
+            - text: ", there will be extreme safety risks around and during the intelligence explosion—we will be faced with novel technical challenges to ensure we can reliably trust and control superhuman AI systems. This very well may require us to slow down at some critical moments, say, delaying by 6 months in the middle of the intelligence explosion to get additional assurances on safety, or using a large fraction of compute on alignment research rather than capabilities progress."
+          - paragraph [ref=e298]:
+            - text: "Some hope for some sort of international treaty on safety. This seems fanciful to me. The world where both the CCP and USG are AGI-pilled enough to take safety risk seriously is also the world in which both realize that international economic and military predominance is at stake, that being months behind on AGI could mean being permanently left behind. If the race is tight, any arms control equilibrium, at least in the early phase around superintelligence, seems extremely unstable. In short, ”breakout” is too easy: the incentive (and the fear that others will act on this incentive) to race ahead with an intelligence explosion, to reach superintelligence and the decisive advantage, too great."
+            - button [ref=e300] [cursor=pointer]:
+              - img [ref=e301]
+              - img [ref=e303]
+              - img [ref=e305]
+            - text: At the very least, the odds we get something good-enough here seem slim. (How have those climate treaties gone? That seems like a dramatically easier problem compared to this.)
+          - paragraph [ref=e307]:
+            - text: The main—perhaps the only—hope we have is that an alliance of democracies has a healthy lead over adversarial powers. The United States must lead, and use that lead to enforce safety norms on the rest of the world. That’s the
+            - link "path we took with nukes" [ref=e308] [cursor=pointer]:
+              - /url: https://marginalrevolution.com/marginalrevolution/2023/04/the-nuclear-non-proliferation-treaty-and-existential-agi-risk.html
+            - text: ", offering assistance on the peaceful uses of nuclear technology in exchange for an international nonproliferation regime (ultimately underwritten by American military power)—and it’s the only path that’s been shown to work."
+          - paragraph [ref=e309]: "Perhaps most importantly, a healthy lead gives us room to maneuver: the ability to “cash in” parts of the lead, if necessary, to get safety right, for example by devoting extra work to alignment during the intelligence explosion."
+          - paragraph [ref=e310]:
+            - text: The safety challenges of superintelligence would become
+            - emphasis [ref=e311]: extremely
+            - text: difficult to manage if you are in a neck-and-neck arms race. A 2 year vs. a 2 month lead could easily make all the difference. If we have only a 2 month lead, we have no margin at all for safety. In fear of the CCP’s intelligence explosion, we’d almost certainly race, no holds barred, through our own intelligence explosion—barreling towards AI systems vastly smarter than humans in months, without any ability to slow down to get key decisions right, with all the risks of superintelligence going awry that implies. We’d face an extremely volatile situation, as we and the CCP rapidly developed extraordinary new military technology that repeatedly destabilized deterrence. If our secrets and weights
+            - link "aren’t locked down" [ref=e312] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/lock-down-the-labs/
+            - text: ", it might even mean a range of other rogue states are close as well, each of them using superintelligence to furnish their own new arsenal of super-WMDs. Even if we barely managed to inch out ahead, it would likely be a pyrrhic victory; the existential struggle would have brought the world to the brink of total self-destruction."
+          - paragraph [ref=e313]:
+            - text: Superintelligence looks very different if the democratic allies have a healthy lead, say 2 years.
+            - button [ref=e315] [cursor=pointer]:
+              - img [ref=e316]
+              - img [ref=e318]
+              - img [ref=e320]
+            - text: That buys us the time necessary to navigate the unprecedented series of challenges we’ll face around and after superintelligence, and to stabilize the situation.
+          - paragraph [ref=e322]:
+            - text: If and when it becomes clear that the US will decisively win,
+            - emphasis [ref=e323]: that’s
+            - text: when we offer a deal to China and other adversaries. They’ll know they won’t win, and so they’ll know their only option is to come to the table; and we’d rather avoid a feverish standoff or last-ditch military attempts on their part to sabotage Western efforts. In exchange for guaranteeing noninterference in their affairs, and sharing the peaceful benefits of superintelligence, a regime of nonproliferation, safety norms, and a semblance of stability post-superintelligence can be born.
+          - paragraph [ref=e324]:
+            - text: In any case, as we go deeper into this struggle, we must not forget the threat of self-destruction. That we made it through the Cold War in one piece involved too much luck
+            - button [ref=e326] [cursor=pointer]:
+              - img [ref=e327]
+              - img [ref=e329]
+              - img [ref=e331]
+            - text: —and the destruction could be a thousandfold more potent than what we faced then. A healthy lead by an American-led coalition of democracies—and a solemn exercise of this leadership to stabilize whatever volatile situation we find ourselves in—is probably the safest path to navigating past this precipice. But in the heat of the AGI race, we better not screw it up.
+          - heading "Superintelligence is a matter of national security" [level=2] [ref=e333]:
+            - strong [ref=e334]: Superintelligence is a matter of national security
+          - paragraph [ref=e335]: "It is clear: AGI is an existential challenge for the national security of the United States. It’s time to start treating it as such."
+          - paragraph [ref=e336]: Slowly, the USG is starting to move. The export controls on American chips are a huge deal, and were an incredibly prescient move at the time. But we have to get serious across the board.
+          - paragraph [ref=e337]:
+            - text: The US
+            - emphasis [ref=e338]: has
+            - text: a lead. We just have to keep it. And we’re screwing that up right now. Most of all, we must rapidly and radically
+            - link "lock down the AI labs" [ref=e339] [cursor=pointer]:
+              - /url: https://situational-awareness.ai/lock-down-the-labs/
+            - text: ", before we leak key AGI breakthroughs in the next 12-24 months (or the AGI weights themselves). We must build the compute clusters in the US, not in dictatorships that offer easy money. And yes, American AI labs have a duty to work with the intelligence community and the military. America’s lead on AGI won’t secure peace and freedom by just building the best AI girlfriend apps. It’s not pretty—but we must build AI for American defense."
+          - separator [ref=e340]
+          - paragraph [ref=e341]:
+            - text: We are already on course for the most combustive international situation in decades. Putin is on the march in Eastern Europe. The Middle East is on fire. The CCP views taking Taiwan as its destiny. Now add in the race to AGI. Add in a century’s worth of technological breakthroughs compressed into years post-superintelligence. It will be the one of most unstable international situations ever seen—and at least initially, the incentives for first-strikes will be tremendous.
+            - button [ref=e343] [cursor=pointer]:
+              - img [ref=e344]
+              - img [ref=e346]
+              - img [ref=e348]
+          - paragraph [ref=e350]:
+            - text: There’s already an eerie convergence of AGI timelines (~2027?) and Taiwan watchers’ Taiwan invasion timelines (
+            - link "China ready to invade Taiwan by 2027?" [ref=e351] [cursor=pointer]:
+              - /url: https://www.bloomberg.com/news/articles/2024-03-20/china-on-track-to-be-ready-for-taiwan-invasion-by-2027-us-says?embedded-checkout=true
+            - text: )—a convergence that will surely only heighten as the world wakes up to AGI. (Imagine if in 1960, the vast majority of the world’s uranium deposits were somehow concentrated in Berlin!) It seems to me that there is a real chance that the AGI endgame plays out with the backdrop of world war. Then all bets are off.
+          - paragraph [ref=e353]:
+            - text: Next post in series
+            - emphasis [ref=e354]: ":"
+            - emphasis [ref=e355]:
+              - strong [ref=e356]:
+                - link "IV. The Project" [ref=e357] [cursor=pointer]:
+                  - /url: https://situational-awareness.ai/the-project/
+          - generic [ref=e359]:
+            - separator [ref=e360]
+            - list [ref=e361]:
+              - listitem [ref=e362]:
+                - paragraph [ref=e363]:
+                  - text: For example, Yi-Large
+                  - link "seems to be" [ref=e364] [cursor=pointer]:
+                    - /url: https://www.reddit.com/r/singularity/comments/1cyoun2/yilarge_catching_up_to_gpt4_overtakes_claude_3/
+                  - text: a GPT-4-class model on LMSys, but that’s over a year after OpenAI released GPT-4.
+                  - link "↩" [ref=e365] [cursor=pointer]:
+                    - /url: "#note-1-140"
+                    - img "↩" [ref=e366]
+              - listitem [ref=e367]:
+                - paragraph [ref=e368]:
+                  - text: Similarly, Qwen hugging face code cites Mistral a lot, and it seems that Chinese LLM dependence on American open-source is an
+                  - link "explicit worry" [ref=e369] [cursor=pointer]:
+                    - /url: https://www.scmp.com/tech/big-tech/article/3255545/china-said-fall-short-matching-us-advances-ai-owing-many-challenges-theory-and-technologies
+                  - text: that has made its way to the Chinese Premier.
+                  - link "↩" [ref=e370] [cursor=pointer]:
+                    - /url: "#note-2-140"
+                    - img "↩" [ref=e371]
+              - listitem [ref=e372]:
+                - paragraph [ref=e373]:
+                  - text: The Huawei Ascend 910B seems to
+                  - link "cost around 120,000 yuan" [ref=e374] [cursor=pointer]:
+                    - /url: https://www.reuters.com/technology/nvidia-cuts-china-prices-huawei-chip-fight-sources-say-2024-05-24/
+                  - text: per card, or about $17k. This is
+                  - link "produced on the SMIC 7nm" [ref=e375] [cursor=pointer]:
+                    - /url: https://www.semianalysis.com/p/nvidias-new-china-ai-chips-circumvent
+                  - text: node, while performing similarly to an A100. H100s are maybe ~3x better than A100s, while costing somewhat more ($20-25k ASP), suggesting only a ~2-3x cost increase for equivalent AI GPU performance for China right now.
+                  - link "↩" [ref=e376] [cursor=pointer]:
+                    - /url: "#note-3-140"
+                    - img "↩" [ref=e377]
+              - listitem [ref=e378]:
+                - paragraph [ref=e379]:
+                  - text: For example, they’re still using Western HBM memory (which for some reason is not export controlled?), though
+                  - link "CXMT is said to be sampling HBM" [ref=e380] [cursor=pointer]:
+                    - /url: https://www.semianalysis.com/p/nvidias-new-china-ai-chips-circumvent
+                  - text: next year.
+                  - link "↩" [ref=e381] [cursor=pointer]:
+                    - /url: "#note-4-140"
+                    - img "↩" [ref=e382]
+              - listitem [ref=e383]:
+                - paragraph [ref=e384]:
+                  - text: Though, since they can still import other types of chips from the West, they could simply direct the entirety of their 7nm node to AI chips, making up for lower overall production.
+                  - link "↩" [ref=e385] [cursor=pointer]:
+                    - /url: "#note-5-140"
+                    - img "↩" [ref=e386]
+              - listitem [ref=e387]:
+                - paragraph [ref=e388]:
+                  - text: Notably, even cybercriminals were able to
+                  - link "hack Nvidia" [ref=e389] [cursor=pointer]:
+                    - /url: https://www.bloomberg.com/news/articles/2022-03-01/nvidia-says-hackers-stole-data-from-network-and-posted-it-online?sref=o4HC3q1q
+                  - text: and get
+                  - link "key GPU design" [ref=e390] [cursor=pointer]:
+                    - /url: https://www.semianalysis.com/p/nvidia-hacked-a-national-security?s=r
+                  - text: secrets. Moreover,
+                  - link "TPUv6 designs were apparently among what was stolen" [ref=e391] [cursor=pointer]:
+                    - /url: https://deliprao.substack.com/p/google-tpu-v6-designs-are-probably
+                  - text: by the recently-indicted Chinese national at Google.
+                  - link "↩" [ref=e392] [cursor=pointer]:
+                    - /url: "#note-6-140"
+                    - img "↩" [ref=e393]
+              - listitem [ref=e394]:
+                - paragraph [ref=e395]:
+                  - text: For example, maybe these are 2x worse on perf/$ or perf/Watt. In turn, that also means to achieve the same overall datacenter performance, you need more power, and need more chips networked together, which also makes things more of a hassle.
+                  - link "↩" [ref=e396] [cursor=pointer]:
+                    - /url: "#note-7-140"
+                    - img "↩" [ref=e397]
+              - listitem [ref=e398]:
+                - paragraph [ref=e399]:
+                  - text: Note that even 3x more on chips would be much less than that in terms of increase in datacenter costs. Actual logic fab costs are <5% of Nvidia GPU cost, and even considering memory and CoWoS it’s less than 20% of the Nvidia pricetag due to their margin. And even GPUs themselves tend to be only 50-60% of the cost of a datacenter. So 3x more expensive on the chip fab end might translate into much, much less than a 3x increase in overall cost. Even for 10x more expensive chips, it seems like China could stomach that without hugely increasing datacenter costs.
+                  - link "↩" [ref=e400] [cursor=pointer]:
+                    - /url: "#note-8-140"
+                    - img "↩" [ref=e401]
+              - listitem [ref=e402]:
+                - paragraph [ref=e403]:
+                  - text: Some argue that even if China stole these secrets, they wouldn’t be able to compete because it requires tacit knowledge. I disagree. I think of this as having two layers. The bottom layer is the engineering prowess for large-scale training runs; these training runs can be hacky and delicate and requires tacit knowledge. But as
+                  - link "I’ll discuss later" [ref=e404] [cursor=pointer]:
+                    - /url: https://docs.google.com/document/d/1rWU00M9JGybX_EtYoKxAwXnoMbxhQv1v0vaCWRNc5iw/edit#bookmark=id.vyfc2cj0wo1f
+                  - text: ", Chinese AI efforts have shown themselves perfectly capable of training large-scale models, and I think they will have this tacit knowledge indigenously. The top layer is the algorithmic recipe—things like model architecture, the right scaling laws, etc.—that could be conveyed in a one-hour call. These compute multipliers are usually discrete changes, meaning the underlying tacit knowledge for large-scale training runs should transfer. I don’t think “tacit knowledge” will be a decisive barrier for Chinese AGI efforts."
+                  - link "↩" [ref=e405] [cursor=pointer]:
+                    - /url: "#note-9-140"
+                    - img "↩" [ref=e406]
+              - listitem [ref=e407]:
+                - paragraph [ref=e408]:
+                  - text: (Primarily monarchy.)
+                  - link "↩" [ref=e409] [cursor=pointer]:
+                    - /url: "#note-10-140"
+                    - img "↩" [ref=e410]
+              - listitem [ref=e411]:
+                - paragraph [ref=e412]: Consider the following comparison of unstable vs. stable arms control equilibria. 1980s arms control during the Cold War reduced nuclear weapons substantially, but targeted a stable equilibrium. The US and the Soviet Union still had 1000s of nuclear weapons. MAD was assured, even if one of the actors tried a crash program to build more nukes; and a rogue nation could try to build some nukes of their own, but not fundamentally threaten the US or Soviet Union with overmatch.
+                - paragraph [ref=e413]:
+                  - text: However, when disarmament is to very low levels of weapons or occurs amidst rapid technological change, the equilibrium is unstable. A rogue actor or treaty-breaker can easily start a crash program and threaten to totally overmatch the other players. Zero nukes wouldn’t be a stable equilibrium; similarly,
+                  - link "this paper" [ref=e414] [cursor=pointer]:
+                    - /url: https://www.tandfonline.com/doi/abs/10.1080/01636608709477602?journalCode=rwaq20&ref=forourposterity.com
+                  - text: has interesting historical case studies (such as post-WWI arms limitations and the Washington Naval Treaty) where disarmament in similarly dynamic situations destabilized, rather than stabilized.
+                - paragraph [ref=e415]:
+                  - text: If mere months of lead on AGI would give an utterly decisive advantage, this makes stable disarmament on AI similarly difficult. A rogue upstart or a treaty-breaker could gain a huge edge by secretly starting a crash program; the temptation would be too great for any sort of arrangement to be stable.
+                  - link "↩" [ref=e416] [cursor=pointer]:
+                    - /url: "#note-11-140"
+                    - img "↩" [ref=e417]
+              - listitem [ref=e418]:
+                - paragraph [ref=e419]:
+                  - text: It’s worth appreciating just how a big a deal 2 years is in terms of difference in AI capabilities. Given the already-rapid pace of AI progress today, and the even-more-rapid pace we should expect in an
+                  - link "intelligence explosion" [ref=e420] [cursor=pointer]:
+                    - /url: https://docs.google.com/document/d/1rWU00M9JGybX_EtYoKxAwXnoMbxhQv1v0vaCWRNc5iw/edit#bookmark=id.syrji3eimr65
+                  - text: ", and the broader technological explosion post-superintelligence, a “even” a 2-year-lead would mean vast differences in capability."
+                  - link "↩" [ref=e421] [cursor=pointer]:
+                    - /url: "#note-12-140"
+                    - img "↩" [ref=e422]
+              - listitem [ref=e423]:
+                - paragraph [ref=e424]:
+                  - text: Daniel Ellsberg
+                  - link "recounts this rivetingly" [ref=e425] [cursor=pointer]:
+                    - /url: https://www.amazon.com/Doomsday-Machine-Confessions-Nuclear-Planner/dp/1608196704
+                  - text: ", as one of the nuclear war planners at RAND and in the national security apparatus at the time."
+                  - link "↩" [ref=e426] [cursor=pointer]:
+                    - /url: "#note-13-140"
+                    - img "↩" [ref=e427]
+              - listitem [ref=e428]:
+                - paragraph [ref=e429]:
+                  - text: Everyone will be racing to their own superintelligences, and there will be a limited window before someone ahead will have irreversibly pulled away. There will be a big incentive to try to disable the enemy superintelligence clusters before they’ve gained a sufficient physical advantage (e.g., using superintelligence to develop impenetrable missile defense or drone swarms) that leaves everyone else permanently in the dust.
+                  - link "↩" [ref=e430] [cursor=pointer]:
+                    - /url: "#note-14-140"
+                    - img "↩" [ref=e431]
+    - contentinfo [ref=e432]
