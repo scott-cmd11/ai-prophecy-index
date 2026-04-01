@@ -8,8 +8,8 @@ export const STATUS_COLORS: Record<string, string> = {
 };
 
 export const STATUS_LABELS: Record<string, string> = {
-  confirmed: "Confirmed",
-  in_progress: "In Progress",
-  outstanding: "Outstanding",
-  incorrect: "Incorrect",
+  confirmed: "Got it right",
+  in_progress: "Still unfolding",
+  outstanding: "Too early to tell",
+  incorrect: "Got it wrong",
 };
