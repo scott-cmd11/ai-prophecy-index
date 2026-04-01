@@ -28,11 +28,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "AI Prediction Tracker",
+  title: "AI Prophecy Index",
   description:
     "Tracking and scoring public AI predictions from Carl Shulman and Leopold Aschenbrenner",
   openGraph: {
-    title: "AI Prediction Tracker",
+    title: "AI Prophecy Index",
     description:
       "Tracking and scoring public AI predictions from Carl Shulman and Leopold Aschenbrenner",
     type: "website",
