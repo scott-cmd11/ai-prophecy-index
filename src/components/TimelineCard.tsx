@@ -154,10 +154,16 @@ export function TimelineCard({
               )}
 
               {prediction.implications && (
-                <div>
+                <div
+                  className="rounded-r-md border-l-2 pl-3 pr-2 py-2"
+                  style={{
+                    borderColor: accentVar,
+                    backgroundColor: "color-mix(in srgb, var(--bg-card) 85%, var(--border-card))",
+                  }}
+                >
                   <h4
                     className="mb-1 font-mono text-[9px] font-medium uppercase tracking-widest"
-                    style={{ color: "var(--text-muted)" }}
+                    style={{ color: accentVar }}
                   >
                     If true
                   </h4>
