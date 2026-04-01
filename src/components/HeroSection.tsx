@@ -1,120 +1,90 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
 import { shulman } from "@/data/shulman";
 import { aschenbrenner } from "@/data/aschenbrenner";
-
-function useCountUp(target: number, duration = 1500) {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    const start = performance.now();
-    let rafId: number;
-
-    function tick(now: number) {
-      const elapsed = now - start;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.floor(eased * target));
-      if (progress < 1) {
-        rafId = requestAnimationFrame(tick);
-      }
-    }
-
-    rafId = requestAnimationFrame(tick);
-
-    return () => cancelAnimationFrame(rafId);
-  }, [target, duration]);
-
-  return count;
-}
+import { getStatusCounts, getHitRate } from "@/lib/utils";
 
 export function HeroSection() {
-  const shulmanCount = useCountUp(shulman.predictions.length, 1500);
-  const aschenbrennerCount = useCountUp(aschenbrenner.predictions.length, 1500);
+  const allPredictions = [...shulman.predictions, ...aschenbrenner.predictions];
+  const counts = getStatusCounts(allPredictions);
+  const total = allPredictions.length;
+  const hitRate = getHitRate(allPredictions);
+
+  const stats = [
+    { label: "Predictions", value: total },
+    { label: "Got it right", value: counts.confirmed },
+    { label: "Got it wrong", value: counts.incorrect },
+    { label: "Still unfolding", value: counts.in_progress },
+    { label: "Too early to tell", value: counts.outstanding },
+    { label: "Hit rate", value: `${hitRate}%` },
+  ];
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center px-6">
-      {/* Label */}
-      <div
-        className="mb-6 font-mono text-[10px] font-medium uppercase tracking-[0.3em]"
-        style={{ color: "var(--text-muted)" }}
-      >
-        Two minds. Forty-four predictions. One future.
-      </div>
-
-      {/* Main headline */}
-      <h1
-        className="text-center font-serif text-6xl italic leading-tight md:text-8xl"
-        style={{ color: "var(--text-primary)" }}
-      >
-        The AI Prophecy
-        <br />
-        Index
-      </h1>
-
-      {/* Thinker counts */}
-      <div className="mt-12 flex gap-16 md:gap-24">
-        {/* Shulman */}
-        <div className="text-center">
-          <div
-            className="font-mono text-5xl font-bold tabular-nums md:text-6xl"
-            style={{ color: "var(--accent-shulman)" }}
-          >
-            {shulmanCount}
-          </div>
-          <div
-            className="mt-2 font-serif text-sm italic md:text-base"
-            style={{ color: "var(--text-secondary)" }}
-          >
-            Carl Shulman
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div
-          className="w-px self-stretch"
-          style={{ background: "var(--spine)" }}
-        />
-
-        {/* Aschenbrenner */}
-        <div className="text-center">
-          <div
-            className="font-mono text-5xl font-bold tabular-nums md:text-6xl"
-            style={{ color: "var(--accent-aschenbrenner)" }}
-          >
-            {aschenbrennerCount}
-          </div>
-          <div
-            className="mt-2 font-serif text-sm italic md:text-base"
-            style={{ color: "var(--text-secondary)" }}
-          >
-            Leopold Aschenbrenner
-          </div>
-        </div>
-      </div>
-
-      {/* AI disclosure */}
-      <p
-        className="mt-10 max-w-sm text-center font-mono text-[10px] leading-relaxed"
-        style={{ color: "var(--text-faint)" }}
-      >
-        Prediction summaries and evidence assessments are AI-generated.
-        Not intended to inform investment or policy decisions.
-      </p>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-        <div
-          className="scroll-indicator font-mono text-xs"
-          style={{ color: "var(--text-faint)" }}
+    <header className="border-b-2" style={{ borderColor: "var(--rule-heavy)" }}>
+      <div className="mx-auto max-w-2xl px-6 pt-10 pb-0 text-center">
+        {/* Kicker */}
+        <p
+          className="mb-3 font-mono text-[10px] uppercase tracking-[0.2em]"
+          style={{ color: "var(--text-muted)" }}
         >
-          ▼
+          Accountability Project · Est. 2025
+        </p>
+
+        {/* Title */}
+        <h1
+          className="text-5xl md:text-7xl leading-[1.05] tracking-tight"
+          style={{
+            fontFamily: "var(--font-serif)",
+            fontStyle: "italic",
+            fontWeight: 400,
+            color: "var(--text-primary)",
+          }}
+        >
+          AI Prophecy Index
+        </h1>
+
+        {/* Rule + deck */}
+        <div className="my-4 flex items-center gap-4 justify-center">
+          <div className="flex-1 h-px max-w-[80px]" style={{ background: "var(--rule-heavy)" }} />
+          <p
+            className="text-sm"
+            style={{ color: "var(--text-muted)" }}
+          >
+            Who got it right, who didn&apos;t, and what the record says
+          </p>
+          <div className="flex-1 h-px max-w-[80px]" style={{ background: "var(--rule-heavy)" }} />
+        </div>
+
+        {/* Stats row */}
+        <div
+          className="flex border-t border-b mt-4"
+          style={{ borderColor: "var(--rule-light)" }}
+        >
+          {stats.map(({ label, value }, i) => (
+            <div
+              key={label}
+              className="flex-1 py-3 text-center"
+              style={{
+                borderRight: i < stats.length - 1 ? `1px solid var(--rule-light)` : "none",
+              }}
+            >
+              <div
+                className="font-mono text-lg font-medium leading-none mb-1"
+                style={{ color: "var(--text-primary)" }}
+              >
+                {value}
+              </div>
+              <div
+                className="font-mono text-[9px] uppercase tracking-widest leading-tight"
+                style={{ color: "var(--text-muted)" }}
+              >
+                {label}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Sentinel for intersection observer */}
-      <div id="hero-sentinel" className="absolute bottom-0 h-px w-full" />
-    </section>
+      {/* Sentinel for intersection observer (keep for future use) */}
+      <div id="hero-sentinel" className="h-px w-full" />
+    </header>
   );
 }
