@@ -56,8 +56,8 @@ export function DonutChart({
           </Pie>
           <Tooltip
             contentStyle={{
-              backgroundColor: "var(--bg-elevated)",
-              border: "1px solid var(--border-default)",
+              backgroundColor: "var(--bg-card)",
+              border: "1px solid var(--border-card)",
               borderRadius: "10px",
               fontSize: "12px",
               fontFamily: "var(--font-mono)",
@@ -109,7 +109,7 @@ export function DonutChart({
             <span className="font-semibold" style={{ color: entry.color }}>
               {entry.value}
             </span>
-            <span style={{ color: "var(--text-faint)" }}>
+            <span style={{ color: "var(--text-muted)" }}>
               ({Math.round((entry.value / total) * 100)}%)
             </span>
           </div>
