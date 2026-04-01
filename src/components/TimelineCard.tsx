@@ -70,16 +70,6 @@ export function TimelineCard({
             )}
           </div>
 
-          {/* Thinker bio — shown first time per year group */}
-          {showThinkerBio && (
-            <p
-              className="mb-1.5 font-mono text-[10px] leading-relaxed"
-              style={{ color: "var(--text-muted)" }}
-            >
-              {showThinkerBio}
-            </p>
-          )}
-
           {/* Claim */}
           <p
             className="text-base leading-snug"

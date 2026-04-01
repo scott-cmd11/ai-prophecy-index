@@ -26,59 +26,63 @@ export function FilterBar({
 
   return (
     <div
-      className="flex flex-wrap items-center gap-2 py-3 border-b mb-0"
+      className="py-3 border-b mb-0"
       style={{ borderColor: "var(--rule-light)" }}
     >
-      {/* Thinker filters */}
-      <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--text-faint)] mr-1">
-        Show
-      </span>
-      <button
-        className={`${PILL_BASE} rounded-sm`}
-        style={{
-          border: `1px solid ${visibleThinkers.shulman ? "var(--accent-shulman)" : "var(--rule-light)"}`,
-          color: visibleThinkers.shulman ? "var(--accent-shulman)" : "var(--text-muted)",
-          backgroundColor: visibleThinkers.shulman ? "color-mix(in srgb, var(--accent-shulman) 8%, white)" : "white",
-        }}
-        onClick={() => onToggleThinker("shulman")}
-      >
-        Shulman
-      </button>
-      <button
-        className={`${PILL_BASE} rounded-sm`}
-        style={{
-          border: `1px solid ${visibleThinkers.aschenbrenner ? "var(--accent-aschenbrenner)" : "var(--rule-light)"}`,
-          color: visibleThinkers.aschenbrenner ? "var(--accent-aschenbrenner)" : "var(--text-muted)",
-          backgroundColor: visibleThinkers.aschenbrenner ? "color-mix(in srgb, var(--accent-aschenbrenner) 8%, white)" : "white",
-        }}
-        onClick={() => onToggleThinker("aschenbrenner")}
-      >
-        Aschenbrenner
-      </button>
-
-      {/* Divider */}
-      <span className="h-4 w-px mx-1" style={{ background: "var(--rule-light)" }} />
-
-      {/* Status filters */}
-      <button
-        className={`${PILL_BASE} rounded-sm ${activeStatuses === "all" ? PILL_ACTIVE : PILL_INACTIVE}`}
-        onClick={() => onToggleStatus("all")}
-      >
-        All
-      </button>
-      {statuses.map((s) => (
+      {/* Row 1: Thinker filters */}
+      <div className="flex items-center gap-2 mb-2">
+        <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--text-faint)] w-12 flex-shrink-0">
+          Thinker
+        </span>
         <button
-          key={s}
-          className={`${PILL_BASE} rounded-sm ${
-            activeStatuses !== "all" && activeStatuses.includes(s)
-              ? PILL_ACTIVE
-              : PILL_INACTIVE
-          }`}
-          onClick={() => onToggleStatus(s)}
+          className={`${PILL_BASE} rounded-sm`}
+          style={{
+            border: `1px solid ${visibleThinkers.shulman ? "var(--accent-shulman)" : "var(--rule-light)"}`,
+            color: visibleThinkers.shulman ? "var(--accent-shulman)" : "var(--text-muted)",
+            backgroundColor: visibleThinkers.shulman ? "color-mix(in srgb, var(--accent-shulman) 8%, white)" : "white",
+          }}
+          onClick={() => onToggleThinker("shulman")}
         >
-          {STATUS_LABELS[s]}
+          Shulman
         </button>
-      ))}
+        <button
+          className={`${PILL_BASE} rounded-sm`}
+          style={{
+            border: `1px solid ${visibleThinkers.aschenbrenner ? "var(--accent-aschenbrenner)" : "var(--rule-light)"}`,
+            color: visibleThinkers.aschenbrenner ? "var(--accent-aschenbrenner)" : "var(--text-muted)",
+            backgroundColor: visibleThinkers.aschenbrenner ? "color-mix(in srgb, var(--accent-aschenbrenner) 8%, white)" : "white",
+          }}
+          onClick={() => onToggleThinker("aschenbrenner")}
+        >
+          Aschenbrenner
+        </button>
+      </div>
+
+      {/* Row 2: Status filters */}
+      <div className="flex items-center gap-2">
+        <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--text-faint)] w-12 flex-shrink-0">
+          Status
+        </span>
+        <button
+          className={`${PILL_BASE} rounded-sm ${activeStatuses === "all" ? PILL_ACTIVE : PILL_INACTIVE}`}
+          onClick={() => onToggleStatus("all")}
+        >
+          All
+        </button>
+        {statuses.map((s) => (
+          <button
+            key={s}
+            className={`${PILL_BASE} rounded-sm ${
+              activeStatuses !== "all" && activeStatuses.includes(s)
+                ? PILL_ACTIVE
+                : PILL_INACTIVE
+            }`}
+            onClick={() => onToggleStatus(s)}
+          >
+            {STATUS_LABELS[s]}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
