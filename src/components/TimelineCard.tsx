@@ -2,6 +2,7 @@
 
 import { Prediction } from "@/types";
 import { StatusBadge } from "@/components/StatusBadge";
+import { annotateJargon } from "@/lib/jargon";
 
 interface TimelineCardProps {
   prediction: Prediction;
@@ -115,7 +116,7 @@ export function TimelineCard({
                 className="text-sm leading-relaxed"
                 style={{ color: "var(--text-secondary)" }}
               >
-                {prediction.evidence}
+                {prediction.evidence ? annotateJargon(prediction.evidence) : null}
               </p>
             </div>
           )}
@@ -146,7 +147,7 @@ export function TimelineCard({
               }}
             >
               <strong className="font-semibold">Why incorrect — </strong>
-              {prediction.whyIncorrect}
+              {prediction.whyIncorrect ? annotateJargon(prediction.whyIncorrect) : null}
             </div>
           )}
 
