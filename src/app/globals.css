@@ -162,6 +162,37 @@ body::before {
 }
 
 /* ============================================================
+   Timeline Card Connecting Lines
+   ============================================================ */
+
+.timeline-card {
+  position: relative;
+}
+
+.timeline-card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 1px;
+  background: var(--spine);
+}
+
+.timeline-card[data-thinker="shulman"]::after {
+  right: -24px;
+}
+
+.timeline-card[data-thinker="aschenbrenner"]::after {
+  left: -24px;
+}
+
+@media (max-width: 767px) {
+  .timeline-card::after {
+    display: none;
+  }
+}
+
+/* ============================================================
    Reduced Motion
    ============================================================ */
 
