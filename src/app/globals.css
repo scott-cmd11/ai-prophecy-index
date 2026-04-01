@@ -1,24 +1,20 @@
 @import "tailwindcss";
 
 /* ============================================================
-   CSS Custom Properties — Editorial Light Design System
+   CSS Custom Properties — Broadsheet Editorial
    ============================================================ */
 
 :root {
   /* Backgrounds */
-  --bg-primary: #f8f7f4;
+  --bg-primary: #f9f7f2;
   --bg-card: #ffffff;
 
   /* Borders */
-  --border-card: #e2e8f0;
+  --border-card: #e0ddd6;
 
   /* Thinker accent colors */
   --accent-shulman: #7c3aed;
   --accent-aschenbrenner: #ea580c;
-
-  /* Spine / timeline rail */
-  --spine: #cbd5e1;
-  --spine-glow: #94a3b8;
 
   /* Prediction status */
   --confirmed: #059669;
@@ -27,24 +23,19 @@
   --incorrect: #dc2626;
 
   /* Typography */
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
-  --text-faint: #cbd5e1;
+  --text-primary: #1a1a1a;
+  --text-secondary: #444444;
+  --text-muted: #888888;
+  --text-faint: #bbbbbb;
 
-  /* Year marker */
-  --year-fill: #e8e4dc;
-  --year-stroke: #cbd5e1;
-
-  /* Overlay backgrounds */
-  --bg-overlay: rgba(248, 247, 244, 0.92);
-  --bg-nav: rgba(255, 255, 255, 0.88);
+  /* Rules / dividers */
+  --rule-heavy: #1a1a1a;
+  --rule-light: #e0ddd6;
 
   /* Font families */
   --font-sans: var(--font-dm-sans), system-ui, sans-serif;
   --font-serif: var(--font-instrument-serif), Georgia, serif;
   --font-mono: var(--font-jetbrains-mono), monospace;
-  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
 }
 
 /* ============================================================
@@ -78,36 +69,21 @@ body::before {
 }
 
 /* ============================================================
-   Scroll-Reveal Keyframes
+   Card expand/collapse — max-height transition
    ============================================================ */
 
-@keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-30px); }
-  to { opacity: 1; transform: translateX(0); }
+.card-expanded-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 200ms ease;
 }
 
-@keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(30px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes countUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+.card-expanded-content.expanded {
+  max-height: 2000px;
 }
 
 /* ============================================================
-   Living Status Animations
+   Status pulse animation (used on "Still unfolding" badge)
    ============================================================ */
 
 @keyframes pulse {
@@ -117,83 +93,6 @@ body::before {
 
 .status-pulse {
   animation: pulse 3s ease-in-out infinite;
-}
-
-@keyframes checkDraw {
-  from { stroke-dashoffset: 20; }
-  to { stroke-dashoffset: 0; }
-}
-
-/* ============================================================
-   Scroll-Reveal Utility Classes
-   ============================================================ */
-
-.scroll-reveal {
-  opacity: 0;
-}
-
-.scroll-reveal.visible {
-  animation-fill-mode: forwards;
-}
-
-.scroll-reveal.visible.from-left {
-  animation: fadeInLeft 400ms ease-out forwards;
-}
-
-.scroll-reveal.visible.from-right {
-  animation: fadeInRight 400ms ease-out forwards;
-}
-
-.scroll-reveal.visible.from-below {
-  animation: fadeInUp 400ms ease-out forwards;
-}
-
-.scroll-reveal.visible.scale-up {
-  animation: scaleIn 300ms ease-out forwards;
-}
-
-/* ============================================================
-   Scroll Indicator Bounce
-   ============================================================ */
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
-}
-
-.scroll-indicator {
-  animation: bounce 2s ease-in-out infinite;
-}
-
-/* ============================================================
-   Timeline Card Connecting Lines
-   ============================================================ */
-
-.timeline-card {
-  position: relative;
-}
-
-.timeline-card::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 24px;
-  height: 1px;
-  background: var(--spine);
-}
-
-.timeline-card[data-thinker="shulman"]::after {
-  right: -24px;
-}
-
-.timeline-card[data-thinker="aschenbrenner"]::after {
-  left: -24px;
-}
-
-@media (max-width: 767px) {
-  .timeline-card::after {
-    display: none;
-  }
 }
 
 /* ============================================================
@@ -221,10 +120,10 @@ body::before {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--spine);
+  background: var(--rule-light);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--spine-glow);
+  background: #aaa;
 }
