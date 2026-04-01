@@ -153,6 +153,23 @@ export function TimelineCard({
                 </div>
               )}
 
+              {prediction.implications && (
+                <div>
+                  <h4
+                    className="mb-1 font-mono text-[9px] font-medium uppercase tracking-widest"
+                    style={{ color: "var(--text-muted)" }}
+                  >
+                    If true
+                  </h4>
+                  <p
+                    className="italic text-sm leading-relaxed"
+                    style={{ color: "var(--text-secondary)" }}
+                  >
+                    {prediction.implications}
+                  </p>
+                </div>
+              )}
+
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
                 {prediction.sourceUrl && (
                   <a

@@ -11,6 +11,7 @@ export interface Prediction {
   status: PredictionStatus;
   confidence?: Confidence;
   evidence?: string;
+  implications?: string;
   lastReviewed: string;
   timeHorizon?: string;
   year: number;

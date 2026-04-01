@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { shulman } from "@/data/shulman";
+import { aschenbrenner } from "@/data/aschenbrenner";
 
 function useCountUp(target: number, duration = 1500) {
   const [count, setCount] = useState(0);
@@ -28,8 +30,8 @@ function useCountUp(target: number, duration = 1500) {
 }
 
 export function HeroSection() {
-  const shulmanCount = useCountUp(14, 1500);
-  const aschenbrennerCount = useCountUp(14, 1500);
+  const shulmanCount = useCountUp(shulman.predictions.length, 1500);
+  const aschenbrennerCount = useCountUp(aschenbrenner.predictions.length, 1500);
 
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center px-6">
@@ -38,7 +40,7 @@ export function HeroSection() {
         className="mb-6 font-mono text-[10px] font-medium uppercase tracking-[0.3em]"
         style={{ color: "var(--text-muted)" }}
       >
-        Two minds. Twenty-eight predictions. One future.
+        Two minds. Forty-four predictions. One future.
       </div>
 
       {/* Main headline */}
