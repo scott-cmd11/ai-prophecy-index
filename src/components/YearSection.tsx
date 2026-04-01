@@ -110,7 +110,6 @@ export function YearSection({
                     thinker="shulman"
                     isExpanded={expandedId === prediction.id}
                     onToggle={() => onExpand(prediction.id)}
-                    index={i}
                   />
                 </div>
               ))}
@@ -153,7 +152,6 @@ export function YearSection({
                     thinker="aschenbrenner"
                     isExpanded={expandedId === prediction.id}
                     onToggle={() => onExpand(prediction.id)}
-                    index={i}
                   />
                 </div>
               ))}
@@ -170,7 +168,6 @@ export function YearSection({
                 thinker="shulman"
                 isExpanded={expandedId === prediction.id}
                 onToggle={() => onExpand(prediction.id)}
-                index={i}
               />
             ))}
           {visibleThinkers.aschenbrenner &&
@@ -181,7 +178,6 @@ export function YearSection({
                 thinker="aschenbrenner"
                 isExpanded={expandedId === prediction.id}
                 onToggle={() => onExpand(prediction.id)}
-                index={i}
               />
             ))}
         </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { Prediction } from "@/types";
 import { StatusBadge } from "@/components/StatusBadge";
 
@@ -9,7 +8,7 @@ interface TimelineCardProps {
   thinker: "shulman" | "aschenbrenner";
   isExpanded: boolean;
   onToggle: () => void;
-  index: number;
+  showThinkerBio?: string;
 }
 
 export function TimelineCard({
@@ -17,207 +16,164 @@ export function TimelineCard({
   thinker,
   isExpanded,
   onToggle,
-  index,
+  showThinkerBio,
 }: TimelineCardProps) {
-  const cardRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const accentColor =
+    thinker === "shulman" ? "var(--accent-shulman)" : "var(--accent-aschenbrenner)";
 
-  const direction = thinker === "shulman" ? "from-left" : "from-right";
-  const accentVar = `var(--accent-${thinker})`;
-
-  useEffect(() => {
-    const el = cardRef.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(el);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+  const thinkerLabel =
+    thinker === "shulman" ? "Shulman" : "Aschenbrenner";
 
   const formattedDate = prediction.lastReviewed
     ? new Date(prediction.lastReviewed).toLocaleDateString("en-US", {
         year: "numeric",
         month: "short",
-        day: "numeric",
       })
     : null;
 
   return (
     <div
-      ref={cardRef}
-      className={`scroll-reveal ${direction} ${isVisible ? "visible" : ""} timeline-card`}
-      data-thinker={thinker}
-      style={{ animationDelay: `${index * 100}ms` }}
+      className="relative border-b"
+      style={{ borderColor: "var(--rule-light)" }}
     >
+      {/* Collapsed header — always visible, click to toggle */}
       <div
+        className="flex cursor-pointer items-start gap-0 py-3.5 transition-colors duration-100 hover:bg-[#f5f3ec] -mx-6 px-6"
         onClick={onToggle}
-        className="group relative cursor-pointer rounded-xl transition-all duration-200 hover:-translate-y-0.5"
-        style={{
-          backgroundColor: "var(--bg-card)",
-          border: "1px solid var(--border-card)",
-        }}
-        onMouseEnter={(e) => {
-          (e.currentTarget as HTMLElement).style.borderColor =
-            "var(--spine-glow)";
-        }}
-        onMouseLeave={(e) => {
-          (e.currentTarget as HTMLElement).style.borderColor =
-            "var(--border-card)";
-        }}
+        role="button"
+        aria-expanded={isExpanded}
       >
-        {/* Top accent line */}
+        {/* Thinker colour bar */}
         <div
-          className="h-[3px] w-full rounded-t-xl"
-          style={{ backgroundColor: accentVar }}
+          className="mt-1 mr-3.5 w-[3px] self-stretch flex-shrink-0 rounded-sm"
+          style={{ backgroundColor: accentColor, minHeight: "20px" }}
         />
 
-        <div className="px-4 pb-4 pt-3">
-          {/* Category + time horizon row */}
-          <div className="mb-2 flex items-center gap-0">
+        {/* Main content */}
+        <div className="flex-1 min-w-0">
+          {/* Meta row */}
+          <div className="mb-1 flex items-center gap-2">
             <span
-              className="font-mono text-[10px] font-medium uppercase tracking-widest"
-              style={{ color: "var(--text-muted)" }}
+              className="font-mono text-[10px] font-semibold uppercase tracking-widest"
+              style={{ color: accentColor }}
             >
-              {prediction.category}
+              {thinkerLabel}
             </span>
             {prediction.timeHorizon && (
-              <>
-                <span
-                  className="mx-1.5 font-mono text-[10px]"
-                  style={{ color: "var(--text-faint)" }}
-                >
-                  &middot;
-                </span>
-                <span
-                  className="font-mono text-[10px] tracking-wide"
-                  style={{ color: "var(--text-faint)" }}
-                >
-                  {prediction.timeHorizon}
-                </span>
-              </>
+              <span
+                className="font-mono text-[10px]"
+                style={{ color: "var(--text-faint)" }}
+              >
+                · {prediction.timeHorizon}
+              </span>
             )}
           </div>
 
-          {/* Claim text */}
+          {/* Thinker bio — shown first time per year group */}
+          {showThinkerBio && (
+            <p
+              className="mb-1.5 font-mono text-[10px] leading-relaxed"
+              style={{ color: "var(--text-muted)" }}
+            >
+              {showThinkerBio}
+            </p>
+          )}
+
+          {/* Claim */}
           <p
-            className={`mb-3 text-sm leading-relaxed ${isExpanded ? "" : "line-clamp-2"}`}
-            style={{ color: "var(--text-primary)" }}
+            className="text-base leading-snug"
+            style={{
+              fontFamily: "var(--font-serif)",
+              fontStyle: "italic",
+              color: "var(--text-primary)",
+            }}
           >
             {prediction.claim}
           </p>
+        </div>
 
-          {/* Status + expand toggle row */}
-          <div className="flex items-center justify-between">
-            <StatusBadge status={prediction.status} />
-            <span
-              className="inline-flex h-5 w-5 items-center justify-center rounded-full text-xs transition-transform duration-200"
-              style={{
-                color: "var(--text-muted)",
-                transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)",
-              }}
-              aria-hidden="true"
-            >
-              &#9662;
-            </span>
-          </div>
+        {/* Status badge — right-aligned */}
+        <div className="ml-4 flex-shrink-0 mt-0.5">
+          <StatusBadge status={prediction.status} />
+        </div>
+      </div>
 
-          {/* Expanded details */}
-          {isExpanded && (
-            <div
-              className="mt-4 space-y-3 border-t pt-4"
-              style={{ borderColor: "var(--border-card)" }}
-            >
-              {prediction.evidence && (
-                <div>
-                  <h4
-                    className="mb-1 font-mono text-[9px] font-medium uppercase tracking-widest"
-                    style={{ color: "var(--text-muted)" }}
-                  >
-                    Assessment
-                  </h4>
-                  <p
-                    className="text-sm leading-relaxed"
-                    style={{ color: "var(--text-secondary)" }}
-                  >
-                    {prediction.evidence}
-                  </p>
-                </div>
-              )}
+      {/* Expanded content — max-height CSS transition (fixes clip bug) */}
+      <div className={`card-expanded-content pl-[17px]${isExpanded ? " expanded" : ""}`}>
+        <div className="pb-4 pt-0.5">
 
-              {prediction.implications && (
-                <div
-                  className="rounded-r-md border-l-2 pl-3 pr-2 py-2"
-                  style={{
-                    borderColor: accentVar,
-                    backgroundColor: "color-mix(in srgb, var(--bg-card) 85%, var(--border-card))",
-                  }}
-                >
-                  <h4
-                    className="mb-1 font-mono text-[9px] font-medium uppercase tracking-widest"
-                    style={{ color: accentVar }}
-                  >
-                    If true
-                  </h4>
-                  <p
-                    className="italic text-sm leading-relaxed"
-                    style={{ color: "var(--text-secondary)" }}
-                  >
-                    {prediction.implications}
-                  </p>
-                </div>
-              )}
-
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
-                {prediction.sourceUrl && (
-                  <a
-                    href={prediction.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="font-mono text-[10px] tracking-wide underline decoration-current/30 underline-offset-2 transition-colors hover:decoration-current"
-                    style={{ color: accentVar }}
-                  >
-                    {prediction.source}
-                  </a>
-                )}
-                {!prediction.sourceUrl && prediction.source && (
-                  <span
-                    className="font-mono text-[10px] tracking-wide"
-                    style={{ color: accentVar }}
-                  >
-                    {prediction.source}
-                  </span>
-                )}
-
-                {prediction.confidence && (
-                  <span
-                    className="font-mono text-[9px] font-medium uppercase tracking-widest"
-                    style={{ color: "var(--text-muted)" }}
-                  >
-                    {prediction.confidence} confidence
-                  </span>
-                )}
-
-                {formattedDate && (
-                  <span
-                    className="font-mono text-[9px] tracking-wide"
-                    style={{ color: "var(--text-faint)" }}
-                  >
-                    Last reviewed {formattedDate}
-                  </span>
-                )}
-              </div>
+          {/* Assessment */}
+          {prediction.evidence && (
+            <div className="mb-3">
+              <p
+                className="mb-1 font-mono text-[9px] uppercase tracking-widest"
+                style={{ color: "var(--text-faint)" }}
+              >
+                Assessment
+              </p>
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: "var(--text-secondary)" }}
+              >
+                {prediction.evidence}
+              </p>
             </div>
           )}
+
+          {/* "If true" block — confirmed only */}
+          {prediction.status === "confirmed" && prediction.implications && (
+            <div
+              className="mb-3 border-l-2 pl-3 py-2 pr-2 rounded-r-sm text-sm leading-relaxed"
+              style={{
+                borderColor: "#16a34a",
+                backgroundColor: "#f0fdf4",
+                color: "#166534",
+              }}
+            >
+              <strong className="font-semibold">If true — </strong>
+              {prediction.implications}
+            </div>
+          )}
+
+          {/* "Why incorrect" block — incorrect only */}
+          {prediction.status === "incorrect" && prediction.whyIncorrect && (
+            <div
+              className="mb-3 border-l-2 pl-3 py-2 pr-2 rounded-r-sm text-sm leading-relaxed"
+              style={{
+                borderColor: "#dc2626",
+                backgroundColor: "#fef2f2",
+                color: "#7f1d1d",
+              }}
+            >
+              <strong className="font-semibold">Why incorrect — </strong>
+              {prediction.whyIncorrect}
+            </div>
+          )}
+
+          {/* Footer metadata */}
+          <div
+            className="flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[10px]"
+            style={{ color: "var(--text-faint)" }}
+          >
+            {prediction.sourceUrl ? (
+              <a
+                href={prediction.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="hover:underline"
+                style={{ color: accentColor }}
+              >
+                {prediction.source}
+              </a>
+            ) : prediction.source ? (
+              <span style={{ color: accentColor }}>{prediction.source}</span>
+            ) : null}
+            {prediction.confidence && (
+              <span>Confidence: {prediction.confidence}</span>
+            )}
+            {formattedDate && <span>Reviewed {formattedDate}</span>}
+          </div>
         </div>
       </div>
     </div>
