@@ -103,7 +103,7 @@ export function YearSection({
           {/* Left column — Shulman */}
           <div className="flex flex-col items-end gap-4 pr-6">
             {visibleThinkers.shulman &&
-              shulmanCards.map((prediction, i) => (
+              shulmanCards.map((prediction) => (
                 <div key={prediction.id} className="w-full max-w-lg">
                   <TimelineCard
                     prediction={prediction}
@@ -145,7 +145,7 @@ export function YearSection({
           {/* Right column — Aschenbrenner */}
           <div className="flex flex-col items-start gap-4 pl-6">
             {visibleThinkers.aschenbrenner &&
-              aschenbrennerCards.map((prediction, i) => (
+              aschenbrennerCards.map((prediction) => (
                 <div key={prediction.id} className="w-full max-w-lg">
                   <TimelineCard
                     prediction={prediction}
@@ -161,7 +161,7 @@ export function YearSection({
         {/* Mobile: single column, no spine */}
         <div className="flex flex-col gap-4 md:hidden">
           {visibleThinkers.shulman &&
-            shulmanCards.map((prediction, i) => (
+            shulmanCards.map((prediction) => (
               <TimelineCard
                 key={prediction.id}
                 prediction={prediction}
@@ -171,7 +171,7 @@ export function YearSection({
               />
             ))}
           {visibleThinkers.aschenbrenner &&
-            aschenbrennerCards.map((prediction, i) => (
+            aschenbrennerCards.map((prediction) => (
               <TimelineCard
                 key={prediction.id}
                 prediction={prediction}
