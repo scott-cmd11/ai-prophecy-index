@@ -82,23 +82,27 @@ export function TimelineCard({
           </p>
         </div>
 
-        {/* Status badge + chevron — right-aligned */}
-        <div className="ml-4 flex-shrink-0 mt-0.5 flex items-center gap-2">
+        {/* Status badge + expand label — right-aligned */}
+        <div className="ml-4 flex-shrink-0 mt-0.5 flex flex-col items-end gap-1.5">
           <StatusBadge status={prediction.status} />
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            style={{
-              color: "var(--text-faint)",
-              transition: "transform 200ms ease",
-              transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)",
-              flexShrink: 0,
-            }}
+          <span
+            className="font-mono text-[9px] uppercase tracking-widest flex items-center gap-1"
+            style={{ color: "var(--text-faint)" }}
           >
-            <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+            {isExpanded ? "close" : "details"}
+            <svg
+              width="10"
+              height="10"
+              viewBox="0 0 12 12"
+              fill="none"
+              style={{
+                transition: "transform 200ms ease",
+                transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)",
+              }}
+            >
+              <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </span>
         </div>
       </div>
 
