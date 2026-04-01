@@ -2,6 +2,7 @@
 
 import { PredictionStatus } from "@/types";
 import { STATUS_LABELS } from "@/lib/constants";
+import { STATUS_STYLES } from "@/components/StatusBadge";
 
 interface FilterBarProps {
   visibleThinkers: { shulman: boolean; aschenbrenner: boolean };
@@ -69,19 +70,24 @@ export function FilterBar({
         >
           All
         </button>
-        {statuses.map((s) => (
-          <button
-            key={s}
-            className={`${PILL_BASE} rounded-sm ${
-              activeStatuses !== "all" && activeStatuses.includes(s)
-                ? PILL_ACTIVE
-                : PILL_INACTIVE
-            }`}
-            onClick={() => onToggleStatus(s)}
-          >
-            {STATUS_LABELS[s]}
-          </button>
-        ))}
+        {statuses.map((s) => {
+          const isActive = activeStatuses !== "all" && activeStatuses.includes(s);
+          const style = STATUS_STYLES[s];
+          return (
+            <button
+              key={s}
+              className={`${PILL_BASE} rounded-sm ${isActive ? "" : PILL_INACTIVE}`}
+              style={isActive ? {
+                color: style.color,
+                backgroundColor: style.bg,
+                border: `1px solid ${style.border}`,
+              } : undefined}
+              onClick={() => onToggleStatus(s)}
+            >
+              {STATUS_LABELS[s]}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

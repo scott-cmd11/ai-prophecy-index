@@ -3,7 +3,7 @@
 import { PredictionStatus } from "@/types";
 import { STATUS_LABELS } from "@/lib/constants";
 
-const STATUS_STYLES: Record<PredictionStatus, { color: string; bg: string; border: string }> = {
+export const STATUS_STYLES: Record<PredictionStatus, { color: string; bg: string; border: string }> = {
   confirmed:    { color: "#166534", bg: "#f0fdf4", border: "#bbf7d0" },
   in_progress:  { color: "#92400e", bg: "#fffbeb", border: "#fde68a" },
   outstanding:  { color: "#475569", bg: "#f8fafc", border: "#e2e8f0" },
