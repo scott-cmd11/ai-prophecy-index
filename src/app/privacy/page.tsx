@@ -102,15 +102,13 @@ export default function PrivacyPage() {
             Contact
           </h2>
           <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-            For questions, corrections, or takedown requests, contact Scott Hazlitt via{" "}
+            For questions, corrections, or takedown requests, contact Scott Hazlitt at{" "}
             <a
-              href="https://scotthazlitt.ai/contact"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:scott@scotthazlitt.ai"
               className="underline decoration-current/30 underline-offset-2 transition-colors hover:decoration-current"
               style={{ color: "var(--accent-aschenbrenner)" }}
             >
-              scotthazlitt.ai/contact
+              scott@scotthazlitt.ai
             </a>
             .
           </p>
