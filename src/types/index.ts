@@ -1,3 +1,5 @@
+import type { PredictionTag } from "@/lib/constants";
+
 export type PredictionStatus = "confirmed" | "in_progress" | "outstanding" | "incorrect";
 export type Confidence = "high" | "medium" | "low" | "implied";
 
@@ -16,6 +18,7 @@ export interface Prediction {
   lastReviewed: string;
   timeHorizon?: string;
   year: number;
+  tags?: PredictionTag[];
 }
 
 export interface Thinker {
