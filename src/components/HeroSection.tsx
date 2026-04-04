@@ -1,9 +1,10 @@
 import { shulman } from "@/data/shulman";
 import { aschenbrenner } from "@/data/aschenbrenner";
+import { cotra } from "@/data/cotra";
 import { getStatusCounts, getHitRate } from "@/lib/utils";
 
 export function HeroSection() {
-  const allPredictions = [...shulman.predictions, ...aschenbrenner.predictions];
+  const allPredictions = [...shulman.predictions, ...aschenbrenner.predictions, ...cotra.predictions];
   const counts = getStatusCounts(allPredictions);
   const total = allPredictions.length;
   const hitRate = getHitRate(allPredictions);
