@@ -13,8 +13,10 @@
 Add an optional `tags` field to the `Prediction` type in `src/types/index.ts`:
 
 ```ts
-tags?: string[];
+tags?: PredictionTag[];
 ```
+
+This uses the `PredictionTag` union type (defined in `src/lib/constants.ts`, see Tag Constants below) for compile-time validation of tag values.
 
 Eight tag values are allowed:
 
@@ -58,13 +60,25 @@ State additions in `Timeline.tsx`:
 const [activeTags, setActiveTags] = useState<string[] | "all">("all");
 ```
 
-Filtering logic: after the existing status filter, apply tag filter:
+Filtering logic: tag filtering is applied within the existing `cardsByYear` loop in `Timeline.tsx`, chained after the status filter at line ~92-95. The existing pattern builds `merged` cards per year, then applies status filtering to produce `filtered`. Tag filtering is added as a second pass on the same `filtered` array:
 
 ```ts
-const filtered = statusFiltered.filter(
-  (c) => activeTags === "all" || c.prediction.tags?.some((t) => activeTags.includes(t))
-);
+// Existing status filter (line ~92-95)
+const statusFiltered =
+  activeStatuses === "all"
+    ? merged
+    : merged.filter((c) => activeStatuses.includes(c.prediction.status));
+
+// New tag filter — applied after status filter, within the same cardsByYear.map()
+const filtered =
+  activeTags === "all"
+    ? statusFiltered
+    : statusFiltered.filter((c) =>
+        c.prediction.tags?.some((t) => activeTags.includes(t))
+      );
 ```
+
+This preserves the existing per-year architecture without refactoring.
 
 ### Tag Constants
 
@@ -130,10 +144,10 @@ New component `AnalysisSection.tsx` rendered between `ThinkersSection` and `Time
 - Dot color: thinker accent color
 - Dot visual encodes status:
   - Confirmed: filled circle
-  - In progress: half-filled circle (or filled with reduced opacity at 0.5)
+  - In progress: filled circle with reduced opacity (0.5) — simpler than half-fill, avoids custom shape complexity
   - Outstanding: ring (stroke only)
   - Incorrect: X mark
-- Y-axis: not meaningful — dots within each year are stacked vertically with jitter to avoid overlap
+- Y-axis: not meaningful — dots within each year are assigned a sequential index (0, 1, 2...) as their Y value, stacking vertically in a column. No randomness or jitter — deterministic layout based on the order predictions appear in the data files. This avoids overlap while keeping the chart stable across renders
 - No Y-axis labels or grid
 - Monospace year labels along the bottom
 - Same legend as Chart A (shared or repeated)
@@ -158,21 +172,25 @@ New component `AnalysisSection.tsx` rendered between `ThinkersSection` and `Time
 A compact stats bar that appears when the user scrolls into the Timeline section and updates at each year checkpoint.
 
 **Lifecycle:**
-1. Hidden by default
-2. Fades in when the first `YearSection` enters the viewport
+The bar uses `position: sticky; top: 0` inside the Timeline `<section>`, so it naturally sticks while the Timeline is in the viewport and disappears when the section scrolls out. No observer-based show/hide is needed for the bar itself — sticky positioning handles it. The Intersection Observer is only used to detect which year is current and update the metrics.
+
+1. Invisible while above the Timeline section (not rendered or `opacity: 0`)
+2. Fades in when the first `YearSection` enters the viewport (observer sets `showStickyBar = true`)
 3. Updates cumulative stats as each subsequent `YearSection` enters
-4. Fades out when the user scrolls past the last `YearSection` (past the bottom rule of the Timeline)
+4. Naturally unsticks and scrolls away when the Timeline section ends
 
 ### Metrics (6 items)
 
-| Metric | Format | Example |
-|--------|--------|---------|
-| Predictions seen | integer | `12` |
-| Confirmed | integer, green (`--confirmed` color) | `3` |
-| Unfolding | integer, amber (`--in_progress` color) | `4` |
-| Early | integer, slate (`--outstanding` color) | `5` |
-| Incorrect | integer, red (`--incorrect` color) | `0` |
-| Hit rate | percentage | `100%` |
+| Metric | Label (abbreviated) | Format | Example |
+|--------|---------------------|--------|---------|
+| Predictions seen | `Seen` | integer | `12` |
+| Confirmed | `Confirmed` | integer, green (`--confirmed` color) | `3` |
+| Unfolding | `Unfolding` | integer, amber (`--in_progress` color) | `4` |
+| Early | `Early` | integer, slate (`--outstanding` color) | `5` |
+| Incorrect | `Incorrect` | integer, red (`--incorrect` color) | `0` |
+| Hit rate | `Hit rate` | percentage | `100%` |
+
+Note: The sticky bar uses abbreviated labels ("Unfolding", "Early") rather than the full `STATUS_LABELS` ("Still unfolding", "Too early to tell") for space reasons.
 
 Hit rate = confirmed / (confirmed + incorrect). If no predictions are confirmed or incorrect, show `—` instead of a percentage.
 
@@ -206,9 +224,9 @@ When values change between year checkpoints, the numbers animate with a brief co
 
 ## 4. Dependencies
 
-### New npm packages
+### npm packages
 
-- `recharts` — charting library (only new dependency)
+- `recharts` — already installed (`^3.8.1` in `package.json`), no new dependency needed
 
 ### Files Created
 
@@ -225,7 +243,7 @@ When values change between year checkpoints, the numbers animate with a brief co
 
 | File | Change |
 |------|--------|
-| `src/types/index.ts` | Add `tags?: string[]` to `Prediction` |
+| `src/types/index.ts` | Add `tags?: PredictionTag[]` to `Prediction` |
 | `src/lib/constants.ts` | Add `PREDICTION_TAGS` array and `PredictionTag` type |
 | `src/data/shulman.ts` | Add tags to all predictions |
 | `src/data/aschenbrenner.ts` | Add tags to all predictions |
@@ -235,7 +253,7 @@ When values change between year checkpoints, the numbers animate with a brief co
 | `src/components/Timeline.tsx` | Add tag filter state, pass year refs for observer, integrate sticky bar |
 | `src/components/YearSection.tsx` | Add `data-year` attribute for observer |
 | `src/app/page.tsx` | Add `AnalysisSection` between ThinkersSection and Timeline |
-| `package.json` | Add `recharts` dependency |
+| `src/data/milestones.ts` | Already exports `TIMELINE_YEARS` — used by scatter plot X-axis |
 
 ---
 
