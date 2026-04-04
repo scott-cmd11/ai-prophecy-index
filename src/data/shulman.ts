@@ -23,6 +23,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2035",
       year: 2030,
+      tags: ["Capabilities", "Timelines"],
     },
     {
       id: "cs-2",
@@ -41,6 +42,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "before AGI",
       year: 2026,
+      tags: ["Capabilities", "Industry"],
     },
     {
       id: "cs-3",
@@ -59,6 +61,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "5-10 years",
       year: 2028,
+      tags: ["Capabilities"],
     },
 
     // --- Economic Transformation ---
@@ -80,6 +83,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "5-15 years after AGI",
       year: 2030,
+      tags: ["Economics"],
     },
     {
       id: "cs-5",
@@ -99,6 +103,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "post-AGI",
       year: 2030,
+      tags: ["Economics"],
     },
     {
       id: "cs-6",
@@ -118,6 +123,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "post-AGI",
       year: 2030,
+      tags: ["Economics", "Industry"],
     },
 
     // --- Robot Industrialization ---
@@ -138,6 +144,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "5-10 years",
       year: 2028,
+      tags: ["Hardware", "Economics"],
     },
     {
       id: "cs-8",
@@ -156,6 +163,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "near-term",
       year: 2024,
+      tags: ["Hardware", "Economics"],
     },
 
     // --- National Security ---
@@ -177,6 +185,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2030",
       year: 2030,
+      tags: ["Geopolitics", "Governance"],
     },
     {
       id: "cs-10",
@@ -196,6 +205,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "post-AGI",
       year: 2030,
+      tags: ["Geopolitics"],
     },
 
     // --- AI Alignment ---
@@ -216,6 +226,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "conditional on AGI",
       year: 2030,
+      tags: ["Safety"],
     },
     {
       id: "cs-12",
@@ -234,6 +245,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "conditional on AGI",
       year: 2030,
+      tags: ["Safety", "Governance"],
     },
     {
       id: "cs-13",
@@ -252,6 +264,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "concurrent with advanced AI",
       year: 2028,
+      tags: ["Safety"],
     },
     {
       id: "cs-14",
@@ -271,6 +284,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "post-AGI",
       year: 2030,
+      tags: ["Geopolitics", "Governance"],
     },
 
     // --- Extended Coverage ---
@@ -291,6 +305,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "before AGI",
       year: 2030,
+      tags: ["Capabilities", "Timelines"],
     },
     {
       id: "cs-16",
@@ -309,6 +324,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "post-AGI",
       year: 2030,
+      tags: ["Hardware", "Economics"],
     },
     {
       id: "cs-17",
@@ -328,6 +344,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "long-run theoretical",
       year: 2030,
+      tags: ["Economics", "Governance"],
     },
     {
       id: "cs-18",
@@ -347,6 +364,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "AGI-adjacent",
       year: 2028,
+      tags: ["Safety"],
     },
     {
       id: "cs-19",
@@ -366,6 +384,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "post-AGI",
       year: 2030,
+      tags: ["Safety", "Capabilities"],
     },
     {
       id: "cs-20",
@@ -384,6 +403,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "near-term",
       year: 2026,
+      tags: ["Capabilities", "Hardware"],
     },
     {
       id: "cs-21",
@@ -402,6 +422,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "conditional on AGI",
       year: 2030,
+      tags: ["Safety", "Governance"],
     },
     {
       id: "cs-22",
@@ -421,6 +442,7 @@ export const shulman: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "post-AGI",
       year: 2030,
+      tags: ["Economics"],
     },
   ],
 };

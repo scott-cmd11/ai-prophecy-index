@@ -23,6 +23,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2027",
       year: 2027,
+      tags: ["Timelines", "Capabilities"],
     },
     {
       id: "la-2",
@@ -41,6 +42,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "within 1 year of AGI",
       year: 2028,
+      tags: ["Timelines", "Capabilities"],
     },
 
     // --- Compute Scaling ---
@@ -61,6 +63,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by mid-2026",
       year: 2026,
+      tags: ["Hardware", "Industry", "Economics"],
     },
     {
       id: "la-4",
@@ -79,6 +82,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2028",
       year: 2028,
+      tags: ["Hardware"],
     },
     {
       id: "la-5",
@@ -97,6 +101,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2030",
       year: 2030,
+      tags: ["Hardware", "Industry"],
     },
     {
       id: "la-6",
@@ -115,6 +120,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2028",
       year: 2028,
+      tags: ["Hardware", "Economics"],
     },
     {
       id: "la-7",
@@ -133,6 +139,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2027",
       year: 2027,
+      tags: ["Hardware"],
     },
 
     // --- China Competition ---
@@ -153,6 +160,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "ongoing",
       year: 2025,
+      tags: ["Geopolitics"],
     },
     {
       id: "la-9",
@@ -171,6 +179,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "post-superintelligence",
       year: 2030,
+      tags: ["Geopolitics", "Governance"],
     },
 
     // --- Government Response ---
@@ -191,6 +200,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2027-2028",
       year: 2027,
+      tags: ["Governance"],
     },
     {
       id: "la-11",
@@ -209,6 +219,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2026-2027",
       year: 2026,
+      tags: ["Governance", "Geopolitics"],
     },
 
     // --- Superintelligence ---
@@ -229,6 +240,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2030",
       year: 2030,
+      tags: ["Capabilities", "Timelines"],
     },
     {
       id: "la-13",
@@ -247,6 +259,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2027-2028",
       year: 2027,
+      tags: ["Capabilities"],
     },
     {
       id: "la-14",
@@ -265,6 +278,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2030",
       year: 2030,
+      tags: ["Safety", "Capabilities"],
     },
 
     // --- Capability Milestones ---
@@ -285,6 +299,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2025-2026",
       year: 2026,
+      tags: ["Capabilities"],
     },
     {
       id: "la-16",
@@ -303,6 +318,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "within 1 year of AGI",
       year: 2028,
+      tags: ["Capabilities", "Safety"],
     },
     {
       id: "la-17",
@@ -321,6 +337,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2027-2028",
       year: 2027,
+      tags: ["Capabilities", "Industry"],
     },
 
     // --- Geopolitics & Government ---
@@ -341,6 +358,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "post-AGI",
       year: 2030,
+      tags: ["Governance"],
     },
     {
       id: "la-19",
@@ -359,6 +377,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by mid-2026",
       year: 2026,
+      tags: ["Geopolitics"],
     },
     {
       id: "la-20",
@@ -377,6 +396,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "post-superintelligence",
       year: 2030,
+      tags: ["Economics"],
     },
     {
       id: "la-21",
@@ -395,6 +415,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2030",
       year: 2030,
+      tags: ["Hardware", "Economics"],
     },
     {
       id: "la-22",
@@ -413,6 +434,7 @@ export const aschenbrenner: Thinker = {
       lastReviewed: "2026-04-01",
       timeHorizon: "by 2030",
       year: 2030,
+      tags: ["Geopolitics", "Governance"],
     },
   ],
 };

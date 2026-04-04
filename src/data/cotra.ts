@@ -22,6 +22,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "as models scale",
       year: 2027,
+      tags: ["Safety"],
     },
     {
       id: "ac-2",
@@ -40,6 +41,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "ongoing",
       year: 2026,
+      tags: ["Safety", "Capabilities"],
     },
     {
       id: "ac-3",
@@ -58,6 +60,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "indeterminate",
       year: 2027,
+      tags: ["Safety", "Capabilities"],
     },
     {
       id: "ac-4",
@@ -76,6 +79,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "as models scale",
       year: 2027,
+      tags: ["Safety", "Governance"],
     },
     {
       id: "ac-5",
@@ -93,6 +97,7 @@ export const cotra: Thinker = {
         "Without pre-committed quantitative targets, market pressures and competitive dynamics will determine how resources are allocated during the most critical period in AI development — almost certainly favouring capability scaling over alignment work.",
       lastReviewed: "2026-04-04",
       year: 2026,
+      tags: ["Safety"],
     },
     {
       id: "ac-6",
@@ -111,6 +116,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "early 2030s",
       year: 2032,
+      tags: ["Timelines"],
     },
     {
       id: "ac-7",
@@ -129,6 +135,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "~1 year after R&D automation",
       year: 2033,
+      tags: ["Timelines", "Capabilities"],
     },
     {
       id: "ac-8",
@@ -147,6 +154,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "by December 31, 2026",
       year: 2026,
+      tags: ["Capabilities"],
     },
     {
       id: "ac-9",
@@ -165,6 +173,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "by December 31, 2026",
       year: 2026,
+      tags: ["Capabilities"],
     },
     {
       id: "ac-10",
@@ -183,6 +192,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "by December 31, 2026",
       year: 2026,
+      tags: ["Economics", "Capabilities"],
     },
     {
       id: "ac-11",
@@ -201,6 +211,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "by ~2036",
       year: 2036,
+      tags: ["Timelines", "Hardware"],
     },
     {
       id: "ac-12",
@@ -219,6 +230,7 @@ export const cotra: Thinker = {
       lastReviewed: "2026-04-04",
       timeHorizon: "by ~2028",
       year: 2028,
+      tags: ["Economics", "Industry"],
     },
   ],
 };
