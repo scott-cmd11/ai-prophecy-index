@@ -5,8 +5,8 @@ import { STATUS_LABELS } from "@/lib/constants";
 import { STATUS_STYLES } from "@/components/StatusBadge";
 
 interface FilterBarProps {
-  visibleThinkers: { shulman: boolean; aschenbrenner: boolean };
-  onToggleThinker: (t: "shulman" | "aschenbrenner") => void;
+  visibleThinkers: { shulman: boolean; aschenbrenner: boolean; cotra: boolean };
+  onToggleThinker: (t: "shulman" | "aschenbrenner" | "cotra") => void;
   activeStatuses: PredictionStatus[] | "all";
   onToggleStatus: (s: PredictionStatus | "all") => void;
 }
@@ -31,7 +31,7 @@ export function FilterBar({
       style={{ borderColor: "var(--rule-light)" }}
     >
       {/* Row 1: Thinker filters */}
-      <div className="flex items-center gap-2 mb-2">
+      <div className="flex items-center gap-2 mb-2 flex-wrap">
         <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--text-faint)] w-12 flex-shrink-0">
           Thinker
         </span>
@@ -57,10 +57,21 @@ export function FilterBar({
         >
           Aschenbrenner
         </button>
+        <button
+          className={`${PILL_BASE} rounded-sm`}
+          style={{
+            border: `1px solid ${visibleThinkers.cotra ? "var(--accent-cotra)" : "var(--rule-light)"}`,
+            color: visibleThinkers.cotra ? "var(--accent-cotra)" : "var(--text-muted)",
+            backgroundColor: visibleThinkers.cotra ? "color-mix(in srgb, var(--accent-cotra) 8%, white)" : "white",
+          }}
+          onClick={() => onToggleThinker("cotra")}
+        >
+          Cotra
+        </button>
       </div>
 
       {/* Row 2: Status filters */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 flex-wrap">
         <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--text-faint)] w-12 flex-shrink-0">
           Status
         </span>

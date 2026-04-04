@@ -76,7 +76,6 @@ export function ThinkersSection() {
           bio={COTRA_BIO}
           slug="cotra"
           accentVar="--accent-cotra"
-          comingSoon
         />
       </div>
     </div>

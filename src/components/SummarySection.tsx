@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { shulman } from "@/data/shulman";
 import { aschenbrenner } from "@/data/aschenbrenner";
+import { cotra } from "@/data/cotra";
 import { getStatusCounts, getHitRate } from "@/lib/utils";
 import { DonutChart } from "@/components/DonutChart";
 import { LAST_UPDATED, STATUS_COLORS } from "@/lib/constants";
@@ -128,7 +129,7 @@ export function SummarySection() {
         </div>
 
         {/* Side-by-side scorecards */}
-        <div className="scroll-reveal from-below mb-16 grid gap-6 md:grid-cols-2">
+        <div className="scroll-reveal from-below mb-16 grid gap-6 md:grid-cols-3">
           <ThinkerCard
             thinker={shulman}
             accentColor="var(--accent-shulman)"
@@ -136,6 +137,10 @@ export function SummarySection() {
           <ThinkerCard
             thinker={aschenbrenner}
             accentColor="var(--accent-aschenbrenner)"
+          />
+          <ThinkerCard
+            thinker={cotra}
+            accentColor="var(--accent-cotra)"
           />
         </div>
 
@@ -198,7 +203,7 @@ export function SummarySection() {
               AI-generated content — use with caution
             </p>
             <p className="text-xs leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-              Prediction summaries, evidence assessments, and implication statements on this site were generated with the assistance of AI language models. While sourced from public interviews and published writing, the framing, interpretation, and status judgements reflect automated analysis and may contain errors, omissions, or bias. This site is an independent tracking project and is not affiliated with Carl Shulman, Leopold Aschenbrenner, or their associated organisations. Content should not be used to inform investment, policy, or other consequential decisions without independent verification.
+              Prediction summaries, evidence assessments, and implication statements on this site were generated with the assistance of AI language models. While sourced from public interviews and published writing, the framing, interpretation, and status judgements reflect automated analysis and may contain errors, omissions, or bias. This site is an independent tracking project and is not affiliated with Carl Shulman, Leopold Aschenbrenner, Ajeya Cotra, or their associated organisations. Content should not be used to inform investment, policy, or other consequential decisions without independent verification.
             </p>
           </div>
         </footer>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { shulman } from "@/data/shulman";
 import { aschenbrenner } from "@/data/aschenbrenner";
+import { cotra } from "@/data/cotra";
 import { TIMELINE_YEARS } from "@/data/milestones";
 import { YearSection, MergedCard } from "@/components/YearSection";
 import { FilterBar } from "@/components/FilterBar";
@@ -13,6 +14,7 @@ export function Timeline() {
   const [visibleThinkers, setVisibleThinkers] = useState({
     shulman: true,
     aschenbrenner: true,
+    cotra: true,
   });
   const [activeStatuses, setActiveStatuses] = useState<PredictionStatus[] | "all">("all");
 
@@ -20,11 +22,11 @@ export function Timeline() {
     setExpandedId((prev) => (prev === id ? null : id));
   }
 
-  function handleToggleThinker(thinker: "shulman" | "aschenbrenner") {
+  function handleToggleThinker(thinker: "shulman" | "aschenbrenner" | "cotra") {
     setVisibleThinkers((prev) => {
       const next = { ...prev, [thinker]: !prev[thinker] };
       // Prevent disabling the last active thinker
-      return next.shulman || next.aschenbrenner ? next : prev;
+      return next.shulman || next.aschenbrenner || next.cotra ? next : prev;
     });
   }
 
@@ -48,13 +50,16 @@ export function Timeline() {
     const aschenbrennerPreds = visibleThinkers.aschenbrenner
       ? aschenbrenner.predictions.filter((p) => p.year === year)
       : [];
+    const cotraPreds = visibleThinkers.cotra
+      ? cotra.predictions.filter((p) => p.year === year)
+      : [];
 
-    // Interleave: shulman[0], aschenbrenner[0], shulman[1], aschenbrenner[1], ...
-    const maxLen = Math.max(shulmanPreds.length, aschenbrennerPreds.length);
+    // Interleave: shulman[0], aschenbrenner[0], cotra[0], shulman[1], ...
+    const maxLen = Math.max(shulmanPreds.length, aschenbrennerPreds.length, cotraPreds.length);
     const merged: MergedCard[] = [];
 
     // Track if we've already shown the bio for each thinker in this year
-    const shownBio = { shulman: false, aschenbrenner: false };
+    const shownBio = { shulman: false, aschenbrenner: false, cotra: false };
 
     for (let i = 0; i < maxLen; i++) {
       if (i < shulmanPreds.length) {
@@ -72,6 +77,14 @@ export function Timeline() {
           showThinkerBio: !shownBio.aschenbrenner && i === 0 ? aschenbrenner.bio : undefined,
         });
         shownBio.aschenbrenner = true;
+      }
+      if (i < cotraPreds.length) {
+        merged.push({
+          prediction: cotraPreds[i],
+          thinker: "cotra",
+          showThinkerBio: !shownBio.cotra && i === 0 ? cotra.bio : undefined,
+        });
+        shownBio.cotra = true;
       }
     }
 
