@@ -3,6 +3,7 @@
 import { Prediction } from "@/types";
 import { StatusBadge } from "@/components/StatusBadge";
 import { annotateJargon } from "@/lib/jargon";
+import { TagPills } from "@/components/TagPills";
 
 interface TimelineCardProps {
   prediction: Prediction;
@@ -81,14 +82,15 @@ export function TimelineCard({
 
           {/* Claim */}
           <p
-            className="text-base leading-snug"
+            className="text-[15px] leading-relaxed"
             style={{
-              fontFamily: "var(--font-serif)",
+              fontFamily: "var(--font-lora)",
               color: "var(--text-primary)",
             }}
           >
             {prediction.claim}
           </p>
+          <TagPills tags={prediction.tags} />
         </div>
 
         {/* Status badge + expand label — right-aligned */}
