@@ -8,6 +8,7 @@ import { TIMELINE_YEARS } from "@/data/milestones";
 import { YearSection, MergedCard } from "@/components/YearSection";
 import { FilterBar } from "@/components/FilterBar";
 import { PredictionStatus } from "@/types";
+import { PredictionTag } from "@/lib/constants";
 
 export function Timeline() {
   const [expandedId, setExpandedId] = useState<string | null>(null);
@@ -17,6 +18,7 @@ export function Timeline() {
     cotra: true,
   });
   const [activeStatuses, setActiveStatuses] = useState<PredictionStatus[] | "all">("all");
+  const [activeTags, setActiveTags] = useState<PredictionTag[] | "all">("all");
 
   function handleExpand(id: string) {
     setExpandedId((prev) => (prev === id ? null : id));
@@ -38,6 +40,14 @@ export function Timeline() {
     setActiveStatuses((prev) => {
       if (prev === "all") return [s];
       const next = prev.includes(s) ? prev.filter((x) => x !== s) : [...prev, s];
+      return next.length === 0 ? "all" : next;
+    });
+  }
+
+  function handleToggleTag(tag: PredictionTag) {
+    setActiveTags((prev) => {
+      if (prev === "all") return [tag];
+      const next = prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag];
       return next.length === 0 ? "all" : next;
     });
   }
@@ -89,10 +99,18 @@ export function Timeline() {
     }
 
     // Apply status filter
-    const filtered =
+    const statusFiltered =
       activeStatuses === "all"
         ? merged
         : merged.filter((c) => activeStatuses.includes(c.prediction.status));
+
+    // Apply tag filter
+    const filtered =
+      activeTags === "all"
+        ? statusFiltered
+        : statusFiltered.filter((c) =>
+            c.prediction.tags?.some((t) => activeTags.includes(t))
+          );
 
     return { year, cards: filtered };
   }).filter(({ cards }) => cards.length > 0);
@@ -106,6 +124,8 @@ export function Timeline() {
           onToggleThinker={handleToggleThinker}
           activeStatuses={activeStatuses}
           onToggleStatus={handleToggleStatus}
+          activeTags={activeTags}
+          onToggleTag={handleToggleTag}
         />
       </div>
 

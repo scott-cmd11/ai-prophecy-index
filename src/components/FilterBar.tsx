@@ -1,7 +1,7 @@
 "use client";
 
 import { PredictionStatus } from "@/types";
-import { STATUS_LABELS } from "@/lib/constants";
+import { STATUS_LABELS, PREDICTION_TAGS, PredictionTag } from "@/lib/constants";
 import { STATUS_STYLES } from "@/components/StatusBadge";
 
 interface FilterBarProps {
@@ -9,6 +9,8 @@ interface FilterBarProps {
   onToggleThinker: (t: "shulman" | "aschenbrenner" | "cotra") => void;
   activeStatuses: PredictionStatus[] | "all";
   onToggleStatus: (s: PredictionStatus | "all") => void;
+  activeTags: PredictionTag[] | "all";
+  onToggleTag: (tag: PredictionTag) => void;
 }
 
 const PILL_BASE =
@@ -22,6 +24,8 @@ export function FilterBar({
   onToggleThinker,
   activeStatuses,
   onToggleStatus,
+  activeTags,
+  onToggleTag,
 }: FilterBarProps) {
   const statuses: PredictionStatus[] = ["confirmed", "in_progress", "outstanding", "incorrect"];
 
@@ -96,6 +100,30 @@ export function FilterBar({
               onClick={() => onToggleStatus(s)}
             >
               {STATUS_LABELS[s]}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Row 3: Topic filters */}
+      <div className="flex items-center gap-2 mt-2 flex-wrap">
+        <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--text-faint)] w-12 flex-shrink-0">
+          Topic
+        </span>
+        {PREDICTION_TAGS.map((tag) => {
+          const isActive = activeTags !== "all" && activeTags.includes(tag);
+          return (
+            <button
+              key={tag}
+              className={`${PILL_BASE} rounded-sm ${isActive ? "" : PILL_INACTIVE}`}
+              style={isActive ? {
+                color: "var(--text-primary)",
+                backgroundColor: "color-mix(in srgb, var(--text-primary) 8%, white)",
+                border: "1px solid var(--text-primary)",
+              } : undefined}
+              onClick={() => onToggleTag(tag)}
+            >
+              {tag}
             </button>
           );
         })}
