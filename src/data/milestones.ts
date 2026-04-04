@@ -5,8 +5,10 @@ export const milestones: Record<number, string[]> = {
   2027: ["Aschenbrenner's AGI target year", "Government response window"],
   2028: ["$100B cluster target", "Robotics scaling test"],
   2030: ["Long-range predictions converge here"],
+  2032: ["Cotra's top-expert-dominating AI window"],
+  2033: ["Cotra's crunch window begins"],
+  2036: ["Cotra's self-sufficient AI median"],
 };
 
-// 2029 is intentionally omitted — no predictions target it.
-// The timeline jumps from 2028 to 2030.
-export const TIMELINE_YEARS = [2024, 2025, 2026, 2027, 2028, 2030] as const;
+// 2029 and 2031 intentionally omitted — no predictions target them.
+export const TIMELINE_YEARS = [2024, 2025, 2026, 2027, 2028, 2030, 2032, 2033, 2036] as const;
