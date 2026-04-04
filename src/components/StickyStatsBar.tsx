@@ -31,7 +31,7 @@ export function StickyStatsBar({ stats, visible }: StickyStatsBarProps) {
         pointerEvents: visible ? "auto" : "none",
       }}
     >
-      <div className="mx-auto max-w-2xl px-6 py-2 flex items-center justify-between">
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 py-2 grid grid-cols-6 gap-1 sm:gap-0 sm:flex sm:items-center sm:justify-between">
         <Metric label="Seen" value={stats.seen} />
         <Metric label="Confirmed" value={stats.confirmed} color="var(--confirmed)" />
         <Metric label="Unfolding" value={stats.in_progress} color="var(--in-progress)" />
@@ -39,13 +39,13 @@ export function StickyStatsBar({ stats, visible }: StickyStatsBarProps) {
         <Metric label="Incorrect" value={stats.incorrect} color="var(--incorrect)" />
         <div className="flex flex-col items-center">
           <span
-            className="font-mono text-sm font-semibold"
+            className="font-mono text-xs sm:text-sm font-semibold"
             style={{ color: "var(--text-primary)" }}
           >
             {hitRate >= 0 ? <AnimatedNumber value={hitRate} suffix="%" /> : "—"}
           </span>
           <span
-            className="font-mono text-[8px] uppercase tracking-widest"
+            className="font-mono text-[7px] sm:text-[8px] uppercase tracking-widest"
             style={{ color: "var(--text-faint)" }}
           >
             Hit rate
@@ -69,11 +69,11 @@ function Metric({
     <div className="flex flex-col items-center">
       <AnimatedNumber
         value={value}
-        className="font-mono text-sm font-semibold"
+        className="font-mono text-xs sm:text-sm font-semibold"
         style={{ color: color ?? "var(--text-primary)" }}
       />
       <span
-        className="font-mono text-[8px] uppercase tracking-widest"
+        className="font-mono text-[7px] sm:text-[8px] uppercase tracking-widest"
         style={{ color: "var(--text-faint)" }}
       >
         {label}

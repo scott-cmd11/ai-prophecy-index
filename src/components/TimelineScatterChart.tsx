@@ -91,14 +91,14 @@ export function TimelineScatterChart() {
         Prediction Density by Year
       </p>
       <ResponsiveContainer width="100%" height={Math.max(180, (maxY + 2) * 16)}>
-        <ScatterChart margin={{ top: 10, right: 20, bottom: 10, left: 20 }}>
+        <ScatterChart margin={{ top: 10, right: 10, bottom: 10, left: 10 }}>
           <XAxis
             type="number"
             dataKey="x"
             domain={[minYear - 0.5, maxYear + 0.5]}
             ticks={[...TIMELINE_YEARS]}
             tick={{
-              fontSize: 10,
+              fontSize: 9,
               fill: "#bbbbbb",
               fontFamily: "var(--font-mono)",
             }}
@@ -116,7 +116,7 @@ export function TimelineScatterChart() {
       </ResponsiveContainer>
 
       {/* Legend row 1: thinker colors */}
-      <div className="mt-3 flex items-center gap-4">
+      <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
         {(["shulman", "aschenbrenner", "cotra"] as const).map((key) => (
           <div key={key} className="flex items-center gap-1.5">
             <div
@@ -130,7 +130,7 @@ export function TimelineScatterChart() {
         ))}
       </div>
       {/* Legend row 2: status encoding */}
-      <div className="mt-1.5 flex items-center gap-4">
+      <div className="mt-1.5 flex flex-wrap items-center gap-x-4 gap-y-1">
         <div className="flex items-center gap-1.5">
           <svg width="10" height="10"><circle cx="5" cy="5" r="4" fill="#334155" /></svg>
           <span className="font-mono text-[9px]" style={{ color: "var(--text-faint)" }}>Confirmed</span>

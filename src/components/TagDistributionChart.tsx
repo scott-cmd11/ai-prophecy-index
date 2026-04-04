@@ -54,7 +54,7 @@ export function TagDistributionChart() {
         <BarChart
           data={data}
           layout="vertical"
-          margin={{ top: 0, right: 40, bottom: 0, left: 0 }}
+          margin={{ top: 0, right: 30, bottom: 0, left: 0 }}
           barSize={8}
           barGap={0}
         >
@@ -62,9 +62,9 @@ export function TagDistributionChart() {
           <YAxis
             type="category"
             dataKey="tag"
-            width={90}
+            width={72}
             tick={{
-              fontSize: 11,
+              fontSize: 10,
               fill: "#334155",
               fontFamily: "var(--font-mono)",
             }}
@@ -88,7 +88,7 @@ export function TagDistributionChart() {
       </ResponsiveContainer>
 
       {/* Legend */}
-      <div className="mt-3 flex items-center gap-4">
+      <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
         {(["shulman", "aschenbrenner", "cotra"] as const).map((key) => (
           <div key={key} className="flex items-center gap-1.5">
             <div

@@ -106,8 +106,8 @@ export function FilterBar({
       </div>
 
       {/* Row 3: Topic filters */}
-      <div className="flex items-center gap-2 mt-2 flex-wrap">
-        <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--text-faint)] w-12 flex-shrink-0">
+      <div className="flex items-start gap-2 mt-2 flex-wrap">
+        <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--text-faint)] w-12 flex-shrink-0 mt-1">
           Topic
         </span>
         {PREDICTION_TAGS.map((tag) => {
