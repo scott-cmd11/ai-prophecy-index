@@ -5,7 +5,7 @@ import { TimelineCard } from "@/components/TimelineCard";
 
 export interface MergedCard {
   prediction: Prediction;
-  thinker: "shulman" | "aschenbrenner";
+  thinker: "shulman" | "aschenbrenner" | "cotra";
   showThinkerBio?: string;
 }
 

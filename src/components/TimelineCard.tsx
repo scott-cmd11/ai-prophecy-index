@@ -6,11 +6,23 @@ import { annotateJargon } from "@/lib/jargon";
 
 interface TimelineCardProps {
   prediction: Prediction;
-  thinker: "shulman" | "aschenbrenner";
+  thinker: "shulman" | "aschenbrenner" | "cotra";
   isExpanded: boolean;
   onToggle: () => void;
   showThinkerBio?: string;
 }
+
+const ACCENT: Record<"shulman" | "aschenbrenner" | "cotra", string> = {
+  shulman: "var(--accent-shulman)",
+  aschenbrenner: "var(--accent-aschenbrenner)",
+  cotra: "var(--accent-cotra)",
+};
+
+const LABEL: Record<"shulman" | "aschenbrenner" | "cotra", string> = {
+  shulman: "Shulman",
+  aschenbrenner: "Aschenbrenner",
+  cotra: "Cotra",
+};
 
 export function TimelineCard({
   prediction,
@@ -19,11 +31,8 @@ export function TimelineCard({
   onToggle,
   showThinkerBio,
 }: TimelineCardProps) {
-  const accentColor =
-    thinker === "shulman" ? "var(--accent-shulman)" : "var(--accent-aschenbrenner)";
-
-  const thinkerLabel =
-    thinker === "shulman" ? "Shulman" : "Aschenbrenner";
+  const accentColor = ACCENT[thinker];
+  const thinkerLabel = LABEL[thinker];
 
   const formattedDate = prediction.lastReviewed
     ? new Date(prediction.lastReviewed).toLocaleDateString("en-US", {
