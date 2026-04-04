@@ -20,7 +20,7 @@ export function YearSection({ year, cards, expandedId, onExpand }: YearSectionPr
   if (cards.length === 0) return null;
 
   return (
-    <section id={`year-${year}`} className="mx-auto max-w-2xl px-6">
+    <section id={`year-${year}`} data-year={year} className="mx-auto max-w-2xl px-6">
       {/* Broadsheet year heading */}
       <div
         className="flex items-center gap-4 pt-8 pb-3 border-t-2"

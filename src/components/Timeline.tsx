@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { shulman } from "@/data/shulman";
 import { aschenbrenner } from "@/data/aschenbrenner";
 import { cotra } from "@/data/cotra";
@@ -9,6 +9,7 @@ import { YearSection, MergedCard } from "@/components/YearSection";
 import { FilterBar } from "@/components/FilterBar";
 import { PredictionStatus } from "@/types";
 import { PredictionTag } from "@/lib/constants";
+import { StickyStatsBar } from "@/components/StickyStatsBar";
 
 export function Timeline() {
   const [expandedId, setExpandedId] = useState<string | null>(null);
@@ -19,6 +20,41 @@ export function Timeline() {
   });
   const [activeStatuses, setActiveStatuses] = useState<PredictionStatus[] | "all">("all");
   const [activeTags, setActiveTags] = useState<PredictionTag[] | "all">("all");
+  const [activeYear, setActiveYear] = useState<number | null>(null);
+  const [showStickyBar, setShowStickyBar] = useState(false);
+  const timelineRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll<HTMLElement>("[data-year]");
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const intersecting = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (intersecting.length > 0) {
+          const year = Number(intersecting[0].target.getAttribute("data-year"));
+          setActiveYear(year);
+          setShowStickyBar(true);
+        } else {
+          const anyVisible = Array.from(sections).some((s) => {
+            const rect = s.getBoundingClientRect();
+            return rect.top < window.innerHeight && rect.bottom > 0;
+          });
+          if (!anyVisible) {
+            setShowStickyBar(false);
+          }
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [visibleThinkers, activeStatuses, activeTags]);
 
   function handleExpand(id: string) {
     setExpandedId((prev) => (prev === id ? null : id));
@@ -115,8 +151,31 @@ export function Timeline() {
     return { year, cards: filtered };
   }).filter(({ cards }) => cards.length > 0);
 
+  // Compute cumulative stats through the active year (unfiltered)
+  const allPredictions = [
+    ...shulman.predictions,
+    ...aschenbrenner.predictions,
+    ...cotra.predictions,
+  ];
+
+  const cumulativeStats = (() => {
+    if (activeYear === null) {
+      return { seen: 0, confirmed: 0, in_progress: 0, outstanding: 0, incorrect: 0 };
+    }
+    const through = allPredictions.filter((p) => p.year <= activeYear);
+    return {
+      seen: through.length,
+      confirmed: through.filter((p) => p.status === "confirmed").length,
+      in_progress: through.filter((p) => p.status === "in_progress").length,
+      outstanding: through.filter((p) => p.status === "outstanding").length,
+      incorrect: through.filter((p) => p.status === "incorrect").length,
+    };
+  })();
+
   return (
-    <section className="py-8">
+    <section ref={timelineRef} className="py-8">
+      <StickyStatsBar stats={cumulativeStats} visible={showStickyBar} />
+
       {/* Inline filter bar */}
       <div className="mx-auto max-w-2xl px-6">
         <FilterBar
