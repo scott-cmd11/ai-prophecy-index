@@ -31,6 +31,7 @@ export default function ShulmanPage() {
         subtitle={shulmanProfile.subtitle}
         accentColor={ACCENT}
         stats={stats}
+        photoUrl={shulmanProfile.photoUrl}
       />
       <ThinkerBio cards={shulmanProfile.bioCards} fullBio={shulmanProfile.bioFull} />
       {shulmanProfile.sections.map((section, i) => (

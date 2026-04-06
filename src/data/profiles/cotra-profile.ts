@@ -5,8 +5,7 @@ export const cotraProfile: ThinkerProfileData = {
   slug: "cotra",
   subtitle:
     "AI safety researcher and forecaster. Author of the Biological Anchors framework for AI timelines. Member of technical staff at METR. One of the most influential voices shaping how the AI safety community thinks about when transformative AI will arrive and what risks it poses.",
-  callout:
-    "<strong style=\"color:#d97706\">Coming soon:</strong> Predictions from Ajeya Cotra are being catalogued and scored. Her work on AI timelines forecasting, threat modelling, and capability benchmarking will be integrated into the tracker.",
+  photoUrl: "https://metr.org/team/ajeya-cotra/",
   bioCards: [
     {
       title: "Education",

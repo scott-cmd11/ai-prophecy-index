@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { shulman } from "@/data/shulman";
 import { aschenbrenner } from "@/data/aschenbrenner";
+import { shulmanProfile } from "@/data/profiles/shulman-profile";
+import { aschenbrennerProfile } from "@/data/profiles/aschenbrenner-profile";
+import { cotraProfile } from "@/data/profiles/cotra-profile";
 
 const COTRA_BIO =
   "Researcher at METR and former technical AI safety lead at Open Philanthropy. Best known for the 'biological anchors' methodology for forecasting transformative AI timelines. Runs the Planned Obsolescence Substack and has twice publicly updated her forecasts toward shorter timelines as capabilities advanced faster than expected.";
@@ -10,10 +13,11 @@ interface ThinkerColumnProps {
   bio: string;
   slug: string;
   accentVar: string;
+  photoUrl?: string;
   comingSoon?: boolean;
 }
 
-function ThinkerColumn({ name, bio, slug, accentVar, comingSoon }: ThinkerColumnProps) {
+function ThinkerColumn({ name, bio, slug, accentVar, photoUrl, comingSoon }: ThinkerColumnProps) {
   return (
     <div className="border-l-2 pl-3" style={{ borderColor: `var(${accentVar})` }}>
       <p
@@ -33,6 +37,17 @@ function ThinkerColumn({ name, bio, slug, accentVar, comingSoon }: ThinkerColumn
         >
           Profile →
         </Link>
+        {photoUrl && (
+          <a
+            href={photoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-[9px] uppercase tracking-widest hover:underline transition-colors"
+            style={{ color: "var(--text-faint)" }}
+          >
+            Photo ↗
+          </a>
+        )}
         {comingSoon && (
           <span
             className="font-mono text-[9px] uppercase tracking-widest"
@@ -64,18 +79,21 @@ export function ThinkersSection() {
           bio={shulman.bio}
           slug={shulman.slug}
           accentVar="--accent-shulman"
+          photoUrl={shulmanProfile.photoUrl}
         />
         <ThinkerColumn
           name={aschenbrenner.name}
           bio={aschenbrenner.bio}
           slug={aschenbrenner.slug}
           accentVar="--accent-aschenbrenner"
+          photoUrl={aschenbrennerProfile.photoUrl}
         />
         <ThinkerColumn
           name="Ajeya Cotra"
           bio={COTRA_BIO}
           slug="cotra"
           accentVar="--accent-cotra"
+          photoUrl={cotraProfile.photoUrl}
         />
       </div>
     </div>

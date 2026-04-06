@@ -23,6 +23,7 @@ export default function CotraPage() {
         accentColor={ACCENT}
         stats={cotraProfile.stats}
         callout={cotraProfile.callout}
+        photoUrl={cotraProfile.photoUrl}
       />
       <ThinkerBio cards={cotraProfile.bioCards} fullBio={cotraProfile.bioFull} />
       {cotraProfile.sections.map((section, i) => (

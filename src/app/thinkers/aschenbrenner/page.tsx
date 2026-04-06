@@ -31,6 +31,7 @@ export default function AschenbrennerPage() {
         subtitle={aschenbrennerProfile.subtitle}
         accentColor={ACCENT}
         stats={stats}
+        photoUrl={aschenbrennerProfile.photoUrl}
       />
       <ThinkerBio cards={aschenbrennerProfile.bioCards} fullBio={aschenbrennerProfile.bioFull} />
       {aschenbrennerProfile.sections.map((section, i) => (

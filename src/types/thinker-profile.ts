@@ -45,6 +45,7 @@ export interface ThinkerProfileData {
   name: string;
   slug: "shulman" | "aschenbrenner" | "cotra";
   subtitle: string;
+  photoUrl?: string;            // External link to a photo of the thinker (for "View photo" link)
   stats?: StatChipData[];      // Shulman + Aschenbrenner have stats
   callout?: string;            // Cotra has "coming soon" callout (supports HTML via dangerouslySetInnerHTML)
   bioCards: BioCardData[];     // 2 cards: Education + Career (or similar)

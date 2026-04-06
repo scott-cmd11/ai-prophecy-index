@@ -13,9 +13,10 @@ interface ThinkerHeroProps {
   accentColor: string;
   stats?: StatChipData[];
   callout?: string;
+  photoUrl?: string;
 }
 
-export function ThinkerHero({ name, subtitle, accentColor, stats, callout }: ThinkerHeroProps) {
+export function ThinkerHero({ name, subtitle, accentColor, stats, callout, photoUrl }: ThinkerHeroProps) {
   return (
     <section
       className="border-b py-16"
@@ -40,6 +41,18 @@ export function ThinkerHero({ name, subtitle, accentColor, stats, callout }: Thi
         >
           {subtitle}
         </p>
+
+        {photoUrl && (
+          <a
+            href={photoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest hover:underline"
+            style={{ color: accentColor }}
+          >
+            View photo ↗
+          </a>
+        )}
 
         {stats && stats.length > 0 && (
           <div className="mt-6 flex flex-wrap gap-2">
