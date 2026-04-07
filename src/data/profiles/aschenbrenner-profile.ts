@@ -5,7 +5,7 @@ export const aschenbrennerProfile: ThinkerProfileData = {
   slug: "aschenbrenner",
   subtitle:
     "Former OpenAI Superalignment researcher. Author of Situational Awareness. Founder and CIO of Situational Awareness LP, an AI-focused hedge fund managing over $1.5 billion.",
-  photoUrl: "https://www.forourposterity.com/about",
+  photoUrl: "https://fortune.com/2026/03/05/leopold-aschenbrenner-ai-hedge-fund-superintelligence-agi-power-companies-crypto-miners/",
   bioCards: [
     {
       title: "Education",

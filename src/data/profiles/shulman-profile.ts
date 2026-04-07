@@ -5,7 +5,7 @@ export const shulmanProfile: ThinkerProfileData = {
   slug: "shulman",
   subtitle:
     "AI policy researcher and independent scholar. Behind the scenes, his work has greatly influenced how leaders in artificial general intelligence picture the world they're creating.",
-  photoUrl: "https://80000hours.org/author/carl-shulman/",
+  photoUrl: "https://80000hours.org/podcast/episodes/carl-shulman-economy-agi/",
   bioCards: [
     {
       title: "Education",
