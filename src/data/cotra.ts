@@ -93,6 +93,9 @@ export const cotra: Thinker = {
       confidence: "high",
       evidence:
         "As of April 2026, no major AI lab (Anthropic, OpenAI, DeepMind, Meta, xAI) has published a quantitative resource-allocation commitment specifying what fraction of AI-generated labour or compute will be dedicated to alignment work when transformative AI capabilities are reached. Safety frameworks at these labs describe priorities qualitatively, not with binding numerical targets.",
+      references: [
+        { label: "80K Hours: Cotra on crunch time (full episode)", url: "https://80000hours.org/podcast/episodes/ajeya-cotra-transformative-ai-crunch-time/" },
+      ],
       implications:
         "Without pre-committed quantitative targets, market pressures and competitive dynamics will determine how resources are allocated during the most critical period in AI development — almost certainly favouring capability scaling over alignment work.",
       lastReviewed: "2026-04-04",

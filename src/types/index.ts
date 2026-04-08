@@ -3,6 +3,11 @@ import type { PredictionTag } from "@/lib/constants";
 export type PredictionStatus = "confirmed" | "in_progress" | "outstanding" | "incorrect";
 export type Confidence = "high" | "medium" | "low" | "implied";
 
+export interface Reference {
+  label: string;
+  url: string;
+}
+
 export interface Prediction {
   id: string;
   claim: string;
@@ -15,6 +20,7 @@ export interface Prediction {
   evidence?: string;
   implications?: string;
   whyIncorrect?: string;
+  references?: Reference[];
   lastReviewed: string;
   timeHorizon?: string;
   year: number;

@@ -58,6 +58,10 @@ export const aschenbrenner: Thinker = {
       confidence: "high",
       evidence:
         "Azure posted $75B+ in full-year FY2025 revenue (up 34%, with Q4 growing 39% YoY). Google Cloud surpassed a $70B annual run rate by end of 2025 (Q4 up 48% to $17.7B). AWS hit $128.7B in full-year 2025 revenue. Meta's AI-powered advertising suite exceeded a $60B annual run rate. Combined, Azure + Google Cloud + AWS collectively surpassed $270B in cloud/AI-driven revenue annually — far exceeding $100B. The prediction is confirmed on a combined basis, even if individual companies don't break out pure 'AI revenue' separately.",
+      references: [
+        { label: "Alphabet Q4 2025 earnings release", url: "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf" },
+        { label: "AWS $128.7B full-year 2025 revenue (CNBC)", url: "https://www.cnbc.com/2026/02/05/aws-q4-earnings-report-2025.html" },
+      ],
       implications:
         "Validated commercial returns at this scale would remove the last serious argument for slowing the compute buildout, accelerating the race dynamic Aschenbrenner describes and reducing the leverage any regulator or treaty could exert.",
       lastReviewed: "2026-04-01",
@@ -77,6 +81,10 @@ export const aschenbrenner: Thinker = {
       confidence: "high",
       evidence:
         "The Stargate project (OpenAI, SoftBank, Oracle, MGX) announced $500B in planned US AI infrastructure in January 2025 and had already deployed over $100B in capital by early 2026 — years ahead of the ~2028 target. The flagship campus in Abilene, Texas went live with Oracle Cloud Infrastructure and 450,000+ Nvidia GB200 GPUs. Five additional US sites were announced, plus a 1 GW UAE facility. Some partner governance disputes caused delays, but construction is broadly on track and the $100B threshold has already been crossed.",
+      references: [
+        { label: "Stargate Abilene: 450K+ GB200 GPUs (DCD)", url: "https://www.datacenterdynamics.com/en/news/openai-and-oracle-to-deploy-450000-gb200-gpus-at-stargate-abilene-data-center/" },
+        { label: "Five new Stargate US sites (OpenAI)", url: "https://openai.com/index/five-new-stargate-sites/" },
+      ],
       implications:
         "Clusters at this cost require sovereign-scale energy and land commitments, effectively making AI infrastructure a matter of national industrial policy in every major economy — reshaping where factories, power plants, and transmission lines get built for a generation.",
       lastReviewed: "2026-04-01",
@@ -134,6 +142,9 @@ export const aschenbrenner: Thinker = {
       confidence: "medium",
       evidence:
         "Gartner reported worldwide AI spending totalled approximately $1.5T in 2025, and projected $2.5T in 2026 and $3.3T in 2027, using a broad definition encompassing infrastructure, software, and services. Hyperscaler capex alone is projected to exceed $600B in 2026. On any broad measure of AI investment, the $1T threshold was crossed well before 2027 — and even on a narrow infrastructure/capex basis, $1T by 2027 appears achievable.",
+      references: [
+        { label: "Gartner: $1.5T AI spending in 2025", url: "https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025" },
+      ],
       implications:
         "Capital at that scale would redirect global semiconductor, construction, and energy supply chains away from other industries, creating shortages and geopolitical leverage points for any country that controls critical inputs like advanced chip fabrication.",
       lastReviewed: "2026-04-01",
@@ -155,6 +166,10 @@ export const aschenbrenner: Thinker = {
       confidence: "high",
       evidence:
         "The Department of Justice secured its first-ever AI-related economic espionage conviction on January 30, 2026, finding former Google engineer Linwei Ding guilty on 14 counts for stealing thousands of pages of Google AI trade secrets (TPU/GPU architecture) for Chinese companies. Separately, Chinese labs linked to DeepSeek were found to have used ~24,000 fraudulent accounts to conduct distillation attacks on Anthropic's Claude, generating over 16 million exchanges to shortcut frontier model training. Three individuals were also charged with conspiring to divert controlled GPU servers worth billions to China. A State Department-commissioned report noted lab security remains 'inadequate to resist a sustained IP exfiltration campaign by a sophisticated attacker.'",
+      references: [
+        { label: "DOJ: Linwei Ding convicted, 14 counts (DOJ)", url: "https://www.justice.gov/opa/pr/former-google-engineer-found-guilty-economic-espionage-and-theft-confidential-ai-technology" },
+        { label: "FDD: first AI espionage prosecution analysis", url: "https://www.fdd.org/analysis/2026/02/02/justice-department-marks-first-successful-prosecution-of-chinese-ai-related-economic-espionage/" },
+      ],
       implications:
         "Successful theft of frontier model weights would collapse a multi-year US compute lead overnight, nullifying the strategic value of export controls and CHIPS Act investments without a single adversarial training run.",
       lastReviewed: "2026-04-01",
@@ -214,6 +229,11 @@ export const aschenbrenner: Thinker = {
       confidence: "medium",
       evidence:
         "As of early 2026, US national security institutions are deeply embedded in frontier AI. The Pentagon (CDAO) holds contracts with Anthropic, OpenAI, xAI, and Google, and is deploying GenAI.mil to its entire 3-million-person workforce. The DoD directed that new commercial AI models be deployed within 30 days of public release. The NSA launched a dedicated AI Security Center. The ODNI created a Chief AI Officer role and an IC-wide AI strategy. The 2026 Annual Threat Assessment (March 2026, DNI Gabbard) formally elevates AI as a top strategic threat. The FY2026 NDAA mandates strict AI supply chain controls for defense procurement.",
+      references: [
+        { label: "CDAO frontier AI partnerships (ai.mil)", url: "https://www.ai.mil/latest/news-press/pr-view/article/4242822/cdao-announces-partnerships-with-frontier-ai-companies-to-address-national-secu/" },
+        { label: "GenAI.mil rollout to 3M DoD personnel", url: "https://defensescoop.com/2025/12/09/genai-mil-platform-dod-commercial-ai-models-agentic-tools-google-gemini/" },
+        { label: "NSA AI Security Center (NSA.gov)", url: "https://www.nsa.gov/AISC/" },
+      ],
       implications:
         "Deep national security involvement would likely bring classification regimes, export controls, and security clearance requirements to frontier AI research, fundamentally changing the open-publication culture that has driven academic AI progress.",
       lastReviewed: "2026-04-01",
@@ -294,6 +314,11 @@ export const aschenbrenner: Thinker = {
       confidence: "high",
       evidence:
         "Frontier models as of early 2026 are approaching or exceeding graduate-level performance on major academic benchmarks. OpenAI's o3 scored 87.7% on GPQA Diamond (graduate-level science questions) and 71.7% on competitive coding benchmarks. Gemini 2.5 Pro reached 84.0% on GPQA Diamond. The bar exam and most professional licensing benchmarks have been surpassed by multiple frontier models. GPT-5.x generation models are approaching 90% on MMLU-Pro, causing benchmark saturation discussions. The threshold of 'basically smarter than most college graduates' is broadly met as of early 2026.",
+      references: [
+        { label: "GPQA Diamond benchmark results (Epoch AI)", url: "https://epoch.ai/benchmarks/gpqa-diamond/" },
+        { label: "Gemini 2.5 Pro benchmarks (Artificial Analysis)", url: "https://artificialanalysis.ai/models/gemini-2-5-pro" },
+        { label: "GPT-5 benchmarks and analysis", url: "https://artificialanalysis.ai/articles/gpt-5-benchmarks-and-analysis" },
+      ],
       implications:
         "Entry-level knowledge work hiring — the traditional on-ramp for new graduates into professional careers — would contract sharply, creating a generational gap where the credential that once guaranteed employment no longer signals scarcity of any marketable skill.",
       lastReviewed: "2026-04-01",

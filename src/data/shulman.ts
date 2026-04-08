@@ -56,6 +56,11 @@ export const shulman: Thinker = {
       confidence: "high",
       evidence:
         "Sakana AI's 'AI Scientist-v2' (April 2025) produced the first entirely AI-generated peer-review-accepted workshop paper, autonomously formulating hypotheses, running experiments, and authoring manuscripts. DeepMind's AlphaEvolve autonomously discovered a new 4×4 matrix multiplication algorithm beating a 1969 record. OpenAI's GPT-5, via Red Queen Bio, optimized a gene-editing protocol achieving a 79× efficiency gain. A separate AI-Researcher framework (NeurIPS 2025) orchestrates the full research pipeline from literature review to publication-ready manuscripts. Human oversight remains standard, but AI is demonstrably performing significant portions of ML and scientific research.",
+      references: [
+        { label: "Sakana AI Scientist-v2: first AI peer-reviewed paper", url: "https://sakana.ai/ai-scientist-first-publication/" },
+        { label: "DeepMind AlphaEvolve announcement", url: "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/" },
+        { label: "OpenAI: GPT-5 wet lab biology via Red Queen Bio", url: "https://openai.com/index/accelerating-biological-research-in-the-wet-lab/" },
+      ],
       implications:
         "A gradual transition means there will be no clear political or legal moment at which governments can declare 'AGI arrived and we must act' — the safety and governance window closes incrementally, without a recognizable trigger point.",
       lastReviewed: "2026-04-01",
@@ -139,6 +144,10 @@ export const shulman: Thinker = {
       confidence: "high",
       evidence:
         "As of early 2026, humanoid robot deployment remains in pilot/early-commercial phase. Boston Dynamics began commercial Atlas production targeting 30,000 units/year; Figure AI's BotQ facility targets 12,000 units/year; Tesla Optimus produced only a few hundred units in 2025 against a 5,000-unit target. Global humanoid shipments are forecast at roughly 50,000 total units for 2026. Cognitive AI capabilities are advancing far faster than physical automation, precisely the asymmetry Shulman described — the bottleneck is clearly real.",
+      references: [
+        { label: "Boston Dynamics Atlas commercial launch", url: "https://bostondynamics.com/blog/boston-dynamics-unveils-new-atlas-robot-to-revolutionize-industry/" },
+        { label: "Figure AI BotQ: 12,000 humanoids/year", url: "https://www.figure.ai/news/botq" },
+      ],
       implications:
         "The physical bottleneck means that construction, logistics, agriculture, and healthcare — sectors representing the majority of global employment — would be insulated from full AI displacement until robotics matures, creating a multi-year window for policy intervention that purely cognitive automation would not afford.",
       lastReviewed: "2026-04-01",
@@ -158,6 +167,10 @@ export const shulman: Thinker = {
       confidence: "high",
       evidence:
         "TSMC has been at capacity for advanced AI chips, with 2-3 year lead times for new fabs. The CHIPS Act allocated $52B to subsidize domestic fab construction. GPU shortages persisted through 2023-2024, constraining training runs. This bottleneck is widely acknowledged across the industry and by analysts as the binding constraint on AI scaling.",
+      references: [
+        { label: "TSMC: advanced-node capacity short of AI demand", url: "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-csays-advanced-node-capacity-falls-short-of-ai-demand" },
+        { label: "CHIPS and Science Act overview (CRS)", url: "https://www.congress.gov/crs-product/R47523" },
+      ],
       implications:
         "With fabrication as the binding constraint, geopolitical control over semiconductor supply chains — TSMC's Taiwan fabs, ASML's EUV monopoly, rare earth inputs — becomes a direct lever on which nation gets to AGI first, elevating chip trade policy to the level of nuclear non-proliferation in strategic importance.",
       lastReviewed: "2026-04-01",
@@ -200,6 +213,11 @@ export const shulman: Thinker = {
       confidence: "medium",
       evidence:
         "Global AI investment reached approximately $1.5 trillion in 2025 (Gartner), with $2T+ forecast for 2026. China's total AI spending reached roughly $125B in 2025. Saudi Arabia's Project Transcendence commits $100B to AI infrastructure. The UAE, France, Germany, India, and the EU all have active national AI investment programs. The Atlantic Council's 2026 geopolitics outlook identifies sovereign AI competition as a defining force. Broad-based national AI investment pressure is unambiguously confirmed, even if the 10–1000x growth differential hasn't yet materialized.",
+      references: [
+        { label: "Gartner: $1.5T worldwide AI spending in 2025", url: "https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025" },
+        { label: "Saudi Project Transcendence $100B (CIO)", url: "https://www.cio.com/article/3602900/saudi-arabia-launches-100-billion-ai-initiative-to-lead-in-global-tech.html" },
+        { label: "Atlantic Council: AI shapes geopolitics in 2026", url: "https://www.atlanticcouncil.org/dispatches/eight-ways-ai-will-shape-geopolitics-in-2026/" },
+      ],
       implications:
         "If the economic penalty for delay reaches even 10x, cautious regulation becomes geopolitically suicidal — no democratic government would accept permanently surrendering its nation's economic weight, meaning safety-motivated governance gaps would be competed away regardless of the risks involved.",
       lastReviewed: "2026-04-01",
@@ -259,6 +277,10 @@ export const shulman: Thinker = {
       confidence: "medium",
       evidence:
         "In October 2025, Microsoft researchers published findings (in Science) that generative AI tools can design dangerous proteins capable of evading existing biosecurity screening systems. In February 2025, Arc Institute released Evo 2 — trained on 128,000 genomes — capable of designing entirely new organisms with 90% accuracy in predicting pathogenic mutations. Anthropic reported that Claude Opus 4 could 'significantly enhance' novices' ability to plan bioweapon production, triggering the company's highest internal security protocols for the first time. Governance remains fragmented: the Trump administration directed NIST to evaluate frontier models for biological capabilities but provided no funding or enforcement mechanisms.",
+      references: [
+        { label: "Microsoft: AI 'zero day' threats in biology (MIT)", url: "https://www.technologyreview.com/2025/10/02/1124767/microsoft-says-ai-can-create-zero-day-threats-in-biology/" },
+        { label: "Arc Institute Evo 2: AI designs new organisms", url: "https://arcinstitute.org/news/evo2" },
+      ],
       implications:
         "Pathogen design capability at this level would lower the barrier to biological weapons to any well-resourced non-state actor with API access, making biosecurity a mass-casualty risk that no state border or military can reliably contain.",
       lastReviewed: "2026-04-01",

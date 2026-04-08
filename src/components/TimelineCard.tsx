@@ -139,7 +139,41 @@ export function TimelineCard({
             </div>
           )}
 
-          {/* "If true" block — confirmed only */}
+          {/* References */}
+          {prediction.references && prediction.references.length > 0 && (
+            <div className="mb-3">
+              <p
+                className="mb-1 font-mono text-[9px] uppercase tracking-widest"
+                style={{ color: "var(--text-faint)" }}
+              >
+                References
+              </p>
+              <ul className="list-none pl-0 space-y-0.5">
+                {prediction.references.map((ref, i) => (
+                  <li key={i} className="text-sm leading-relaxed">
+                    <span
+                      className="font-mono text-[11px]"
+                      style={{ color: "var(--text-faint)" }}
+                    >
+                      [{i + 1}]
+                    </span>{" "}
+                    <a
+                      href={ref.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="hover:underline"
+                      style={{ color: accentColor }}
+                    >
+                      {ref.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* "Why it matters" block — confirmed only */}
           {prediction.status === "confirmed" && prediction.implications && (
             <div
               className="mb-3 border-l-2 pl-3 py-2 pr-2 rounded-r-sm text-sm leading-relaxed"
@@ -149,7 +183,7 @@ export function TimelineCard({
                 color: "#166534",
               }}
             >
-              <strong className="font-semibold">If true — </strong>
+              <strong className="font-semibold">Why it matters — </strong>
               {prediction.implications}
             </div>
           )}
