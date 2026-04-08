@@ -21,10 +21,14 @@ export function YearSection({ year, cards, expandedId, onExpand }: YearSectionPr
 
   return (
     <section id={`year-${year}`} data-year={year} className="mx-auto max-w-2xl px-6">
-      {/* Broadsheet year heading */}
+      {/* Broadsheet year heading — sticky within its section */}
       <div
-        className="flex items-center gap-4 pt-8 pb-3 border-t-2"
-        style={{ borderColor: "var(--rule-heavy)" }}
+        className="sticky z-30 flex items-center gap-4 pt-8 pb-3 border-t-2"
+        style={{
+          top: "43px",
+          borderColor: "var(--rule-heavy)",
+          backgroundColor: "var(--bg-primary)",
+        }}
       >
         <h2
           className="text-3xl flex-shrink-0"
