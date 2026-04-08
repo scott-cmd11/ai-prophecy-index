@@ -128,7 +128,11 @@ export function TimelineCard({
                 className="mb-1 font-mono text-[9px] uppercase tracking-widest"
                 style={{ color: "var(--text-faint)" }}
               >
-                Assessment
+                {prediction.status === "confirmed"
+                  ? "How we scored it"
+                  : prediction.status === "incorrect"
+                    ? "Why it missed"
+                    : "Assessment"}
               </p>
               <p
                 className="text-sm leading-relaxed"
