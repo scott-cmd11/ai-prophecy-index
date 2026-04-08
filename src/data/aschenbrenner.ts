@@ -313,15 +313,15 @@ export const aschenbrenner: Thinker = {
       status: "confirmed",
       confidence: "high",
       evidence:
-        "Frontier models as of early 2026 are approaching or exceeding graduate-level performance on major academic benchmarks. OpenAI's o3 scored 87.7% on GPQA Diamond (graduate-level science questions) and 71.7% on competitive coding benchmarks. Gemini 2.5 Pro reached 84.0% on GPQA Diamond. The bar exam and most professional licensing benchmarks have been surpassed by multiple frontier models. GPT-5.x generation models are approaching 90% on MMLU-Pro, causing benchmark saturation discussions. The threshold of 'basically smarter than most college graduates' is broadly met as of early 2026.",
+        "Frontier models as of mid-2026 decisively exceed graduate-level performance on major academic benchmarks. Anthropic's Claude Mythos Preview (Project Glasswing, April 2026) scored 94.6% on GPQA Diamond — graduate-level science questions where PhD holders average roughly 65%. OpenAI's o3 scored 87.7% and Gemini 2.5 Pro reached 84.0% on the same benchmark. The bar exam and most professional licensing benchmarks have been surpassed by multiple frontier models. GPT-5.x generation models are approaching 90% on MMLU-Pro, causing benchmark saturation discussions. The threshold of 'basically smarter than most college graduates' is unambiguously met.",
       references: [
+        { label: "Anthropic Project Glasswing announcement", url: "https://www.anthropic.com/glasswing" },
         { label: "GPQA Diamond benchmark results (Epoch AI)", url: "https://epoch.ai/benchmarks/gpqa-diamond/" },
-        { label: "Gemini 2.5 Pro benchmarks (Artificial Analysis)", url: "https://artificialanalysis.ai/models/gemini-2-5-pro" },
         { label: "GPT-5 benchmarks and analysis", url: "https://artificialanalysis.ai/articles/gpt-5-benchmarks-and-analysis" },
       ],
       implications:
         "Entry-level knowledge work hiring — the traditional on-ramp for new graduates into professional careers — would contract sharply, creating a generational gap where the credential that once guaranteed employment no longer signals scarcity of any marketable skill.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-07",
       timeHorizon: "by 2025-2026",
       year: 2026,
       tags: ["Capabilities"],
@@ -356,10 +356,10 @@ export const aschenbrenner: Thinker = {
       status: "in_progress",
       confidence: "high",
       evidence:
-        "SWE-bench Verified scores climbed from ~49% (Claude 3.5 Sonnet, Oct 2024) to ~88% (GPT-5, Feb 2026), roughly doubling in 18 months. Claude Code Sonnet 4.5 achieved 77.2% on SWE-bench Verified. Cursor added parallel agent support (8 agents via git worktrees) in February 2026. However, Devin 2.0 achieved only 13–15% success on real production GitHub issues in independent testing, and fully autonomous management of entire production codebases as a senior engineer has not been demonstrated. The trajectory is strongly directional; the deadline remains ahead.",
+        "SWE-bench Verified scores climbed from ~49% (Claude 3.5 Sonnet, Oct 2024) to ~88% (GPT-5, Feb 2026), roughly doubling in 18 months. Anthropic's Claude Mythos Preview (Project Glasswing, April 2026) pushed this to 93.9% — and scored 77.8% on the harder SWE-bench Pro and 82.0% on Terminal-Bench 2.0 (vs. Opus 4.6's 65.4%). Cursor added parallel agent support (8 agents via git worktrees) in February 2026. However, Devin 2.0 achieved only 13–15% success on real production GitHub issues in independent testing, and fully autonomous management of entire production codebases as a senior engineer has not been demonstrated. The benchmark trajectory is accelerating fast; the gap between benchmark performance and real-world full automation is narrowing but remains.",
       implications:
         "Software development — the world's highest-paying profession by headcount and the engine of the tech industry's trillion-dollar valuations — would see its labor market repriced to near-zero, eliminating the economic moat that has sustained Silicon Valley's talent competition for three decades.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-07",
       timeHorizon: "by 2027-2028",
       year: 2027,
       tags: ["Capabilities", "Industry"],
