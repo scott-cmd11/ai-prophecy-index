@@ -70,20 +70,6 @@ body::before {
 }
 
 /* ============================================================
-   Card expand/collapse — max-height transition
-   ============================================================ */
-
-.card-expanded-content {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 200ms ease;
-}
-
-.card-expanded-content.expanded {
-  max-height: 2000px;
-}
-
-/* ============================================================
    Status pulse animation (used on "Still unfolding" badge)
    ============================================================ */
 

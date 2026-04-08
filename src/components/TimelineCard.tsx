@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef, useCallback } from "react";
 import { Prediction } from "@/types";
 import { StatusBadge } from "@/components/StatusBadge";
 import { annotateJargon } from "@/lib/jargon";
@@ -32,8 +33,27 @@ export function TimelineCard({
   onToggle,
   showThinkerBio,
 }: TimelineCardProps) {
+  const cardRef = useRef<HTMLDivElement>(null);
   const accentColor = ACCENT[thinker];
   const thinkerLabel = LABEL[thinker];
+
+  const handleClick = useCallback(() => {
+    onToggle();
+    // When expanding, scroll card into view after the state update
+    if (!isExpanded && cardRef.current) {
+      requestAnimationFrame(() => {
+        const el = cardRef.current;
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        // If the top of the card is above the viewport (behind sticky bar), scroll it into view
+        if (rect.top < 60) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          // Offset for sticky bar
+          window.scrollBy({ top: -60, behavior: "smooth" });
+        }
+      });
+    }
+  }, [isExpanded, onToggle]);
 
   const formattedDate = prediction.lastReviewed
     ? new Date(prediction.lastReviewed).toLocaleDateString("en-US", {
@@ -44,13 +64,14 @@ export function TimelineCard({
 
   return (
     <div
-      className="relative border-b"
+      ref={cardRef}
+      className="relative border-b scroll-mt-16"
       style={{ borderColor: "var(--rule-light)" }}
     >
       {/* Collapsed header — always visible, click to toggle */}
       <div
         className="flex cursor-pointer items-start gap-0 py-3.5 transition-colors duration-100 hover:bg-[#f5f3ec] -mx-6 px-6"
-        onClick={onToggle}
+        onClick={handleClick}
         role="button"
         aria-expanded={isExpanded}
       >
@@ -117,9 +138,16 @@ export function TimelineCard({
         </div>
       </div>
 
-      {/* Expanded content — max-height CSS transition (fixes clip bug) */}
-      <div className={`card-expanded-content pl-[17px]${isExpanded ? " expanded" : ""}`}>
-        <div className="pb-4 pt-0.5">
+      {/* Expanded content — grid row transition for smooth expand/collapse */}
+      <div
+        className="pl-[17px]"
+        style={{
+          overflow: "hidden",
+          maxHeight: isExpanded ? "600px" : "0px",
+          transition: "max-height 300ms ease-out",
+        }}
+      >
+          <div className="pb-4 pt-0.5">
 
           {/* Assessment */}
           {prediction.evidence && (
@@ -231,7 +259,7 @@ export function TimelineCard({
             )}
             {formattedDate && <span>Reviewed {formattedDate}</span>}
           </div>
-        </div>
+          </div>
       </div>
     </div>
   );
