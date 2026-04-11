@@ -209,10 +209,14 @@ export const aschenbrenner: Thinker = {
       status: "in_progress",
       confidence: "medium",
       evidence:
-        "The Stargate Initiative (Executive Order, January 2025) is a $500B public-private infrastructure partnership explicitly framed around US AI national security supremacy. The Genesis Mission Executive Order (November 2025) formally mobilizes all 17 DOE National Laboratories into an integrated AI-driven scientific discovery platform, targeting 'initial operating capability' by end of 2026. Neither constitutes a full lab merger or classified AGI crash program, but the Genesis Mission closely approximates a national science mobilization for AI. The NIST AI Safety Institute was renamed and deprioritized under the Trump administration. The prediction window has not closed.",
+        "The Stargate Initiative (Executive Order, January 2025) is a $500B public-private infrastructure partnership explicitly framed around US AI national security supremacy. The Genesis Mission Executive Order (November 2025) formally mobilizes all 17 DOE National Laboratories into an integrated AI-driven scientific discovery platform, targeting 'initial operating capability' by end of 2026. Neither constitutes a full lab merger or classified AGI crash program, but the Genesis Mission closely approximates a national science mobilization for AI. The NIST AI Safety Institute was renamed and deprioritized under the Trump administration. A qualitatively new signal arrived in April 2026: OpenAI CEO Sam Altman published 'Industrial Policy for the Intelligence Age,' a 13-page policy blueprint explicitly invoking 'Progressive Era' and 'New Deal' framing and proposing federal mechanisms (Public Wealth Fund, robot taxes, containment playbooks) — the first time a frontier-lab CEO has publicly *requested* large-scale government intervention rather than resisting it. The prediction window has not closed.",
+      references: [
+        { label: "Axios: Sam's superintelligence New Deal", url: "https://www.axios.com/2026/04/06/behind-the-curtain-sams-superintelligence-new-deal" },
+        { label: "The Hill: OpenAI policy blueprint", url: "https://thehill.com/policy/technology/5817906-openai-ai-policy-recommendations/" },
+      ],
       implications:
         "Nationalizing AI development would immediately raise questions about private IP, researcher freedom, and civil liberties that have no clean legal precedent — and would likely trigger reciprocal state-led AI mobilizations in China and the EU.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-10",
       timeHorizon: "by 2027-2028",
       year: 2027,
       tags: ["Governance"],
@@ -321,7 +325,7 @@ export const aschenbrenner: Thinker = {
       ],
       implications:
         "Entry-level knowledge work hiring — the traditional on-ramp for new graduates into professional careers — would contract sharply, creating a generational gap where the credential that once guaranteed employment no longer signals scarcity of any marketable skill.",
-      lastReviewed: "2026-04-07",
+      lastReviewed: "2026-04-10",
       timeHorizon: "by 2025-2026",
       year: 2026,
       tags: ["Capabilities"],
@@ -356,10 +360,10 @@ export const aschenbrenner: Thinker = {
       status: "in_progress",
       confidence: "high",
       evidence:
-        "SWE-bench Verified scores climbed from ~49% (Claude 3.5 Sonnet, Oct 2024) to ~88% (GPT-5, Feb 2026), roughly doubling in 18 months. Anthropic's Claude Mythos Preview (Project Glasswing, April 2026) pushed this to 93.9% — and scored 77.8% on the harder SWE-bench Pro and 82.0% on Terminal-Bench 2.0 (vs. Opus 4.6's 65.4%). Cursor added parallel agent support (8 agents via git worktrees) in February 2026. However, Devin 2.0 achieved only 13–15% success on real production GitHub issues in independent testing, and fully autonomous management of entire production codebases as a senior engineer has not been demonstrated. The benchmark trajectory is accelerating fast; the gap between benchmark performance and real-world full automation is narrowing but remains.",
+        "SWE-bench Verified scores climbed from ~49% (Claude 3.5 Sonnet, Oct 2024) to ~88% (GPT-5, Feb 2026), roughly doubling in 18 months. Anthropic's Claude Mythos Preview (Project Glasswing, April 2026) pushed this to 93.9% — and scored 77.8% on the harder SWE-bench Pro and 82.0% on Terminal-Bench 2.0 (vs. Opus 4.6's 65.4%). Anthropic also shipped Claude Sonnet 4.6 in the same week (1M-token context beta, broad gains in coding, agent planning, and computer use), continuing the trajectory of agent-capability stepping. Cursor added parallel agent support (8 agents via git worktrees) in February 2026. However, Devin 2.0 achieved only 13–15% success on real production GitHub issues in independent testing, and fully autonomous management of entire production codebases as a senior engineer has not been demonstrated. The benchmark trajectory is accelerating fast; the gap between benchmark performance and real-world full automation is narrowing but remains.",
       implications:
         "Software development — the world's highest-paying profession by headcount and the engine of the tech industry's trillion-dollar valuations — would see its labor market repriced to near-zero, eliminating the economic moat that has sustained Silicon Valley's talent competition for three decades.",
-      lastReviewed: "2026-04-07",
+      lastReviewed: "2026-04-10",
       timeHorizon: "by 2027-2028",
       year: 2027,
       tags: ["Capabilities", "Industry"],
@@ -377,10 +381,14 @@ export const aschenbrenner: Thinker = {
       status: "outstanding",
       confidence: "medium",
       evidence:
-        "Stargate ($500B over 4 years, announced January 2025) is the closest analog but remains private-sector led. The Genesis Mission EO (November 2025) mobilized all 17 DOE National Laboratories into an AI platform, but stops short of merging leading commercial labs into a government project. No Congressional appropriation at the trillion-dollar scale for AI has been passed. The prediction requires AGI to arrive first as the triggering condition.",
+        "Stargate ($500B over 4 years, announced January 2025) is the closest analog but remains private-sector led. The Genesis Mission EO (November 2025) mobilized all 17 DOE National Laboratories into an AI platform, but stops short of merging leading commercial labs into a government project. No Congressional appropriation at the trillion-dollar scale for AI has been passed. April 2026 added a notable political precondition signal: OpenAI's 'Industrial Policy for the Intelligence Age' blueprint proposes a federally managed Public Wealth Fund seeded by AI companies — the first time a frontier-lab CEO has publicly proposed an actual fiscal mechanism for state-scale AI redistribution. This is preconditional groundwork, not appropriation, but it shifts the policy Overton window in the direction the prediction requires. The prediction still requires AGI to arrive first as the triggering condition.",
+      references: [
+        { label: "Axios: Sam's superintelligence New Deal", url: "https://www.axios.com/2026/04/06/behind-the-curtain-sams-superintelligence-new-deal" },
+        { label: "Inc.: Altman proposes new economic system", url: "https://www.inc.com/leila-sheridan/sam-altman-proposes-a-new-economic-system-for-the-ai-era/91327230" },
+      ],
       implications:
         "A government-absorbed AI program would concentrate extraordinary technological power in the executive branch, raising constitutional questions about oversight and creating a permanent national security classification regime around the most consequential technology in history.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-10",
       timeHorizon: "post-AGI",
       year: 2030,
       tags: ["Governance"],

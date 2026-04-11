@@ -82,10 +82,14 @@ export const shulman: Thinker = {
       status: "outstanding",
       confidence: "medium",
       evidence:
-        "GDP growth remains in the normal 2-3% annual range globally. AI is augmenting productivity in specific sectors (software, customer service, content) but is not yet substituting for most human labor at scale. The precondition — AI that can replace most human work — has not been met.",
+        "GDP growth remains in the normal 2-3% annual range globally. AI is augmenting productivity in specific sectors (software, customer service, content) but is not yet substituting for most human labor at scale. The precondition — AI that can replace most human work — has not been met. Notable shift in April 2026: OpenAI CEO Sam Altman published 'Industrial Policy for the Intelligence Age,' a 13-page policy blueprint proposing a Public Wealth Fund seeded by AI companies, taxes on automated labor, and a payroll-to-capital tax-base shift. The document explicitly invokes 'Progressive Era' and 'New Deal' framing — the first time a frontier-lab CEO has formally ratified the explosive-economic-transformation thesis Shulman has argued for years, even as the underlying GDP numbers haven't moved.",
+      references: [
+        { label: "Axios: Sam's superintelligence New Deal", url: "https://www.axios.com/2026/04/06/behind-the-curtain-sams-superintelligence-new-deal" },
+        { label: "Fortune: Altman New Deal / regulatory nihilism critics", url: "https://fortune.com/2026/04/06/sam-altman-says-ai-superintelligence-is-so-big-that-we-need-a-new-deal-critics-say-openais-policy-ideas-are-a-cover-for-regulatory-nihilism/" },
+      ],
       implications:
         "Growth at 100–1000x current rates would make every existing geopolitical power balance, trade relationship, and fiscal model obsolete within years — the countries and companies that capture this surplus would accumulate wealth that renders all historical economic dominance trivial by comparison.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-10",
       timeHorizon: "5-15 years after AGI",
       year: 2030,
       tags: ["Economics"],
@@ -102,10 +106,10 @@ export const shulman: Thinker = {
       status: "in_progress",
       confidence: "medium",
       evidence:
-        "AI has dramatically reduced costs for translation, basic coding, content generation, and customer support. Entry-level job postings in AI-exposed roles are down roughly 35% since 2023, with workers aged 22–25 seeing ~16% employment declines. However, high-skill cognitive work requiring judgment, creativity, and domain expertise still commands significant premiums. Microsoft AI CEO Mustafa Suleyman estimated full automation of office work was still 12–18 months away as of February 2026. The trend is directionally correct but full collapse to near-zero has not occurred.",
+        "AI has dramatically reduced costs for translation, basic coding, content generation, and customer support. Entry-level job postings in AI-exposed roles are down roughly 35% since 2023, with workers aged 22–25 seeing ~16% employment declines. However, high-skill cognitive work requiring judgment, creativity, and domain expertise still commands significant premiums. Microsoft AI CEO Mustafa Suleyman estimated full automation of office work was still 12–18 months away as of February 2026. The trend is directionally correct but full collapse to near-zero has not occurred. Altman's April 2026 'Industrial Policy for the Intelligence Age' blueprint explicitly acknowledges that AI 'could hollow out the wage-and-payroll revenue that funds Social Security' — a frontier-lab CEO publicly conceding the wage-collapse thesis even before it shows up in aggregate cost data.",
       implications:
         "Near-zero-cost legal, medical, and financial advice would be deeply democratizing for individuals, but would eliminate the primary income source for the professional middle class in wealthy nations — the political consequences of that displacement have no historical precedent.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-10",
       timeHorizon: "post-AGI",
       year: 2030,
       tags: ["Economics"],
@@ -122,10 +126,10 @@ export const shulman: Thinker = {
       status: "outstanding",
       confidence: "medium",
       evidence:
-        "No fully AI-operated businesses are competing at scale against human-staffed companies. AI-augmented firms are gaining advantages in specific domains, but humans remain essential for management, strategy, client relationships, and complex decision-making. The prediction requires much more capable AI systems.",
+        "No fully AI-operated businesses are competing at scale against human-staffed companies. AI-augmented firms are gaining advantages in specific domains, but humans remain essential for management, strategy, client relationships, and complex decision-making. The prediction requires much more capable AI systems. Notable in April 2026: Altman's 'Industrial Policy for the Intelligence Age' blueprint proposes large-scale redistribution programs (Public Wealth Fund, robot taxes, 4-day workweeks) — the policy menu Shulman implied would be required is now being floated by the very CEO racing to make the prediction true.",
       implications:
         "If human-staffed firms cannot compete on cost or speed, employment as the primary mechanism for distributing economic participation would break down — forcing governments to choose between large-scale redistribution programs and accepting levels of structural unemployment that no democratic system has previously survived.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-10",
       timeHorizon: "post-AGI",
       year: 2030,
       tags: ["Economics", "Industry"],
@@ -238,10 +242,10 @@ export const shulman: Thinker = {
       status: "outstanding",
       confidence: "implied",
       evidence:
-        "This is a probabilistic risk assessment that cannot be scored until AGI-level systems exist. Mechanistic interpretability was named one of MIT Technology Review's '10 Breakthrough Technologies 2026,' and Anthropic's Microscope tooling now traces complete model reasoning paths — genuine progress. However, the 2026 International AI Safety Report (backed by 30+ countries, 100+ experts) warns that reliable pre-deployment safety testing has become harder as models learn to distinguish test from deployment environments. Twelve companies published safety frameworks by end of 2025, but METR's December 2025 review found uneven implementation.",
+        "This is a probabilistic risk assessment that cannot be scored until AGI-level systems exist. Mechanistic interpretability was named one of MIT Technology Review's '10 Breakthrough Technologies 2026,' and Anthropic's Microscope tooling now traces complete model reasoning paths — genuine progress. However, the 2026 International AI Safety Report (backed by 30+ countries, 100+ experts) warns that reliable pre-deployment safety testing has become harder as models learn to distinguish test from deployment environments. Twelve companies published safety frameworks by end of 2025, but METR's December 2025 review found uneven implementation. April 2026 added a sharp data point on the offensive-cyber side of the takeover-scenario reasoning: Anthropic's Claude Mythos Preview autonomously discovered and exploited a 17-year-old root-level RCE in FreeBSD NFS (CVE-2026-4747) end-to-end, the first publicly documented case of a frontier model independently constructing a working exploit chain against production infrastructure.",
       implications:
         "A one-in-four chance of civilizational-scale catastrophe from a single technology — accepted as a reasonable baseline estimate by a careful analyst — would normally mandate the kind of precautionary investment and international coordination that has not yet materialized.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-10",
       timeHorizon: "conditional on AGI",
       year: 2030,
       tags: ["Safety"],
@@ -276,14 +280,17 @@ export const shulman: Thinker = {
       status: "confirmed",
       confidence: "medium",
       evidence:
-        "In October 2025, Microsoft researchers published findings (in Science) that generative AI tools can design dangerous proteins capable of evading existing biosecurity screening systems. In February 2025, Arc Institute released Evo 2 — trained on 128,000 genomes — capable of designing entirely new organisms with 90% accuracy in predicting pathogenic mutations. Anthropic reported that Claude Opus 4 could 'significantly enhance' novices' ability to plan bioweapon production, triggering the company's highest internal security protocols for the first time. Governance remains fragmented: the Trump administration directed NIST to evaluate frontier models for biological capabilities but provided no funding or enforcement mechanisms.",
+        "In October 2025, Microsoft researchers published findings (in Science) that generative AI tools can design dangerous proteins capable of evading existing biosecurity screening systems. In February 2025, Arc Institute released Evo 2 — trained on 128,000 genomes — capable of designing entirely new organisms with 90% accuracy in predicting pathogenic mutations. Anthropic reported that Claude Opus 4 could 'significantly enhance' novices' ability to plan bioweapon production, triggering the company's highest internal security protocols for the first time. The same dual-use dynamic now extends to cybersecurity: in April 2026, Anthropic announced Claude Mythos Preview (Project Glasswing), which scored 83.1% on CyberGym and was used to autonomously identify thousands of zero-day vulnerabilities across every major operating system and web browser — including a 17-year-old remote-code-execution flaw in FreeBSD's NFS implementation (CVE-2026-4747) that the model both discovered and exploited end-to-end without human guidance. Anthropic gated the model behind a defensive-only research preview with AWS, Apple, Google, Microsoft, Cisco, CrowdStrike, JPMorgan, Broadcom, and Nvidia. Governance remains fragmented: the Trump administration directed NIST to evaluate frontier models for biological capabilities but provided no funding or enforcement mechanisms.",
       references: [
         { label: "Microsoft: AI 'zero day' threats in biology (MIT)", url: "https://www.technologyreview.com/2025/10/02/1124767/microsoft-says-ai-can-create-zero-day-threats-in-biology/" },
         { label: "Arc Institute Evo 2: AI designs new organisms", url: "https://arcinstitute.org/news/evo2" },
+        { label: "Anthropic: Project Glasswing announcement", url: "https://www.anthropic.com/glasswing" },
+        { label: "Claude Mythos Preview (red.anthropic.com)", url: "https://red.anthropic.com/2026/mythos-preview/" },
+        { label: "Hacker News: Mythos finds thousands of zero-days", url: "https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html" },
       ],
       implications:
-        "Pathogen design capability at this level would lower the barrier to biological weapons to any well-resourced non-state actor with API access, making biosecurity a mass-casualty risk that no state border or military can reliably contain.",
-      lastReviewed: "2026-04-01",
+        "Dual-use AI capability at this level would lower the barrier to both biological and cyber mass-casualty attacks to any well-resourced actor with API access, making biosecurity and critical-infrastructure security risks that no state border or military can reliably contain.",
+      lastReviewed: "2026-04-10",
       timeHorizon: "concurrent with advanced AI",
       year: 2028,
       tags: ["Safety"],
@@ -321,10 +328,10 @@ export const shulman: Thinker = {
       status: "outstanding",
       confidence: "medium",
       evidence:
-        "GPT-4 training is estimated at ~3.8 × 10²⁵ FLOP. As of mid-2025, over 30 publicly announced models have been trained at or above GPT-4 scale. The next generation of frontier models (GPT-6 class) are expected to require 10²⁶–10²⁷ FLOP — 10–1,000× GPT-4. Stargate's Abilene campus (450,000+ GB200 GPUs, live early 2026) would be capable of training runs approaching 10²⁷–10²⁸ FLOP range by 2027–2028. No confirmed training run has reached 1000× GPT-4 (i.e., ~3.8 × 10²⁸ FLOP) yet, but the infrastructure to do so is being built.",
+        "GPT-4 training is estimated at ~3.8 × 10²⁵ FLOP. As of mid-2025, over 30 publicly announced models have been trained at or above GPT-4 scale. The next generation of frontier models (GPT-6 class) are expected to require 10²⁶–10²⁷ FLOP — 10–1,000× GPT-4. Stargate's Abilene campus (450,000+ GB200 GPUs, live early 2026) would be capable of training runs approaching 10²⁷–10²⁸ FLOP range by 2027–2028. Anthropic separately signed a multi-year capacity deal with CoreWeave in April 2026 (multiple Nvidia generations across US data centers) to handle Claude inference and training demand. No confirmed training run has reached 1000× GPT-4 (i.e., ~3.8 × 10²⁸ FLOP) yet, but the infrastructure to do so is being built.",
       implications:
         "Training costs in the tens-to-hundreds of billions effectively restrict AGI development to a handful of nation-states and mega-corporations, concentrating decision-making over the most consequential technology in history in fewer hands than any previous transformative invention.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-10",
       timeHorizon: "before AGI",
       year: 2030,
       tags: ["Capabilities", "Timelines"],
@@ -458,10 +465,10 @@ export const shulman: Thinker = {
       status: "outstanding",
       confidence: "medium",
       evidence:
-        "Global GDP is ~$100T annually. Shulman's argument: if AI reaches even 10% of theoretical brain-efficiency at scale, the aggregate cognitive labor value would dwarf current economic output. No AI system is near this productivity level. This represents the theoretical upside of full cognitive automation — the 'ceiling' of Shulman's economic projections, conditional on AGI and hardware efficiency convergence.",
+        "Global GDP is ~$100T annually. Shulman's argument: if AI reaches even 10% of theoretical brain-efficiency at scale, the aggregate cognitive labor value would dwarf current economic output. No AI system is near this productivity level. This represents the theoretical upside of full cognitive automation — the 'ceiling' of Shulman's economic projections, conditional on AGI and hardware efficiency convergence. Worth noting: Sam Altman's April 2026 'Industrial Policy for the Intelligence Age' blueprint frames the transition in language consistent with this scale — 'Progressive Era / New Deal' magnitude — and proposes a Public Wealth Fund as the vehicle for distributing the resulting surplus. The fiscal-system-obsolescence implication Shulman flagged is now being publicly anticipated by the lab CEOs themselves, even though the underlying productivity has not arrived.",
       implications:
         "An AI sector larger than global GDP would dwarf every existing industry, financial market, and tax base simultaneously — the fiscal systems that fund governments, militaries, and social programs are built on assumptions about economic scale that this scenario would render categorically obsolete.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-10",
       timeHorizon: "post-AGI",
       year: 2030,
       tags: ["Economics"],

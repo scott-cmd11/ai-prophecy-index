@@ -35,10 +35,14 @@ export const cotra: Thinker = {
       status: "in_progress",
       confidence: "high",
       evidence:
-        "The industry broadly pursued agentic deployment of existing frontier models throughout 2024–2026 — Claude, GPT-4o, Gemini in agentic frameworks with tool use, multi-step planning, and real-world action. This runs counter to Cotra's recommendation. No consensus has emerged from the safety community that agentic deployment was the riskier path, but no major lab has been able to demonstrate that it is safe either.",
+        "The industry broadly pursued agentic deployment of existing frontier models throughout 2024–2026 — Claude, GPT-4o, Gemini in agentic frameworks with tool use, multi-step planning, and real-world action. This runs counter to Cotra's recommendation. No consensus has emerged from the safety community that agentic deployment was the riskier path, but no major lab has been able to demonstrate that it is safe either. April 2026 produced a sharp case-in-point: Anthropic's own Claude Mythos Preview, deployed agentically in pre-release testing, autonomously identified thousands of zero-day vulnerabilities across major operating systems and constructed a working end-to-end exploit chain for a 17-year-old FreeBSD NFS RCE (CVE-2026-4747). Anthropic's response — gating Mythos behind a defensive-only Project Glasswing research preview rather than general release — is itself an implicit confirmation that the risk Cotra warned about is real enough to override commercial pressure.",
+      references: [
+        { label: "Anthropic: Project Glasswing announcement", url: "https://www.anthropic.com/glasswing" },
+        { label: "Simon Willison: Project Glasswing analysis", url: "https://simonwillison.net/2026/Apr/7/project-glasswing/" },
+      ],
       implications:
         "If correct, the industry is already on the high-risk trajectory — expanding model agency before alignment techniques are sufficient — and current safety evaluations designed for single-turn interactions may be systematically missing the most dangerous capabilities.",
-      lastReviewed: "2026-04-04",
+      lastReviewed: "2026-04-10",
       timeHorizon: "ongoing",
       year: 2026,
       tags: ["Safety", "Capabilities"],
@@ -92,13 +96,14 @@ export const cotra: Thinker = {
       status: "confirmed",
       confidence: "high",
       evidence:
-        "As of April 2026, no major AI lab (Anthropic, OpenAI, DeepMind, Meta, xAI) has published a quantitative resource-allocation commitment specifying what fraction of AI-generated labour or compute will be dedicated to alignment work when transformative AI capabilities are reached. Safety frameworks at these labs describe priorities qualitatively, not with binding numerical targets.",
+        "As of April 2026, no major AI lab (Anthropic, OpenAI, DeepMind, Meta, xAI) has published a quantitative resource-allocation commitment specifying what fraction of AI-generated labour or compute will be dedicated to alignment work when transformative AI capabilities are reached. Safety frameworks at these labs describe priorities qualitatively, not with binding numerical targets. OpenAI's April 2026 'Industrial Policy for the Intelligence Age' blueprint references 'containment playbooks for AI systems that can't be recalled' — but this is qualitative language from the policy team, not a binding compute or labour allocation target. The prediction's core claim (no quantitative commitments) holds.",
       references: [
         { label: "80K Hours: Cotra on crunch time (full episode)", url: "https://80000hours.org/podcast/episodes/ajeya-cotra-transformative-ai-crunch-time/" },
+        { label: "Axios: Sam's superintelligence New Deal", url: "https://www.axios.com/2026/04/06/behind-the-curtain-sams-superintelligence-new-deal" },
       ],
       implications:
         "Without pre-committed quantitative targets, market pressures and competitive dynamics will determine how resources are allocated during the most critical period in AI development — almost certainly favouring capability scaling over alignment work.",
-      lastReviewed: "2026-04-04",
+      lastReviewed: "2026-04-10",
       year: 2026,
       tags: ["Safety"],
     },
@@ -189,10 +194,10 @@ export const cotra: Thinker = {
       status: "in_progress",
       confidence: "high",
       evidence:
-        "Cotra's original January 2026 prediction was a median of 24-hour task horizons by year-end, with an 80th percentile of ~40 hours. Claude Opus 4.6 hit ~12 hours on METR's benchmark in early 2026 — nearly 10 months ahead of schedule. She revised the forecast upward in March 2026 to >100 hours by December 31, 2026. As of April 2026, this prediction remains in progress.",
+        "Cotra's original January 2026 prediction was a median of 24-hour task horizons by year-end, with an 80th percentile of ~40 hours. Claude Opus 4.6 hit ~12 hours on METR's benchmark in early 2026 — nearly 10 months ahead of schedule. She revised the forecast upward in March 2026 to >100 hours by December 31, 2026. April 2026 brought two further capability data points: Anthropic shipped Claude Sonnet 4.6 (1M-token context beta, broad gains in agent planning, coding, and computer use) and disclosed Claude Mythos Preview's 93.9% on SWE-bench Verified and 82.0% on Terminal-Bench 2.0 — both directionally consistent with longer task horizons, though no fresh METR re-run has been published. As of April 2026, this prediction remains in progress.",
       implications:
         "100-hour task horizons would mean AI agents can autonomously complete roughly a full working week's worth of complex software engineering work without human intervention — approaching the level of an unsupervised junior engineer.",
-      lastReviewed: "2026-04-04",
+      lastReviewed: "2026-04-10",
       timeHorizon: "by December 31, 2026",
       year: 2026,
       tags: ["Economics", "Capabilities"],
