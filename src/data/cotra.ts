@@ -35,14 +35,16 @@ export const cotra: Thinker = {
       status: "in_progress",
       confidence: "high",
       evidence:
-        "The industry broadly pursued agentic deployment of existing frontier models throughout 2024–2026 — Claude, GPT-4o, Gemini in agentic frameworks with tool use, multi-step planning, and real-world action. This runs counter to Cotra's recommendation. No consensus has emerged from the safety community that agentic deployment was the riskier path, but no major lab has been able to demonstrate that it is safe either. April 2026 produced a sharp case-in-point: Anthropic's own Claude Mythos Preview, deployed agentically in pre-release testing, autonomously identified thousands of zero-day vulnerabilities across major operating systems and constructed a working end-to-end exploit chain for a 17-year-old FreeBSD NFS RCE (CVE-2026-4747). Anthropic's response — gating Mythos behind a defensive-only Project Glasswing research preview rather than general release — is itself an implicit confirmation that the risk Cotra warned about is real enough to override commercial pressure.",
+        "The industry broadly pursued agentic deployment of existing frontier models throughout 2024–2026 — Claude, GPT-4o, Gemini in agentic frameworks with tool use, multi-step planning, and real-world action. This runs counter to Cotra's recommendation. No consensus has emerged from the safety community that agentic deployment was the riskier path, but no major lab has been able to demonstrate that it is safe either. April 2026 produced a sharp case-in-point: Anthropic's own Claude Mythos Preview, deployed agentically in pre-release testing, autonomously identified thousands of zero-day vulnerabilities across major operating systems and constructed a working end-to-end exploit chain for a 17-year-old FreeBSD NFS RCE (CVE-2026-4747). Anthropic's response — gating Mythos behind a defensive-only Project Glasswing research preview rather than general release — is itself an implicit confirmation that the risk Cotra warned about is real enough to override commercial pressure. By mid-April 2026, the downstream implication became clearer: Fortune reported that over 99% of Mythos-discovered vulnerabilities remain unpatched, with organizations unable to remediate at the speed AI agents can discover. This patching-gap dynamic is a direct instantiation of Cotra's core warning — agentic deployment generates real-world consequences faster than safety infrastructure can respond.",
       references: [
         { label: "Anthropic: Project Glasswing announcement", url: "https://www.anthropic.com/glasswing" },
         { label: "Simon Willison: Project Glasswing analysis", url: "https://simonwillison.net/2026/Apr/7/project-glasswing/" },
+        { label: "Fortune: AI finds flaws faster than companies can patch (Apr 14)", url: "https://fortune.com/2026/04/14/anthropic-mythos-reveals-security-gap-ai-finds-flaws-far-faster-than-companies-can-patch-them/" },
+        { label: "CNBC: Jamie Dimon on Mythos vulnerability exposure (Apr 14)", url: "https://www.cnbc.com/2026/04/14/jamie-dimon-anthropic-mythos-vulnerabilities-cyber-attacks.html" },
       ],
       implications:
         "If correct, the industry is already on the high-risk trajectory — expanding model agency before alignment techniques are sufficient — and current safety evaluations designed for single-turn interactions may be systematically missing the most dangerous capabilities.",
-      lastReviewed: "2026-04-10",
+      lastReviewed: "2026-04-15",
       timeHorizon: "ongoing",
       year: 2026,
       tags: ["Safety", "Capabilities"],
@@ -194,10 +196,10 @@ export const cotra: Thinker = {
       status: "in_progress",
       confidence: "high",
       evidence:
-        "Cotra's original January 2026 prediction was a median of 24-hour task horizons by year-end, with an 80th percentile of ~40 hours. Claude Opus 4.6 hit ~12 hours on METR's benchmark in early 2026 — nearly 10 months ahead of schedule. She revised the forecast upward in March 2026 to >100 hours by December 31, 2026. April 2026 brought two further capability data points: Anthropic shipped Claude Sonnet 4.6 (1M-token context beta, broad gains in agent planning, coding, and computer use) and disclosed Claude Mythos Preview's 93.9% on SWE-bench Verified and 82.0% on Terminal-Bench 2.0 — both directionally consistent with longer task horizons, though no fresh METR re-run has been published. As of April 2026, this prediction remains in progress.",
+        "Cotra's original January 2026 prediction was a median of 24-hour task horizons by year-end, with an 80th percentile of ~40 hours. Claude Opus 4.6 hit ~12 hours on METR's benchmark in early 2026 — nearly 10 months ahead of schedule. She revised the forecast upward in March 2026 to >100 hours by December 31, 2026. April 2026 brought several further capability data points: Anthropic shipped Claude Sonnet 4.6 (1M-token context beta, broad gains in agent planning, coding, and computer use) and disclosed Claude Mythos Preview's 93.9% on SWE-bench Verified and 82.0% on Terminal-Bench 2.0. On April 10, METR added GPT-5.4 to its time-horizon tracker: point estimate 5.7 hours under standard methodology (95% CI: 3–13.5 hrs), rising to 13 hours if reward hacks are permitted (95% CI: 5–74 hrs). The METR doubling time since 2023 has accelerated to ~130 days (4.3 months). All data points are directionally consistent with the >100-hour target; no model has yet reached that bar.",
       implications:
         "100-hour task horizons would mean AI agents can autonomously complete roughly a full working week's worth of complex software engineering work without human intervention — approaching the level of an unsupervised junior engineer.",
-      lastReviewed: "2026-04-10",
+      lastReviewed: "2026-04-15",
       timeHorizon: "by December 31, 2026",
       year: 2026,
       tags: ["Economics", "Capabilities"],
