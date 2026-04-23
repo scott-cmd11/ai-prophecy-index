@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local tooling scratch
+/.playwright-mcp/
+/.superpowers/
+/commit.bat
+
+# generated static docs
+/docs/*.html
