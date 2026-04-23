@@ -11,4 +11,5 @@ export const milestones: Record<number, string[]> = {
 };
 
 // 2029 and 2031 intentionally omitted — no predictions target them.
-export const TIMELINE_YEARS = [2024, 2025, 2026, 2027, 2028, 2030, 2032, 2033, 2036] as const;
+// 2022 and 2023 carry real-world events only (no predictions yet).
+export const TIMELINE_YEARS = [2022, 2023, 2024, 2025, 2026, 2027, 2028, 2030, 2032, 2033, 2036] as const;

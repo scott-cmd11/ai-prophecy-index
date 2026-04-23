@@ -17,6 +17,11 @@
   --accent-aschenbrenner: #ea580c;
   --accent-cotra: #059669;
 
+  /* Event category colors */
+  --event-release: #1e40af;
+  --event-policy: #7c2d12;
+  --event-safety: #b91c1c;
+
   /* Prediction status */
   --confirmed: #059669;
   --in-progress: #d97706;

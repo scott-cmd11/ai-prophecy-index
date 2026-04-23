@@ -5,6 +5,7 @@ import { shulman } from "@/data/shulman";
 import { aschenbrenner } from "@/data/aschenbrenner";
 import { cotra } from "@/data/cotra";
 import { TIMELINE_YEARS } from "@/data/milestones";
+import { events } from "@/data/events";
 import { YearSection, MergedCard } from "@/components/YearSection";
 import { FilterBar } from "@/components/FilterBar";
 import { PredictionStatus } from "@/types";
@@ -148,8 +149,12 @@ export function Timeline() {
             c.prediction.tags?.some((t) => activeTags.includes(t))
           );
 
-    return { year, cards: filtered };
-  }).filter(({ cards }) => cards.length > 0);
+    const yearEvents = events
+      .filter((e) => e.year === year)
+      .sort((a, b) => a.date.localeCompare(b.date));
+
+    return { year, cards: filtered, events: yearEvents };
+  }).filter(({ cards, events }) => cards.length > 0 || events.length > 0);
 
   // Compute cumulative stats through the active year (unfiltered)
   const allPredictions = [
@@ -189,11 +194,12 @@ export function Timeline() {
       </div>
 
       {/* Year sections */}
-      {cardsByYear.map(({ year, cards }) => (
+      {cardsByYear.map(({ year, cards, events }) => (
         <YearSection
           key={year}
           year={year}
           cards={cards}
+          events={events}
           expandedId={expandedId}
           onExpand={handleExpand}
         />
