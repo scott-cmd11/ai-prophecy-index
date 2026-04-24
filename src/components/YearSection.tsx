@@ -1,8 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { AIEvent, Prediction } from "@/types";
 import { TimelineCard } from "@/components/TimelineCard";
 import { EventsRail } from "@/components/EventsRail";
+
+const CURRENT_YEAR = 2026;
 
 export interface MergedCard {
   prediction: Prediction;
@@ -25,6 +28,8 @@ export function YearSection({
   expandedId,
   onExpand,
 }: YearSectionProps) {
+  const [collapsed, setCollapsed] = useState(year < CURRENT_YEAR);
+
   if (cards.length === 0 && events.length === 0) return null;
 
   const predictionCount = cards.length;
@@ -35,15 +40,35 @@ export function YearSection({
       data-year={year}
       className="mx-auto max-w-5xl px-6"
     >
-      {/* Broadsheet year heading — sticky, spans both columns */}
+      {/* Broadsheet year heading — sticky, spans both columns, clickable to toggle */}
       <div
-        className="sticky z-30 flex items-center gap-4 pt-8 pb-3 border-t-2"
+        role="button"
+        tabIndex={0}
+        aria-expanded={!collapsed}
+        onClick={() => setCollapsed((c) => !c)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            setCollapsed((c) => !c);
+          }
+        }}
+        className="sticky z-30 flex items-center gap-4 pt-8 pb-3 border-t-2 cursor-pointer select-none"
         style={{
           top: "43px",
           borderColor: "var(--rule-heavy)",
           backgroundColor: "var(--bg-primary)",
         }}
       >
+        <span
+          className="font-mono text-[12px] flex-shrink-0 w-3 inline-block transition-transform duration-150"
+          style={{
+            color: "var(--text-faint)",
+            transform: collapsed ? "rotate(0deg)" : "rotate(90deg)",
+          }}
+          aria-hidden="true"
+        >
+          ▸
+        </span>
         <h2
           className="text-3xl flex-shrink-0"
           style={{
@@ -68,7 +93,10 @@ export function YearSection({
       </div>
 
       {/* Two-track layout: events rail + predictions */}
-      <div className="md:grid md:grid-cols-[14rem_1fr] md:gap-8">
+      {!collapsed && (
+      <div
+        className="md:grid md:grid-cols-[14rem_1fr] md:gap-8"
+      >
         {/* Events rail */}
         <aside className="md:pt-0">
           <EventsRail
@@ -101,6 +129,7 @@ export function YearSection({
           )}
         </div>
       </div>
+      )}
     </section>
   );
 }
