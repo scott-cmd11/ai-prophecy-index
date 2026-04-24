@@ -62,7 +62,7 @@ export function TagDistributionChart() {
           <YAxis
             type="category"
             dataKey="tag"
-            width={72}
+            width={96}
             tick={{
               fontSize: 10,
               fill: "#334155",

@@ -164,10 +164,13 @@ export function Timeline() {
   ];
 
   const cumulativeStats = (() => {
-    if (activeYear === null) {
-      return { seen: 0, confirmed: 0, in_progress: 0, outstanding: 0, incorrect: 0 };
-    }
-    const through = allPredictions.filter((p) => p.year <= activeYear);
+    // When no year is resolved yet (initial load, fast scroll past collapsed
+    // sections, etc.), fall back to totals across all predictions so the bar
+    // always shows meaningful data instead of zeros.
+    const through =
+      activeYear === null
+        ? allPredictions
+        : allPredictions.filter((p) => p.year <= activeYear);
     return {
       seen: through.length,
       confirmed: through.filter((p) => p.status === "confirmed").length,
