@@ -182,7 +182,7 @@ export function Timeline() {
 
   return (
     <section ref={timelineRef} className="py-8">
-      <StickyStatsBar stats={cumulativeStats} visible={showStickyBar} />
+      <StickyStatsBar stats={cumulativeStats} visible={showStickyBar} activeYear={activeYear} />
 
       {/* Inline filter bar */}
       <div className="mx-auto max-w-2xl px-6">

@@ -14,9 +14,10 @@ interface CumulativeStats {
 interface StickyStatsBarProps {
   stats: CumulativeStats;
   visible: boolean;
+  activeYear: number | null;
 }
 
-export function StickyStatsBar({ stats, visible }: StickyStatsBarProps) {
+export function StickyStatsBar({ stats, visible, activeYear }: StickyStatsBarProps) {
   const resolved = stats.confirmed + stats.incorrect;
   const hitRate = resolved > 0 ? Math.round((stats.confirmed / resolved) * 100) : -1;
 
@@ -32,13 +33,29 @@ export function StickyStatsBar({ stats, visible }: StickyStatsBarProps) {
         pointerEvents: visible ? "auto" : "none",
       }}
     >
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 py-2 grid grid-cols-6 gap-1 sm:gap-0 sm:flex sm:items-center sm:justify-between">
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 py-2 flex items-center gap-3 sm:gap-4">
+        <div className="flex flex-col flex-shrink-0">
+          <span
+            className="font-mono text-xs sm:text-sm font-semibold tabular-nums"
+            style={{ color: "var(--text-primary)" }}
+          >
+            {activeYear ?? "All"}
+          </span>
+          <span
+            className="font-mono text-[7px] sm:text-[8px] uppercase tracking-widest"
+            style={{ color: "var(--text-faint)" }}
+          >
+            Through
+          </span>
+        </div>
+        <div className="flex-1 grid grid-cols-5 gap-1 sm:gap-0 sm:flex sm:items-center sm:justify-between">
         <Metric label="Predictions" value={stats.seen} />
         <Metric label={STATUS_LABELS.confirmed} value={stats.confirmed} color="var(--confirmed)" />
         <Metric label={STATUS_LABELS.in_progress} value={stats.in_progress} color="var(--in-progress)" />
         <Metric label={STATUS_LABELS.outstanding} value={stats.outstanding} color="var(--outstanding)" />
         <Metric label={STATUS_LABELS.incorrect} value={stats.incorrect} color="var(--incorrect)" />
-        <div className="flex flex-col items-center">
+        </div>
+        <div className="flex flex-col items-center flex-shrink-0">
           <span
             className="font-mono text-xs sm:text-sm font-semibold"
             style={{ color: "var(--text-primary)" }}
