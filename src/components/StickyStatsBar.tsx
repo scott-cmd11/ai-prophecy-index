@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatedNumber } from "@/components/AnimatedNumber";
+import { STATUS_LABELS } from "@/lib/constants";
 
 interface CumulativeStats {
   seen: number;
@@ -32,11 +33,11 @@ export function StickyStatsBar({ stats, visible }: StickyStatsBarProps) {
       }}
     >
       <div className="mx-auto max-w-2xl px-4 sm:px-6 py-2 grid grid-cols-6 gap-1 sm:gap-0 sm:flex sm:items-center sm:justify-between">
-        <Metric label="Seen" value={stats.seen} />
-        <Metric label="Confirmed" value={stats.confirmed} color="var(--confirmed)" />
-        <Metric label="Unfolding" value={stats.in_progress} color="var(--in-progress)" />
-        <Metric label="Early" value={stats.outstanding} color="var(--outstanding)" />
-        <Metric label="Incorrect" value={stats.incorrect} color="var(--incorrect)" />
+        <Metric label="Predictions" value={stats.seen} />
+        <Metric label={STATUS_LABELS.confirmed} value={stats.confirmed} color="var(--confirmed)" />
+        <Metric label={STATUS_LABELS.in_progress} value={stats.in_progress} color="var(--in-progress)" />
+        <Metric label={STATUS_LABELS.outstanding} value={stats.outstanding} color="var(--outstanding)" />
+        <Metric label={STATUS_LABELS.incorrect} value={stats.incorrect} color="var(--incorrect)" />
         <div className="flex flex-col items-center">
           <span
             className="font-mono text-xs sm:text-sm font-semibold"

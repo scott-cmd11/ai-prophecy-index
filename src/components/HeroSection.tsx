@@ -2,6 +2,7 @@ import { shulman } from "@/data/shulman";
 import { aschenbrenner } from "@/data/aschenbrenner";
 import { cotra } from "@/data/cotra";
 import { getStatusCounts, getHitRate } from "@/lib/utils";
+import { STATUS_LABELS } from "@/lib/constants";
 
 export function HeroSection() {
   const allPredictions = [...shulman.predictions, ...aschenbrenner.predictions, ...cotra.predictions];
@@ -11,10 +12,10 @@ export function HeroSection() {
 
   const stats = [
     { label: "Predictions", value: total },
-    { label: "Got it right", value: counts.confirmed },
-    { label: "Got it wrong", value: counts.incorrect },
-    { label: "Still unfolding", value: counts.in_progress },
-    { label: "Too early to tell", value: counts.outstanding },
+    { label: STATUS_LABELS.confirmed, value: counts.confirmed },
+    { label: STATUS_LABELS.incorrect, value: counts.incorrect },
+    { label: STATUS_LABELS.in_progress, value: counts.in_progress },
+    { label: STATUS_LABELS.outstanding, value: counts.outstanding },
     { label: "Hit rate", value: `${hitRate}%` },
   ];
 
