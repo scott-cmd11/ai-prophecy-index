@@ -147,14 +147,15 @@ export const shulman: Thinker = {
       status: "confirmed",
       confidence: "high",
       evidence:
-        "As of early 2026, humanoid robot deployment remains in pilot/early-commercial phase. Boston Dynamics began commercial Atlas production targeting 30,000 units/year; Figure AI's BotQ facility targets 12,000 units/year; Tesla Optimus produced only a few hundred units in 2025 against a 5,000-unit target. Global humanoid shipments are forecast at roughly 50,000 total units for 2026. Cognitive AI capabilities are advancing far faster than physical automation, precisely the asymmetry Shulman described — the bottleneck is clearly real.",
+        "As of early 2026, humanoid robot deployment remains in pilot/early-commercial phase. Boston Dynamics began commercial Atlas production targeting 30,000 units/year; Figure AI's BotQ facility targets 12,000 units/year; Tesla Optimus produced only a few hundred units in 2025 against a 5,000-unit target. Global humanoid shipments are forecast at roughly 50,000 total units for 2026. Cognitive AI capabilities are advancing far faster than physical automation, precisely the asymmetry Shulman described. April 14, 2026 added a concrete cognitive-side data point: Google DeepMind released Gemini Robotics-ER 1.6, a reasoning-first model with measurably improved spatial reasoning, multi-view understanding, and a new instrument-reading capability (gauges, sight glasses) developed in collaboration with Boston Dynamics for industrial inspection. The bottleneck is clearly real, but the cognitive layer that drives robots is filling in faster than the manufacturing capacity to deploy them.",
       references: [
         { label: "Boston Dynamics Atlas commercial launch", url: "https://bostondynamics.com/blog/boston-dynamics-unveils-new-atlas-robot-to-revolutionize-industry/" },
         { label: "Figure AI BotQ: 12,000 humanoids/year", url: "https://www.figure.ai/news/botq" },
+        { label: "Gemini Robotics-ER 1.6 release (DeepMind, Apr 14)", url: "https://deepmind.google/blog/gemini-robotics-er-1-6/" },
       ],
       implications:
         "The physical bottleneck means that construction, logistics, agriculture, and healthcare — sectors representing the majority of global employment — would be insulated from full AI displacement until robotics matures, creating a multi-year window for policy intervention that purely cognitive automation would not afford.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-30",
       timeHorizon: "5-10 years",
       year: 2028,
       tags: ["Hardware", "Economics"],
@@ -216,15 +217,17 @@ export const shulman: Thinker = {
       status: "confirmed",
       confidence: "medium",
       evidence:
-        "Global AI investment reached approximately $1.5 trillion in 2025 (Gartner), with $2T+ forecast for 2026. China's total AI spending reached roughly $125B in 2025. Saudi Arabia's Project Transcendence commits $100B to AI infrastructure. The UAE, France, Germany, India, and the EU all have active national AI investment programs. The Atlantic Council's 2026 geopolitics outlook identifies sovereign AI competition as a defining force. Broad-based national AI investment pressure is unambiguously confirmed, even if the 10–1000x growth differential hasn't yet materialized.",
+        "Global AI investment reached approximately $1.5 trillion in 2025 (Gartner), with $2T+ forecast for 2026. China's total AI spending reached roughly $125B in 2025; DeepSeek released a preview of its V4 model on April 24, 2026, claiming frontier-tier performance, demonstrating continued Chinese lab competitiveness. Saudi Arabia's Project Transcendence commits $100B to AI infrastructure. Microsoft committed $10B to Japan over 2026–2029 (April 3, 2026) for AI infrastructure, cybersecurity, and workforce — partnering with Sakura Internet and SoftBank for in-country GPU compute, signaling sovereign-AI partnership models are now mainstream. The UAE, France, Germany, India, and the EU all have active national AI investment programs. The Atlantic Council's 2026 geopolitics outlook identifies sovereign AI competition as a defining force. Broad-based national AI investment pressure is unambiguously confirmed, even if the 10–1000x growth differential hasn't yet materialized.",
       references: [
         { label: "Gartner: $1.5T worldwide AI spending in 2025", url: "https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025" },
         { label: "Saudi Project Transcendence $100B (CIO)", url: "https://www.cio.com/article/3602900/saudi-arabia-launches-100-billion-ai-initiative-to-lead-in-global-tech.html" },
         { label: "Atlantic Council: AI shapes geopolitics in 2026", url: "https://www.atlanticcouncil.org/dispatches/eight-ways-ai-will-shape-geopolitics-in-2026/" },
+        { label: "Microsoft $10B Japan AI investment (Apr 3)", url: "https://news.microsoft.com/source/asia/2026/04/03/microsoft-deepens-its-commitment-to-japan-with-10-billion-investment-in-ai-infrastructure-cybersecurity-workforce/" },
+        { label: "DeepSeek V4 preview release (CNN, Apr 24)", url: "https://edition.cnn.com/2026/04/24/tech/chinas-ai-deepseek-v4-intl-hnk" },
       ],
       implications:
         "If the economic penalty for delay reaches even 10x, cautious regulation becomes geopolitically suicidal — no democratic government would accept permanently surrendering its nation's economic weight, meaning safety-motivated governance gaps would be competed away regardless of the risks involved.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-30",
       timeHorizon: "post-AGI",
       year: 2030,
       tags: ["Geopolitics"],
@@ -280,7 +283,7 @@ export const shulman: Thinker = {
       status: "confirmed",
       confidence: "medium",
       evidence:
-        "In October 2025, Microsoft researchers published findings (in Science) that generative AI tools can design dangerous proteins capable of evading existing biosecurity screening systems. In February 2025, Arc Institute released Evo 2 — trained on 128,000 genomes — capable of designing entirely new organisms with 90% accuracy in predicting pathogenic mutations. Anthropic reported that Claude Opus 4 could 'significantly enhance' novices' ability to plan bioweapon production, triggering the company's highest internal security protocols for the first time. The same dual-use dynamic now extends to cybersecurity: in April 2026, Anthropic announced Claude Mythos Preview (Project Glasswing), which scored 83.1% on CyberGym and was used to autonomously identify thousands of zero-day vulnerabilities across every major operating system and web browser — including a 17-year-old remote-code-execution flaw in FreeBSD's NFS implementation (CVE-2026-4747) that the model both discovered and exploited end-to-end without human guidance. Anthropic gated the model behind a defensive-only research preview with AWS, Apple, Google, Microsoft, Cisco, CrowdStrike, JPMorgan, Broadcom, and Nvidia. Governance remains fragmented: the Trump administration directed NIST to evaluate frontier models for biological capabilities but provided no funding or enforcement mechanisms. By mid-April 2026, coverage of Mythos shifted from the model's raw capability to a systemic patching-gap problem: Fortune reported that over 99% of vulnerabilities Mythos identified remain unpatched, with organizations fundamentally unable to remediate at the speed AI can discover. Experts began calling this the 'Vulnpocalypse' (NBC News, Apr 15), and JPMorgan CEO Jamie Dimon publicly warned that Mythos reveals 'a lot more vulnerabilities' for cyberattacks (CNBC, Apr 14) — adding major financial-institution pressure to the governance debate.",
+        "In October 2025, Microsoft researchers published findings (in Science) that generative AI tools can design dangerous proteins capable of evading existing biosecurity screening systems. In February 2025, Arc Institute released Evo 2 — trained on 128,000 genomes — capable of designing entirely new organisms with 90% accuracy in predicting pathogenic mutations. Anthropic reported that Claude Opus 4 could 'significantly enhance' novices' ability to plan bioweapon production, triggering the company's highest internal security protocols for the first time. The same dual-use dynamic now extends to cybersecurity: in April 2026, Anthropic announced Claude Mythos Preview (Project Glasswing), which scored 83.1% on CyberGym and was used to autonomously identify thousands of zero-day vulnerabilities across every major operating system and web browser — including a 17-year-old remote-code-execution flaw in FreeBSD's NFS implementation (CVE-2026-4747) that the model both discovered and exploited end-to-end without human guidance. Anthropic gated the model behind a defensive-only research preview with AWS, Apple, Google, Microsoft, Cisco, CrowdStrike, JPMorgan, Broadcom, and Nvidia. Governance remains fragmented: the Trump administration directed NIST to evaluate frontier models for biological capabilities but provided no funding or enforcement mechanisms. By mid-April 2026, coverage of Mythos shifted from the model's raw capability to a systemic patching-gap problem: Fortune reported that over 99% of vulnerabilities Mythos identified remain unpatched, with organizations fundamentally unable to remediate at the speed AI can discover. Experts began calling this the 'Vulnpocalypse' (NBC News, Apr 15), and JPMorgan CEO Jamie Dimon publicly warned that Mythos reveals 'a lot more vulnerabilities' for cyberattacks (CNBC, Apr 14). The US government response through April 2026 was strikingly incoherent: NSA was already using Mythos despite a Pentagon supply-chain risk designation against Anthropic (Axios, Apr 19); CISA — the federal cyber defense agency — was locked out (Axios, Apr 21); the White House simultaneously drafted an executive action to give agencies broader Mythos access (Bloomberg, Apr 16) and publicly opposed Anthropic's plan to expand Glasswing to ~70 more organizations (Bloomberg/WSJ, Apr 29–30); and unauthorized users reportedly obtained access through private channels — a containment failure for an offensive-cyber-capable model. The dual-use risk Shulman warned about is now visibly outpacing US government coordination capacity.",
       references: [
         { label: "Microsoft: AI 'zero day' threats in biology (MIT)", url: "https://www.technologyreview.com/2025/10/02/1124767/microsoft-says-ai-can-create-zero-day-threats-in-biology/" },
         { label: "Arc Institute Evo 2: AI designs new organisms", url: "https://arcinstitute.org/news/evo2" },
@@ -290,6 +293,10 @@ export const shulman: Thinker = {
         { label: "Fortune: Mythos reveals patching gap — AI finds flaws faster than companies can fix (Apr 14)", url: "https://fortune.com/2026/04/14/anthropic-mythos-reveals-security-gap-ai-finds-flaws-far-faster-than-companies-can-patch-them/" },
         { label: "NBC News: 'Vulnpocalypse' — AI tips the scales toward hackers (Apr 15)", url: "https://www.nbcnews.com/tech/security/anthropic-claude-mythos-ai-hackers-cybersecurity-vulnerabilities-rcna273673" },
         { label: "CNBC: Jamie Dimon warns Mythos reveals 'a lot more vulnerabilities' (Apr 14)", url: "https://www.cnbc.com/2026/04/14/jamie-dimon-anthropic-mythos-vulnerabilities-cyber-attacks.html" },
+        { label: "Axios: NSA using Mythos despite Pentagon blacklist (Apr 19)", url: "https://www.axios.com/2026/04/19/nsa-anthropic-mythos-pentagon" },
+        { label: "Axios: CISA locked out of Mythos (Apr 21)", url: "https://www.axios.com/2026/04/21/cisa-anthropic-mythos-ai-security" },
+        { label: "Bloomberg: White House opposes Anthropic Mythos expansion (Apr 30)", url: "https://www.bloomberg.com/news/articles/2026-04-30/white-house-opposes-anthropic-plan-for-mythos-access-wsj-says" },
+        { label: "Bloomberg: WH executive action to give agencies Mythos access (Apr 16)", url: "https://www.bloomberg.com/news/articles/2026-04-16/white-house-moves-to-give-us-agencies-anthropic-mythos-access" },
       ],
       implications:
         "Dual-use AI capability at this level would lower the barrier to both biological and cyber mass-casualty attacks to any well-resourced actor with API access, making biosecurity and critical-infrastructure security risks that no state border or military can reliably contain.",
@@ -331,10 +338,10 @@ export const shulman: Thinker = {
       status: "outstanding",
       confidence: "medium",
       evidence:
-        "GPT-4 training is estimated at ~3.8 × 10²⁵ FLOP. As of mid-2025, over 30 publicly announced models have been trained at or above GPT-4 scale. The next generation of frontier models (GPT-6 class) are expected to require 10²⁶–10²⁷ FLOP — 10–1,000× GPT-4. Stargate's Abilene campus (450,000+ GB200 GPUs, live early 2026) would be capable of training runs approaching 10²⁷–10²⁸ FLOP range by 2027–2028. Anthropic separately signed a multi-year capacity deal with CoreWeave in April 2026 (multiple Nvidia generations across US data centers) to handle Claude inference and training demand. No confirmed training run has reached 1000× GPT-4 (i.e., ~3.8 × 10²⁸ FLOP) yet, but the infrastructure to do so is being built.",
+        "GPT-4 training is estimated at ~3.8 × 10²⁵ FLOP. As of mid-2025, over 30 publicly announced models have been trained at or above GPT-4 scale. The next generation of frontier models (GPT-6 class) are expected to require 10²⁶–10²⁷ FLOP — 10–1,000× GPT-4. Stargate's Abilene campus (450,000+ GB200 GPUs, live early 2026) would be capable of training runs approaching 10²⁷–10²⁸ FLOP range by 2027–2028. Anthropic signed a multi-year capacity deal with CoreWeave in April 2026 (multiple Nvidia generations across US data centers), and on April 24, 2026, Google announced an additional investment of up to $40B in Anthropic in cash and compute — substantially expanding Anthropic's training and inference budget. Q1 2026 earnings (April 29) raised hyperscaler 2026 capex guidance to a combined $700B+ (Microsoft $190B, Amazon ~$200B, Alphabet $180–190B, Meta $125–145B). No confirmed training run has reached 1000× GPT-4 (i.e., ~3.8 × 10²⁸ FLOP) yet, but the infrastructure and capital to do so are being assembled at unprecedented scale.",
       implications:
         "Training costs in the tens-to-hundreds of billions effectively restrict AGI development to a handful of nation-states and mega-corporations, concentrating decision-making over the most consequential technology in history in fewer hands than any previous transformative invention.",
-      lastReviewed: "2026-04-10",
+      lastReviewed: "2026-04-30",
       timeHorizon: "before AGI",
       year: 2030,
       tags: ["Capabilities", "Timelines"],
@@ -429,10 +436,10 @@ export const shulman: Thinker = {
       status: "in_progress",
       confidence: "high",
       evidence:
-        "Epoch AI data shows training compute costs for frontier models doubling approximately every 5–8 months, closely bracketing Shulman's 6-month claim. Hyperscaler AI capex grew roughly 84% from 2024 to 2025 (~$224B to ~$413B combined), implying a ~12-month doubling at the aggregate capex level. Algorithmic efficiency is improving at ~0.5 OOM/year (Epoch AI). The 6-month figure aligns well with per-model training run scaling; aggregate industry capex doubles closer to annually — directionally consistent but slightly slower than predicted.",
+        "Epoch AI data shows training compute costs for frontier models doubling approximately every 5–8 months, closely bracketing Shulman's 6-month claim. Hyperscaler AI capex grew roughly 84% from 2024 to 2025 (~$224B to ~$413B combined). Q1 2026 earnings (April 29, 2026) revised 2026 hyperscaler capex up to a combined $700B+ — Microsoft $190B, Amazon ~$200B, Alphabet $180–190B, Meta $125–145B — implying ~70% YoY growth on the aggregate capex measure (~14-month doubling). Algorithmic efficiency is improving at ~0.5 OOM/year (Epoch AI). The 6-month figure aligns well with per-model training run scaling; aggregate industry capex doubles closer to annually — directionally consistent but slightly slower than predicted.",
       implications:
         "Sustained exponential scaling through the AGI transition means that any safety or governance framework designed today will be calibrated for systems several capability doublings behind whatever exists when the framework takes effect.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-30",
       timeHorizon: "near-term",
       year: 2026,
       tags: ["Capabilities", "Hardware"],

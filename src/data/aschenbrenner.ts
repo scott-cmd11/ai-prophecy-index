@@ -80,14 +80,15 @@ export const aschenbrenner: Thinker = {
       status: "confirmed",
       confidence: "high",
       evidence:
-        "The Stargate project (OpenAI, SoftBank, Oracle, MGX) announced $500B in planned US AI infrastructure in January 2025 and had already deployed over $100B in capital by early 2026 — years ahead of the ~2028 target. The flagship campus in Abilene, Texas went live with Oracle Cloud Infrastructure and 450,000+ Nvidia GB200 GPUs. Five additional US sites were announced, plus a 1 GW UAE facility. Some partner governance disputes caused delays, but construction is broadly on track and the $100B threshold has already been crossed.",
+        "The Stargate project (OpenAI, SoftBank, Oracle, MGX) announced $500B in planned US AI infrastructure in January 2025 and had already deployed over $100B in capital by early 2026 — years ahead of the ~2028 target. The flagship campus in Abilene, Texas went live with Oracle Cloud Infrastructure and 450,000+ Nvidia GB200 GPUs. Five additional US sites were announced, plus a 1 GW UAE facility. The April 2026 picture deepened the buildout substantially: Anthropic signed a multi-year CoreWeave capacity deal (Apr 10), Google announced an additional investment of up to $40B in Anthropic in cash and compute (Apr 24), and the Microsoft–OpenAI exclusivity arrangement was dissolved (Apr 28) with OpenAI distributing across AWS Bedrock as well — accelerating multi-vendor compute commitments. The $100B threshold has been comfortably crossed; the question now is whether any single cluster reaches that scale, not aggregate capital.",
       references: [
         { label: "Stargate Abilene: 450K+ GB200 GPUs (DCD)", url: "https://www.datacenterdynamics.com/en/news/openai-and-oracle-to-deploy-450000-gb200-gpus-at-stargate-abilene-data-center/" },
         { label: "Five new Stargate US sites (OpenAI)", url: "https://openai.com/index/five-new-stargate-sites/" },
+        { label: "Google to invest up to $40B in Anthropic (TechCrunch, Apr 24)", url: "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/" },
       ],
       implications:
         "Clusters at this cost require sovereign-scale energy and land commitments, effectively making AI infrastructure a matter of national industrial policy in every major economy — reshaping where factories, power plants, and transmission lines get built for a generation.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-30",
       timeHorizon: "by 2028",
       year: 2028,
       tags: ["Hardware"],
@@ -141,13 +142,14 @@ export const aschenbrenner: Thinker = {
       status: "confirmed",
       confidence: "medium",
       evidence:
-        "Gartner reported worldwide AI spending totalled approximately $1.5T in 2025, and projected $2.5T in 2026 and $3.3T in 2027, using a broad definition encompassing infrastructure, software, and services. Hyperscaler capex alone is projected to exceed $600B in 2026. On any broad measure of AI investment, the $1T threshold was crossed well before 2027 — and even on a narrow infrastructure/capex basis, $1T by 2027 appears achievable.",
+        "Gartner reported worldwide AI spending totalled approximately $1.5T in 2025, and projected $2.5T in 2026 and $3.3T in 2027, using a broad definition encompassing infrastructure, software, and services. Q1 2026 earnings (April 29, 2026) blew through prior hyperscaler capex projections: Microsoft raised its 2026 capex guide to $190B, Amazon to ~$200B, Alphabet to $180–190B, and Meta to $125–145B — combined hyperscaler capex now tracking $700B+ for 2026 alone (vs. ~$413B in 2025, +70% YoY). On any broad measure, the $1T threshold was crossed in 2025; on a narrow infrastructure/capex basis, $1T by 2027 is now near-certain — the prediction is comfortably confirmed.",
       references: [
         { label: "Gartner: $1.5T AI spending in 2025", url: "https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025" },
+        { label: "Q1 2026 hyperscaler capex tracking $700B (Yahoo Finance)", url: "https://finance.yahoo.com/markets/article/magnificent-7-earnings-rush-reveals-ai-spending-surge-with-hyperscaler-capex-set-to-reach-725-billion-in-2026-224901707.html" },
       ],
       implications:
         "Capital at that scale would redirect global semiconductor, construction, and energy supply chains away from other industries, creating shortages and geopolitical leverage points for any country that controls critical inputs like advanced chip fabrication.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-30",
       timeHorizon: "by 2027",
       year: 2027,
       tags: ["Hardware"],
@@ -165,14 +167,15 @@ export const aschenbrenner: Thinker = {
       status: "confirmed",
       confidence: "high",
       evidence:
-        "The Department of Justice secured its first-ever AI-related economic espionage conviction on January 30, 2026, finding former Google engineer Linwei Ding guilty on 14 counts for stealing thousands of pages of Google AI trade secrets (TPU/GPU architecture) for Chinese companies. Separately, Chinese labs linked to DeepSeek were found to have used ~24,000 fraudulent accounts to conduct distillation attacks on Anthropic's Claude, generating over 16 million exchanges to shortcut frontier model training. Three individuals were also charged with conspiring to divert controlled GPU servers worth billions to China. A State Department-commissioned report noted lab security remains 'inadequate to resist a sustained IP exfiltration campaign by a sophisticated attacker.'",
+        "The Department of Justice secured its first-ever AI-related economic espionage conviction on January 30, 2026, finding former Google engineer Linwei Ding guilty on 14 counts for stealing thousands of pages of Google AI trade secrets (TPU/GPU architecture) for Chinese companies. Separately, Chinese labs linked to DeepSeek were found to have used ~24,000 fraudulent accounts to conduct distillation attacks on Anthropic's Claude, generating over 16 million exchanges to shortcut frontier model training. Three individuals were also charged with conspiring to divert controlled GPU servers worth billions to China. A State Department-commissioned report noted lab security remains 'inadequate to resist a sustained IP exfiltration campaign by a sophisticated attacker.' On April 24, 2026, DeepSeek released a preview of its V4 model claiming to rival frontier models from OpenAI, Anthropic, and Google — the rapid Chinese frontier-model output continues to validate the underlying competitive pressure Aschenbrenner described, even as the most direct evidence of weight exfiltration remains the distillation-attack pathway rather than insider theft of full model weights.",
       references: [
         { label: "DOJ: Linwei Ding convicted, 14 counts (DOJ)", url: "https://www.justice.gov/opa/pr/former-google-engineer-found-guilty-economic-espionage-and-theft-confidential-ai-technology" },
         { label: "FDD: first AI espionage prosecution analysis", url: "https://www.fdd.org/analysis/2026/02/02/justice-department-marks-first-successful-prosecution-of-chinese-ai-related-economic-espionage/" },
+        { label: "DeepSeek V4 preview release (CNN, Apr 24)", url: "https://edition.cnn.com/2026/04/24/tech/chinas-ai-deepseek-v4-intl-hnk" },
       ],
       implications:
         "Successful theft of frontier model weights would collapse a multi-year US compute lead overnight, nullifying the strategic value of export controls and CHIPS Act investments without a single adversarial training run.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-30",
       timeHorizon: "ongoing",
       year: 2025,
       tags: ["Geopolitics"],
@@ -209,14 +212,18 @@ export const aschenbrenner: Thinker = {
       status: "in_progress",
       confidence: "medium",
       evidence:
-        "The Stargate Initiative (Executive Order, January 2025) is a $500B public-private infrastructure partnership explicitly framed around US AI national security supremacy. The Genesis Mission Executive Order (November 2025) formally mobilizes all 17 DOE National Laboratories into an integrated AI-driven scientific discovery platform, targeting 'initial operating capability' by end of 2026. Neither constitutes a full lab merger or classified AGI crash program, but the Genesis Mission closely approximates a national science mobilization for AI. The NIST AI Safety Institute was renamed and deprioritized under the Trump administration. A qualitatively new signal arrived in April 2026: OpenAI CEO Sam Altman published 'Industrial Policy for the Intelligence Age,' a 13-page policy blueprint explicitly invoking 'Progressive Era' and 'New Deal' framing and proposing federal mechanisms (Public Wealth Fund, robot taxes, containment playbooks) — the first time a frontier-lab CEO has publicly *requested* large-scale government intervention rather than resisting it. The prediction window has not closed.",
+        "The Stargate Initiative (Executive Order, January 2025) is a $500B public-private infrastructure partnership explicitly framed around US AI national security supremacy. The Genesis Mission Executive Order (November 2025) formally mobilizes all 17 DOE National Laboratories into an integrated AI-driven scientific discovery platform, targeting 'initial operating capability' by end of 2026. Neither constitutes a full lab merger or classified AGI crash program, but the Genesis Mission closely approximates a national science mobilization for AI. The NIST AI Safety Institute was renamed and deprioritized under the Trump administration. A qualitatively new signal arrived in early April 2026: OpenAI CEO Sam Altman published 'Industrial Policy for the Intelligence Age,' a 13-page policy blueprint explicitly invoking 'Progressive Era' and 'New Deal' framing and proposing federal mechanisms (Public Wealth Fund, robot taxes, containment playbooks) — the first time a frontier-lab CEO has publicly *requested* large-scale government intervention rather than resisting it. However, late-April 2026 produced two counter-signals to the consolidation half of the prediction. (1) Frontier labs are diversifying, not merging: the Microsoft–OpenAI exclusivity arrangement was dissolved (Apr 28) with OpenAI distributing onto AWS Bedrock, while Google committed up to $40B more to Anthropic (Apr 24). (2) The federal government's response to Mythos was incoherent rather than coordinated: NSA used the model while CISA was locked out (Axios, Apr 21), the Pentagon held a supply-chain risk designation against Anthropic while the White House drafted an executive action to give agencies workaround access (Bloomberg, Apr 16), and the White House publicly opposed Anthropic's plan to expand Glasswing from ~40 to ~70 organizations (Bloomberg/WSJ, Apr 29–30) — even as senior administration officials (Susie Wiles, Scott Bessent) met directly with Dario Amodei. The picture as of late April is one of intense national-security engagement without a unified command structure — closer to ad-hoc inter-agency competition than to a Manhattan-style consolidated program.",
       references: [
         { label: "Axios: Sam's superintelligence New Deal", url: "https://www.axios.com/2026/04/06/behind-the-curtain-sams-superintelligence-new-deal" },
         { label: "The Hill: OpenAI policy blueprint", url: "https://thehill.com/policy/technology/5817906-openai-ai-policy-recommendations/" },
+        { label: "Google to invest up to $40B in Anthropic (TechCrunch, Apr 24)", url: "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/" },
+        { label: "Axios: NSA using Mythos despite Pentagon blacklist (Apr 19)", url: "https://www.axios.com/2026/04/19/nsa-anthropic-mythos-pentagon" },
+        { label: "Bloomberg: WH executive action for agency Mythos access (Apr 16)", url: "https://www.bloomberg.com/news/articles/2026-04-16/white-house-moves-to-give-us-agencies-anthropic-mythos-access" },
+        { label: "Bloomberg: WH opposes Anthropic Mythos expansion (Apr 30)", url: "https://www.bloomberg.com/news/articles/2026-04-30/white-house-opposes-anthropic-plan-for-mythos-access-wsj-says" },
       ],
       implications:
         "Nationalizing AI development would immediately raise questions about private IP, researcher freedom, and civil liberties that have no clean legal precedent — and would likely trigger reciprocal state-led AI mobilizations in China and the EU.",
-      lastReviewed: "2026-04-10",
+      lastReviewed: "2026-04-30",
       timeHorizon: "by 2027-2028",
       year: 2027,
       tags: ["Governance"],
@@ -232,15 +239,18 @@ export const aschenbrenner: Thinker = {
       status: "confirmed",
       confidence: "medium",
       evidence:
-        "As of early 2026, US national security institutions are deeply embedded in frontier AI. The Pentagon (CDAO) holds contracts with Anthropic, OpenAI, xAI, and Google, and is deploying GenAI.mil to its entire 3-million-person workforce. The DoD directed that new commercial AI models be deployed within 30 days of public release. The NSA launched a dedicated AI Security Center. The ODNI created a Chief AI Officer role and an IC-wide AI strategy. The 2026 Annual Threat Assessment (March 2026, DNI Gabbard) formally elevates AI as a top strategic threat. The FY2026 NDAA mandates strict AI supply chain controls for defense procurement.",
+        "As of early 2026, US national security institutions are deeply embedded in frontier AI. The Pentagon (CDAO) holds contracts with Anthropic, OpenAI, xAI, and Google, and is deploying GenAI.mil to its entire 3-million-person workforce. The DoD directed that new commercial AI models be deployed within 30 days of public release. The NSA launched a dedicated AI Security Center. The ODNI created a Chief AI Officer role and an IC-wide AI strategy. The 2026 Annual Threat Assessment (March 2026, DNI Gabbard) formally elevates AI as a top strategic threat. The FY2026 NDAA mandates strict AI supply chain controls for defense procurement. April 2026 furnished the most concrete confirmation yet: the rollout of Anthropic's Claude Mythos became a multi-agency national-security event in real time. NSA was cleared to use Mythos despite a Pentagon supply-chain risk designation against Anthropic (Axios, Apr 19); CISA was deliberately excluded (Axios, Apr 21); the Commerce Department's Center for AI Standards and Innovation tested it; the White House drafted an executive action to give agencies workaround access (Bloomberg, Apr 16) and then publicly opposed Anthropic's plan to expand the program (Bloomberg/WSJ, Apr 29–30); and senior administration officials (Susie Wiles, Scott Bessent) met directly with Dario Amodei. The prediction is unambiguously confirmed — the question now is whether the involvement is coherent enough to count as policy.",
       references: [
         { label: "CDAO frontier AI partnerships (ai.mil)", url: "https://www.ai.mil/latest/news-press/pr-view/article/4242822/cdao-announces-partnerships-with-frontier-ai-companies-to-address-national-secu/" },
         { label: "GenAI.mil rollout to 3M DoD personnel", url: "https://defensescoop.com/2025/12/09/genai-mil-platform-dod-commercial-ai-models-agentic-tools-google-gemini/" },
         { label: "NSA AI Security Center (NSA.gov)", url: "https://www.nsa.gov/AISC/" },
+        { label: "Axios: NSA using Mythos despite Pentagon blacklist (Apr 19)", url: "https://www.axios.com/2026/04/19/nsa-anthropic-mythos-pentagon" },
+        { label: "Axios: CISA locked out of Mythos (Apr 21)", url: "https://www.axios.com/2026/04/21/cisa-anthropic-mythos-ai-security" },
+        { label: "Axios: WH workshops plan to bring back Anthropic (Apr 29)", url: "https://www.axios.com/2026/04/29/trump-anthropic-pentagon-ai-executive-order-gov" },
       ],
       implications:
         "Deep national security involvement would likely bring classification regimes, export controls, and security clearance requirements to frontier AI research, fundamentally changing the open-publication culture that has driven academic AI progress.",
-      lastReviewed: "2026-04-01",
+      lastReviewed: "2026-04-30",
       timeHorizon: "by 2026-2027",
       year: 2026,
       tags: ["Governance", "Geopolitics"],
@@ -317,7 +327,7 @@ export const aschenbrenner: Thinker = {
       status: "confirmed",
       confidence: "high",
       evidence:
-        "Frontier models as of mid-2026 decisively exceed graduate-level performance on major academic benchmarks. Anthropic's Claude Mythos Preview (Project Glasswing, April 2026) scored 94.6% on GPQA Diamond — graduate-level science questions where PhD holders average roughly 65%. OpenAI's o3 scored 87.7% and Gemini 2.5 Pro reached 84.0% on the same benchmark. The bar exam and most professional licensing benchmarks have been surpassed by multiple frontier models. GPT-5.x generation models are approaching 90% on MMLU-Pro, causing benchmark saturation discussions. The threshold of 'basically smarter than most college graduates' is unambiguously met.",
+        "Frontier models as of mid-2026 decisively exceed graduate-level performance on major academic benchmarks. Anthropic's Claude Mythos Preview (Project Glasswing, April 2026) scored 94.6% on GPQA Diamond — graduate-level science questions where PhD holders average roughly 65%. OpenAI's o3 scored 87.7% and Gemini 2.5 Pro reached 84.0% on the same benchmark. OpenAI released GPT-5.5 on April 23, 2026 with a published system card extending the 5.x line further into agentic territory. The bar exam and most professional licensing benchmarks have been surpassed by multiple frontier models. GPT-5.x generation models are approaching 90% on MMLU-Pro, causing benchmark saturation discussions. The threshold of 'basically smarter than most college graduates' is unambiguously met.",
       references: [
         { label: "Anthropic Project Glasswing announcement", url: "https://www.anthropic.com/glasswing" },
         { label: "GPQA Diamond benchmark results (Epoch AI)", url: "https://epoch.ai/benchmarks/gpqa-diamond/" },
@@ -325,7 +335,7 @@ export const aschenbrenner: Thinker = {
       ],
       implications:
         "Entry-level knowledge work hiring — the traditional on-ramp for new graduates into professional careers — would contract sharply, creating a generational gap where the credential that once guaranteed employment no longer signals scarcity of any marketable skill.",
-      lastReviewed: "2026-04-10",
+      lastReviewed: "2026-04-30",
       timeHorizon: "by 2025-2026",
       year: 2026,
       tags: ["Capabilities"],
@@ -360,10 +370,10 @@ export const aschenbrenner: Thinker = {
       status: "in_progress",
       confidence: "high",
       evidence:
-        "SWE-bench Verified scores climbed from ~49% (Claude 3.5 Sonnet, Oct 2024) to ~88% (GPT-5, Feb 2026), roughly doubling in 18 months. Anthropic's Claude Mythos Preview (Project Glasswing, April 2026) pushed this to 93.9% — and scored 77.8% on the harder SWE-bench Pro and 82.0% on Terminal-Bench 2.0 (vs. Opus 4.6's 65.4%). Anthropic also shipped Claude Sonnet 4.6 in the same week (1M-token context beta, broad gains in coding, agent planning, and computer use), continuing the trajectory of agent-capability stepping. Cursor added parallel agent support (8 agents via git worktrees) in February 2026. However, Devin 2.0 achieved only 13–15% success on real production GitHub issues in independent testing, and fully autonomous management of entire production codebases as a senior engineer has not been demonstrated. The benchmark trajectory is accelerating fast; the gap between benchmark performance and real-world full automation is narrowing but remains.",
+        "SWE-bench Verified scores climbed from ~49% (Claude 3.5 Sonnet, Oct 2024) to ~88% (GPT-5, Feb 2026), roughly doubling in 18 months. Anthropic's Claude Mythos Preview (Project Glasswing, April 2026) pushed this to 93.9% — and scored 77.8% on the harder SWE-bench Pro and 82.0% on Terminal-Bench 2.0 (vs. Opus 4.6's 65.4%). Anthropic also shipped Claude Sonnet 4.6 in the same week (1M-token context beta, broad gains in coding, agent planning, and computer use). On April 10, METR added GPT-5.4 to its time-horizon tracker (point estimate 5.7 hrs, 13 hrs allowing reward hacks); on April 23, OpenAI released GPT-5.5 with a system card emphasizing further agentic-coding gains, and on April 28, OpenAI Codex and Managed Agents launched on AWS Bedrock — broadening the agentic-coding deployment surface materially. Cursor added parallel agent support (8 agents via git worktrees) in February 2026. However, Devin 2.0 achieved only 13–15% success on real production GitHub issues in independent testing, and fully autonomous management of entire production codebases as a senior engineer has not been demonstrated. The benchmark trajectory is accelerating fast; the gap between benchmark performance and real-world full automation is narrowing but remains.",
       implications:
         "Software development — the world's highest-paying profession by headcount and the engine of the tech industry's trillion-dollar valuations — would see its labor market repriced to near-zero, eliminating the economic moat that has sustained Silicon Valley's talent competition for three decades.",
-      lastReviewed: "2026-04-10",
+      lastReviewed: "2026-04-30",
       timeHorizon: "by 2027-2028",
       year: 2027,
       tags: ["Capabilities", "Industry"],
