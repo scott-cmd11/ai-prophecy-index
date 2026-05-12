@@ -55,6 +55,16 @@ export function TimelineCard({
     }
   }, [isExpanded, onToggle]);
 
+  const handleKeyDown = useCallback(
+    (event: React.KeyboardEvent<HTMLDivElement>) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        handleClick();
+      }
+    },
+    [handleClick]
+  );
+
   const formattedDate = prediction.lastReviewed
     ? new Date(prediction.lastReviewed).toLocaleDateString("en-US", {
         year: "numeric",
@@ -72,8 +82,11 @@ export function TimelineCard({
       <div
         className="flex cursor-pointer items-start gap-0 py-3.5 transition-colors duration-100 hover:bg-[#f5f3ec] -mx-6 px-6"
         onClick={handleClick}
+        onKeyDown={handleKeyDown}
         role="button"
+        tabIndex={0}
         aria-expanded={isExpanded}
+        aria-label={`${isExpanded ? "Close" : "Open"} evidence for ${thinkerLabel} prediction`}
       >
         {/* Thinker colour bar */}
         <div
@@ -100,6 +113,15 @@ export function TimelineCard({
               </span>
             )}
           </div>
+
+          {showThinkerBio && (
+            <p
+              className="mb-1.5 text-[12px] leading-relaxed"
+              style={{ color: "var(--text-muted)" }}
+            >
+              {showThinkerBio}
+            </p>
+          )}
 
           {/* Claim */}
           <p
@@ -142,11 +164,12 @@ export function TimelineCard({
       <div
         className="pl-[17px]"
         style={{
-          overflow: "hidden",
-          maxHeight: isExpanded ? "600px" : "0px",
-          transition: "max-height 300ms ease-out",
+          display: "grid",
+          gridTemplateRows: isExpanded ? "1fr" : "0fr",
+          transition: "grid-template-rows 260ms ease-out",
         }}
       >
+          <div className="min-h-0 overflow-hidden">
           <div className="pb-4 pt-0.5">
 
           {/* Assessment */}
@@ -161,6 +184,12 @@ export function TimelineCard({
                   : prediction.status === "incorrect"
                     ? "Why it missed"
                     : "Assessment"}
+              </p>
+              <p
+                className="mb-1.5 font-mono text-[9px] leading-relaxed"
+                style={{ color: "var(--text-muted)" }}
+              >
+                AI-assisted editorial assessment. Check the linked source before relying on it.
               </p>
               <p
                 className="text-sm leading-relaxed"
@@ -194,7 +223,7 @@ export function TimelineCard({
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="hover:underline"
+                      className="inline-flex min-h-8 items-center hover:underline"
                       style={{ color: accentColor }}
                     >
                       {ref.label}
@@ -246,7 +275,7 @@ export function TimelineCard({
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="hover:underline"
+                className="inline-flex min-h-8 items-center hover:underline"
                 style={{ color: accentColor }}
               >
                 {prediction.source}
@@ -258,6 +287,7 @@ export function TimelineCard({
               <span>Confidence: {prediction.confidence}</span>
             )}
             {formattedDate && <span>Reviewed {formattedDate}</span>}
+          </div>
           </div>
           </div>
       </div>

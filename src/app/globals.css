@@ -37,6 +37,7 @@
   /* Rules / dividers */
   --rule-heavy: #1a1a1a;
   --rule-light: #e0ddd6;
+  --sticky-stats-height: 44px;
 
   /* Font families */
   --font-sans: var(--font-dm-sans), system-ui, sans-serif;

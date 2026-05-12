@@ -1,0 +1,26 @@
+{
+  "desktop": {
+    "title": "AI Prophecy Index",
+    "h1": "AI Prophecy Index",
+    "noHorizontalOverflow": true
+  },
+  "mobile": {
+    "title": "AI Prophecy Index",
+    "noHorizontalOverflow": true,
+    "smallTargets": [],
+    "predictionExpanded": true,
+    "allTopicsTapWorks": "true"
+  },
+  "interactions": {
+    "predictionExpanded": true,
+    "eventExpanded": true,
+    "filteredText": "SHOWING 8 PREDICTIONS AND 37 EVENTS",
+    "allTopicsRestored": "true"
+  },
+  "routes": {
+    "/robots.txt": 200,
+    "/sitemap.xml": 200,
+    "/privacy": 200,
+    "/thinkers/cotra": 200
+  }
+}

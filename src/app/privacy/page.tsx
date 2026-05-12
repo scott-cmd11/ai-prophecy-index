@@ -3,7 +3,7 @@ import Link from "next/link";
 import { LAST_UPDATED } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Privacy & Legal — AI Prophecy Index",
+  title: "Privacy & Legal",
   description: "Privacy policy and legal notices for the AI Prophecy Index.",
 };
 
@@ -34,7 +34,7 @@ export default function PrivacyPage() {
             About This Site
           </h2>
           <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-            AI Prophecy Index is an independent research and tracking project created by Scott Hazlitt. It documents and evaluates publicly stated predictions about artificial intelligence made by Carl Shulman and Leopold Aschenbrenner. This site is not affiliated with, endorsed by, or connected to either individual or their associated organisations.
+            AI Prophecy Index is an independent research and tracking project created by Scott Hazlitt. It documents and evaluates publicly stated predictions about artificial intelligence made by Carl Shulman, Leopold Aschenbrenner, and Ajeya Cotra. This site is not affiliated with, endorsed by, or connected to those individuals or their associated organisations.
           </p>
         </section>
 
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
             Prediction summaries, evidence assessments, implication statements, and other editorial content on this site were produced with the assistance of AI language models, including Claude (Anthropic). While source materials are drawn from public interviews, podcasts, and published writing, the framing, interpretation, categorisation, and status judgements reflect automated analysis and editorial choices. This content may contain errors, omissions, or unintended bias.
           </p>
           <p className="mt-3 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-            All AI-generated content is clearly labelled. No content on this site should be taken as a definitive or authoritative representation of the views of the individuals tracked.
+            AI-assisted assessment panels are labelled where they appear in the tracker. No content on this site should be taken as a definitive or authoritative representation of the views of the individuals tracked.
           </p>
         </section>
 

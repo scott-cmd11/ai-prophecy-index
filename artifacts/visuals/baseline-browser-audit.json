@@ -1,0 +1,175 @@
+{
+  "desktop": {
+    "title": "AI Prophecy Index",
+    "h1": "AI Prophecy Index",
+    "scrollWidth": 1440,
+    "innerWidth": 1440
+  },
+  "mobile": {
+    "title": "AI Prophecy Index",
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "smallTappables": [
+      {
+        "text": "Start with the tracker",
+        "width": 180,
+        "height": 29
+      },
+      {
+        "text": "How to read it",
+        "width": 110,
+        "height": 27
+      },
+      {
+        "text": "Profile →",
+        "width": 63,
+        "height": 14
+      },
+      {
+        "text": "Photo ↗",
+        "width": 45,
+        "height": 14
+      },
+      {
+        "text": "Profile →",
+        "width": 63,
+        "height": 14
+      },
+      {
+        "text": "Photo ↗",
+        "width": 45,
+        "height": 14
+      },
+      {
+        "text": "Profile →",
+        "width": 63,
+        "height": 14
+      },
+      {
+        "text": "Photo ↗",
+        "width": 45,
+        "height": 14
+      },
+      {
+        "text": "▸The DataShow charts",
+        "width": 342,
+        "height": 32
+      },
+      {
+        "text": "Shulman",
+        "width": 68,
+        "height": 25
+      },
+      {
+        "text": "Aschenbrenner",
+        "width": 104,
+        "height": 25
+      },
+      {
+        "text": "Cotra",
+        "width": 56,
+        "height": 25
+      },
+      {
+        "text": "All",
+        "width": 44,
+        "height": 25
+      },
+      {
+        "text": "Got it right",
+        "width": 98,
+        "height": 25
+      },
+      {
+        "text": "Still unfolding",
+        "width": 116,
+        "height": 25
+      },
+      {
+        "text": "Too early to tell",
+        "width": 128,
+        "height": 25
+      },
+      {
+        "text": "Got it wrong",
+        "width": 98,
+        "height": 25
+      },
+      {
+        "text": "Hardware",
+        "width": 74,
+        "height": 25
+      },
+      {
+        "text": "Timelines",
+        "width": 80,
+        "height": 25
+      },
+      {
+        "text": "Geopolitics",
+        "width": 92,
+        "height": 25
+      },
+      {
+        "text": "Economics",
+        "width": 80,
+        "height": 25
+      },
+      {
+        "text": "Safety",
+        "width": 62,
+        "height": 25
+      },
+      {
+        "text": "Governance",
+        "width": 86,
+        "height": 25
+      },
+      {
+        "text": "Capabilities",
+        "width": 98,
+        "height": 25
+      },
+      {
+        "text": "Industry",
+        "width": 74,
+        "height": 25
+      },
+      {
+        "text": "U.S. Department of Justice →",
+        "width": 158,
+        "height": 12
+      },
+      {
+        "text": "Anthropic →",
+        "width": 66,
+        "height": 12
+      },
+      {
+        "text": "The Hill →",
+        "width": 61,
+        "height": 12
+      },
+      {
+        "text": "Anthropic →",
+        "width": 66,
+        "height": 12
+      },
+      {
+        "text": "Axios →",
+        "width": 45,
+        "height": 12
+      }
+    ]
+  },
+  "interactions": [
+    {
+      "action": "open 2026 and first prediction",
+      "externalLinksVisible": 87
+    },
+    {
+      "action": "toggle Cotra off and Safety topic on",
+      "showingText": "Showing 8 predictions and 37 events"
+    }
+  ]
+}

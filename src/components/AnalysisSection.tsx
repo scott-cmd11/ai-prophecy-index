@@ -25,7 +25,7 @@ export function AnalysisSection() {
               setOpen((o) => !o);
             }
           }}
-          className="flex flex-wrap items-baseline gap-x-4 gap-y-2 cursor-pointer select-none"
+          className="flex min-h-11 flex-wrap items-center gap-x-4 gap-y-2 cursor-pointer select-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--text-primary)]"
         >
           <h2
             className="text-2xl flex items-baseline gap-2"

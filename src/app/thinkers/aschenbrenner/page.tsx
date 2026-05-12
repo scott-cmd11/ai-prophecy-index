@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { aschenbrennerProfile } from "@/data/profiles/aschenbrenner-profile";
 import { aschenbrenner } from "@/data/aschenbrenner";
 import { getStatusCounts } from "@/lib/utils";
@@ -8,7 +9,7 @@ import { ThinkerBio } from "@/components/thinker-profile/ThinkerBio";
 import { ResourceSection } from "@/components/thinker-profile/ResourceSection";
 
 export const metadata: Metadata = {
-  title: "Leopold Aschenbrenner — AI Prophecy Index",
+  title: "Leopold Aschenbrenner",
   description:
     "Profile and resources for Leopold Aschenbrenner — former OpenAI researcher, author of Situational Awareness, and founder of Situational Awareness LP.",
 };
@@ -32,6 +33,7 @@ export default function AschenbrennerPage() {
         accentColor={ACCENT}
         stats={stats}
         photoUrl={aschenbrennerProfile.photoUrl}
+        trackerHref="/#tracker"
       />
       <ThinkerBio cards={aschenbrennerProfile.bioCards} fullBio={aschenbrennerProfile.bioFull} />
       {aschenbrennerProfile.sections.map((section, i) => (
@@ -41,9 +43,9 @@ export default function AschenbrennerPage() {
         className="border-t py-8 text-center font-mono text-[10px]"
         style={{ borderColor: "var(--rule-light)", color: "var(--text-muted)" }}
       >
-        <a href="/" style={{ color: "var(--text-muted)" }} className="hover:underline">
+        <Link href="/" style={{ color: "var(--text-muted)" }} className="hover:underline">
           AI Prophecy Index
-        </a>
+        </Link>
         {" · "}
         <a href="https://scotthazlitt.ai" target="_blank" rel="noopener noreferrer" style={{ color: "var(--text-muted)" }} className="hover:underline">
           A project by Scott Hazlitt

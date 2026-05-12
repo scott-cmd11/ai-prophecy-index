@@ -1,6 +1,7 @@
 "use client";
 
 import { AIEvent, AIEventCategory } from "@/types";
+import { LAST_UPDATED } from "@/lib/constants";
 
 const CATEGORY_COLOR: Record<AIEventCategory, string> = {
   release: "var(--event-release)",
@@ -30,6 +31,13 @@ export function EventCard({ event, isExpanded, onToggle }: EventCardProps) {
     day: "numeric",
   });
 
+  function handleKeyDown(keyboardEvent: React.KeyboardEvent<HTMLDivElement>) {
+    if (keyboardEvent.key === "Enter" || keyboardEvent.key === " ") {
+      keyboardEvent.preventDefault();
+      onToggle();
+    }
+  }
+
   return (
     <div
       className="relative border-b scroll-mt-16"
@@ -38,8 +46,11 @@ export function EventCard({ event, isExpanded, onToggle }: EventCardProps) {
       <div
         className="flex cursor-pointer items-start gap-0 py-3 transition-colors duration-100 hover:bg-[#f5f3ec] -mx-3 px-3"
         onClick={onToggle}
+        onKeyDown={handleKeyDown}
         role="button"
+        tabIndex={0}
         aria-expanded={isExpanded}
+        aria-label={`${isExpanded ? "Close" : "Open"} event details for ${event.title}`}
       >
         <div
           className="mt-1 mr-2.5 w-[2px] self-stretch flex-shrink-0 rounded-sm"
@@ -71,11 +82,12 @@ export function EventCard({ event, isExpanded, onToggle }: EventCardProps) {
 
       <div
         style={{
-          overflow: "hidden",
-          maxHeight: isExpanded ? "400px" : "0px",
-          transition: "max-height 300ms ease-out",
+          display: "grid",
+          gridTemplateRows: isExpanded ? "1fr" : "0fr",
+          transition: "grid-template-rows 240ms ease-out",
         }}
       >
+        <div className="min-h-0 overflow-hidden">
         <div className="pb-3 pt-0.5 pl-[14px] pr-2">
           {event.summary && (
             <p
@@ -85,6 +97,12 @@ export function EventCard({ event, isExpanded, onToggle }: EventCardProps) {
               {event.summary}
             </p>
           )}
+          <p
+            className="mb-1.5 font-mono text-[9px] uppercase tracking-widest"
+            style={{ color: "var(--text-faint)" }}
+          >
+            Sourced event. Compare with predictions in this year. Ledger reviewed {LAST_UPDATED}.
+          </p>
           {(event.source || event.sourceUrl) && (
             <div
               className="font-mono text-[9px]"
@@ -96,7 +114,7 @@ export function EventCard({ event, isExpanded, onToggle }: EventCardProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="hover:underline"
+                  className="inline-flex min-h-8 items-center hover:underline"
                   style={{ color }}
                 >
                   {event.source ?? "Source"} →
@@ -106,6 +124,7 @@ export function EventCard({ event, isExpanded, onToggle }: EventCardProps) {
               )}
             </div>
           )}
+        </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { DM_Sans, Instrument_Serif, JetBrains_Mono, Lora, Space_Grotesk } from "next/font/google";
+import { DM_Sans, Instrument_Serif, JetBrains_Mono, Lora } from "next/font/google";
 import "./globals.css";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -28,21 +29,32 @@ const lora = Lora({
   style: ["normal", "italic"],
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
-  weight: ["700"],
-});
-
 export const metadata: Metadata = {
-  title: "AI Prophecy Index",
-  description:
-    "Tracking and scoring public AI predictions from Carl Shulman and Leopold Aschenbrenner",
+  metadataBase: new URL(SITE_URL),
+  applicationName: SITE_NAME,
+  title: {
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "AI Prophecy Index",
-    description:
-      "Tracking and scoring public AI predictions from Carl Shulman and Leopold Aschenbrenner",
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: "/",
+    siteName: SITE_NAME,
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -54,7 +66,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} ${lora.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      className={`${dmSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} ${lora.variable} h-full antialiased`}
     >
       <body className="min-h-full font-sans">
         {children}

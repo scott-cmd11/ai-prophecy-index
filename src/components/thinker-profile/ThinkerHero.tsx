@@ -1,5 +1,5 @@
-// src/components/thinker-profile/ThinkerHero.tsx
 import type { StatChipData } from "@/types/thinker-profile";
+import Link from "next/link";
 
 const CHIP_COLORS: Record<string, string> = {
   confirmed: "#059669",
@@ -14,9 +14,18 @@ interface ThinkerHeroProps {
   stats?: StatChipData[];
   callout?: string;
   photoUrl?: string;
+  trackerHref?: string;
 }
 
-export function ThinkerHero({ name, subtitle, accentColor, stats, callout, photoUrl }: ThinkerHeroProps) {
+export function ThinkerHero({
+  name,
+  subtitle,
+  accentColor,
+  stats,
+  callout,
+  photoUrl,
+  trackerHref,
+}: ThinkerHeroProps) {
   return (
     <section
       className="border-b py-16"
@@ -42,17 +51,28 @@ export function ThinkerHero({ name, subtitle, accentColor, stats, callout, photo
           {subtitle}
         </p>
 
-        {photoUrl && (
-          <a
-            href={photoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest hover:underline"
-            style={{ color: accentColor }}
-          >
-            View photo ↗
-          </a>
-        )}
+        <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+          {trackerHref && (
+            <Link
+              href={trackerHref}
+              className="inline-flex min-h-9 items-center gap-1.5 border px-3 py-1.5 font-mono text-[10px] uppercase tracking-widest transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--text-primary)]"
+              style={{ borderColor: accentColor, color: accentColor }}
+            >
+              View tracked predictions
+            </Link>
+          )}
+          {photoUrl && (
+            <a
+              href={photoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-9 items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--text-primary)]"
+              style={{ color: accentColor }}
+            >
+              Source profile
+            </a>
+          )}
+        </div>
 
         {stats && stats.length > 0 && (
           <div className="mt-6 flex flex-wrap gap-2">

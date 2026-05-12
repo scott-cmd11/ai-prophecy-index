@@ -42,8 +42,13 @@ next-env.d.ts
 
 # local tooling scratch
 /.playwright-mcp/
+/.playwright-cli/
+output/
 /.superpowers/
 /commit.bat
 
 # generated static docs
 /docs/*.html
+
+# generated audit/runtime logs
+artifacts/**/*.log

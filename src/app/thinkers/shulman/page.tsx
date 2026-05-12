@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { shulmanProfile } from "@/data/profiles/shulman-profile";
 import { shulman } from "@/data/shulman";
 import { getStatusCounts } from "@/lib/utils";
@@ -8,7 +9,7 @@ import { ThinkerBio } from "@/components/thinker-profile/ThinkerBio";
 import { ResourceSection } from "@/components/thinker-profile/ResourceSection";
 
 export const metadata: Metadata = {
-  title: "Carl Shulman — AI Prophecy Index",
+  title: "Carl Shulman",
   description:
     "Profile and resources for Carl Shulman — AI policy researcher, independent scholar, and one of the most influential behind-the-scenes thinkers in AI safety.",
 };
@@ -32,6 +33,7 @@ export default function ShulmanPage() {
         accentColor={ACCENT}
         stats={stats}
         photoUrl={shulmanProfile.photoUrl}
+        trackerHref="/#tracker"
       />
       <ThinkerBio cards={shulmanProfile.bioCards} fullBio={shulmanProfile.bioFull} />
       {shulmanProfile.sections.map((section, i) => (
@@ -41,9 +43,9 @@ export default function ShulmanPage() {
         className="border-t py-8 text-center font-mono text-[10px]"
         style={{ borderColor: "var(--rule-light)", color: "var(--text-muted)" }}
       >
-        <a href="/" style={{ color: "var(--text-muted)" }} className="hover:underline">
+        <Link href="/" style={{ color: "var(--text-muted)" }} className="hover:underline">
           AI Prophecy Index
-        </a>
+        </Link>
         {" · "}
         <a href="https://scotthazlitt.ai" target="_blank" rel="noopener noreferrer" style={{ color: "var(--text-muted)" }} className="hover:underline">
           A project by Scott Hazlitt

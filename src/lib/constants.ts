@@ -1,4 +1,4 @@
-export const LAST_UPDATED = "2026-04-04";
+export const LAST_UPDATED = "2026-04-30";
 
 export const STATUS_COLORS: Record<string, string> = {
   confirmed: "#34d399",

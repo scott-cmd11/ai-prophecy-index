@@ -13,7 +13,8 @@ import { PredictionTag } from "@/lib/constants";
 import { StickyStatsBar } from "@/components/StickyStatsBar";
 
 export function Timeline() {
-  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [expandedPredictionId, setExpandedPredictionId] = useState<string | null>(null);
+  const [expandedEventId, setExpandedEventId] = useState<string | null>(null);
   const [visibleThinkers, setVisibleThinkers] = useState({
     shulman: true,
     aschenbrenner: true,
@@ -54,11 +55,14 @@ export function Timeline() {
 
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visibleThinkers, activeStatuses, activeTags]);
 
-  function handleExpand(id: string) {
-    setExpandedId((prev) => (prev === id ? null : id));
+  function handlePredictionExpand(id: string) {
+    setExpandedPredictionId((prev) => (prev === id ? null : id));
+  }
+
+  function handleEventExpand(id: string) {
+    setExpandedEventId((prev) => (prev === id ? null : id));
   }
 
   function handleToggleThinker(thinker: "shulman" | "aschenbrenner" | "cotra") {
@@ -87,6 +91,16 @@ export function Timeline() {
       const next = prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag];
       return next.length === 0 ? "all" : next;
     });
+  }
+
+  function handleClearTags() {
+    setActiveTags("all");
+  }
+
+  function handleResetFilters() {
+    setVisibleThinkers({ shulman: true, aschenbrenner: true, cotra: true });
+    setActiveStatuses("all");
+    setActiveTags("all");
   }
 
   // Build interleaved cards per year
@@ -180,12 +194,81 @@ export function Timeline() {
     };
   })();
 
+  const resultCount = cardsByYear.reduce((sum, { cards }) => sum + cards.length, 0);
+  const eventCount = cardsByYear.reduce((sum, { events }) => sum + events.length, 0);
+  const isFiltered =
+    !visibleThinkers.shulman ||
+    !visibleThinkers.aschenbrenner ||
+    !visibleThinkers.cotra ||
+    activeStatuses !== "all" ||
+    activeTags !== "all";
+
   return (
-    <section ref={timelineRef} className="py-8">
-      <StickyStatsBar stats={cumulativeStats} visible={showStickyBar} activeYear={activeYear} />
+    <section id="tracker" ref={timelineRef} className="py-8 scroll-mt-4">
+      <StickyStatsBar
+        stats={cumulativeStats}
+        visible={showStickyBar && cumulativeStats.seen > 0}
+        activeYear={activeYear}
+        isFiltered={isFiltered}
+      />
 
       {/* Inline filter bar */}
       <div className="mx-auto max-w-2xl px-6">
+        <div id="method" className="pb-4">
+          <p
+            className="mb-2 font-mono text-[9px] uppercase tracking-widest"
+            style={{ color: "var(--text-faint)" }}
+          >
+            How to read the ledger
+          </p>
+          <h2
+            className="text-3xl leading-tight"
+            style={{
+              fontFamily: "var(--font-serif)",
+              fontStyle: "italic",
+              fontWeight: 400,
+              color: "var(--text-primary)",
+            }}
+          >
+            Events and predictions are grouped by year.
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+            Use the filters to narrow the record, open a claim for the scoring evidence,
+            then compare it with the sourced events in the same year.
+          </p>
+          <div
+            className="mt-4 grid gap-3 border-y py-3 text-[12px] leading-relaxed sm:grid-cols-3"
+            style={{ borderColor: "var(--rule-light)", color: "var(--text-secondary)" }}
+          >
+            <div>
+              <p
+                className="mb-1 font-mono text-[9px] uppercase tracking-widest"
+                style={{ color: "var(--text-faint)" }}
+              >
+                Status
+              </p>
+              <p>Right and wrong are used only when the public record is specific enough to score.</p>
+            </div>
+            <div>
+              <p
+                className="mb-1 font-mono text-[9px] uppercase tracking-widest"
+                style={{ color: "var(--text-faint)" }}
+              >
+                Hit rate
+              </p>
+              <p>The rate counts resolved predictions only: confirmed claims versus incorrect claims.</p>
+            </div>
+            <div>
+              <p
+                className="mb-1 font-mono text-[9px] uppercase tracking-widest"
+                style={{ color: "var(--text-faint)" }}
+              >
+                Events
+              </p>
+              <p>Sourced events are context for comparison. They are not scored as predictions.</p>
+            </div>
+          </div>
+        </div>
         <FilterBar
           visibleThinkers={visibleThinkers}
           onToggleThinker={handleToggleThinker}
@@ -193,6 +276,11 @@ export function Timeline() {
           onToggleStatus={handleToggleStatus}
           activeTags={activeTags}
           onToggleTag={handleToggleTag}
+          onClearTags={handleClearTags}
+          resultCount={resultCount}
+          eventCount={eventCount}
+          isFiltered={isFiltered}
+          onReset={handleResetFilters}
         />
       </div>
 
@@ -203,8 +291,10 @@ export function Timeline() {
           year={year}
           cards={cards}
           events={events}
-          expandedId={expandedId}
-          onExpand={handleExpand}
+          expandedPredictionId={expandedPredictionId}
+          expandedEventId={expandedEventId}
+          onExpandPrediction={handlePredictionExpand}
+          onExpandEvent={handleEventExpand}
         />
       ))}
 

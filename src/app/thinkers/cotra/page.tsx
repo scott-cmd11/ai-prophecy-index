@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { cotraProfile } from "@/data/profiles/cotra-profile";
 import { ThinkerNav } from "@/components/thinker-profile/ThinkerNav";
 import { ThinkerHero } from "@/components/thinker-profile/ThinkerHero";
@@ -6,7 +7,7 @@ import { ThinkerBio } from "@/components/thinker-profile/ThinkerBio";
 import { ResourceSection } from "@/components/thinker-profile/ResourceSection";
 
 export const metadata: Metadata = {
-  title: "Ajeya Cotra — AI Prophecy Index",
+  title: "Ajeya Cotra",
   description:
     "Profile and resources for Ajeya Cotra — AI safety researcher, biological anchors forecaster, and METR technical staff.",
 };
@@ -24,6 +25,7 @@ export default function CotraPage() {
         stats={cotraProfile.stats}
         callout={cotraProfile.callout}
         photoUrl={cotraProfile.photoUrl}
+        trackerHref="/#tracker"
       />
       <ThinkerBio cards={cotraProfile.bioCards} fullBio={cotraProfile.bioFull} />
       {cotraProfile.sections.map((section, i) => (
@@ -33,9 +35,9 @@ export default function CotraPage() {
         className="border-t py-8 text-center font-mono text-[10px]"
         style={{ borderColor: "var(--rule-light)", color: "var(--text-muted)" }}
       >
-        <a href="/" style={{ color: "var(--text-muted)" }} className="hover:underline">
+        <Link href="/" style={{ color: "var(--text-muted)" }} className="hover:underline">
           AI Prophecy Index
-        </a>
+        </Link>
         {" · "}
         <a href="https://scotthazlitt.ai" target="_blank" rel="noopener noreferrer" style={{ color: "var(--text-muted)" }} className="hover:underline">
           A project by Scott Hazlitt

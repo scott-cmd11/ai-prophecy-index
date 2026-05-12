@@ -5,7 +5,7 @@ import { AIEvent, Prediction } from "@/types";
 import { TimelineCard } from "@/components/TimelineCard";
 import { EventsRail } from "@/components/EventsRail";
 
-const CURRENT_YEAR = 2026;
+const CURRENT_YEAR = new Date().getFullYear();
 
 export interface MergedCard {
   prediction: Prediction;
@@ -17,16 +17,20 @@ interface YearSectionProps {
   year: number;
   cards: MergedCard[];
   events: AIEvent[];
-  expandedId: string | null;
-  onExpand: (id: string) => void;
+  expandedPredictionId: string | null;
+  expandedEventId: string | null;
+  onExpandPrediction: (id: string) => void;
+  onExpandEvent: (id: string) => void;
 }
 
 export function YearSection({
   year,
   cards,
   events,
-  expandedId,
-  onExpand,
+  expandedPredictionId,
+  expandedEventId,
+  onExpandPrediction,
+  onExpandEvent,
 }: YearSectionProps) {
   const [collapsed, setCollapsed] = useState(year < CURRENT_YEAR);
 
@@ -52,9 +56,9 @@ export function YearSection({
             setCollapsed((c) => !c);
           }
         }}
-        className="sticky z-30 flex items-center gap-4 pt-8 pb-3 border-t-2 cursor-pointer select-none"
+        className="sticky z-30 flex min-h-12 items-center gap-4 pt-8 pb-3 border-t-2 cursor-pointer select-none"
         style={{
-          top: "43px",
+          top: "var(--sticky-stats-height)",
           borderColor: "var(--rule-heavy)",
           backgroundColor: "var(--bg-primary)",
         }}
@@ -101,8 +105,8 @@ export function YearSection({
         <aside className="md:pt-0">
           <EventsRail
             events={events}
-            expandedId={expandedId}
-            onExpand={onExpand}
+            expandedId={expandedEventId}
+            onExpand={onExpandEvent}
           />
         </aside>
 
@@ -114,8 +118,8 @@ export function YearSection({
                 key={prediction.id}
                 prediction={prediction}
                 thinker={thinker}
-                isExpanded={expandedId === prediction.id}
-                onToggle={() => onExpand(prediction.id)}
+                isExpanded={expandedPredictionId === prediction.id}
+                onToggle={() => onExpandPrediction(prediction.id)}
                 showThinkerBio={showThinkerBio}
               />
             ))

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Prophecy Index Audit - 2026-05-12</title>
+    <style>
+      :root {
+        --paper: #f9f7f2;
+        --ink: #1a1a1a;
+        --muted: #5f5b53;
+        --faint: #8b867c;
+        --rule: #d9d4ca;
+        --card: #fffdf8;
+        --shulman: #7c3aed;
+        --aschenbrenner: #ea580c;
+        --cotra: #059669;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.55;
+      }
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 48px 24px 72px;
+      }
+      header {
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 24px;
+        margin-bottom: 32px;
+      }
+      .kicker,
+      th,
+      .label {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 11px;
+        color: var(--faint);
+      }
+      h1 {
+        margin: 8px 0 10px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: clamp(40px, 8vw, 78px);
+        line-height: 0.98;
+      }
+      h2 {
+        margin: 40px 0 12px;
+        padding-top: 18px;
+        border-top: 1px solid var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 30px;
+      }
+      h3 {
+        margin: 24px 0 8px;
+        font-size: 17px;
+      }
+      p { margin: 0 0 12px; color: var(--muted); }
+      a { color: var(--ink); text-underline-offset: 3px; }
+      ul { margin: 8px 0 0; padding-left: 20px; }
+      li { margin: 7px 0; color: var(--muted); }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0 24px;
+        background: var(--card);
+        border-top: 1px solid var(--ink);
+        border-bottom: 1px solid var(--ink);
+      }
+      th, td {
+        padding: 12px 10px;
+        border-bottom: 1px solid var(--rule);
+        text-align: left;
+        vertical-align: top;
+      }
+      td:first-child {
+        width: 26%;
+        color: var(--ink);
+        font-weight: 650;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin: 18px 0 24px;
+      }
+      .card {
+        border-left: 3px solid var(--rule);
+        background: var(--card);
+        padding: 14px 16px;
+      }
+      .card strong { color: var(--ink); }
+      .shulman { border-color: var(--shulman); }
+      .aschenbrenner { border-color: var(--aschenbrenner); }
+      .cotra { border-color: var(--cotra); }
+      code {
+        background: #eee8dd;
+        padding: 1px 4px;
+        border-radius: 2px;
+        font-size: 0.95em;
+      }
+      .decision {
+        border: 1px solid var(--rule);
+        background: #fffaf0;
+        padding: 14px 16px;
+        margin: 16px 0;
+      }
+      @media (max-width: 760px) {
+        main { padding: 32px 16px 56px; }
+        .grid { grid-template-columns: 1fr; }
+        td:first-child { width: auto; }
+        table, tbody, tr, td { display: block; }
+        th { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="kicker">Codex Audit Artifact / 2026-05-12</div>
+        <h1>AI Prophecy Index</h1>
+        <p>
+          End-to-end audit plan for preserving the institutional broadsheet direction while
+          improving clarity, mobile usability, source trust, and validation readiness.
+        </p>
+      </header>
+
+      <section>
+        <h2>Context Read</h2>
+        <p>
+          Reviewed project instructions, prior lessons, session log, README, package scripts,
+          Next.js 16 docs, App Router routes, homepage/profile components, prediction/event data,
+          design specs, and implementation plans.
+        </p>
+        <div class="grid">
+          <div class="card shulman"><strong>Records:</strong><br />56 predictions across Carl Shulman, Leopold Aschenbrenner, and Ajeya Cotra.</div>
+          <div class="card aschenbrenner"><strong>Events:</strong><br />37 sourced AI events from 2022-2026 shown alongside predictions.</div>
+          <div class="card cotra"><strong>Design:</strong><br />Broadsheet editorial, ruled layout, serif claims, mono metadata, restrained colours.</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Baseline Evidence</h2>
+        <table>
+          <thead><tr><th>Artifact</th><th>Path</th></tr></thead>
+          <tbody>
+            <tr><td>Desktop first viewport</td><td><code>artifacts/visuals/baseline-home-desktop.png</code></td></tr>
+            <tr><td>Mobile first viewport</td><td><code>artifacts/visuals/baseline-home-mobile-390.png</code></td></tr>
+            <tr><td>Desktop tracker</td><td><code>artifacts/visuals/baseline-tracker-desktop.png</code></td></tr>
+            <tr><td>Expanded evidence</td><td><code>artifacts/visuals/baseline-expanded-desktop.png</code></td></tr>
+            <tr><td>Mobile tracker</td><td><code>artifacts/visuals/baseline-tracker-mobile-390.png</code></td></tr>
+            <tr><td>Browser audit JSON</td><td><code>artifacts/visuals/baseline-browser-audit.json</code></td></tr>
+          </tbody>
+        </table>
+        <p>
+          Browser audit confirmed no horizontal overflow at 390px. It also found many high-use
+          controls below comfortable touch height, including filter pills and profile/source links.
+        </p>
+      </section>
+
+      <section>
+        <h2>Priority Findings</h2>
+        <table>
+          <thead><tr><th>Area</th><th>Finding and Acceptance Criteria</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Product clarity</td>
+              <td>The hero explains the ledger, but the scoring method needs a compact rubric for confirmed, unfolding, too early, incorrect, confidence, and last-reviewed.</td>
+            </tr>
+            <tr>
+              <td>Mobile usability</td>
+              <td>At 390px there is no overflow, but tap targets are too small. Core controls should reach a practical minimum height while retaining mono editorial styling.</td>
+            </tr>
+            <tr>
+              <td>Sticky stats</td>
+              <td>The bar avoids zero states, but mobile wording should name hit rate clearly and expose open/resolved status without implying filtered counts.</td>
+            </tr>
+            <tr>
+              <td>Filters</td>
+              <td>Pressed state is mostly colour. Add non-colour cues, an all-topics reset, and a clearer disabled state for the final active thinker.</td>
+            </tr>
+            <tr>
+              <td>Events and evidence</td>
+              <td>Events and predictions are grouped by year, but the relationship is only implied. Event cards should explicitly invite comparison with same-year predictions.</td>
+            </tr>
+            <tr>
+              <td>Source trust</td>
+              <td>Prediction evidence is AI-assisted, but the inline assessment cards are not labelled as such. Add a small local disclosure without weakening the existing legal notice.</td>
+            </tr>
+            <tr>
+              <td>Profiles</td>
+              <td>Back-to-tracker links should consistently return to the tracker. "Photo" links often point to profile/source pages and should be relabelled.</td>
+            </tr>
+            <tr>
+              <td>Metadata</td>
+              <td>Root metadata is basic. Add canonical/Twitter metadata plus robots and sitemap routes without inventing factual claims.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Implementation Slices</h2>
+        <h3>Slice 1 - Trust and scoring clarity</h3>
+        <ul>
+          <li>Add a compact scoring rubric near the tracker method block.</li>
+          <li>Add AI-assisted assessment labelling in expanded prediction evidence.</li>
+          <li>Add event comparison/source-trust cues without changing event facts or prediction scores.</li>
+        </ul>
+        <h3>Slice 2 - Mobile interaction polish</h3>
+        <ul>
+          <li>Increase filter, profile, source, and disclosure controls to practical touch sizes.</li>
+          <li>Improve sticky stats wording and status grouping on mobile.</li>
+          <li>Add non-colour active cues and all-topics/reset affordances.</li>
+        </ul>
+        <h3>Slice 3 - Public route and metadata polish</h3>
+        <ul>
+          <li>Align profile navigation and source-link wording.</li>
+          <li>Add sitemap and robots route files using the current route set.</li>
+          <li>Update metadata and README only to match current public behaviour.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Validation Plan</h2>
+        <ul>
+          <li><code>npm run lint</code></li>
+          <li><code>npm run build</code></li>
+          <li>Real-browser desktop and 390px mobile smoke checks for first viewport, filters, expanded prediction, expanded event, profile navigation, privacy page, and screenshot capture.</li>
+        </ul>
+        <div class="decision">
+          Canonical URL confirmed by Scott: https://ai-prophecy-index.vercel.app/. Explicit event-to-prediction IDs and fuller evidence-reference coverage are still valuable, but they are broader data-governance work. This pass improves the visible relationship cues without changing scoring or factual claims.
+        </div>
+      </section>
+
+      <section>
+        <h2>Final Validation Results</h2>
+        <ul>
+          <li><code>npm run lint</code> passed.</li>
+          <li><code>npm run build</code> passed and generated static routes for the homepage, privacy page, sitemap, robots file, and all three thinker profiles.</li>
+          <li>Desktop smoke check passed: no horizontal overflow, evidence panels open, event panels open, filters work, and source links remain reachable.</li>
+          <li>Mobile 390px smoke check passed: no horizontal overflow, no button or link targets under 32px, tracker controls are tappable, and evidence expansion works.</li>
+          <li>Profile check passed: Cotra profile loads on desktop and mobile, and the back link returns to <code>/#tracker</code>.</li>
+          <li>Route checks passed for <code>/robots.txt</code>, <code>/sitemap.xml</code>, <code>/privacy</code>, and <code>/thinkers/cotra</code>.</li>
+        </ul>
+        <p>
+          Final screenshots and smoke data are saved in <code>artifacts/visuals/</code>, including
+          <code>final-home-desktop.png</code>, <code>final-home-mobile-390.png</code>,
+          <code>final-tracker-desktop.png</code>, <code>final-tracker-mobile-390.png</code>,
+          <code>final-expanded-desktop.png</code>, <code>final-cotra-desktop.png</code>,
+          <code>final-cotra-mobile-390.png</code>, and <code>final-browser-smoke.json</code>.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

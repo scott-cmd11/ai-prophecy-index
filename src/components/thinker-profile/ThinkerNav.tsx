@@ -13,15 +13,15 @@ export function ThinkerNav() {
     >
       <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-3.5">
         <Link
-          href="/"
-          className="font-mono text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-70"
+          href="/#tracker"
+          className="inline-flex min-h-8 items-center font-mono text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--text-primary)]"
           style={{ color: "var(--text-muted)" }}
         >
           <span style={{ color: "var(--text-primary)" }}>AI</span> Prophecy Index
         </Link>
         <Link
-          href="/"
-          className="font-mono text-[10px] uppercase tracking-widest transition-colors hover:underline"
+          href="/#tracker"
+          className="inline-flex min-h-8 items-center font-mono text-[10px] uppercase tracking-widest transition-colors hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--text-primary)]"
           style={{ color: "var(--text-muted)" }}
         >
           ← Back to tracker

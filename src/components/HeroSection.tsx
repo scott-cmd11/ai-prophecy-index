@@ -1,8 +1,9 @@
 import { shulman } from "@/data/shulman";
 import { aschenbrenner } from "@/data/aschenbrenner";
 import { cotra } from "@/data/cotra";
+import { events } from "@/data/events";
 import { getStatusCounts, getHitRate } from "@/lib/utils";
-import { STATUS_LABELS } from "@/lib/constants";
+import { LAST_UPDATED, STATUS_LABELS } from "@/lib/constants";
 
 export function HeroSection() {
   const allPredictions = [...shulman.predictions, ...aschenbrenner.predictions, ...cotra.predictions];
@@ -16,12 +17,12 @@ export function HeroSection() {
     { label: STATUS_LABELS.incorrect, value: counts.incorrect },
     { label: STATUS_LABELS.in_progress, value: counts.in_progress },
     { label: STATUS_LABELS.outstanding, value: counts.outstanding },
-    { label: "Hit rate", value: `${hitRate}%` },
+    { label: "Resolved hit rate", value: `${hitRate}%` },
   ];
 
   return (
     <header className="border-b-2" style={{ borderColor: "var(--rule-heavy)" }}>
-      <div className="mx-auto max-w-2xl px-6 pt-10 pb-0 text-center">
+      <div className="mx-auto max-w-3xl px-6 pt-10 pb-0 text-center">
         {/* Kicker */}
         <p
           className="mb-3 font-mono text-[10px] uppercase tracking-[0.2em]"
@@ -47,10 +48,11 @@ export function HeroSection() {
         <div className="my-4 flex items-center gap-4 justify-center">
           <div className="flex-1 h-px max-w-[80px]" style={{ background: "var(--rule-heavy)" }} />
           <p
-            className="text-sm"
-            style={{ color: "var(--text-muted)" }}
+            className="max-w-xl text-sm leading-relaxed"
+            style={{ color: "var(--text-secondary)" }}
           >
-            Who got it right, who didn&apos;t, and what the record says
+            A sourced accountability ledger for public AI forecasts: what was predicted,
+            what actually happened, and how the record is being scored.
           </p>
           <div className="flex-1 h-px max-w-[80px]" style={{ background: "var(--rule-heavy)" }} />
         </div>
@@ -82,6 +84,26 @@ export function HeroSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 pb-5 font-mono text-[10px] uppercase tracking-widest">
+          <a
+            href="#tracker"
+            className="inline-flex min-h-9 items-center border px-3 py-1.5 transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--text-primary)]"
+            style={{ borderColor: "var(--rule-heavy)", color: "var(--text-primary)" }}
+          >
+            Start with the tracker
+          </a>
+          <a
+            href="#method"
+            className="inline-flex min-h-9 items-center px-1.5 py-1.5 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--text-primary)]"
+            style={{ color: "var(--text-muted)" }}
+          >
+            How to read it
+          </a>
+          <span style={{ color: "var(--text-faint)" }}>
+            {events.length} real events logged &middot; reviewed {LAST_UPDATED}
+          </span>
         </div>
       </div>
 

@@ -41,6 +41,7 @@ export function TagDistributionChart() {
     rows.sort((a, b) => b.total - a.total);
     return rows;
   }, []);
+  const topRows = data.slice(0, 3);
 
   return (
     <div>
@@ -86,6 +87,37 @@ export function TagDistributionChart() {
           </Bar>
         </BarChart>
       </ResponsiveContainer>
+      <table className="sr-only">
+        <caption>Prediction counts by topic and thinker</caption>
+        <thead>
+          <tr>
+            <th>Topic</th>
+            <th>Shulman</th>
+            <th>Aschenbrenner</th>
+            <th>Cotra</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((row) => (
+            <tr key={row.tag}>
+              <td>{row.tag}</td>
+              <td>{row.shulman}</td>
+              <td>{row.aschenbrenner}</td>
+              <td>{row.cotra}</td>
+              <td>{row.total}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <p
+        className="mt-3 text-xs leading-relaxed"
+        style={{ color: "var(--text-secondary)" }}
+      >
+        Largest topic clusters:{" "}
+        {topRows.map((row) => `${row.tag} (${row.total})`).join(", ")}.
+      </p>
 
       {/* Legend */}
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">

@@ -81,6 +81,21 @@ export function TimelineScatterChart() {
   const maxY = Math.max(...data.map((d) => d.y), 0);
   const minYear = Math.min(...TIMELINE_YEARS);
   const maxYear = Math.max(...TIMELINE_YEARS);
+  const yearlyCounts = TIMELINE_YEARS.map((year) => ({
+    year,
+    total: data.filter((dot) => dot.x === year).length,
+  })).filter((row) => row.total > 0);
+  const statusCounts = data.reduce<Record<PredictionStatus, number>>(
+    (counts, dot) => {
+      counts[dot.status] += 1;
+      return counts;
+    },
+    { confirmed: 0, in_progress: 0, outstanding: 0, incorrect: 0 }
+  );
+  const busiestYear = yearlyCounts.reduce(
+    (max, row) => (row.total > max.total ? row : max),
+    { year: minYear, total: 0 }
+  );
 
   return (
     <div>
@@ -114,6 +129,25 @@ export function TimelineScatterChart() {
           <Scatter data={data} shape={<StatusDot />} isAnimationActive={false} />
         </ScatterChart>
       </ResponsiveContainer>
+      <p className="sr-only">
+        Timeline density chart with {data.length} predictions:
+        {" "}
+        {statusCounts.confirmed} confirmed,
+        {" "}
+        {statusCounts.in_progress} still unfolding,
+        {" "}
+        {statusCounts.outstanding} too early to tell, and
+        {" "}
+        {statusCounts.incorrect} incorrect.
+      </p>
+
+      <p
+        className="mt-3 text-xs leading-relaxed"
+        style={{ color: "var(--text-secondary)" }}
+      >
+        Densest forecast year: {busiestYear.year} with {busiestYear.total} tracked
+        prediction{busiestYear.total === 1 ? "" : "s"}.
+      </p>
 
       {/* Legend row 1: thinker colors */}
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">

@@ -367,6 +367,8 @@ export const events: AIEvent[] = [
       "Former Google engineer Linwei Ding is convicted on 14 counts for stealing thousands of pages of TPU/GPU architecture trade secrets for Chinese companies — the DOJ's first AI-related economic espionage conviction.",
     category: "policy",
     source: "U.S. Department of Justice",
+    sourceUrl:
+      "https://www.justice.gov/opa/pr/former-google-engineer-found-guilty-economic-espionage-and-theft-confidential-ai-technology",
   },
   {
     id: "evt-2026-claude-opus-46",

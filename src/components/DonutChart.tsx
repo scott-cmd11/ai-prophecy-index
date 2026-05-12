@@ -46,9 +46,7 @@ export function DonutChart({
             dataKey="value"
             stroke="var(--bg-primary)"
             strokeWidth={2}
-            animationBegin={0}
-            animationDuration={1000}
-            animationEasing="ease-out"
+            isAnimationActive={false}
           >
             {data.map((entry, index) => (
               <Cell key={index} fill={entry.color} />
@@ -58,7 +56,7 @@ export function DonutChart({
             contentStyle={{
               backgroundColor: "var(--bg-card)",
               border: "1px solid var(--border-card)",
-              borderRadius: "10px",
+              borderRadius: "6px",
               fontSize: "12px",
               fontFamily: "var(--font-mono)",
               padding: "8px 12px",
