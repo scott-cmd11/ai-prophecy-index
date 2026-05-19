@@ -93,3 +93,13 @@ Remaining product decisions:
 - Canonical production URL confirmed by Scott: `https://ai-prophecy-index.vercel.app/`. The current fallback in `src/lib/site.ts` matches it.
 - Consider a later data-model pass for explicit event-to-prediction relationships rather than year-level comparison only.
 - Consider adding richer per-event review metadata if the real-events ledger becomes a higher-trust source surface.
+
+## May 18 Event Ledger Update
+
+- [x] Add missing April 18-May 18, 2026 events to the 2026 real-events rail.
+- [x] Preserve the existing scoring and prediction claims.
+- [x] Add source arrays for multi-source events without removing legacy source support.
+- [x] Add `research` and `market` event styling to match the requested categories.
+- [x] Run `npm run lint`.
+- [x] Run `npm run build`.
+- [x] Verify the 2026 section locally in a real browser.

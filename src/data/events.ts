@@ -428,4 +428,161 @@ export const events: AIEvent[] = [
     sourceUrl:
       "https://www.usnews.com/news/top-news/articles/2026-04-23/white-house-accuses-china-of-industrial-scale-theft-of-ai-technology-ft-reports",
   },
+  {
+    id: "evt-2026-agent-market-evals",
+    date: "2026-04-24",
+    year: 2026,
+    title: "Agent markets expose bargaining gains and betting losses",
+    summary:
+      "Anthropic's Project Deal shows Opus agents out-negotiating Haiku agents in a simulated market, while General Reasoning's KellyBench finds frontier agents losing money in adversarial sports betting. The paired results suggest agents are starting to compete economically but remain exploitable when incentives are noisy and adversarial.",
+    category: "market",
+    sources: [
+      {
+        label: "Anthropic Project Deal",
+        url: "https://www.anthropic.com/features/project-deal",
+      },
+      {
+        label: "General Reasoning KellyBench",
+        url: "https://www.gr.inc/releases/introducing-kellybench",
+      },
+      {
+        label: "Air Street State of AI: May 2026",
+        url: "https://press.airstreet.com/p/state-of-ai-may-2026",
+      },
+    ],
+  },
+  {
+    id: "evt-2026-microsoft-openai-compute-reset",
+    date: "2026-04-27",
+    year: 2026,
+    title: "Microsoft and OpenAI end exclusive compute terms",
+    summary:
+      "Microsoft and OpenAI revise their partnership so OpenAI can multi-source compute while Microsoft keeps strategic access and a non-exclusive licence. The reset makes frontier-model infrastructure more multi-cloud and weakens the assumption that one hyperscaler controls OpenAI's scaling path.",
+    category: "market",
+    sources: [
+      {
+        label: "Microsoft official blog",
+        url: "https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/",
+      },
+      {
+        label: "Air Street State of AI: May 2026",
+        url: "https://press.airstreet.com/p/state-of-ai-may-2026",
+      },
+    ],
+  },
+  {
+    id: "evt-2026-aisi-cyber-range-threshold",
+    date: "2026-04-30",
+    year: 2026,
+    title: "AISI cyber range cleared by Mythos, then GPT-5.5",
+    summary:
+      "The UK AI Security Institute reports Claude Mythos clearing its 32-step cyber-offense range and GPT-5.5 reaching similar results three weeks later. AISI frames the gap as evidence that autonomous offensive-cyber capability is advancing on roughly a four-month doubling time.",
+    category: "research",
+    sources: [
+      {
+        label: "AISI Claude Mythos evaluation",
+        url: "https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities",
+      },
+      {
+        label: "AISI GPT-5.5 evaluation",
+        url: "https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities",
+      },
+      {
+        label: "AISI cyber capability trend",
+        url: "https://www.aisi.gov.uk/blog/how-fast-is-autonomous-ai-cyber-capability-advancing",
+      },
+    ],
+  },
+  {
+    id: "evt-2026-compute-policy-push",
+    date: "2026-05-04",
+    year: 2026,
+    title: "US compute politics move into legislative proposals",
+    summary:
+      "US lawmakers and policy shops float a Bureau of Compute, CHIPS Act 2.0, and AI data-centre moratorium proposals as power, chip access, and land-use pressure intensifies. The proposals mark compute scarcity as a policy problem rather than just a hyperscaler procurement issue.",
+    category: "policy",
+    sources: [
+      {
+        label: "Air Street State of AI: May 2026",
+        url: "https://press.airstreet.com/p/state-of-ai-may-2026",
+      },
+      {
+        label: "Sanders-Ocasio-Cortez AI Data Center Moratorium Act",
+        url: "https://www.sanders.senate.gov/press-releases/news-sanders-ocasio-cortez-announce-ai-data-center-moratorium-act/",
+      },
+      {
+        label: "CNAS chip supply report",
+        url: "https://www.cnas.org/publications/reports/american-ai-companies-cant-get-enough-chips",
+      },
+    ],
+  },
+  {
+    id: "evt-2026-china-open-weight-coding-wave",
+    date: "2026-05-04",
+    year: 2026,
+    title: "Chinese labs ship open-weight coding wave",
+    summary:
+      "Zhipu AI, MiniMax, Moonshot, and DeepSeek release GLM-5.1, M2.7, Kimi K2.6, and V4 within a 12-day window. The burst keeps open-weight coding capability close to the closed frontier and reinforces the speed of China-based lab iteration.",
+    category: "release",
+    sources: [
+      {
+        label: "Air Street State of AI: May 2026",
+        url: "https://press.airstreet.com/p/state-of-ai-may-2026",
+      },
+      {
+        label: "MiniMax M2.7 release coverage",
+        url: "https://www.unite.ai/minimax-open-sources-m2-7-a-self-evolving-agent-model/",
+      },
+      {
+        label: "DeepSeek V4 Pro weights",
+        url: "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      },
+    ],
+  },
+  {
+    id: "evt-2026-robotics-long-horizon-agents",
+    date: "2026-05-04",
+    year: 2026,
+    title: "π0.7 and ML-Master 2.0 extend long-horizon agents",
+    summary:
+      "The π0.7 robotics foundation model demonstrates stronger generalist manipulation and steering, while ML-Master 2.0 introduces hierarchical memory for long-horizon machine-learning tasks. Both point toward agents that can maintain context and control across longer real-world workflows.",
+    category: "research",
+    sources: [
+      {
+        label: "π0.7 arXiv paper",
+        url: "https://arxiv.org/abs/2604.15483",
+      },
+      {
+        label: "ML-Master 2.0 arXiv paper",
+        url: "https://arxiv.org/abs/2601.10402",
+      },
+      {
+        label: "Air Street State of AI: May 2026",
+        url: "https://press.airstreet.com/p/state-of-ai-may-2026",
+      },
+    ],
+  },
+  {
+    id: "evt-2026-gpt-55-instant-default",
+    date: "2026-05-05",
+    year: 2026,
+    title: "GPT-5.5 Instant becomes the default ChatGPT model",
+    summary:
+      "OpenAI releases GPT-5.5 Instant and makes it the default ChatGPT model, pairing faster interactive use with lower latency and stronger everyday coding and reasoning. The default switch matters because it moves frontier-level capability into the product surface most users actually touch.",
+    category: "release",
+    sources: [
+      {
+        label: "OpenAI GPT-5.5 Instant",
+        url: "https://openai.com/index/gpt-5-5-instant/",
+      },
+      {
+        label: "OpenAI GPT-5.5 Instant system card",
+        url: "https://deploymentsafety.openai.com/gpt-5-5-instant/gpt-5-5-instant.pdf",
+      },
+      {
+        label: "Air Street State of AI: May 2026",
+        url: "https://press.airstreet.com/p/state-of-ai-may-2026",
+      },
+    ],
+  },
 ];

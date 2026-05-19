@@ -27,7 +27,7 @@ export interface Prediction {
   tags?: PredictionTag[];
 }
 
-export type AIEventCategory = "release" | "policy" | "safety";
+export type AIEventCategory = "release" | "policy" | "safety" | "research" | "market";
 
 export interface AIEvent {
   id: string;
@@ -38,6 +38,7 @@ export interface AIEvent {
   category: AIEventCategory;
   source?: string;
   sourceUrl?: string;
+  sources?: Reference[];
 }
 
 export interface Thinker {

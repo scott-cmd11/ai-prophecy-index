@@ -7,12 +7,16 @@ const CATEGORY_COLOR: Record<AIEventCategory, string> = {
   release: "var(--event-release)",
   policy: "var(--event-policy)",
   safety: "var(--event-safety)",
+  research: "var(--event-research)",
+  market: "var(--event-market)",
 };
 
 const CATEGORY_LABEL: Record<AIEventCategory, string> = {
   release: "Release",
   policy: "Policy",
   safety: "Safety",
+  research: "Research",
+  market: "Market",
 };
 
 interface EventCardProps {
@@ -24,6 +28,12 @@ interface EventCardProps {
 export function EventCard({ event, isExpanded, onToggle }: EventCardProps) {
   const color = CATEGORY_COLOR[event.category];
   const label = CATEGORY_LABEL[event.category];
+  const sourceLinks =
+    event.sources && event.sources.length > 0
+      ? event.sources
+      : event.sourceUrl
+        ? [{ label: event.source ?? "Source", url: event.sourceUrl }]
+        : [];
 
   const [y, m, d] = event.date.split("-").map(Number);
   const formattedDate = new Date(y, m - 1, d).toLocaleDateString("en-US", {
@@ -103,27 +113,34 @@ export function EventCard({ event, isExpanded, onToggle }: EventCardProps) {
           >
             Sourced event. Compare with predictions in this year. Ledger reviewed {LAST_UPDATED}.
           </p>
-          {(event.source || event.sourceUrl) && (
+          {sourceLinks.length > 0 ? (
+            <ul
+              className="space-y-0.5 font-mono text-[9px]"
+              style={{ color: "var(--text-faint)" }}
+            >
+              {sourceLinks.map((source) => (
+                <li key={`${event.id}-${source.url}`}>
+                  <a
+                    href={source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex min-h-8 max-w-full items-center whitespace-normal break-words hover:underline"
+                    style={{ color }}
+                  >
+                    {source.label} →
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : event.source ? (
             <div
               className="font-mono text-[9px]"
               style={{ color: "var(--text-faint)" }}
             >
-              {event.sourceUrl ? (
-                <a
-                  href={event.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="inline-flex min-h-8 items-center hover:underline"
-                  style={{ color }}
-                >
-                  {event.source ?? "Source"} →
-                </a>
-              ) : (
-                <span style={{ color }}>{event.source}</span>
-              )}
+              <span style={{ color }}>{event.source}</span>
             </div>
-          )}
+          ) : null}
         </div>
         </div>
       </div>
