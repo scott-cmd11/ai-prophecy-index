@@ -26,6 +26,26 @@ const LABEL: Record<"shulman" | "aschenbrenner" | "cotra", string> = {
   cotra: "Cotra",
 };
 
+const REVIEW_MONTHS = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+
+function formatReviewMonth(dateString: string) {
+  const [year, month] = dateString.split("-").map(Number);
+  return `${REVIEW_MONTHS[month - 1]} ${year}`;
+}
+
 export function TimelineCard({
   prediction,
   thinker,
@@ -66,10 +86,7 @@ export function TimelineCard({
   );
 
   const formattedDate = prediction.lastReviewed
-    ? new Date(prediction.lastReviewed).toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "short",
-      })
+    ? formatReviewMonth(prediction.lastReviewed)
     : null;
 
   return (
